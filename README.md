@@ -22,10 +22,10 @@ attribution. House style: blueprint aesthetic, no em-dashes in visible text.
 | Work | Type | Usage methods | Annotation types | Annotations | Clusters | Data access | License | Atlas |
 |---|---|---|---|---|---|---|---|---|
 | EPIC-KITCHENS-100 | dataset (corpus + benchmark) | corpus, eval-benchmark | verb-noun-action, clip-narration | 76,885 | 111 | open (CSV on GitHub) | CC BY-NC 4.0 | [EN](epic-kitchens-100/epic-kitchens-100_atlas.html) / [CN](epic-kitchens-100/epic-kitchens-100_atlas_cn.html) |
+| HD-EPIC | dataset (corpus + benchmark) | corpus, eval-benchmark | clip-narration, verb-noun-action, task-instruction, vqa, dense-multi-aspect | 59,454 | 314 | open (GitHub) | CC BY 4.0 | [EN](hd-epic/hd-epic_atlas.html) / [CN](hd-epic/hd-epic_atlas_cn.html) |
 | [Ego4D](https://arxiv.org/abs/2110.07058) | corpus | corpus, perception-pretrain, eval-benchmark | clip-narration, video-summary, verb-noun-action | n/a | n/a | gated (license sign-up, then CLI) | Ego4D License (gated; redistribution restricted, GAP on verbatim terms) | planned |
 | [Ego-Exo4D](https://arxiv.org/abs/2311.18259) | corpus | corpus, perception-pretrain, eval-benchmark | atomic-substep, clip-narration, expert-commentary | n/a | n/a | gated (license form, then CLI) | Ego-Exo4D License (gated; redistribution restricted, GAP on verbatim terms) | planned |
 | [EgoVLP (EgoClip / EgoNCE / EgoMCQ)](https://arxiv.org/abs/2206.01670) | corpus | perception-pretrain, corpus, eval-benchmark | clip-narration, verb-noun-action | n/a | n/a | open CSV (Ego4D-derived) via repo Drive links | code MIT; data inherits Ego4D License (GAP, not restated) | planned |
-| [HD-EPIC](https://arxiv.org/abs/2502.04144) | corpus | corpus, eval-benchmark | dense-multi-aspect, verb-noun-action, task-instruction, vqa | n/a | n/a | open (GitHub annotations) | CC BY 4.0 (data.bris portal; GAP: live GitHub LICENSE not confirmed) | planned |
 | [EgoSchema](https://arxiv.org/abs/2308.09126) | corpus | eval-benchmark | vqa | n/a | n/a | open questions + options; correct-answer key withheld | Ego4D License (questions LLM-generated then human-curated) | planned |
 | [EgoVerse](https://arxiv.org/abs/2604.07607) | dataset | corpus, co-train, vla-pretrain | task-instruction, clip-narration, atomic-substep | n/a | n/a | via S3 sync script (AWS creds) | code MIT; dataset/annotation redistribution license not stated (GAP) | planned |
 | [EgoDex](https://arxiv.org/abs/2505.11709) | dataset | corpus, hand-pose, vla-pretrain, eval-benchmark | task-instruction | n/a | n/a | open download (Apple CDN); redistribution barred | CC BY-NC-ND: annotation-text redistribution NOT permitted | planned |
@@ -72,9 +72,6 @@ possible; unverifiable items are marked in the per-run uncertainty notes.
 - **[EgoVLP (EgoClip / EgoNCE / EgoMCQ)](https://arxiv.org/abs/2206.01670)** (NeurIPS 2022) [perception-pretrain, corpus, eval-benchmark | clip-narration, verb-noun-action]  
   A pre-filtered, cleaned text layer over Ego4D: ~3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.  
   access: open CSV (Ego4D-derived) via repo Drive links | license: code MIT; data inherits Ego4D License (GAP, not restated) | download+cluster target: egoclip.csv gives ~3.8M narration strings (Ego4D-derived)
-- **[HD-EPIC](https://arxiv.org/abs/2502.04144)** (CVPR 2025) [corpus, eval-benchmark | dense-multi-aspect, verb-noun-action, task-instruction, vqa]  
-  Highly-detailed kitchen understanding: 59,454 fine-grained action segments (81% unique sentences), recipe steps, 3D twins, gaze, and a 26,650-question VQA benchmark.  
-  access: open (GitHub annotations) | license: CC BY 4.0 (data.bris portal; GAP: live GitHub LICENSE not confirmed) | download+cluster target: open narrations, recipe steps, and VQA strings
 - **[EgoSchema](https://arxiv.org/abs/2308.09126)** (NeurIPS 2023) [eval-benchmark | vqa]  
   Diagnostic long-form video-QA benchmark: 5,031 multiple-choice questions over 3-minute Ego4D clips requiring long temporal certificates.  
   access: open questions + options; correct-answer key withheld | license: Ego4D License (questions LLM-generated then human-curated) | download+cluster target: 5,031 question + option strings open (labels withheld)

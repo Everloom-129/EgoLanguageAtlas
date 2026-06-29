@@ -1,0 +1,24 @@
+{
+  "name": "HD-EPIC",
+  "slug": "hd-epic",
+  "status": "built",
+  "work_type": "dataset (corpus + benchmark)",
+  "focus": "41 hours of unscripted egocentric cooking across 9 kitchens, with highly-detailed full-sentence narrations, recipe steps, and a 26,550 question VQA benchmark.",
+  "usage_methods": ["corpus", "eval-benchmark"],
+  "usage_downstream": [],
+  "annotation_types": ["clip-narration", "verb-noun-action", "task-instruction", "vqa", "dense-multi-aspect"],
+  "source_datasets": ["EPIC-KITCHENS protocol (9 kitchens)"],
+  "data_access": "project-script (GitHub)",
+  "downloadable": "open (GitHub)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "redistribution": "permitted with attribution",
+  "links": {
+    "paper": "https://arxiv.org/abs/2502.04144",
+    "repo": "https://github.com/hd-epic/hd-epic-annotations",
+    "project": "https://hd-epic.github.io/",
+    "atlas_en": "hd-epic/hd-epic_atlas.html",
+    "atlas_cn": "hd-epic/hd-epic_atlas_cn.html"
+  },
+  "stats_file": "hd-epic/hd-epic_stats.json"
+}

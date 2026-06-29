@@ -50,17 +50,6 @@ PLANNED = [
         "focus": "A pre-filtered, cleaned text layer over Ego4D: ~3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.",
     },
     {
-        "category": "corpus", "name": "HD-EPIC", "venue": "CVPR 2025",
-        "arxiv": "https://arxiv.org/abs/2502.04144",
-        "usage_methods": ["corpus", "eval-benchmark"],
-        "annotation_types": ["dense-multi-aspect", "verb-noun-action", "task-instruction", "vqa"],
-        "source_datasets": "original capture (EPIC-KITCHENS protocol)",
-        "data_access": "project-script", "downloadable": "open (GitHub annotations)",
-        "license": "CC BY 4.0 (data.bris portal; GAP: live GitHub LICENSE not confirmed)",
-        "suitability": "download+cluster target: open narrations, recipe steps, and VQA strings",
-        "focus": "Highly-detailed kitchen understanding: 59,454 fine-grained action segments (81% unique sentences), recipe steps, 3D twins, gaze, and a 26,650-question VQA benchmark.",
-    },
-    {
         "category": "corpus", "name": "EgoSchema", "venue": "NeurIPS 2023",
         "arxiv": "https://arxiv.org/abs/2308.09126",
         "usage_methods": ["eval-benchmark"],
@@ -303,7 +292,8 @@ def main():
         "generated_note": ("Web-verified from primary sources on 2026-06-28 by the "
                            "atlas research pass. Fields containing GAP were not "
                            "confirmable verbatim and must be re-checked before build. "
-                           "EPIC-KITCHENS-100 is omitted here because it is already built."),
+                           "EPIC-KITCHENS-100 and HD-EPIC are omitted here because they "
+                           "are already built."),
         "planned": PLANNED,
     }
     out = os.path.join(HERE, "roadmap.json")

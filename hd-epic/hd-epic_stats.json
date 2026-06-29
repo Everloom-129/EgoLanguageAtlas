@@ -1,0 +1,801 @@
+{
+  "work": "HD-EPIC",
+  "annotation_type": [
+    "clip-narration",
+    "verb-noun-action",
+    "task-instruction",
+    "vqa",
+    "dense-multi-aspect"
+  ],
+  "counts": {
+    "labelled_segments": 59454,
+    "unique_narrations_clean": 52645,
+    "unique_share": 0.8855,
+    "vocab_size_tokens": 6284,
+    "verb_classes": 106,
+    "noun_classes": 303,
+    "distinct_main_verbs": 100,
+    "distinct_main_nouns": 256,
+    "videos": 156,
+    "participants": 9,
+    "recipes": 69,
+    "recipe_steps": 457,
+    "vqa_questions": 26550,
+    "vqa_categories": 7,
+    "vqa_tasks": 30
+  },
+  "length": {
+    "tokens_mean": 15.649,
+    "tokens_median": 14.0,
+    "tokens_p90": 25.0,
+    "tokens_max": 97,
+    "chars_mean": 80.627,
+    "chars_median": 73.0,
+    "multi_verb_share": 0.3805,
+    "token_hist": [
+      [
+        2,
+        135
+      ],
+      [
+        3,
+        792
+      ],
+      [
+        4,
+        680
+      ],
+      [
+        5,
+        556
+      ],
+      [
+        6,
+        1215
+      ],
+      [
+        7,
+        2283
+      ],
+      [
+        8,
+        3133
+      ],
+      [
+        9,
+        2909
+      ],
+      [
+        10,
+        3636
+      ],
+      [
+        11,
+        4382
+      ],
+      [
+        12,
+        4328
+      ],
+      [
+        13,
+        3860
+      ],
+      [
+        14,
+        3214
+      ],
+      [
+        15,
+        3064
+      ],
+      [
+        16,
+        2943
+      ],
+      [
+        17,
+        2674
+      ],
+      [
+        18,
+        2526
+      ],
+      [
+        19,
+        2223
+      ],
+      [
+        20,
+        2215
+      ],
+      [
+        21,
+        1795
+      ],
+      [
+        22,
+        1636
+      ],
+      [
+        23,
+        1329
+      ],
+      [
+        24,
+        1152
+      ],
+      [
+        25,
+        983
+      ],
+      [
+        26,
+        865
+      ],
+      [
+        27,
+        691
+      ],
+      [
+        28,
+        594
+      ],
+      [
+        29,
+        527
+      ],
+      [
+        30,
+        438
+      ]
+    ]
+  },
+  "hours": {
+    "hours_paper_cited": 41.0,
+    "annotated_span_hours": 41.172
+  },
+  "density": {
+    "segments_per_hour_cited": 1450.1,
+    "segments_per_video": 381.12
+  },
+  "granularity_tier": "clip-narration full-sentence + verb-noun-action + task-instruction + vqa (dense, multi-aspect)",
+  "verb_top": [
+    [
+      "take",
+      13477
+    ],
+    [
+      "put",
+      12515
+    ],
+    [
+      "open",
+      2917
+    ],
+    [
+      "move",
+      2911
+    ],
+    [
+      "close",
+      2503
+    ],
+    [
+      "wash",
+      2451
+    ],
+    [
+      "press",
+      1317
+    ],
+    [
+      "lift",
+      1219
+    ],
+    [
+      "shake",
+      1133
+    ],
+    [
+      "turn-on",
+      1081
+    ],
+    [
+      "cut",
+      1074
+    ],
+    [
+      "pull",
+      1051
+    ],
+    [
+      "mix",
+      962
+    ],
+    [
+      "turn-off",
+      853
+    ],
+    [
+      "pat",
+      834
+    ],
+    [
+      "turn",
+      773
+    ],
+    [
+      "pour",
+      755
+    ],
+    [
+      "squeeze",
+      718
+    ],
+    [
+      "remove",
+      710
+    ],
+    [
+      "scoop",
+      544
+    ],
+    [
+      "throw",
+      456
+    ],
+    [
+      "reach",
+      427
+    ],
+    [
+      "flip",
+      420
+    ],
+    [
+      "drop",
+      415
+    ],
+    [
+      "transition",
+      404
+    ]
+  ],
+  "noun_top": [
+    [
+      "spoon",
+      2751
+    ],
+    [
+      "bowl",
+      2669
+    ],
+    [
+      "cupboard",
+      2322
+    ],
+    [
+      "tap",
+      1930
+    ],
+    [
+      "pan",
+      1894
+    ],
+    [
+      "hand",
+      1803
+    ],
+    [
+      "lid",
+      1711
+    ],
+    [
+      "knife",
+      1634
+    ],
+    [
+      "package",
+      1554
+    ],
+    [
+      "drawer",
+      1537
+    ],
+    [
+      "spatula",
+      1419
+    ],
+    [
+      "plate",
+      1312
+    ],
+    [
+      "cup",
+      1239
+    ],
+    [
+      "bag",
+      1211
+    ],
+    [
+      "bottle",
+      1185
+    ],
+    [
+      "onion",
+      1141
+    ],
+    [
+      "sponge",
+      1004
+    ],
+    [
+      "box",
+      966
+    ],
+    [
+      "potato",
+      911
+    ],
+    [
+      "cloth",
+      829
+    ],
+    [
+      "top",
+      800
+    ],
+    [
+      "board:chopping",
+      761
+    ],
+    [
+      "food",
+      693
+    ],
+    [
+      "jar",
+      659
+    ],
+    [
+      "mushroom",
+      642
+    ]
+  ],
+  "verb_category_dist": [
+    [
+      "retrieve",
+      16103
+    ],
+    [
+      "leave",
+      13669
+    ],
+    [
+      "manipulate",
+      7197
+    ],
+    [
+      "access",
+      4326
+    ],
+    [
+      "clean",
+      3926
+    ],
+    [
+      "block",
+      3658
+    ],
+    [
+      "transition",
+      3424
+    ],
+    [
+      "merge",
+      2158
+    ],
+    [
+      "split",
+      1993
+    ],
+    [
+      "monitor",
+      1188
+    ],
+    [
+      "sense",
+      983
+    ],
+    [
+      "order",
+      473
+    ],
+    [
+      "distribute",
+      321
+    ],
+    [
+      "",
+      35
+    ]
+  ],
+  "noun_category_dist": [
+    [
+      "containers",
+      8366
+    ],
+    [
+      "appliances",
+      6233
+    ],
+    [
+      "crockery",
+      6049
+    ],
+    [
+      "vegetables",
+      5437
+    ],
+    [
+      "cutlery",
+      4898
+    ],
+    [
+      "utensils",
+      4096
+    ],
+    [
+      "cookware",
+      3020
+    ],
+    [
+      "furniture",
+      3002
+    ],
+    [
+      "storage",
+      2549
+    ],
+    [
+      "cleaning equipment and material",
+      2108
+    ],
+    [
+      "materials",
+      2073
+    ],
+    [
+      "hand",
+      1803
+    ],
+    [
+      "baked goods and grains",
+      1641
+    ],
+    [
+      "spices and herbs and sauces",
+      1448
+    ],
+    [
+      "prepared food",
+      1374
+    ],
+    [
+      "dairy and eggs",
+      1297
+    ],
+    [
+      "rubbish",
+      938
+    ],
+    [
+      "fruits and nuts",
+      924
+    ],
+    [
+      "meat and substitute",
+      907
+    ],
+    [
+      "drinks",
+      765
+    ],
+    [
+      "other",
+      519
+    ],
+    [
+      "",
+      7
+    ]
+  ],
+  "word_top": [
+    [
+      "right",
+      28140
+    ],
+    [
+      "hand",
+      24757
+    ],
+    [
+      "my",
+      23409
+    ],
+    [
+      "using",
+      22052
+    ],
+    [
+      "left",
+      21212
+    ],
+    [
+      "up",
+      14197
+    ],
+    [
+      "hand.",
+      13397
+    ],
+    [
+      "pick",
+      10393
+    ],
+    [
+      "hand,",
+      10128
+    ],
+    [
+      "that",
+      7051
+    ],
+    [
+      "place",
+      6150
+    ],
+    [
+      "put",
+      5521
+    ],
+    [
+      "both",
+      5378
+    ],
+    [
+      "holding",
+      5295
+    ],
+    [
+      "bowl",
+      5161
+    ],
+    [
+      "down",
+      5088
+    ],
+    [
+      "kitchen",
+      5027
+    ],
+    [
+      "top",
+      4872
+    ],
+    [
+      "so",
+      4614
+    ],
+    [
+      "while",
+      4338
+    ],
+    [
+      "i",
+      4239
+    ],
+    [
+      "knife",
+      3748
+    ],
+    [
+      "chopping",
+      3569
+    ],
+    [
+      "spoon",
+      3553
+    ],
+    [
+      "hands",
+      3542
+    ],
+    [
+      "water",
+      3483
+    ],
+    [
+      "open",
+      3407
+    ],
+    [
+      "back",
+      3330
+    ],
+    [
+      "pan",
+      3294
+    ],
+    [
+      "board",
+      3227
+    ],
+    [
+      "tap",
+      3137
+    ],
+    [
+      "counter",
+      2918
+    ],
+    [
+      "sink",
+      2912
+    ],
+    [
+      "off",
+      2803
+    ],
+    [
+      "can",
+      2687
+    ],
+    [
+      "plastic",
+      2599
+    ],
+    [
+      "close",
+      2564
+    ],
+    [
+      "lid",
+      2548
+    ],
+    [
+      "out",
+      2444
+    ],
+    [
+      "turn",
+      2431
+    ]
+  ],
+  "vqa": {
+    "total": 26550,
+    "n_categories": 7,
+    "n_tasks": 30,
+    "by_category": [
+      [
+        "fine_grained",
+        21000
+      ],
+      [
+        "gaze",
+        2000
+      ],
+      [
+        "3d_perception",
+        1500
+      ],
+      [
+        "object_motion",
+        900
+      ],
+      [
+        "recipe",
+        550
+      ],
+      [
+        "ingredient",
+        400
+      ],
+      [
+        "nutrition",
+        200
+      ]
+    ],
+    "examples": [
+      {
+        "task": "fixture_interaction_counting",
+        "category": "3d_perception",
+        "question": "How many times did I close the item indicated by bounding box <BBOX 419.29845528161303 759.8126621265317 946.7606194248815 1122.6783709387232> in <TIME 00:03:1.8 video 1>?"
+      },
+      {
+        "task": "fixture_location",
+        "category": "3d_perception",
+        "question": "Given the direction I am looking at <TIME 00:00:27.2 video 1>, where is the boiler located?"
+      },
+      {
+        "task": "object_contents_retrieval",
+        "category": "3d_perception",
+        "question": "Which of these objects did the person put in/on the item indicated by bounding box <BBOX 116.76849439864645 585.4222374175963 994.8534232426013 1063.9106723235532> in <TIME 00:05:3.633 video 1>?"
+      },
+      {
+        "task": "object_location",
+        "category": "3d_perception",
+        "question": "Where did I put the object identified by <BBOX 787.036 734.085 972.362 791.85> at <TIME 00:04:47.9 video 1> after taking it at <TIME 00:04:47.9 video 1>?"
+      },
+      {
+        "task": "action_localization",
+        "category": "fine_grained",
+        "question": "When did the action <hit spatula> happen in the video 1?"
+      },
+      {
+        "task": "action_recognition",
+        "category": "fine_grained",
+        "question": "Which of these sentences best describe the ongoing action(s) in the video 1?"
+      },
+      {
+        "task": "how_recognition",
+        "category": "fine_grained",
+        "question": "What is the best description for how the person carried out the action <open microwave door> in this video segment?"
+      },
+      {
+        "task": "why_recognition",
+        "category": "fine_grained",
+        "question": "What is the best description for why the person performed the action <pick up tea towel> in video 1?"
+      }
+    ]
+  },
+  "recipes": {
+    "n_recipes": 69,
+    "n_steps": 457,
+    "examples": [
+      {
+        "recipe": "Nespresso",
+        "step": "Put one capsule into the coffee machine."
+      },
+      {
+        "recipe": "Nespresso",
+        "step": "Press the long coffee button"
+      },
+      {
+        "recipe": "Nespresso",
+        "step": "Pour minimum amount of milk into the frother"
+      },
+      {
+        "recipe": "Nespresso",
+        "step": "Add the frothed milk into the coffee"
+      },
+      {
+        "recipe": "Nespresso",
+        "step": "Stir"
+      },
+      {
+        "recipe": "Cacio e Pepe",
+        "step": "cook your choice of pasta in a large pot of generously salted boiling water until al dente."
+      },
+      {
+        "recipe": "Cacio e Pepe",
+        "step": "Toast the grounded peppercorns until fragrant in a frying pan (with little butter) over medium heat, about 2 minutes. Keep them moving to prevent them from burning."
+      },
+      {
+        "recipe": "Cacio e Pepe",
+        "step": "While the pasta cooks, add freshly grated parmigano cheese to the crushed black peppercorns on very low heat. Gradually add a cup of the boiling cooking water to the bowl, constantly mixing and adjust"
+      }
+    ]
+  },
+  "clusters": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "n_clusters": 314,
+    "noise_share_unique": 0.1389,
+    "noise_share_weighted": 0.1303,
+    "largest_total": 1300,
+    "median_total": 115
+  }
+}

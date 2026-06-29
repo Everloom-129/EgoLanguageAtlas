@@ -1,0 +1,228 @@
+{
+  "work": "HD-EPIC",
+  "route": "project-script (GitHub raw)",
+  "repo": "https://github.com/hd-epic/hd-epic-annotations",
+  "branch": "main",
+  "commit_sha": "aa1f833febdfa14253328d11d0585c9eb1fe0b72",
+  "access_utc": "2026-06-29T06:16:55.123707+00:00",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 19170,
+      "status": "downloaded",
+      "sha256": "8e9627915b3ed2eacfc41b4da6d6b368a82377c35a5e3b5a5e0f4f7783e0095f"
+    },
+    {
+      "file": "high-level/complete_recipes.json",
+      "bytes": 1423549,
+      "status": "downloaded",
+      "sha256": "3be62038a229907baaea8232620b512eaf9e5b1d40c4ad245c07f1e6f6ec73e5"
+    },
+    {
+      "file": "narrations-and-action-segments/HD_EPIC_Narrations.pkl",
+      "bytes": 17519823,
+      "status": "downloaded",
+      "sha256": "4b4aebaaa5a37da4dd780e8800000a34616c10dc69a148ddf255e9e519063212"
+    },
+    {
+      "file": "narrations-and-action-segments/HD_EPIC_Narrations_erratum.csv",
+      "bytes": 1360,
+      "status": "downloaded",
+      "sha256": "e05368d17533869c1bab9ffe193d110cb67552e0c972a1a18e0a832b2f3bf495"
+    },
+    {
+      "file": "narrations-and-action-segments/HD_EPIC_noun_classes.csv",
+      "bytes": 410055,
+      "status": "downloaded",
+      "sha256": "d5ac73fff1c62f46dcfc3134c78b33f4518a9c73cf016ce91d911c77302964ff"
+    },
+    {
+      "file": "narrations-and-action-segments/HD_EPIC_verb_classes.csv",
+      "bytes": 28326,
+      "status": "downloaded",
+      "sha256": "b71f3155fdb9e337fed54a612845b7b337f4ec2b32870fdbf2d37affe5238263"
+    },
+    {
+      "file": "vqa-benchmark/3d_perception_fixture_interaction_counting.json",
+      "bytes": 152428,
+      "status": "downloaded",
+      "sha256": "ed3f1bd803c50cb8a38103843c1cabd4a0b0d32a0e1de506eeabd2a0b368ebe0"
+    },
+    {
+      "file": "vqa-benchmark/3d_perception_fixture_location.json",
+      "bytes": 232609,
+      "status": "downloaded",
+      "sha256": "fa74ef2f656dfb5be992bc302d77ed9d6b837e1044e298041ffb0764599c4ba6"
+    },
+    {
+      "file": "vqa-benchmark/3d_perception_object_contents_retrieval.json",
+      "bytes": 123512,
+      "status": "downloaded",
+      "sha256": "6ec4d8d60be0fd97fe4b984e7cdde5879eb67d8a2736a353930614a8fa46ca3f"
+    },
+    {
+      "file": "vqa-benchmark/3d_perception_object_location.json",
+      "bytes": 299418,
+      "status": "downloaded",
+      "sha256": "e9eaa1fbd2869324d13132c9b77e8345d1056f8bce5d281f6600b900041b149d"
+    },
+    {
+      "file": "vqa-benchmark/fine_grained_action_localization.json",
+      "bytes": 9331419,
+      "status": "downloaded",
+      "sha256": "604c4c361dae1f005eb28c0392deb52ca5ac9d71062bd123ef85af3ef53709cd"
+    },
+    {
+      "file": "vqa-benchmark/fine_grained_action_recognition.json",
+      "bytes": 13969128,
+      "status": "downloaded",
+      "sha256": "8b332baca05958a6f82b0232402729109089db7c36a88e0d5c4673018056992c"
+    },
+    {
+      "file": "vqa-benchmark/fine_grained_how_recognition.json",
+      "bytes": 416850,
+      "status": "downloaded",
+      "sha256": "5069dbcc4287f9467218235ddc92feca71e4e28c4295040363854c1489353966"
+    },
+    {
+      "file": "vqa-benchmark/fine_grained_why_recognition.json",
+      "bytes": 393661,
+      "status": "downloaded",
+      "sha256": "d22531be3f23a8c4dd182693edac2acb5b75cc5ea017228cd89716cb5b3048d4"
+    },
+    {
+      "file": "vqa-benchmark/gaze_gaze_estimation.json",
+      "bytes": 627450,
+      "status": "downloaded",
+      "sha256": "304c1e3b75f30b07d7cb8c7344d97b56680b94049b2bcc601b3c2a8222fd99bf"
+    },
+    {
+      "file": "vqa-benchmark/gaze_interaction_anticipation.json",
+      "bytes": 568911,
+      "status": "downloaded",
+      "sha256": "b21e14e816dfa23306093dfe23412aca722dae8eba4bd9bb0c66edfac5663e67"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_exact_ingredient_recognition.json",
+      "bytes": 64203,
+      "status": "downloaded",
+      "sha256": "6b89d2d268cbfc55f061ecf6337702c597c3473575bf920350798d210a0b14b5"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_ingredient_adding_localization.json",
+      "bytes": 103845,
+      "status": "downloaded",
+      "sha256": "6e84d8818e0f3be0b8fecfc4aeeb450c688f34ee61e597ae3bf6b6815b0b982a"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_ingredient_recognition.json",
+      "bytes": 65305,
+      "status": "downloaded",
+      "sha256": "c6e177e0d08bf0fd54f5f4f4466d1928adfeab4b5928717d213794fc49c3e09d"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_ingredient_retrieval.json",
+      "bytes": 51109,
+      "status": "downloaded",
+      "sha256": "efdf87e070c0b6c62528eaaa907a143f587ed9ed762e26b12dd43728c2277b3f"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_ingredient_weight.json",
+      "bytes": 24956,
+      "status": "downloaded",
+      "sha256": "ba6bb8920f43d6916bd432b53a57f7cf7e222e78c828a8bc23626631baee5a75"
+    },
+    {
+      "file": "vqa-benchmark/ingredient_ingredients_order.json",
+      "bytes": 54537,
+      "status": "downloaded",
+      "sha256": "a39dfaa11adb523c7529b3725a87e3e69ea8ba174e7d226288054f104fbd4d5f"
+    },
+    {
+      "file": "vqa-benchmark/nutrition_image_nutrition_estimation.json",
+      "bytes": 329556,
+      "status": "downloaded",
+      "sha256": "6d1e1d46518c8192ece245d4c72e87a1d372ee8ed56b1c06ce3f2593335cf32b"
+    },
+    {
+      "file": "vqa-benchmark/nutrition_nutrition_change.json",
+      "bytes": 82155,
+      "status": "downloaded",
+      "sha256": "d8dc4a834807dfa0296e6e46639b3c0eeb3826fd01b3bf618d90fda2aac0deb9"
+    },
+    {
+      "file": "vqa-benchmark/nutrition_video_nutrition_estimation.json",
+      "bytes": 60350,
+      "status": "downloaded",
+      "sha256": "c7f0bae9c5c66b08716f44e4b8f0cde3a6baac95f14d365e12db54c923c8517b"
+    },
+    {
+      "file": "vqa-benchmark/object_motion_object_movement_counting.json",
+      "bytes": 120865,
+      "status": "downloaded",
+      "sha256": "110276451b3e583d290685f5c10dfcf0a287188e10f1c49e36e87d9ac3793ae8"
+    },
+    {
+      "file": "vqa-benchmark/object_motion_object_movement_itinerary.json",
+      "bytes": 569112,
+      "status": "downloaded",
+      "sha256": "3352cbdc49192ccba017f52666a0fa486365fd8562759b16109bbcaa1b67d989"
+    },
+    {
+      "file": "vqa-benchmark/object_motion_stationary_object_localization.json",
+      "bytes": 162522,
+      "status": "downloaded",
+      "sha256": "07012e728fd63f72fec44f3182326602a730c5c177dc82b94cee342b072f4a0c"
+    },
+    {
+      "file": "vqa-benchmark/recipe_following_activity_recognition.json",
+      "bytes": 34608,
+      "status": "downloaded",
+      "sha256": "25b6cea9ab606644440dcf18aead00b6b53939008cd7812e61c47ea82549ac43"
+    },
+    {
+      "file": "vqa-benchmark/recipe_multi_recipe_recognition.json",
+      "bytes": 25486,
+      "status": "downloaded",
+      "sha256": "2ff06d11155a6b86d8ec1debda0c4cae15516f22243639a0bed3bf0b9522aa8b"
+    },
+    {
+      "file": "vqa-benchmark/recipe_multi_step_localization.json",
+      "bytes": 84795,
+      "status": "downloaded",
+      "sha256": "bf95f59683585c7364839868c3cb9d1c8b815563687c263a3223bad1852f7dd1"
+    },
+    {
+      "file": "vqa-benchmark/recipe_prep_localization.json",
+      "bytes": 225217,
+      "status": "downloaded",
+      "sha256": "df28bb8612e6d27a2747fc7fd001ebec39041c566af834fabf0a2cc7fc9cf9bc"
+    },
+    {
+      "file": "vqa-benchmark/recipe_recipe_recognition.json",
+      "bytes": 94955,
+      "status": "downloaded",
+      "sha256": "b26a2435ef621dcb01c620e27146491b6ad8abc393ac1eea7650a7c25ffdd028"
+    },
+    {
+      "file": "vqa-benchmark/recipe_rough_step_localization.json",
+      "bytes": 81727,
+      "status": "downloaded",
+      "sha256": "6bec8063e6e78372e488d99dd639d6891309707d748bdbb79d621cde90902324"
+    },
+    {
+      "file": "vqa-benchmark/recipe_step_localization.json",
+      "bytes": 98611,
+      "status": "downloaded",
+      "sha256": "528f4b9653b3a9ac43d1171cb167ddfe600d94294e7efbfcdeeed91121c0cd7b"
+    },
+    {
+      "file": "vqa-benchmark/recipe_step_recognition.json",
+      "bytes": 97443,
+      "status": "downloaded",
+      "sha256": "9af3b6716672619dfa30fce16513b93d2f88847247ea634bd1fe3b41477a4969"
+    }
+  ]
+}

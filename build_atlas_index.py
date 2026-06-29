@@ -20,6 +20,8 @@ import html
 import json
 import os
 
+import atlas_lib as A
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 BUILD_DATE = datetime.date.today().isoformat()
 
@@ -62,13 +64,18 @@ def load_entries():
             sp = os.path.join(HERE, e["stats_file"])
             if os.path.exists(sp):
                 st = json.load(open(sp, encoding="utf-8"))
+                dens = (st["density"].get("segments_per_hour_labelled")
+                        or st["density"].get("segments_per_hour_cited") or 0)
+                hrs = (st["hours"].get("total_hours_all_videos")
+                       or st["hours"].get("annotated_span_hours") or 0)
                 e["_counts"] = {
-                    "annotations": st["counts"]["labelled_segments"],
+                    "annotations": st["counts"].get("labelled_segments", "n/a"),
                     "clusters": st.get("clusters", {}).get("n_clusters", "n/a"),
-                    "density": round(st["density"]["segments_per_hour_labelled"]),
-                    "hours": st["hours"]["total_hours_all_videos"],
-                    "unique": st["counts"]["unique_narrations_clean"],
+                    "density": round(dens),
+                    "hours": hrs,
+                    "unique": st["counts"].get("unique_narrations_clean", "n/a"),
                 }
+                e["_stats"] = st
         built.append(e)
     return built
 
@@ -222,6 +229,68 @@ def roadmap_html(planned):
     return "\n".join(out)
 
 
+def jacc(a, b):
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def build_crosswork(built):
+    works = [e for e in built if e.get("_stats")]
+    if len(works) < 2:
+        return ('<p class="note">A second built atlas is required for the cross-work '
+                'comparison.</p>')
+    # work x verb-family coverage matrix (share of annotations per verb category)
+    totals = {}
+    for e in works:
+        for name, cnt in e["_stats"].get("verb_category_dist", []):
+            totals[name] = totals.get(name, 0) + cnt
+    cats = [c for c, _ in sorted(totals.items(), key=lambda x: -x[1])]
+    head = "".join(f'<th class="num">{esc(c)}</th>' for c in cats)
+    rows = []
+    for e in works:
+        d = dict(e["_stats"].get("verb_category_dist", []))
+        tot = sum(d.values()) or 1
+        cells = []
+        for c in cats:
+            share = d.get(c, 0) / tot
+            alpha = min(0.82, share * 2.6)
+            cells.append(f'<td class="num" style="background:rgba(31,78,155,{alpha:.2f})">'
+                         f'{share * 100:.0f}</td>')
+        rows.append(f'<tr><td class="lab">{esc(e["name"])}</td>{"".join(cells)}</tr>')
+    matrix = ('<div class="minihead">work &times; verb-family coverage (% of annotations)</div>'
+              '<div class="tablewrap"><table class="dtable"><thead><tr><th>work</th>'
+              f'{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
+    # granularity contrast
+    mls = [(e["name"], round(e["_stats"]["length"]["tokens_mean"], 1)) for e in works]
+    gran = ('<div class="minihead">granularity contrast (mean narration length, tokens)</div>'
+            + A.bar_rows([(n, int(round(v))) for n, v in mls], color="var(--accent2)"))
+    # lexical overlap on top-25 class keys
+    def keys(e, field):
+        return set(k for k, _ in e["_stats"].get(field, [])[:25])
+    ov = []
+    for i in range(len(works)):
+        for j in range(i + 1, len(works)):
+            a, b = works[i], works[j]
+            ov.append(f'<tr><td class="lab">{esc(a["name"])} vs {esc(b["name"])}</td>'
+                      f'<td class="num">{jacc(keys(a, "verb_top"), keys(b, "verb_top")):.2f}</td>'
+                      f'<td class="num">{jacc(keys(a, "noun_top"), keys(b, "noun_top")):.2f}</td></tr>')
+    overlap = ('<div class="minihead">lexical overlap (Jaccard, top-25 class keys)</div>'
+               '<div class="tablewrap"><table class="dtable"><thead><tr><th>pair</th>'
+               '<th class="num">verbs</th><th class="num">nouns</th></tr></thead>'
+               f'<tbody>{"".join(ov)}</tbody></table></div>')
+    # usage-method x annotation-style map
+    um = []
+    for e in works:
+        chips = (" ".join(chip(u) for u in e.get("usage_methods", []))
+                 + " " + " ".join(f'<span class="chip alt">{esc(a)}</span>'
+                                   for a in e.get("annotation_types", [])))
+        um.append(f'<div class="rm"><b>{esc(e["name"])}</b> {chips}</div>')
+    umap = '<div class="minihead">usage-method and annotation-style</div>' + "".join(um)
+    return (matrix + '<div class="twocol"><div>' + gran + '</div><div>' + overlap
+            + '</div></div>' + umap)
+
+
 def build_index(built, planned):
     n_built = len(built)
     n_plan = len(planned)
@@ -237,12 +306,10 @@ def build_index(built, planned):
     cards_html = "".join(cards) or '<p class="note">No built atlases yet.</p>'
 
     if n_built >= 2:
-        cross = ('<p>The work by cluster coverage matrix and the vocabulary-overlap '
-                 'heatmap are computed across the built atlases. See each atlas for '
-                 'its own cluster scatter and table.</p>')
+        cross = build_crosswork(built)
     else:
         cross = ('<p class="note">The cross-work coverage matrix and vocabulary-overlap '
-                 'heatmap activate once a second atlas is built. With a single entry, '
+                 'comparison activate once a second atlas is built. With a single entry, '
                  'the per-work cluster scatter and cluster table inside that atlas are '
                  'the comparison surface.</p>')
 

@@ -60,16 +60,22 @@ and `<!-- ROADMAP:START -->`/`<!-- ROADMAP:END -->` markers. Editing those
 regions by hand will be overwritten. To change the roadmap, edit the `PLANNED`
 list in `build_roadmap.py` (its single source of truth), run it, then run
 `build_atlas_index.py`. Adding or rebuilding any atlas means re-running
-`build_atlas_index.py` so the dashboard does not desync.
+`build_atlas_index.py` so the dashboard does not desync. When two or more
+atlases are built, `build_atlas_index.py` also computes the cross-work comparison
+(verb-family coverage matrix, granularity contrast, lexical Jaccard overlap) from
+each entry's `stats.json`.
 
 **Atlas HTML is self-contained and offline.** All CSS and JS are inline. Cluster,
 scatter and stats data are embedded as `<script type="application/json">` blocks
 and read with `JSON.parse`; the render step replaces `</` with `<\/` in that JSON
-so a stray `</script>` cannot break the page. No CDNs, no fonts, no network. EN
-and CN are produced from one `render_<slug>.py` via an `I18N` dict: the data is
-identical, only the chrome and prose differ, and a header toggle links the two
-files. The scatter is a hand-rolled canvas (no chart library): an offscreen base
-layer is blitted per frame, hover does a linear nearest-point scan.
+so a stray `</script>` cannot break the page. No CDNs, no fonts, no network. The shared chrome (CSS, JS, header, scatter,
+cluster table, sample browser, footer, page assembly) lives in `atlas_lib.py` at
+the repo root; each `render_<slug>.py` is a thin wrapper that supplies entry
+metadata, work-specific i18n, and the work-specific section bodies (usage path,
+granularity, verbs and nouns, and any extra panel such as HD-EPIC's VQA panel).
+EN and CN come from the same data via merged i18n dicts, and a header toggle
+links the two files. The scatter is a hand-rolled canvas (no chart library): an
+offscreen base layer is blitted per frame, hover does a linear nearest-point scan.
 
 **Analysis conventions.** Clustering runs on the unique cleaned narrations
 (frequency-weighted), not every row. The sentence-encoder name is a constant at
@@ -106,3 +112,8 @@ access date are recorded in each atlas footer.
   `<2.5`. See requirements.txt.
 - Chained `grep` in a shell `&&` pipeline exits non-zero when there are no
   matches, which is the desired result when checking for external auto-loads.
+- Per-entry `stats.json` schemas differ (EPIC uses
+  `density.segments_per_hour_labelled` and `hours.total_hours_all_videos`;
+  HD-EPIC uses `segments_per_hour_cited` and `annotated_span_hours`).
+  `build_atlas_index.py` reads both with fallbacks; a new entry should match one
+  schema or extend that fallback.
