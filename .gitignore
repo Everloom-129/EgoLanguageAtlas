@@ -1,0 +1,25 @@
+# Local caches of raw annotation downloads (kept out of the repo by house policy).
+# EPIC-KITCHENS-100 is CC BY-NC 4.0 so its text MAY be redistributed with
+# attribution, but raw source dumps still live only in the cache; the repo keeps
+# normalized + derived artifacts.
+**/.cache/
+.cache/
+
+# Sentence-encoder model caches and large embedding dumps.
+**/*.npy
+**/hf_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Claude Code personal/local settings
+.claude/settings.local.json

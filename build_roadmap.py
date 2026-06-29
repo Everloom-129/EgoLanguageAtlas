@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+"""Emit roadmap.json: the researched-but-not-yet-built works for the atlas.
+
+Every record was web-verified from primary sources (arXiv, project pages,
+GitHub, HuggingFace) by research passes on 2026-06-28. Fields marked GAP could
+not be confirmed verbatim and must be re-checked before a work is built. This
+file is the single source of truth for the roadmap; edit here, then run:
+
+    python build_roadmap.py && python build_atlas_index.py
+"""
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+# category: corpus | dataset | dense-annotation | method
+PLANNED = [
+    # ---- corpora with real language annotations ----
+    {
+        "category": "corpus", "name": "Ego4D", "venue": "CVPR 2022",
+        "arxiv": "https://arxiv.org/abs/2110.07058",
+        "usage_methods": ["corpus", "perception-pretrain", "eval-benchmark"],
+        "annotation_types": ["clip-narration", "video-summary", "verb-noun-action"],
+        "source_datasets": "original capture (3,670 h, 74 locations)",
+        "data_access": "ego4d-cli", "downloadable": "gated (license sign-up, then CLI)",
+        "license": "Ego4D License (gated; redistribution restricted, GAP on verbatim terms)",
+        "suitability": "download+cluster target, gated: real #C/#O narrations behind license",
+        "focus": "Foundational 3,670-hour worldwide egocentric corpus with millions of timestamped free-form narrations and a multi-task benchmark suite.",
+    },
+    {
+        "category": "corpus", "name": "Ego-Exo4D", "venue": "CVPR 2024",
+        "arxiv": "https://arxiv.org/abs/2311.18259",
+        "usage_methods": ["corpus", "perception-pretrain", "eval-benchmark"],
+        "annotation_types": ["atomic-substep", "clip-narration", "expert-commentary"],
+        "source_datasets": "original capture (paired ego + exo, skilled activity)",
+        "data_access": "egoexo4d-cli", "downloadable": "gated (license form, then CLI)",
+        "license": "Ego-Exo4D License (gated; redistribution restricted, GAP on verbatim terms)",
+        "suitability": "download+cluster target, gated: three real annotation streams behind license",
+        "focus": "Time-synchronized ego and exo video of skilled activity with atomic action descriptions, narrate-and-act narrations, and expert commentary.",
+    },
+    {
+        "category": "corpus", "name": "EgoVLP (EgoClip / EgoNCE / EgoMCQ)", "venue": "NeurIPS 2022",
+        "arxiv": "https://arxiv.org/abs/2206.01670",
+        "usage_methods": ["perception-pretrain", "corpus", "eval-benchmark"],
+        "annotation_types": ["clip-narration", "verb-noun-action"],
+        "source_datasets": "Ego4D",
+        "data_access": "project-script", "downloadable": "open CSV (Ego4D-derived) via repo Drive links",
+        "license": "code MIT; data inherits Ego4D License (GAP, not restated)",
+        "suitability": "download+cluster target: egoclip.csv gives ~3.8M narration strings (Ego4D-derived)",
+        "focus": "A pre-filtered, cleaned text layer over Ego4D: ~3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.",
+    },
+    {
+        "category": "corpus", "name": "HD-EPIC", "venue": "CVPR 2025",
+        "arxiv": "https://arxiv.org/abs/2502.04144",
+        "usage_methods": ["corpus", "eval-benchmark"],
+        "annotation_types": ["dense-multi-aspect", "verb-noun-action", "task-instruction", "vqa"],
+        "source_datasets": "original capture (EPIC-KITCHENS protocol)",
+        "data_access": "project-script", "downloadable": "open (GitHub annotations)",
+        "license": "CC BY 4.0 (data.bris portal; GAP: live GitHub LICENSE not confirmed)",
+        "suitability": "download+cluster target: open narrations, recipe steps, and VQA strings",
+        "focus": "Highly-detailed kitchen understanding: 59,454 fine-grained action segments (81% unique sentences), recipe steps, 3D twins, gaze, and a 26,650-question VQA benchmark.",
+    },
+    {
+        "category": "corpus", "name": "EgoSchema", "venue": "NeurIPS 2023",
+        "arxiv": "https://arxiv.org/abs/2308.09126",
+        "usage_methods": ["eval-benchmark"],
+        "annotation_types": ["vqa"],
+        "source_datasets": "Ego4D",
+        "data_access": "project-script", "downloadable": "open questions + options; correct-answer key withheld",
+        "license": "Ego4D License (questions LLM-generated then human-curated)",
+        "suitability": "download+cluster target: 5,031 question + option strings open (labels withheld)",
+        "focus": "Diagnostic long-form video-QA benchmark: 5,031 multiple-choice questions over 3-minute Ego4D clips requiring long temporal certificates.",
+    },
+    # ---- datasets ----
+    {
+        "category": "dataset", "name": "EgoVerse", "venue": "arXiv 2026",
+        "arxiv": "https://arxiv.org/abs/2604.07607",
+        "usage_methods": ["corpus", "co-train", "vla-pretrain"],
+        "annotation_types": ["task-instruction", "clip-narration", "atomic-substep"],
+        "source_datasets": "original capture (Aria / iPhone)",
+        "data_access": "project-script", "downloadable": "via S3 sync script (AWS creds)",
+        "license": "code MIT; dataset/annotation redistribution license not stated (GAP)",
+        "suitability": "download+cluster target: dense per-segment language, but redistribution terms unclear",
+        "focus": "Worldwide human egocentric platform, 1,362 h / ~80k episodes / 1,965 tasks, split into controlled EgoVerse-A and industry-scale EgoVerse-I with manipulation-relevant language.",
+    },
+    {
+        "category": "dataset", "name": "EgoDex", "venue": "ICLR 2026",
+        "arxiv": "https://arxiv.org/abs/2505.11709",
+        "usage_methods": ["corpus", "hand-pose", "vla-pretrain", "eval-benchmark"],
+        "annotation_types": ["task-instruction"],
+        "source_datasets": "original capture (Apple Vision Pro)",
+        "data_access": "project-script", "downloadable": "open download (Apple CDN); redistribution barred",
+        "license": "CC BY-NC-ND: annotation-text redistribution NOT permitted",
+        "suitability": "analyze locally only: rich task language + 3D hand pose, but ND blocks sharing clustered text",
+        "focus": "829 hours of Apple Vision Pro egocentric video with native 3D hand pose over 194 tabletop tasks, each with a GPT-generated task description.",
+    },
+    {
+        "category": "dataset", "name": "EgoVid-5M", "venue": "NeurIPS 2025",
+        "arxiv": "https://arxiv.org/abs/2411.08380",
+        "usage_methods": ["world-model", "corpus"],
+        "annotation_types": ["clip-narration", "verb-noun-action"],
+        "source_datasets": "Ego4D",
+        "data_access": "huggingface", "downloadable": "open (HF: Jeff-Wang/EgoVid-5M)",
+        "license": "apache-2.0 for hosted annotations (Ego4D License on videos)",
+        "suitability": "download+cluster target: 5M MLLM/LLM action descriptions + captions, openly hosted",
+        "focus": "5M egocentric clips (from Ego4D) paired with kinematic control and MLLM-plus-LLM action text for video generation. A clear VLM-authored annotation case study.",
+    },
+    {
+        "category": "dataset", "name": "OpenEgo", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2509.05513",
+        "usage_methods": ["corpus", "hand-pose", "vla-pretrain"],
+        "annotation_types": ["task-instruction", "atomic-substep", "verb-noun-action"],
+        "source_datasets": "CaptainCook4D, HOI4D, HoloAssist, EgoDex, HOT3D, HO-Cap",
+        "data_access": "project-script", "downloadable": "open-ish (Box); EgoDex-derived subset gated",
+        "license": "mixed per-source (MIT code; constituents vary, some CC BY-NC-ND)",
+        "suitability": "download+cluster target with caveats: unified timestamped language primitives, mixed licenses",
+        "focus": "Consolidates six egocentric corpora (1,107 h, 290 tasks) into a unified 21-joint hand-pose format with intention-aligned, timestamped language primitives.",
+    },
+    {
+        "category": "dataset", "name": "OakInk2", "venue": "CVPR 2024",
+        "arxiv": "https://arxiv.org/abs/2403.19417",
+        "usage_methods": ["corpus", "hand-pose", "affordance"],
+        "annotation_types": ["task-instruction", "atomic-substep"],
+        "source_datasets": "original capture (multi-view bimanual rig)",
+        "data_access": "huggingface", "downloadable": "open (HF: kelvin34501/OakInk-v2)",
+        "license": "CC BY-SA 4.0: redistribution permitted with attribution + share-alike",
+        "suitability": "download+cluster target: open task and per-primitive language",
+        "focus": "Bimanual hand-object manipulation organized as Affordance, Primitive Task, and Complex Task, with LLM-decomposable task programs and per-primitive descriptions.",
+    },
+    # ---- dense-annotation works ----
+    {
+        "category": "dense-annotation", "name": "DeMiAn (How to Instruct Your Robot)", "venue": "arXiv 2026",
+        "arxiv": "https://arxiv.org/abs/2605.17077",
+        "usage_methods": ["dense-relabel", "vla-pretrain", "world-model"],
+        "annotation_types": ["dense-multi-aspect", "task-instruction"],
+        "source_datasets": ">1M robot clips + 50K EgoVerse human videos",
+        "data_access": "none", "downloadable": "none (no code/data release found)",
+        "license": "paper CC BY 4.0; dense annotations not released (GAP)",
+        "suitability": "descriptive-only: the clearest dense-multi-aspect exemplar, but annotations unreleased",
+        "focus": "Studies language density as a lever: re-labels segments along four aspects (physical motion, scene, arm pose, reasoning) via Qwen3-VL, with a learned instructor selecting an annotation at deployment.",
+    },
+    {
+        "category": "dense-annotation", "name": "PhysBrain", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2512.16793",
+        "usage_methods": ["dense-relabel", "vla-pretrain", "perception-pretrain", "corpus"],
+        "annotation_types": ["vqa", "dense-multi-aspect"],
+        "source_datasets": "Ego4D, BuildAI, EgoDex",
+        "data_access": "none", "downloadable": "none (E2E-3M not yet released)",
+        "license": "not stated (GAP)",
+        "suitability": "descriptive-only: revisit if E2E-3M is released",
+        "focus": "An Egocentric2Embodiment pipeline turning raw human egocentric video into schema-driven, evidence-grounded supervision across seven VQA modes, yielding the ~3M-instance E2E-3M dataset.",
+    },
+    # ---- methods that define how human video is used ----
+    {
+        "category": "method", "name": "R3M", "venue": "CoRL 2022",
+        "arxiv": "https://arxiv.org/abs/2203.12601",
+        "usage_methods": ["perception-pretrain"], "annotation_types": [],
+        "source_datasets": "Ego4D",
+        "data_access": "none", "downloadable": "none (consumes Ego4D narrations)",
+        "license": "code MIT",
+        "suitability": "descriptive-only: publishes a frozen encoder, reuses Ego4D narrations",
+        "focus": "Pretrains a reusable visual representation on Ego4D via time-contrastive learning and video-language alignment for data-efficient manipulation.",
+    },
+    {
+        "category": "method", "name": "VIP", "venue": "ICLR 2023",
+        "arxiv": "https://arxiv.org/abs/2210.00030",
+        "usage_methods": ["reward-repr", "perception-pretrain"], "annotation_types": [],
+        "source_datasets": "Ego4D",
+        "data_access": "none", "downloadable": "none (trains on unlabeled Ego4D)",
+        "license": "code CC BY-NC 4.0",
+        "suitability": "descriptive-only: produces a reward/representation model, no annotation corpus",
+        "focus": "Learns a self-supervised goal-conditioned value function from unlabeled Ego4D video, providing dense visual rewards for unseen robot tasks.",
+    },
+    {
+        "category": "method", "name": "VRB (Vision-Robotics Bridge)", "venue": "CVPR 2023",
+        "arxiv": "https://arxiv.org/abs/2304.08488",
+        "usage_methods": ["affordance"], "annotation_types": [],
+        "source_datasets": "Ego4D + EPIC-KITCHENS",
+        "data_access": "none", "downloadable": "none (visual affordances, no language)",
+        "license": "code MIT",
+        "suitability": "descriptive-only: outputs contact + trajectory affordances, no language corpus",
+        "focus": "Trains a visual affordance model (contact heatmap plus post-contact wrist trajectory) from human video to drive several robot-learning paradigms.",
+    },
+    {
+        "category": "method", "name": "EgoMimic", "venue": "ICRA 2025",
+        "arxiv": "https://arxiv.org/abs/2410.24221",
+        "usage_methods": ["co-train", "hand-pose"], "annotation_types": [],
+        "source_datasets": "own Project Aria human demos",
+        "data_access": "huggingface", "downloadable": "HF data is hand-tracking + video (no language corpus)",
+        "license": "code MIT; HF dataset license not stated (GAP)",
+        "suitability": "descriptive-only: releases an egocentric hand-tracking dataset, not a language corpus",
+        "focus": "Captures egocentric human data with Aria glasses and co-trains a unified human-plus-robot imitation policy on a kinematically-matched bimanual robot.",
+    },
+    {
+        "category": "method", "name": "HAT (Humanoid Policy ~ Human Policy)", "venue": "CoRL 2025",
+        "arxiv": "https://arxiv.org/abs/2503.13441",
+        "usage_methods": ["co-train", "corpus", "hand-pose"],
+        "annotation_types": ["task-instruction"],
+        "source_datasets": "own PH2D collection",
+        "data_access": "huggingface", "downloadable": "open (HF: RogerQi/PH2D, ~27k demos)",
+        "license": "HF dataset MIT: redistribution permitted",
+        "suitability": "download+cluster target: a NEW open egocentric corpus with per-task language",
+        "focus": "Releases PH2D, ~27k egocentric human demos with language task specifications and 3D hand poses, and co-trains a Human Action Transformer with differentiable retargeting.",
+    },
+    {
+        "category": "method", "name": "ZeroMimic", "venue": "ICRA 2025",
+        "arxiv": "https://arxiv.org/abs/2503.23877",
+        "usage_methods": ["affordance", "hand-pose"], "annotation_types": [],
+        "source_datasets": "EPIC-KITCHENS",
+        "data_access": "none", "downloadable": "none (consumes EPIC; releases policies)",
+        "license": "arXiv listing CC BY 4.0; code/checkpoint license not separately verified (GAP)",
+        "suitability": "descriptive-only: distills EPIC-KITCHENS video into deployable policies, no language corpus",
+        "focus": "Distills image-goal-conditioned manipulation skills (open, close, pour, pick-place, cut, stir) from EPIC-KITCHENS human video for zero-shot robot deployment.",
+    },
+    {
+        "category": "method", "name": "EgoVLA", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2507.12440",
+        "usage_methods": ["vla-pretrain", "hand-pose", "eval-benchmark"],
+        "annotation_types": ["task-instruction"],
+        "source_datasets": "HOI4D, HOT3D, HoloAssist, TACO",
+        "data_access": "project-script", "downloadable": "derived-only (reuses source labels)",
+        "license": "code MIT; reused labels follow each source license (GAP)",
+        "suitability": "descriptive-only: VLA reusing existing labels, no standalone corpus",
+        "focus": "Pretrains a VLA on egocentric human videos to predict wrist/hand actions, then retargets via inverse kinematics for a bimanual humanoid, with a new manipulation benchmark.",
+    },
+    {
+        "category": "method", "name": "Being-H0", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2507.15597",
+        "usage_methods": ["vla-pretrain", "hand-pose", "corpus"],
+        "annotation_types": ["task-instruction"],
+        "source_datasets": "UniHand (11 sets incl. OakInk2, EgoDex, HoloAssist)",
+        "data_access": "huggingface", "downloadable": "derived-only (checkpoints; UniHand text not released standalone)",
+        "license": "code MIT; full UniHand corpus license not released (GAP)",
+        "suitability": "descriptive-only: signature UniHand instruction corpus not independently downloadable",
+        "focus": "A dexterous VLA pretrained from large-scale human hand videos via physical instruction tuning and part-level hand-motion tokenization, building the UniHand corpus.",
+    },
+    {
+        "category": "method", "name": "EMMA", "venue": "RA-L 2026",
+        "arxiv": "https://arxiv.org/abs/2509.04443",
+        "usage_methods": ["co-train"], "annotation_types": [],
+        "source_datasets": "own egocentric human full-body motion + static robot data",
+        "data_access": "none", "downloadable": "none (code coming soon)",
+        "license": "code/data license unspecified (GAP)",
+        "suitability": "descriptive-only: trajectory/motion data only, no language corpus",
+        "focus": "Scales mobile manipulation by co-training egocentric human full-body motion with static robot data, avoiding mobile teleoperation.",
+    },
+    {
+        "category": "method", "name": "Phantom", "venue": "CoRL 2025",
+        "arxiv": "https://arxiv.org/abs/2503.00779",
+        "usage_methods": ["hand-pose"], "annotation_types": [],
+        "source_datasets": "own lab human video demos",
+        "data_access": "project-script", "downloadable": "none (code only, no dataset)",
+        "license": "code MIT; paper CC BY 4.0",
+        "suitability": "descriptive-only: code-only human-to-robot pipeline, no language corpus",
+        "focus": "Trains manipulation from human-only video by converting demos to robot-compatible pairs via hand-pose estimation and visual editing (inpaint arm, overlay robot).",
+    },
+    {
+        "category": "method", "name": "EgoZero", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2505.20290",
+        "usage_methods": ["hand-pose"], "annotation_types": [],
+        "source_datasets": "own Project Aria smart-glasses demos",
+        "data_access": "none", "downloadable": "none (self-collected, not public)",
+        "license": "code MIT; paper CC BY 4.0",
+        "suitability": "descriptive-only: policy method, data not public, no language corpus",
+        "focus": "Learns closed-loop manipulation from Project Aria smart-glasses human demos with zero robot data, deployed zero-shot on a Franka gripper.",
+    },
+    {
+        "category": "method", "name": "MotionTrans", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2509.17759",
+        "usage_methods": ["co-train", "hand-pose", "corpus"],
+        "annotation_types": ["task-instruction"],
+        "source_datasets": "own VR human manipulation + robot data",
+        "data_access": "huggingface", "downloadable": "derived-only (HF; NL instructions generated locally)",
+        "license": "code MIT; HF dataset has no license tag (GAP)",
+        "suitability": "descriptive-only: ~30-task instruction set with local NL augmentation, not a standalone corpus",
+        "focus": "Transfers motion-level skills from VR-collected human demos to robots via a transformation pipeline and weighted human-robot co-training.",
+    },
+    {
+        "category": "method", "name": "LAPA (Latent Action Pretraining)", "venue": "ICLR 2025",
+        "arxiv": "https://arxiv.org/abs/2410.11758",
+        "usage_methods": ["vla-pretrain"], "annotation_types": ["task-instruction"],
+        "source_datasets": "Open X-Embodiment, Bridgev2, Something-Something V2",
+        "data_access": "huggingface", "downloadable": "derived-only (weights; instructions follow source licenses)",
+        "license": "code + weights MIT; consumed instruction text follows OXE/SSv2/Bridge (GAP)",
+        "suitability": "descriptive-only: releases weights/code, no downloadable language corpus",
+        "focus": "Unsupervised VLA pretraining that learns discrete latent actions between frames from actionless and human video, then fine-tunes to robot actions.",
+    },
+    {
+        "category": "method", "name": "MAPLE", "venue": "arXiv 2025",
+        "arxiv": "https://arxiv.org/abs/2504.06084",
+        "usage_methods": ["perception-pretrain", "affordance", "hand-pose"], "annotation_types": [],
+        "source_datasets": "Ego4D (eval on EPIC-KITCHENS, EGTEA Gaze+)",
+        "data_access": "none", "downloadable": "none (visual/kinematic priors, no language)",
+        "license": "no license file in repo (GAP, default all-rights-reserved)",
+        "suitability": "descriptive-only: contact + hand-pose priors, nothing clusterable",
+        "focus": "Learns encoder features predicting contact points and grasping hand poses at contact from egocentric images, reused to train dexterous manipulation policies.",
+    },
+]
+
+
+def main():
+    doc = {
+        "generated_note": ("Web-verified from primary sources on 2026-06-28 by the "
+                           "atlas research pass. Fields containing GAP were not "
+                           "confirmable verbatim and must be re-checked before build. "
+                           "EPIC-KITCHENS-100 is omitted here because it is already built."),
+        "planned": PLANNED,
+    }
+    out = os.path.join(HERE, "roadmap.json")
+    with open(out, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+    by_cat = {}
+    for p in PLANNED:
+        by_cat[p["category"]] = by_cat.get(p["category"], 0) + 1
+    print(f"wrote {out}: {len(PLANNED)} planned works")
+    for k, v in by_cat.items():
+        print(f"  {k}: {v}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,501 @@
+ann_id,work,source_dataset,annotation_type,text,text_clean,t_start,t_end,clip_id,verb,noun,split,participant_id,verb_class,noun_class,verb_key,noun_key,verb_category,noun_category,n_nouns,seg_dur_s
+P01_01_129,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut carrots,cut carrots,564.25,568.84,P01_01,cut,carrot,train,P01,7,41,cut,carrot,split,vegetables,1,4.59
+P01_01_175,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,still stirring vegetables,still stirring vegetables,775.67,781.63,P01_01,stir,vegetable,train,P01,10,94,mix,vegetable,merge,vegetables,1,5.96
+P01_01_254,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down spoon,put down spoon,1236.14,1238.93,P01_01,put-down,spoon,train,P01,1,1,put,spoon,leave,cutlery,1,2.79
+P01_02_22,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap,open tap,66.61,67.63,P01_02,turn-on,tap,train,P01,6,0,turn-on,tap,access,appliances,1,1.02
+P01_03_14,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move glass,move glass,32.98,34.46,P01_03,move,glass,train,P01,11,10,move,glass,transition,crockery,1,1.48
+P01_05_119,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour potatoes into saucepan,pour potatoes into saucepan,417.52,425.12,P01_05,pour-into,potato,train,P01,9,30,pour,potato,merge,vegetables,2,7.6
+P01_05_171,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put fruit onto table,put fruit onto table,687.07,688.47,P01_05,put-onto,fruit,train,P01,1,254,put,fruit,leave,fruits and nuts,2,1.4
+P01_05_174,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take sausages,take sausages,695.04,696.72,P01_05,take,sausage,train,P01,0,86,take,sausage,retrieve,meat and substitute,1,1.68
+P01_06_58,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash saucepan,wash saucepan,174.76,193.15,P01_06,wash,saucepan,train,P01,2,5,wash,pan,clean,cookware,1,18.39
+P01_06_85,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse tong,rinse tong,328.08,333.71,P01_06,rinse,tong,train,P01,2,142,wash,tongs,clean,utensils,1,5.63
+P01_08_5,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cereals into cupboard,put cereals into cupboard,20.23,22.53,P01_08,put-into,cereal,train,P01,5,99,insert,cereal,leave,baked goods and grains,2,2.3
+P01_09_122,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,continue kneading dough,continue kneading dough,532.34,545.45,P01_09,knead,dough,train,P01,51,25,knead,dough,manipulate,baked goods and grains,1,13.11
+P01_09_212,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour potato onto plate,pour potato onto plate,999.89,1002.32,P01_09,pour-onto,potato,train,P01,9,30,pour,potato,merge,vegetables,2,2.43
+P01_09_245,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put onion into container,put onion into container,1127.61,1128.67,P01_09,put-into,onion,train,P01,5,16,insert,onion,leave,vegetables,2,1.06
+P01_09_647,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place onion onto pizza,place onion onto pizza,2708.59,2709.29,P01_09,place-onto,onion,train,P01,1,16,put,onion,leave,vegetables,2,0.7
+P01_09_820,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse cloth,rinse cloth,3293.21,3294.66,P01_09,rinse,cloth,train,P01,2,17,wash,cloth,clean,cleaning equipment and material,1,1.45
+P01_102_112,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,242.21,242.81,P01_102,turn-off,tap,train,P01,8,0,turn-off,tap,block,appliances,1,0.6
+P01_102_118,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,dry hands,dry hands,255.6,261.6,P01_102,dry,hand,train,P01,14,11,dry,hand,clean,hand,1,6.0
+P01_102_26,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash colander,wash colander,65.24,68.52,P01_102,wash,colander,train,P01,2,39,wash,colander,clean,utensils,1,3.28
+P01_103_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,16.17,17.3,P01_103,open,cupboard,train,P01,3,3,open,cupboard,access,storage,1,1.13
+P01_105_133,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down wok,put down wok,255.89,257.93,P01_105,put-down,wok,train,P01,1,5,put,pan,leave,cookware,1,2.04
+P01_105_192,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open fridge,open fridge,410.0,410.98,P01_105,open,fridge,train,P01,3,12,open,fridge,access,appliances,1,0.98
+P01_105_220,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,flatten box,flatten box,490.5,495.31,P01_105,flatten,box,train,P01,87,23,flatten,box,manipulate,containers,1,4.81
+P01_105_325,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down pak choi leaf,put down pak choi leaf,756.06,756.93,P01_105,put-down,leaf:pak:choi,train,P01,1,62,put,leaf,leave,vegetables,1,0.87
+P01_105_39,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down cup,put down cup,46.32,48.08,P01_105,put-down,cup,train,P01,1,13,put,cup,leave,crockery,1,1.76
+P01_105_674,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,tap spatula,tap spatula,1739.59,1741.17,P01_105,tap,spatula,train,P01,32,20,pat,spatula,sense,utensils,1,1.58
+P01_106_223,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw dirt,throw dirt,661.04,662.32,P01_106,throw,dirt,train,P01,13,54,throw,rubbish,leave,rubbish,1,1.28
+P01_107_55,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,103.33,104.72999999999999,P01_107,pick-up,spoon,train,P01,0,1,take,spoon,retrieve,cutlery,1,1.4
+P01_109_142,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down potato slices,put down potato slices,460.95,461.4,P01_109,put-down,slice:potato,train,P01,1,30,put,potato,leave,vegetables,1,0.45
+P01_109_197,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,gather potato skin,gather potato skin,563.61,568.8,P01_109,gather,skin:potato,train,P01,63,48,gather,skin,retrieve,rubbish,1,5.19
+P01_109_206,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,581.05,581.73,P01_109,turn-off,tap,train,P01,8,0,turn-off,tap,block,appliances,1,0.68
+P01_109_239,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close drawer,close drawer,660.99,661.61,P01_109,close,drawer,train,P01,4,8,close,drawer,block,furniture,1,0.62
+P01_109_355,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up eggs,pick up eggs,1244.96,1245.51,P01_109,pick-up,egg,train,P01,0,53,take,egg,retrieve,dairy and eggs,1,0.55
+P01_109_368,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down eggshell,put down eggshell,1263.98,1265.24,P01_109,put-down,eggshell,train,P01,1,141,put,shell:egg,leave,rubbish,1,1.26
+P01_109_405,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up lid,pick up lid,1407.29,1408.54,P01_109,pick-up,lid,train,P01,0,6,take,lid,retrieve,containers,1,1.25
+P01_109_474,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,split potatoes,split potatoes,1868.86,2027.07,P01_109,split,potato,train,P01,52,30,divide,potato,split,vegetables,1,158.21
+P01_109_497,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down potato bit,put down potato bit,2084.37,2086.37,P01_109,put-down,bit:potato,train,P01,1,30,put,potato,leave,vegetables,1,2.0
+P01_109_587,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cutting board down,put cutting board down,2519.81,2522.57,P01_109,put-down,board:cutting,train,P01,1,18,put,board:chopping,leave,utensils,1,2.76
+P01_109_636,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,shake cloth,shake cloth,2885.53,2886.07,P01_109,shake,cloth,train,P01,15,17,shake,cloth,manipulate,cleaning equipment and material,1,0.54
+P01_109_694,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,distribute egg,distribute egg,3045.94,3058.43,P01_109,distribute,egg,train,P01,27,53,apply,egg,distribute,dairy and eggs,1,12.49
+P01_109_799,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up sponge,pick up sponge,3400.95,3401.64,P01_109,pick-up,sponge,train,P01,0,9,take,sponge,retrieve,cleaning equipment and material,1,0.69
+P01_10_8,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down pizza,put down pizza,27.09,28.08,P01_10,put-down,pizza,train,P01,1,91,put,pizza,leave,prepared food,1,0.99
+P01_13_22,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,69.11,70.09,P01_13,open,cupboard,val,P01,3,3,open,cupboard,access,storage,1,0.98
+P01_14_150,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take container,take container,492.35,493.36,P01_14,take,container,val,P01,0,21,take,container,retrieve,containers,1,1.01
+P01_14_270,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take glasses,take glasses,959.31,960.29,P01_14,take,glass,val,P01,0,10,take,glass,retrieve,crockery,1,0.98
+P01_14_350,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close fridge,close fridge,1340.35,1341.62,P01_14,close,fridge,val,P01,4,12,close,fridge,block,appliances,1,1.27
+P01_14_85,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down oil,put down oil,226.39,227.89,P01_14,put-down,oil,val,P01,1,31,put,oil,leave,spices and herbs and sauces,1,1.5
+P01_15_24,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close drawer,close drawer,70.2,71.22,P01_15,close,drawer,val,P01,4,8,close,drawer,block,furniture,1,1.02
+P01_18_331,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close rice box,close rice box,1455.99,1461.99,P01_18,close,box:rice,train,P01,4,23,close,box,block,containers,1,6.0
+P01_18_358,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wait for oil to be hot,wait for oil to be hot,1573.11,1602.02,P01_18,wait,oil,train,P01,72,31,wait,oil,monitor,spices and herbs and sauces,1,28.91
+P01_18_405,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take cutting board,take cutting board,1894.75,1896.29,P01_18,take,board:cutting,train,P01,0,18,take,board:chopping,retrieve,utensils,1,1.54
+P01_18_45,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open drawer,open drawer,147.3,148.97,P01_18,open,drawer,train,P01,3,8,open,drawer,access,furniture,1,1.67
+P01_18_463,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open container,open container,2227.31,2229.07,P01_18,open,container,train,P01,3,21,open,container,access,containers,1,1.76
+P01_18_489,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash saucepan,wash saucepan,2398.85,2411.05,P01_18,wash,saucepan,train,P01,2,5,wash,pan,clean,cookware,1,12.2
+P02_03_159,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close fridge,close fridge,553.04,553.77,P02_03,close,fridge,train,P02,4,12,close,fridge,block,appliances,1,0.73
+P02_03_171,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move pan,move pan,581.18,582.5,P02_03,move,pan,train,P02,11,5,move,pan,transition,cookware,1,1.32
+P02_03_234,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move scissors,move scissors,774.96,776.09,P02_03,move,scissors,train,P02,11,79,move,scissors,transition,utensils,1,1.13
+P02_03_358,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put spoon,put spoon,1239.19,1239.7,P02_03,put,spoon,train,P02,1,1,put,spoon,leave,cutlery,1,0.51
+P02_04_114,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash plate,wash plate,274.95,279.35,P02_04,wash,plate,train,P02,2,2,wash,plate,clean,crockery,1,4.4
+P02_04_25,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put broccoli in jar,put broccoli in jar,61.17,64.0,P02_04,put-in,broccoli,train,P02,5,101,insert,broccoli,leave,vegetables,2,2.83
+P02_06_263,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close cupboard,close cupboard,746.37,747.34,P02_06,close,cupboard,train,P02,4,3,close,cupboard,block,storage,1,0.97
+P02_06_52,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash lid,wash lid,142.61,145.12,P02_06,wash,lid,train,P02,2,6,wash,lid,clean,containers,1,2.51
+P02_07_5,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open oven,open oven,10.74,12.38,P02_07,open,oven,train,P02,3,46,open,oven,access,appliances,1,1.64
+P02_09_166,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put bowl into oven,put bowl into oven,634.65,639.88,P02_09,put-into,bowl,train,P02,5,7,insert,bowl,leave,crockery,2,5.23
+P02_09_171,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,get meat,get meat,660.06,661.45,P02_09,get,meat,train,P02,0,28,take,meat,retrieve,meat and substitute,1,1.39
+P02_09_18,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw cover,throw cover,59.23,60.1,P02_09,throw,cover,train,P02,13,89,throw,cover,leave,containers,1,0.87
+P02_09_242,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move chopping board,move chopping board,1033.74,1034.41,P02_09,move,board:chopping,train,P02,11,18,move,board:chopping,transition,utensils,1,0.67
+P02_09_290,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up wooden spoon,pick up wooden spoon,1297.36,1299.75,P02_09,pick-up,spoon:wooden,train,P02,0,1,take,spoon,retrieve,cutlery,1,2.39
+P02_09_79,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,192.79,194.18,P02_09,pick-up,spoon,train,P02,0,1,take,spoon,retrieve,cutlery,1,1.39
+P02_102_41,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cheese,pick up cheese,64.78,66.9,P02_102,pick-up,cheese,train,P02,0,32,take,cheese,retrieve,dairy and eggs,1,2.12
+P02_102_56,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put light on,put light on,89.21000000000001,92.5,P02_102,put-on,light,train,P02,1,114,put,light,leave,appliances,1,3.29
+P02_103_28,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up towel,pick up towel,87.6,88.1,P02_103,pick-up,towel,train,P02,0,52,take,towel,retrieve,materials,1,0.5
+P02_105_29,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close box,close box,45.24,46.13,P02_105,close,box,train,P02,4,23,close,box,block,containers,1,0.89
+P02_107_18,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open coffee machine,open coffee machine,41.29,41.92,P02_107,open,machine:coffee,train,P02,3,50,open,maker:coffee,access,appliances,1,0.63
+P02_107_34,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close fridge,close fridge,67.11,68.02,P02_107,close,fridge,train,P02,4,12,close,fridge,block,appliances,1,0.91
+P02_108_150,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,380.13,381.79,P02_108,pick-up,spoon,train,P02,0,1,take,spoon,retrieve,cutlery,1,1.66
+P02_118_148,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap,open tap,443.71,445.0,P02_118,turn-on,tap,train,P02,6,0,turn-on,tap,access,appliances,1,1.29
+P02_118_217,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,sponge glass,sponge glass,651.05,657.85,P02_118,sponge,glass,train,P02,2,10,wash,glass,clean,crockery,1,6.8
+P02_118_67,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cover blender with lid,cover blender with lid,231.6,232.55,P02_118,cover-with,blender,train,P02,36,82,wrap,blender,block,appliances,2,0.95
+P02_121_60,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,180.35,181.32,P02_121,pick-up,spoon,train,P02,0,1,take,spoon,retrieve,cutlery,1,0.97
+P02_123_125,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,switch off hob,switch off hob,416.24,417.17,P02_123,switch-off,hob,train,P02,8,24,turn-off,hob,block,appliances,1,0.93
+P02_123_185,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wear apron,wear apron,672.43,681.1,P02_123,wear,apron,train,P02,68,199,wear,apron,manipulate,materials,1,8.67
+P02_123_255,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close tap,close tap,819.27,819.98,P02_123,turn-off,tap,train,P02,8,0,turn-off,tap,block,appliances,1,0.71
+P02_124_72,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put milk bottle in fridge door,put milk bottle in fridge door,154.46,156.01,P02_124,put-in,bottle:milk,train,P02,5,15,insert,bottle,leave,containers,2,1.55
+P02_126_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,return plastic box to cupboard,return plastic box to cupboard,57.61,59.56,P02_126,return-to,box:plastic,train,P02,11,23,move,box,transition,containers,2,1.95
+P02_129_133,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down bag,put down bag,297.54,298.32,P02_129,put-down,bag,train,P02,1,19,put,bag,leave,containers,1,0.78
+P02_129_149,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down lid,put down lid,329.78,330.87,P02_129,put-down,lid,train,P02,1,6,put,lid,leave,containers,1,1.09
+P02_129_20,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,break spaghetti,break spaghetti,37.79,39.97,P02_129,break,spaghetti,train,P02,30,45,break,pasta,split,baked goods and grains,1,2.18
+P02_12_108,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,knead dough,knead dough,318.75,345.7,P02_12,knead,dough,val,P02,51,25,knead,dough,manipulate,baked goods and grains,1,26.95
+P02_12_123,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,spread olive in tray,spread olive in tray,384.05,395.02,P02_12,spread-in,olive,val,P02,27,83,apply,olive,distribute,fruits and nuts,2,10.97
+P02_12_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put meat in tupperware,put meat in tupperware,114.33,115.49000000000001,P02_12,put-in,meat,val,P02,5,28,insert,meat,leave,meat and substitute,2,1.16
+P02_12_84,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move tray,move tray,246.24,247.0,P02_12,move,tray,val,P02,11,35,move,tray,transition,cookware,1,0.76
+P02_130_16,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,sponge pan,sponge pan,38.09,39.8,P02_130,sponge,pan,train,P02,2,5,wash,pan,clean,cookware,1,1.71
+P02_130_242,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up condensed milk tin,pick up condensed milk tin,661.32,663.41,P02_130,pick-up,tin:condensed:milk,train,P02,0,61,take,can,retrieve,containers,1,2.09
+P02_131_116,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse mug,rinse mug,366.88,369.51,P02_131,rinse,mug,train,P02,2,13,wash,cup,clean,crockery,1,2.63
+P02_132_24,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down cylinder covered with foil paper,put down cylinder covered with foil paper,53.66,54.74,P02_132,put-down,cylinder,train,P02,1,175,put,cake,leave,baked goods and grains,2,1.08
+P02_132_5,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down tupperware,put down tupperware,20.47,21.85,P02_132,put-down,tupperware,train,P02,1,23,put,box,leave,containers,1,1.38
+P02_132_70,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up chocolate pieces,pick up chocolate pieces,177.56,179.22,P02_132,pick-up,piece:chocolate,train,P02,0,188,take,chocolate,retrieve,prepared food,1,1.66
+P02_132_71,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put chocolate piece in tupperware,put chocolate piece in tupperware,179.13,180.37,P02_132,put-in,piece:chocolate,train,P02,5,188,insert,chocolate,leave,prepared food,2,1.24
+P02_135_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove bagel from bag,remove bagel from bag,25.67,28.65,P02_135,remove-from,bagel,train,P02,12,33,remove,bread,retrieve,baked goods and grains,2,2.98
+P02_135_19,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open fridge,open fridge,43.97,44.87,P02_135,open,fridge,train,P02,3,12,open,fridge,access,appliances,1,0.9
+P03_02_35,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab crisps,grab crisps,69.56,70.55,P03_02,grab,crisp,train,P03,0,229,take,crisp,retrieve,prepared food,1,0.99
+P03_02_81,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,fill bottle,fill bottle,161.63,168.35,P03_02,fill,bottle,train,P03,26,15,fill,bottle,merge,containers,1,6.72
+P03_03_19,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up clothes,pick up clothes,50.5,51.82,P03_03,pick-up,clothes,train,P03,0,73,take,clothes,retrieve,materials,1,1.32
+P03_04_173,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take chicken,take chicken,691.8,697.45,P03_04,take,chicken,train,P03,0,57,take,chicken,retrieve,meat and substitute,1,5.65
+P03_04_213,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take bowl,take bowl,946.0,946.84,P03_04,take,bowl,train,P03,0,7,take,bowl,retrieve,crockery,1,0.84
+P03_04_259,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab plate,grab plate,1129.46,1130.08,P03_04,grab,plate,train,P03,0,2,take,plate,retrieve,crockery,1,0.62
+P03_04_353,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put drink,put drink,1532.25,1532.95,P03_04,put,drink,train,P03,1,209,put,drink,leave,drinks,1,0.7
+P03_04_92,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,slice onion,slice onion,344.45,347.65999999999997,P03_04,slice,onion,train,P03,7,16,cut,onion,split,vegetables,1,3.21
+P03_05_20,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cup,put cup,43.53,44.28,P03_05,put,cup,train,P03,1,13,put,cup,leave,crockery,1,0.75
+P03_06_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put pan,put pan,21.82,23.24,P03_06,put,pan,train,P03,1,5,put,pan,leave,cookware,1,1.42
+P03_101_210,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put sink strainer in sink,put sink strainer in sink,523.22,524.27,P03_101,put-in,strainer:sink,train,P03,5,39,insert,colander,leave,utensils,2,1.05
+P03_101_246,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cheese,put cheese,621.55,621.94,P03_101,put,cheese,train,P03,1,32,put,cheese,leave,dairy and eggs,1,0.39
+P03_101_297,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up crisps,pick up crisps,710.19,710.95,P03_101,pick-up,crisp,train,P03,0,229,take,crisp,retrieve,prepared food,1,0.76
+P03_107_17,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up saucepan lid,pick up saucepan lid,35.48,36.71,P03_107,pick-up,lid:saucepan,train,P03,0,6,take,lid,retrieve,containers,1,1.23
+P03_10_35,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close juice,close juice,85.2,86.95,P03_10,close,juice,train,P03,4,183,close,juice,block,drinks,1,1.75
+P03_112_105,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cheese,open cheese,187.12,189.9,P03_112,open,cheese,train,P03,3,32,open,cheese,access,dairy and eggs,1,2.78
+P03_112_2,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place spoon,place spoon,7.85,8.83,P03_112,place,spoon,train,P03,1,1,put,spoon,leave,cutlery,1,0.98
+P03_113_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,spoon chilli onto plate,spoon chilli onto plate,98.83,104.05,P03_113,spoon-onto,chilli,train,P03,16,69,scoop,chilli,retrieve,spices and herbs and sauces,2,5.22
+P03_117_165,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move tap,move tap,504.29,504.94,P03_117,move,tap,train,P03,11,0,move,tap,transition,appliances,1,0.65
+P03_117_170,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put sink strainer back in sink,put sink strainer back in sink,516.7,517.45,P03_117,put-in,strainer:sink,train,P03,5,39,insert,colander,leave,utensils,2,0.75
+P03_118_21,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take breadsticks out of box,take breadsticks out of box,38.25,40.28,P03_118,take-out,breadstick,train,P03,12,226,remove,breadstick,retrieve,baked goods and grains,2,2.03
+P03_119_122,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put tupperware on drying rack,put tupperware on drying rack,400.65,403.02,P03_119,put-on,tupperware,train,P03,1,23,put,box,leave,containers,2,2.37
+P03_119_205,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wipe down washing up bowl,wipe down washing up bowl,659.76,661.3,P03_119,wipe-down,bowl:washing:up,train,P03,2,7,wash,bowl,clean,crockery,1,1.54
+P03_120_173,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,fill large saucepan with water,fill large saucepan with water,582.63,591.41,P03_120,fill-with,saucepan:large,train,P03,26,5,fill,pan,merge,cookware,2,8.78
+P03_120_38,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up scales,pick up scales,77.0,79.31,P03_120,pick-up,scale,train,P03,0,108,take,scale,retrieve,appliances,1,2.31
+P03_121_50,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,whisk eggs,whisk eggs,283.21,289.7,P03_121,whisk,egg,train,P03,10,53,mix,egg,merge,dairy and eggs,1,6.49
+P03_14_35,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,sweep floor,sweep floor,149.14,170.45,P03_14,sweep,floor,train,P03,57,159,brush,floor,clean,furniture,1,21.31
+P03_19_132,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab lid,grab lid,389.48,390.43,P03_19,grab,lid,train,P03,0,6,take,lid,retrieve,containers,1,0.95
+P03_19_47,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,fill bottle,fill bottle,145.64,148.14,P03_19,fill,bottle,train,P03,26,15,fill,bottle,merge,containers,1,2.5
+P03_20_17,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,104.9,105.4,P03_20,turn-on,tap,train,P03,6,0,turn-on,tap,access,appliances,1,0.5
+P03_24_75,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put scissors,put scissors,501.62,502.91,P03_24,put,scissors,val,P03,1,79,put,scissors,leave,utensils,1,1.29
+P04_01_102,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put spoon,put spoon,456.08,457.22,P04_01,put,spoon,train,P04,1,1,put,spoon,leave,cutlery,1,1.14
+P04_02_68,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,slice end of carrot,slice end of carrot,289.26,291.87,P04_02,slice,end:carrot,train,P04,7,41,cut,carrot,split,vegetables,1,2.61
+P04_04_130,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down plate,put down plate,739.83,740.93,P04_04,put-down,plate,train,P04,1,2,put,plate,leave,crockery,1,1.1
+P04_04_64,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,peel potato,peel potato,300.1,312.61,P04_04,peel,potato,train,P04,19,30,peel,potato,split,vegetables,1,12.51
+P04_05_157,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close dishwasher,close dishwasher,1132.7,1135.91,P04_05,close,dishwasher,train,P04,4,70,close,dishwasher,block,appliances,1,3.21
+P04_05_61,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,tip out paneer,tip out paneer,411.4,413.97,P04_05,tip-out,paneer,train,P04,20,32,empty,cheese,split,dairy and eggs,1,2.57
+P04_06_117,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off hob,turn off hob,780.22,787.45,P04_06,turn-off,hob,train,P04,8,24,turn-off,hob,block,appliances,1,7.23
+P04_101_40,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,71.96000000000001,72.74,P04_101,pick-up,spoon,train,P04,0,1,take,spoon,retrieve,cutlery,1,0.78
+P04_101_60,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,test water,test water,110.94,111.86,P04_101,test,water,train,P04,24,27,check,water,monitor,drinks,1,0.92
+P04_103_30,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,press button on scale,press button on scale,50.76,52.29,P04_103,press,button,train,P04,21,92,press,button,manipulate,appliances,2,1.53
+P04_103_38,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,press button on scale,press button on scale,57.99,59.89,P04_103,press,button,train,P04,21,92,press,button,manipulate,appliances,2,1.9
+P04_104_180,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,fill spoon with water,fill spoon with water,386.99,388.52,P04_104,fill-with,spoon,train,P04,26,1,fill,spoon,merge,cutlery,2,1.53
+P04_104_93,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open fridge,open fridge,204.11,205.57,P04_104,open,fridge,train,P04,3,12,open,fridge,access,appliances,1,1.46
+P04_107_535,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pull away dough chunk,pull away dough chunk,926.82,927.07,P04_107,pull,chunk:dough,train,P04,31,25,pull,dough,manipulate,baked goods and grains,1,0.25
+P04_107_635,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,slide chopstick out of dough,slide chopstick out of dough,1037.73,1038.4,P04_107,slide-out,chopstick,train,P04,61,80,slide,chopstick,manipulate,utensils,2,0.67
+P04_107_883,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,peel dough off rolling pin,peel dough off rolling pin,1387.78,1388.8,P04_107,peel-off,dough,train,P04,19,25,peel,dough,split,baked goods and grains,2,1.02
+P04_108_3,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put oven dish on floor,put oven dish on floor,8.63,11.09,P04_108,put-on,dish:oven,train,P04,1,35,put,tray,leave,cookware,2,2.46
+P04_109_195,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down knife,put down knife,399.9,400.49,P04_109,put-down,knife,train,P04,1,4,put,knife,leave,cutlery,1,0.59
+P04_109_271,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,shake water out of pan,shake water out of pan,526.99,527.74,P04_109,shake-out,water,train,P04,15,27,shake,water,manipulate,drinks,2,0.75
+P04_109_359,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,break up broccoli florets,break up broccoli florets,663.01,671.5,P04_109,break-up,floret:broccoli,train,P04,30,101,break,broccoli,split,vegetables,1,8.49
+P04_109_50,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab bits of carrot,grab bits of carrot,142.32,144.4,P04_109,grab,bit:carrot,train,P04,0,41,take,carrot,retrieve,vegetables,1,2.08
+P04_10_64,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,slice celery,slice celery,673.91,708.77,P04_10,slice,celery,train,P04,7,223,cut,celery,split,vegetables,1,34.86
+P04_10_89,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up chicken thigh,pick up chicken thigh,856.17,858.03,P04_10,pick-up,thigh:chicken,train,P04,0,57,take,chicken,retrieve,meat and substitute,1,1.86
+P04_110_143,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut steamed bun with fork,cut steamed bun with fork,335.2,338.14,P04_110,cut,fork,train,P04,7,14,cut,fork,split,cutlery,1,2.94
+P04_110_153,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move fork away from plate,move fork away from plate,347.65999999999997,350.18,P04_110,move,fork,train,P04,11,14,move,fork,transition,cutlery,2,2.52
+P04_110_51,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down gochujang,put down gochujang,128.94,129.77,P04_110,put-down,gochujang,train,P04,1,148,put,paste,leave,spices and herbs and sauces,1,0.83
+P04_110_54,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour sesame oil into mug,pour sesame oil into mug,131.58,133.44,P04_110,pour-into,oil:sesame,train,P04,9,31,pour,oil,merge,spices and herbs and sauces,2,1.86
+P04_112_37,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close cupboard,close cupboard,63.28,64.35,P04_112,close,cupboard,train,P04,4,3,close,cupboard,block,storage,1,1.07
+P04_112_40,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down tupperware lid,put down tupperware lid,67.29,68.07,P04_112,put-down,lid:tupperware,train,P04,1,6,put,lid,leave,containers,1,0.78
+P04_113_24,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,try to pick up tupperware lid,try to pick up tupperware lid,58.96,61.65,P04_113,pick-up,lid:tupperware,train,P04,0,6,take,lid,retrieve,containers,1,2.69
+P04_113_25,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up tupperware pot and lid,pick up tupperware pot and lid,61.44,62.17,P04_113,pick-up,pot:tupperware,train,P04,0,29,take,pot,retrieve,cookware,2,0.73
+P04_113_452,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down lid of rice cooker,put down lid of rice cooker,926.56,927.7,P04_113,put-down,lid:rice:cooker,train,P04,1,6,put,lid,leave,containers,1,1.14
+P04_114_83,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,look in oven,look in oven,154.3,157.9,P04_114,look-in,oven,train,P04,24,46,check,oven,monitor,appliances,1,3.6
+P04_115_96,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take eggshells,take eggshells,189.1,190.58,P04_115,take,eggshell,train,P04,0,141,take,shell:egg,retrieve,rubbish,1,1.48
+P04_116_91,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down saucepan,put down saucepan,208.21,208.96,P04_116,put-down,saucepan,train,P04,1,5,put,pan,leave,cookware,1,0.75
+P04_117_146,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up saucepan and spatula,pick up saucepan and spatula,302.35,303.89,P04_117,pick-up,saucepan,train,P04,0,5,take,pan,retrieve,cookware,2,1.54
+P04_119_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,51.3,52.0,P04_119,turn-on,tap,train,P04,6,0,turn-on,tap,access,appliances,1,0.7
+P04_119_159,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,screw cap on milk bottle,screw cap on milk bottle,420.6,428.52,P04_119,screw,cap,train,P04,78,118,screw,cap,manipulate,containers,2,7.92
+P04_119_166,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down pan,put down pan,441.14,442.44,P04_119,put-down,pan,train,P04,1,5,put,pan,leave,cookware,1,1.3
+P04_120_114,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put thermometer into milk,put thermometer into milk,349.87,361.24,P04_120,put-into,thermometer,train,P04,5,166,insert,thermometer,leave,utensils,2,11.37
+P04_120_373,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down spatula,put down spatula,816.81,818.24,P04_120,put-down,spatula,train,P04,1,20,put,spatula,leave,utensils,1,1.43
+P04_121_190,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put tea towel on oven door,put tea towel on oven door,519.44,521.54,P04_121,put-on,towel:tea,train,P04,1,52,put,towel,leave,materials,2,2.1
+P04_121_241,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,659.52,660.54,P04_121,turn-on,tap,train,P04,6,0,turn-on,tap,access,appliances,1,1.02
+P04_121_71,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,read temperature on thermometer,read temperature on thermometer,315.23,326.93,P04_121,read,temperature,train,P04,38,65,look,heat,monitor,appliances,2,11.7
+P04_22_16,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up measuring spoons,pick up measuring spoons,110.67,115.06,P04_22,pick-up,spoon:measuring,train,P04,0,1,take,spoon,retrieve,cutlery,1,4.39
+P04_31_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put away spoon,put away spoon,69.75,71.38,P04_31,put,spoon,val,P04,1,1,put,spoon,leave,cutlery,1,1.63
+P04_31_99,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put lid on slow cooker,put lid on slow cooker,750.93,753.81,P04_31,put-on,lid,val,P04,1,6,put,lid,leave,containers,2,2.88
+P05_03_111,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,press button,press button,516.18,517.14,P05_03,press,button,train,P05,21,92,press,button,manipulate,appliances,1,0.96
+P05_03_132,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take pot,take pot,713.88,715.09,P05_03,take,pot,train,P05,0,29,take,pot,retrieve,cookware,1,1.21
+P05_07_30,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,130.7,131.93,P05_07,open,cupboard,val,P05,3,3,open,cupboard,access,storage,1,1.23
+P05_08_97,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour pasta into colander,pour pasta into colander,794.06,799.3,P05_08,pour-into,pasta,train,P05,9,45,pour,pasta,merge,baked goods and grains,2,5.24
+P05_09_56,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take milk container,take milk container,388.75,390.24,P05_09,take,container:milk,val,P05,0,21,take,container,retrieve,containers,1,1.49
+P05_09_9,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take kettle,take kettle,24.8,25.61,P05_09,take,kettle,val,P05,0,44,take,kettle,retrieve,appliances,1,0.81
+P06_03_36,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put yeast in cupboard,put yeast in cupboard,136.35,138.34,P06_03,put-in,yeast,train,P06,5,195,insert,yeast,leave,baked goods and grains,2,1.99
+P06_05_173,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put knife in dishwasher,put knife in dishwasher,1168.51,1171.76,P06_05,put-in,knife,train,P06,5,4,insert,knife,leave,cutlery,2,3.25
+P06_07_218,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open dishwasher,open dishwasher,897.72,898.5,P06_07,open,dishwasher,train,P06,3,70,open,dishwasher,access,appliances,1,0.78
+P06_09_63,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,peel garlic,peel garlic,680.11,682.21,P06_09,peel,garlic,train,P06,19,51,peel,garlic,split,vegetables,1,2.1
+P06_103_132,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash sieve,wash sieve,578.84,590.26,P06_103,wash,sieve,train,P06,2,39,wash,colander,clean,utensils,1,11.42
+P06_103_80,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,271.9,272.95,P06_103,open,cupboard,train,P06,3,3,open,cupboard,access,storage,1,1.05
+P06_108_124,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open door,open door,575.46,577.29,P06_108,open,door,train,P06,3,3,open,cupboard,access,storage,1,1.83
+P06_13_54,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,spoon sauce into tupperware,spoon sauce into tupperware,202.82999999999998,213.57999999999998,P06_13,spoon,sauce,val,P06,16,47,scoop,sauce,retrieve,spices and herbs and sauces,2,10.75
+P07_04_76,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tupperware,open tupperware,376.62,377.95,P07_04,open,tupperware,train,P07,3,23,open,box,access,containers,1,1.33
+P07_08_9,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open fridge,open fridge,61.04,62.22,P07_08,open,fridge,train,P07,3,12,open,fridge,access,appliances,1,1.18
+P07_09_19,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close tortilla,close tortilla,152.76,156.31,P07_09,close,tortilla,train,P07,4,107,close,wrap,block,materials,1,3.55
+P07_101_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take cheese,take cheese,58.8,60.56,P07_101,take,cheese,train,P07,0,32,take,cheese,retrieve,dairy and eggs,1,1.76
+P07_102_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,33.5,34.08,P07_102,turn-off,tap,train,P07,8,0,turn-off,tap,block,appliances,1,0.58
+P07_10_143,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take fork,take fork,777.2,778.67,P07_10,take,fork,train,P07,0,14,take,fork,retrieve,cutlery,1,1.47
+P07_111_15,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash knife,wash knife,36.33,40.19,P07_111,wash,knife,train,P07,2,4,wash,knife,clean,cutlery,1,3.86
+P07_114_15,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab lid,grab lid,60.52,61.51,P07_114,grab,lid,train,P07,0,6,take,lid,retrieve,containers,1,0.99
+P07_116_14,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab container,grab container,34.03,35.57,P07_116,grab,container,train,P07,0,21,take,container,retrieve,containers,1,1.54
+P07_117_107,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse container,rinse container,310.25,316.05,P07_117,rinse,container,train,P07,2,21,wash,container,clean,containers,1,5.8
+P07_117_115,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,338.5,339.2,P07_117,turn-off,tap,train,P07,8,0,turn-off,tap,block,appliances,1,0.7
+P07_117_48,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash plate,wash plate,117.12,121.59,P07_117,wash,plate,train,P07,2,2,wash,plate,clean,crockery,1,4.47
+P07_13_7,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close cereal,close cereal,24.76,27.0,P07_13,close,cereal,val,P07,4,99,close,cereal,block,baked goods and grains,1,2.24
+P07_15_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash knife,wash knife,41.51,48.35,P07_15,wash,knife,val,P07,2,4,wash,knife,clean,cutlery,1,6.84
+P08_01_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,get coffee,get coffee,32.52,33.67,P08_01,get,coffee,train,P08,0,59,take,coffee,retrieve,drinks,1,1.15
+P08_01_137,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour water,pour water,553.35,554.03,P08_01,pour,water,train,P08,9,27,pour,water,merge,drinks,1,0.68
+P08_01_55,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close bag,close bag,192.21,197.81,P08_01,close,bag,train,P08,4,19,close,bag,block,containers,1,5.6
+P08_04_40,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open drawer,open drawer,116.68,118.17,P08_04,open,drawer,train,P08,3,8,open,drawer,access,furniture,1,1.49
+P08_05_152,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open microwave,open microwave,714.65,716.03,P08_05,open,microwave,train,P08,3,90,open,microwave,access,appliances,1,1.38
+P08_05_27,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut plastic bag,cut plastic bag,79.07,82.7,P08_05,cut,bag:plastic,train,P08,7,19,cut,bag,split,containers,1,3.63
+P08_05_284,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place processor in dishwasher,place processor in dishwasher,1398.32,1414.37,P08_05,place-in,processor,train,P08,5,147,insert,processor:food,leave,appliances,2,16.05
+P08_05_347,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap water,open tap water,1665.75,1666.81,P08_05,open,water:tap,train,P08,3,0,open,tap,access,appliances,1,1.06
+P08_09_114,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place on plate,place on plate,461.97,463.73,P08_09,place-on,plate,val,P08,1,2,put,plate,leave,crockery,1,1.76
+P08_09_138,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place cheese,place cheese,588.5,592.78,P08_09,place,cheese,val,P08,1,32,put,cheese,leave,dairy and eggs,1,4.28
+P08_09_50,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,get chopping board,get chopping board,171.89,173.01,P08_09,get,board:chopping,val,P08,0,18,take,board:chopping,retrieve,utensils,1,1.12
+P08_09_96,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move pan,move pan,392.48,396.36,P08_09,move,pan,val,P08,11,5,move,pan,transition,cookware,1,3.88
+P08_10_17,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,arrange chopping board,arrange chopping board,58.83,63.39,P08_10,arrange,board:chopping,val,P08,40,18,sort,board:chopping,order,utensils,1,4.56
+P08_11_43,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn tap water,turn tap water,177.76,179.28,P08_11,turn,water:tap,train,P08,23,0,turn,tap,manipulate,appliances,1,1.52
+P08_16_100,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,break eggs,break eggs,483.09,485.3,P08_16,break,egg,val,P08,30,53,break,egg,split,dairy and eggs,1,2.21
+P08_21_244,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut plastic bag,cut plastic bag,1024.37,1028.42,P08_21,cut,bag:plastic,train,P08,7,19,cut,bag,split,containers,1,4.05
+P08_21_318,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place plate on pan,place plate on pan,1308.76,1310.51,P08_21,place-on,plate,train,P08,1,2,put,plate,leave,crockery,2,1.75
+P08_22_13,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,get yoghurt,get yoghurt,36.31,37.71,P08_22,get,yoghurt,train,P08,0,98,take,yoghurt,retrieve,dairy and eggs,1,1.4
+P08_23_237,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour yoghurt,pour yoghurt,1253.65,1257.01,P08_23,pour,yoghurt,train,P08,9,98,pour,yoghurt,merge,dairy and eggs,1,3.36
+P08_24_81,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,mix salad,mix salad,350.54,354.43,P08_24,mix,salad,train,P08,10,68,mix,salad,merge,prepared food,1,3.89
+P09_07_7,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put supplement in mixer,put supplement in mixer,15.61,25.55,P09_07,put-in,supplement,val,P09,5,171,insert,tablet,leave,cleaning equipment and material,2,9.94
+P09_103_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean hands,clean hands,149.57999999999998,155.15,P09_103,clean,hand,train,P09,2,11,wash,hand,clean,hand,1,5.57
+P09_104_1,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,place jug on countertop,place jug on countertop,6.07,7.51,P09_104,place-on,jug,train,P09,1,66,put,jug,leave,crockery,2,1.44
+P09_104_47,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open drawer,open drawer,233.4,234.53,P09_104,open,drawer,train,P09,3,8,open,drawer,access,furniture,1,1.13
+P10_01_51,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,switch off the oven top left,switch off the oven top left,359.05,360.76,P10_01,switch-off,top:oven,train,P10,8,46,turn-off,oven,block,appliances,1,1.71
+P10_01_74,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put the fried egg inside the plate,put the fried egg inside the plate,548.33,556.53,P10_01,put-inside,egg:fried,train,P10,5,53,insert,egg,leave,dairy and eggs,2,8.2
+P10_02_127,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean up the chopstick,clean up the chopstick,1059.74,1063.05,P10_02,clean-up,chopstick,train,P10,2,80,wash,chopstick,clean,utensils,1,3.31
+P10_03_181,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean the sink,clean the sink,1473.72,1475.43,P10_03,clean,sink,val,P10,2,63,wash,sink,clean,furniture,1,1.71
+P10_03_186,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash the bowl,wash the bowl,1511.17,1513.86,P10_03,wash,bowl,val,P10,2,7,wash,bowl,clean,crockery,1,2.69
+P10_04_119,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut the ginger,cut the ginger,812.56,814.19,P10_04,cut,ginger,train,P10,7,131,cut,ginger,split,spices and herbs and sauces,1,1.63
+P10_04_260,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,get the third pot,get the third pot,1681.09,1684.38,P10_04,get,pot:third,train,P10,0,29,take,pot,retrieve,cookware,1,3.29
+P10_04_264,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put the pot on the hob,put the pot on the hob,1723.87,1727.53,P10_04,put-on,pot,train,P10,1,29,put,pot,leave,cookware,2,3.66
+P10_04_292,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove skin of garlic,remove skin of garlic,1926.13,1931.59,P10_04,remove,skin:garlic,train,P10,12,48,remove,skin,retrieve,rubbish,1,5.46
+P10_04_70,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,keep on mixing the fish with the flour,keep on mixing the fish with the flour,458.07,468.8,P10_04,mix-with,fish,train,P10,10,119,mix,fish,merge,meat and substitute,2,10.73
+P11_02_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open door,open door,10.86,11.43,P11_02,open,door,train,P11,3,3,open,cupboard,access,storage,1,0.57
+P11_05_351,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up colander,pick up colander,1535.23,1536.03,P11_05,pick-up,colander,train,P11,0,39,take,colander,retrieve,utensils,1,0.8
+P11_05_47,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw away courgette,throw away courgette,148.62,149.87,P11_05,throw-away,courgette,train,P11,13,76,throw,courgette,leave,vegetables,1,1.25
+P11_102_51,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up leeks,pick up leeks,144.01,144.63,P11_102,pick-up,leek,train,P11,0,117,take,leek,retrieve,vegetables,1,0.62
+P11_102_70,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put away jug,put away jug,289.75,291.81,P11_102,put-away,jug,train,P11,1,66,put,jug,leave,crockery,1,2.06
+P11_103_44,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw away packaging,throw away packaging,107.9,110.44,P11_103,throw,packaging,train,P11,13,26,throw,package,leave,containers,1,2.54
+P11_103_72,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse off rag,rinse off rag,209.62,211.04,P11_103,rinse-off,rag,train,P11,2,17,wash,cloth,clean,cleaning equipment and material,1,1.42
+P11_105_28,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,recycle pizza packaging,recycle pizza packaging,89.36,93.64,P11_105,recycle,packaging:pizza,train,P11,13,26,throw,package,leave,containers,1,4.28
+P11_15_15,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put kettle down,put kettle down,57.27,59.8,P11_15,put-down,kettle,train,P11,1,44,put,kettle,leave,appliances,1,2.53
+P11_15_52,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove bottom of leek,remove bottom of leek,182.49,186.15,P11_15,remove,bottom:leek,train,P11,12,117,remove,leek,retrieve,vegetables,1,3.66
+P11_15_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off water,turn off water,22.78,23.61,P11_15,turn-off,tap,train,P11,8,0,turn-off,tap,block,appliances,1,0.83
+P11_20_5,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up leeks,pick up leeks,21.7,23.47,P11_20,pick-up,leek,val,P11,0,117,take,leek,retrieve,vegetables,1,1.77
+P11_22_52,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wipe down soy sauce,wipe down soy sauce,148.7,150.92000000000002,P11_22,wipe-down,sauce:soy,val,P11,2,47,wash,sauce,clean,spices and herbs and sauces,1,2.22
+P12_01_3,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take plates,take plates,11.1,12.6,P12_01,take,plate,train,P12,0,2,take,plate,retrieve,crockery,1,1.5
+P12_02_167,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put garbage in sink,put garbage in sink,1690.96,1692.85,P12_02,put-in,garbage,train,P12,5,54,insert,rubbish,leave,rubbish,2,1.89
+P12_02_62,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,crush garlic,crush garlic,615.63,618.52,P12_02,crush,garlic,train,P12,49,51,crush,garlic,split,vegetables,1,2.89
+P12_03_80,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put tarragon on cutting,put tarragon on cutting,948.71,1004.41,P12_03,put-on,tarragon,val,P12,1,62,put,leaf,leave,vegetables,1,55.7
+P12_101_155,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap,open tap,422.59,423.47,P12_101,turn-on,tap,train,P12,6,0,turn-on,tap,access,appliances,1,0.88
+P12_101_160,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,fill mug with some water,fill mug with some water,429.64,430.47,P12_101,fill-with,mug,train,P12,26,13,fill,cup,merge,crockery,2,0.83
+P12_101_204,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close tap,close tap,575.5,576.04,P12_101,turn-off,tap,train,P12,8,0,turn-off,tap,block,appliances,1,0.54
+P12_101_289,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour down onions into frying pan,pour down onions into frying pan,1003.36,1005.28,P12_101,pour-down,onion,train,P12,9,16,pour,onion,merge,vegetables,2,1.92
+P12_101_407,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cheese with hand,pick up cheese with hand,1601.3,1602.49,P12_101,pick-up,cheese,train,P12,0,32,take,cheese,retrieve,dairy and eggs,2,1.19
+P12_101_444,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cream cheese container,open cream cheese container,1718.96,1723.42,P12_101,open,container:cream:cheese,train,P12,3,21,open,container,access,containers,1,4.46
+P12_104_82,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash hand,wash hand,355.25,358.02,P12_104,wash,hand,train,P12,2,11,wash,hand,clean,hand,1,2.77
+P13_01_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up banana,pick up banana,508.38,509.79,P13_01,pick-up,banana,val,P13,0,146,take,banana,retrieve,fruits and nuts,1,1.41
+P13_07_23,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put scissors on sink,put scissors on sink,153.79,156.04,P13_07,put-on,scissors,train,P13,1,79,put,scissors,leave,utensils,2,2.25
+P13_08_159,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take pot with spaghetti,take pot with spaghetti,2159.3,2160.8,P13_08,take-with,pot,train,P13,0,29,take,pot,retrieve,cookware,2,1.5
+P13_10_13,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cheese on hamburger,put cheese on hamburger,69.15,69.78999999999999,P13_10,put-on,cheese,train,P13,1,32,put,cheese,leave,dairy and eggs,2,0.64
+P15_04_28,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down board,put down board,408.61,410.82,P15_04,put-down,board,val,P15,1,18,put,board:chopping,leave,utensils,1,2.21
+P15_06_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash chopping board,wash chopping board,62.71,78.84,P15_06,wash,board:chopping,val,P15,2,18,wash,board:chopping,clean,utensils,1,16.13
+P15_08_45,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,dry glass,dry glass,218.89,232.36,P15_08,dry,glass,train,P15,14,10,dry,glass,clean,crockery,1,13.47
+P17_04_15,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash corn,wash corn,118.95,129.11,P17_04,wash,corn,train,P17,2,125,wash,corn,clean,vegetables,1,10.16
+P18_04_15,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse knife and fork,rinse knife and fork,75.44,85.53,P18_04,rinse,knife,val,P18,2,4,wash,knife,clean,cutlery,2,10.09
+P18_04_25,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse tupperware,rinse tupperware,129.56,138.39,P18_04,rinse,tupperware,val,P18,2,23,wash,box,clean,containers,1,8.83
+P18_05_1,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put bowl in cupboard,put bowl in cupboard,8.39,11.63,P18_05,put-in,bowl,val,P18,5,7,insert,bowl,leave,crockery,2,3.24
+P18_05_47,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour salt,pour salt,212.19,214.38,P18_05,pour,salt,val,P18,9,38,pour,salt,merge,spices and herbs and sauces,1,2.19
+P18_10_30,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open coffee,open coffee,86.55,88.67,P18_10,open,coffee,val,P18,3,59,open,coffee,access,drinks,1,2.12
+P18_12_28,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,dry hands on towel,dry hands on towel,186.88,191.39,P18_12,dry-on,hand,val,P18,14,11,dry,hand,clean,hand,2,4.51
+P20_03_19,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open lid of milk,open lid of milk,46.04,51.01,P20_03,open,lid:milk,train,P20,3,118,open,cap,access,containers,1,4.97
+P20_04_345,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up salad,pick up salad,2012.49,2016.07,P20_04,pick-up,salad,train,P20,0,68,take,salad,retrieve,prepared food,1,3.58
+P20_04_384,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wipe counter with rag,wipe counter with rag,2205.9,2208.58,P20_04,wipe,rag,train,P20,2,17,wash,cloth,clean,cleaning equipment and material,1,2.68
+P20_06_43,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close sauce,close sauce,190.13,192.58,P20_06,close,sauce,val,P20,4,47,close,sauce,block,spices and herbs and sauces,1,2.45
+P21_02_29,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,entering cooking time,entering cooking time,226.26,229.56,P21_02,enter,time:cooking,val,P21,67,111,transition,alarm,transition,appliances,1,3.3
+P21_03_67,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,waiting for the microwave to finish,waiting for the microwave to finish,520.55,525.35,P21_03,wait-for,microwave,train,P21,72,90,wait,microwave,monitor,appliances,1,4.8
+P21_04_14,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,opening the cheese pack,opening the cheese pack,81.25,89.53,P21_04,open,pack:cheese,train,P21,3,26,open,package,access,containers,1,8.28
+P21_04_63,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,taking olive oil,taking olive oil,482.68,484.49,P21_04,take,oil:olive,train,P21,0,31,take,oil,retrieve,spices and herbs and sauces,1,1.81
+P22_01_327,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move knife,move knife,1021.24,1024.36,P22_01,move,knife,val,P22,11,4,move,knife,transition,cutlery,1,3.12
+P22_01_41,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,arrange cup,arrange cup,122.63,125.46,P22_01,arrange,cup,val,P22,40,13,sort,cup,order,crockery,1,2.83
+P22_02_199,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean,clean,442.2,446.45,P22_02,clean,top,val,P22,2,42,wash,top,clean,furniture,1,4.25
+P22_02_27,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take plate,take plate,55.34,57.08,P22_02,take,plate,val,P22,0,2,take,plate,retrieve,crockery,1,1.74
+P22_03_0,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open coffee machine,open coffee machine,3.96,4.67,P22_03,open,machine:coffee,val,P22,3,50,open,maker:coffee,access,appliances,1,0.71
+P22_03_298,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down saucer,put down saucer,686.24,687.49,P22_03,put-down,saucer,val,P22,1,2,put,plate,leave,crockery,1,1.25
+P22_03_316,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up fork,pick up fork,729.18,730.12,P22_03,pick-up,fork,val,P22,0,14,take,fork,retrieve,cutlery,1,0.94
+P22_05_101,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse pitcher,rinse pitcher,251.72,265.72,P22_05,rinse,pitcher,train,P22,2,66,wash,jug,clean,crockery,1,14.0
+P22_05_170,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on coffee machine,turn on coffee machine,445.15,449.59,P22_05,turn-on,machine:coffee,train,P22,6,50,turn-on,maker:coffee,access,appliances,1,4.44
+P22_05_217,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,peel peach,peel peach,573.93,575.1,P22_05,peel,peach,train,P22,19,74,peel,peach,split,fruits and nuts,1,1.17
+P22_05_92,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,drain filter holder,drain filter holder,220.24,235.93,P22_05,drain,holder:filter,train,P22,37,50,filter,maker:coffee,split,appliances,1,15.69
+P22_06_120,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse plate,rinse plate,264.15,269.65,P22_06,rinse,plate,train,P22,2,2,wash,plate,clean,crockery,1,5.5
+P22_06_53,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove filter,remove filter,130.66,132.02,P22_06,remove,filter,train,P22,12,77,remove,filter,retrieve,utensils,1,1.36
+P22_07_176,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour in onion,pour in onion,427.18,430.64,P22_07,pour-in,onion,train,P22,9,16,pour,onion,merge,vegetables,1,3.46
+P22_07_189,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open bag,open bag,462.90999999999997,465.0,P22_07,open,bag,train,P22,3,19,open,bag,access,containers,1,2.09
+P22_07_204,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,peel courgette,peel courgette,509.77,517.89,P22_07,peel,courgette,train,P22,19,76,peel,courgette,split,vegetables,1,8.12
+P22_07_278,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down spice,put down spice,781.07,781.92,P22_07,put-down,spice,train,P22,1,85,put,spice,leave,spices and herbs and sauces,1,0.85
+P22_07_504,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up plates,pick up plates,1453.21,1455.82,P22_07,pick-up,plate,train,P22,0,2,take,plate,retrieve,crockery,1,2.61
+P22_07_595,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean microwave,clean microwave,1727.75,1734.54,P22_07,clean,microwave,train,P22,2,90,wash,microwave,clean,appliances,1,6.79
+P22_07_618,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put wooden fork,put wooden fork,1790.31,1791.76,P22_07,put,fork:wooden,train,P22,1,14,put,fork,leave,cutlery,1,1.45
+P22_07_733,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick lid,pick lid,2158.93,2160.04,P22_07,pick,lid,train,P22,0,6,take,lid,retrieve,containers,1,1.11
+P22_08_111,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down teaspoon,put down teaspoon,252.41,253.24,P22_08,put-down,teaspoon,train,P22,1,1,put,spoon,leave,cutlery,1,0.83
+P22_09_176,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse sink,rinse sink,387.49,390.24,P22_09,rinse,sink,train,P22,2,63,wash,sink,clean,furniture,1,2.75
+P22_09_63,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put away cutting board,put away cutting board,109.39,110.22999999999999,P22_09,put,board:cutting,train,P22,1,18,put,board:chopping,leave,utensils,1,0.84
+P22_101_159,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down glass,put down glass,356.3,356.97,P22_101,put-down,glass,train,P22,1,10,put,glass,leave,crockery,1,0.67
+P22_103_168,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spatula,pick up spatula,298.36,298.73,P22_103,pick-up,spatula,train,P22,0,20,take,spatula,retrieve,utensils,1,0.37
+P22_105_13,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up mozzarella,pick up mozzarella,59.76,60.99,P22_105,pick-up,mozzarella,train,P22,0,32,take,cheese,retrieve,dairy and eggs,1,1.23
+P22_105_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up mozzarella,pick up mozzarella,25.4,30.83,P22_105,pick-up,mozzarella,train,P22,0,32,take,cheese,retrieve,dairy and eggs,1,5.43
+P22_106_275,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse glass,rinse glass,466.04,466.98,P22_106,rinse,glass,train,P22,2,10,wash,glass,clean,crockery,1,0.94
+P22_106_277,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down glass,put down glass,469.7,470.85,P22_106,put-down,glass,train,P22,1,10,put,glass,leave,crockery,1,1.15
+P22_107_187,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,436.17,436.74,P22_107,turn-off,tap,train,P22,8,0,turn-off,tap,block,appliances,1,0.57
+P22_108_25,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down bowl,put down bowl,67.81,69.44,P22_108,put-down,bowl,train,P22,1,7,put,bowl,leave,crockery,1,1.63
+P22_108_34,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move glasses,move glasses,86.48,88.36,P22_108,move,glass,train,P22,11,10,move,glass,transition,crockery,1,1.88
+P22_108_60,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,137.31,138.01,P22_108,turn-on,tap,train,P22,6,0,turn-on,tap,access,appliances,1,0.7
+P22_109_369,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up burner cap,pick up burner cap,949.97,951.12,P22_109,pick-up,cap:burner,train,P22,0,24,take,hob,retrieve,appliances,1,1.15
+P22_109_627,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move container,move container,1593.81,1595.25,P22_109,move,container,train,P22,11,21,move,container,transition,containers,1,1.44
+P22_109_666,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,insert burner cap,insert burner cap,1688.23,1690.14,P22_109,insert,cap:burner,train,P22,5,24,insert,hob,leave,appliances,1,1.91
+P22_109_724,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,spray degreaser,spray degreaser,1807.83,1810.47,P22_109,spray,degreaser,train,P22,44,22,spray,liquid:washing,distribute,cleaning equipment and material,1,2.64
+P22_109_92,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open drawer,open drawer,182.4,183.53,P22_109,open,drawer,train,P22,3,8,open,drawer,access,furniture,1,1.13
+P22_10_0,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,grab tin,grab tin,1.02,1.99,P22_10,grab,tin,train,P22,0,61,take,can,retrieve,containers,1,0.97
+P22_10_32,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down down egg,put down down egg,64.52,65.54,P22_10,put-down,egg,train,P22,1,53,put,egg,leave,dairy and eggs,1,1.02
+P22_10_381,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down detergent,put down detergent,823.35,824.27,P22_10,put-down,detergent,train,P22,1,22,put,liquid:washing,leave,cleaning equipment and material,1,0.92
+P22_110_209,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,dry hands,dry hands,396.2,400.56,P22_110,dry,hand,train,P22,14,11,dry,hand,clean,hand,1,4.36
+P22_110_26,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down spoon rest,put down spoon rest,36.19,37.07,P22_110,put-down,rest:spoon,train,P22,1,109,put,rest,leave,other,1,0.88
+P22_111_170,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up lid,pick up lid,443.83,445.04,P22_111,pick-up,lid,train,P22,0,6,take,lid,retrieve,containers,1,1.21
+P22_111_425,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down oil,put down oil,966.67,967.84,P22_111,put-down,oil,train,P22,1,31,put,oil,leave,spices and herbs and sauces,1,1.17
+P22_113_251,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down measuring cup,put down measuring cup,525.29,525.99,P22_113,put-down,cup:measuring,train,P22,1,13,put,cup,leave,crockery,1,0.7
+P22_113_74,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down bread,put down bread,117.03999999999999,117.99000000000001,P22_113,put-down,bread,train,P22,1,33,put,bread,leave,baked goods and grains,1,0.95
+P22_116_124,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,lather sponge,lather sponge,290.43,291.6,P22_116,lather,sponge,train,P22,2,9,wash,sponge,clean,cleaning equipment and material,1,1.17
+P22_116_136,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,319.35,320.35,P22_116,pick-up,spoon,train,P22,0,1,take,spoon,retrieve,cutlery,1,1.0
+P22_116_195,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse knife,rinse knife,438.79,439.67,P22_116,rinse,knife,train,P22,2,4,wash,knife,clean,cutlery,1,0.88
+P22_117_159,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cloth,pick up cloth,380.25,380.65,P22_117,pick-up,cloth,train,P22,0,17,take,cloth,retrieve,cleaning equipment and material,1,0.4
+P22_117_339,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse knife,rinse knife,774.31,776.76,P22_117,rinse,knife,train,P22,2,4,wash,knife,clean,cutlery,1,2.45
+P22_12_1,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open locker,open locker,5.0,6.21,P22_12,open,locker,train,P22,3,3,open,cupboard,access,storage,1,1.21
+P22_12_152,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,shake hands,shake hands,381.66,382.49,P22_12,shake,hand,train,P22,15,11,shake,hand,manipulate,hand,1,0.83
+P22_12_235,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close tap,close tap,553.46,554.06,P22_12,turn-off,tap,train,P22,8,0,turn-off,tap,block,appliances,1,0.6
+P22_13_90,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up container,pick up container,191.89,192.94,P22_13,pick-up,container,train,P22,0,21,take,container,retrieve,containers,1,1.05
+P22_16_270,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove leaf,remove leaf,816.6,820.85,P22_16,remove,leaf,train,P22,12,62,remove,leaf,retrieve,vegetables,1,4.25
+P22_16_281,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,remove leaf,remove leaf,832.35,835.22,P22_16,remove,leaf,train,P22,12,62,remove,leaf,retrieve,vegetables,1,2.87
+P22_16_311,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut lettuce,cut lettuce,941.06,943.8,P22_16,cut,lettuce,train,P22,7,120,cut,lettuce,split,vegetables,1,2.74
+P22_16_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up pan,pick up pan,95.53999999999999,96.75999999999999,P22_16,pick-up,pan,train,P22,0,5,take,pan,retrieve,cookware,1,1.22
+P22_16_439,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn place mat,turn place mat,1269.22,1270.75,P22_16,turn,mat:place,train,P22,23,84,turn,mat,manipulate,materials,1,1.53
+P22_16_453,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cutlery,pick up cutlery,1299.31,1302.89,P22_16,pick-up,cutlery,train,P22,0,58,take,cutlery,retrieve,cutlery,1,3.58
+P22_16_468,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down plate,put down plate,1329.19,1330.8,P22_16,put-down,plate,train,P22,1,2,put,plate,leave,crockery,1,1.61
+P22_16_469,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up slice of bread,pick up slice of bread,1331.97,1333.21,P22_16,pick-up,slice:bread,train,P22,0,33,take,bread,retrieve,baked goods and grains,1,1.24
+P22_16_514,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down water,put down water,1427.4,1428.71,P22_16,put-down,water,train,P22,1,27,put,water,leave,drinks,1,1.31
+P22_17_14,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on light,turn on light,18.89,20.49,P22_17,turn-on,light,train,P22,6,114,turn-on,light,access,appliances,1,1.6
+P22_17_214,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take dish,take dish,541.05,542.88,P22_17,take,dish,train,P22,0,2,take,plate,retrieve,crockery,1,1.83
+P22_17_316,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up utensil,pick up utensil,728.87,729.6,P22_17,pick-up,utensil,train,P22,0,154,take,utensil,retrieve,utensils,1,0.73
+P22_17_405,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,empty bottle,empty bottle,942.3,943.28,P22_17,empty,bottle,train,P22,20,15,empty,bottle,split,containers,1,0.98
+P22_17_428,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up grater,pick up grater,1024.88,1025.89,P22_17,pick-up,grater,train,P22,0,96,take,grater,retrieve,utensils,1,1.01
+P23_02_91,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put the washing liquid on it,put the washing liquid on it,733.76,734.83,P23_02,put-on,liquid:washing,train,P23,1,22,put,liquid:washing,leave,cleaning equipment and material,1,1.07
+P23_03_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put the box in the fridge,put the box in the fridge,353.0,354.89,P23_03,put-in,box,train,P23,5,23,insert,box,leave,containers,2,1.89
+P23_04_93,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open the tap,open the tap,1323.56,1324.55,P23_04,turn-on,tap,train,P23,6,0,turn-on,tap,access,appliances,1,0.99
+P23_05_54,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put into the pan,put into the pan,713.86,715.01,P23_05,put-into,pan,val,P23,5,5,insert,pan,leave,cookware,1,1.15
+P23_101_16,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap,open tap,36.3,37.44,P23_101,turn-on,tap,train,P23,6,0,turn-on,tap,access,appliances,1,1.14
+P23_101_299,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put plate,put plate,1558.51,1559.79,P23_101,put,plate,train,P23,1,2,put,plate,leave,crockery,1,1.28
+P23_101_311,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put brush,put brush,1590.62,1592.03,P23_101,put,brush,train,P23,1,103,put,brush,leave,cleaning equipment and material,1,1.41
+P23_102_177,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put bag in dustbin,put bag in dustbin,987.64,988.74,P23_102,put-in,bag,train,P23,5,19,insert,bag,leave,containers,2,1.1
+P23_102_191,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put mango,put mango,1077.48,1078.13,P23_102,put,mango,train,P23,1,207,put,mango,leave,fruits and nuts,1,0.65
+P23_102_196,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put knife,put knife,1129.62,1130.09,P23_102,put,knife,train,P23,1,4,put,knife,leave,cutlery,1,0.47
+P23_102_223,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean glass,clean glass,1366.07,1367.54,P23_102,clean,glass,train,P23,2,10,wash,glass,clean,crockery,1,1.47
+P23_102_393,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw water,throw water,2320.29,2328.54,P23_102,throw,water,train,P23,13,27,throw,water,leave,drinks,1,8.25
+P23_102_465,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put waste in dustbin,put waste in dustbin,2674.15,2675.87,P23_102,put-in,waste,train,P23,5,54,insert,rubbish,leave,rubbish,2,1.72
+P23_102_509,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put spoon,put spoon,2936.77,2938.09,P23_102,put,spoon,train,P23,1,1,put,spoon,leave,cutlery,1,1.32
+P24_01_76,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open tap,open tap,584.79,586.28,P24_01,turn-on,tap,train,P24,6,0,turn-on,tap,access,appliances,1,1.49
+P24_02_155,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down knife on table,put down knife on table,807.13,808.93,P24_02,put-down,knife,train,P24,1,4,put,knife,leave,cutlery,2,1.8
+P24_03_81,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put cup,put cup,307.16,308.25,P24_03,put,cup,train,P24,1,13,put,cup,leave,crockery,1,1.09
+P24_04_116,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put coffee cup down,put coffee cup down,471.43,473.44,P24_04,put-down,cup:coffee,train,P24,1,13,put,cup,leave,crockery,1,2.01
+P24_05_199,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close fridge,close fridge,1046.81,1048.11,P24_05,close,fridge,train,P24,4,12,close,fridge,block,appliances,1,1.3
+P24_06_80,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put pot,put pot,418.68,420.43,P24_06,put,pot,train,P24,1,29,put,pot,leave,cookware,1,1.75
+P24_08_22,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up plate,pick up plate,52.34,53.55,P24_08,pick-up,plate,train,P24,0,2,take,plate,retrieve,crockery,1,1.21
+P24_08_303,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,stir pasta,stir pasta,1292.76,1297.48,P24_08,stir,pasta,train,P24,10,45,mix,pasta,merge,baked goods and grains,1,4.72
+P25_04_34,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down lighter,put down lighter,414.08,415.54,P25_04,put-down,lighter,train,P25,1,130,put,lighter,leave,utensils,1,1.46
+P25_05_51,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put detergent,put detergent,394.27,399.18,P25_05,put,detergent,train,P25,1,22,put,liquid:washing,leave,cleaning equipment and material,1,4.91
+P25_05_55,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take salad,take salad,419.42,421.24,P25_05,take,salad,train,P25,0,68,take,salad,retrieve,prepared food,1,1.82
+P25_09_91,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put chicken,put chicken,693.87,708.99,P25_09,put,chicken,train,P25,1,57,put,chicken,leave,meat and substitute,1,15.12
+P25_09_96,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put napkin,put napkin,734.91,736.06,P25_09,put,napkin,train,P25,1,88,put,napkin,leave,materials,1,1.15
+P25_104_194,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up washing up liquid,pick up washing up liquid,576.27,577.36,P25_104,pick-up,liquid:washing:up,train,P25,0,22,take,liquid:washing,retrieve,cleaning equipment and material,1,1.09
+P25_107_202,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up aubergine,pick up aubergine,1053.53,1064.18,P25_107,pick-up,aubergine,train,P25,0,67,take,aubergine,retrieve,vegetables,1,10.65
+P25_107_502,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down aubergine,put down aubergine,2185.02,2185.87,P25_107,put-down,aubergine,train,P25,1,67,put,aubergine,leave,vegetables,1,0.85
+P25_11_34,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put napkins,put napkins,222.67000000000002,224.4,P25_11,put,napkin,train,P25,1,88,put,napkin,leave,materials,1,1.73
+P26_103_89,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down fork,put down fork,314.99,315.72,P26_103,put-down,fork,train,P26,1,14,put,fork,leave,cutlery,1,0.73
+P26_104_170,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down phone,put down phone,685.41,687.04,P26_104,put-down,phone,train,P26,1,165,put,phone,leave,appliances,1,1.63
+P26_105_19,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down lid,put down lid,66.78,68.81,P26_105,put-down,lid,train,P26,1,6,put,lid,leave,containers,1,2.03
+P26_110_3,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up pasta,pick up pasta,10.28,12.31,P26_110,pick-up,pasta,train,P26,0,45,take,pasta,retrieve,baked goods and grains,1,2.03
+P26_111_26,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse pot,rinse pot,94.89,103.27000000000001,P26_111,rinse,pot,train,P26,2,29,wash,pot,clean,cookware,1,8.38
+P26_112_72,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,lather plate,lather plate,225.78,232.85,P26_112,lather,plate,train,P26,2,2,wash,plate,clean,crockery,1,7.07
+P26_117_21,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down lighter,put down lighter,78.75,82.53999999999999,P26_117,put-down,lighter,train,P26,1,130,put,lighter,leave,utensils,1,3.79
+P26_118_45,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse fork,rinse fork,246.61,247.59,P26_118,rinse,fork,train,P26,2,14,wash,fork,clean,cutlery,1,0.98
+P26_18_38,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,soap cup,soap cup,288.01,296.04,P26_18,lather,cup:soap,train,P26,2,13,wash,cup,clean,crockery,1,8.03
+P27_07_22,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take sponge,take sponge,262.09,262.92,P27_07,take,sponge,train,P27,0,9,take,sponge,retrieve,cleaning equipment and material,1,0.83
+P27_101_118,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up glass,pick up glass,320.71,321.41,P27_101,pick-up,glass,train,P27,0,10,take,glass,retrieve,crockery,1,0.7
+P27_103_249,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up bottle,pick up bottle,1009.12,1009.74,P27_103,pick-up,bottle,train,P27,0,15,take,bottle,retrieve,containers,1,0.62
+P27_103_550,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash fork,wash fork,2179.07,2182.52,P27_103,wash,fork,train,P27,2,14,wash,fork,clean,cutlery,1,3.45
+P27_103_581,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse cutlery,rinse cutlery,2233.91,2235.9,P27_103,rinse,cutlery,train,P27,2,58,wash,cutlery,clean,cutlery,1,1.99
+P27_104_213,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash fork,wash fork,620.9,624.9,P27_104,wash,fork,train,P27,2,14,wash,fork,clean,cutlery,1,4.0
+P27_104_240,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down glass,put down glass,710.4,711.2,P27_104,put-down,glass,train,P27,1,10,put,glass,leave,crockery,1,0.8
+P27_105_187,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down ham,put down ham,672.54,679.03,P27_105,put-down,ham,train,P27,1,156,put,salami,leave,meat and substitute,1,6.49
+P27_105_29,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cake,pick up cake,111.96000000000001,112.66,P27_105,pick-up,cake,train,P27,0,175,take,cake,retrieve,baked goods and grains,1,0.7
+P27_105_75,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up spoon,pick up spoon,273.2,273.57,P27_105,pick-up,spoon,train,P27,0,1,take,spoon,retrieve,cutlery,1,0.37
+P28_01_1,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,4.84,6.26,P28_01,open,cupboard,train,P28,3,3,open,cupboard,access,storage,1,1.42
+P28_01_2,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down oil,put down oil,6.46,9.2,P28_01,put-down,oil,train,P28,1,31,put,oil,leave,spices and herbs and sauces,1,2.74
+P28_02_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take cutlery,take cutlery,18.46,21.01,P28_02,take,cutlery,train,P28,0,58,take,cutlery,retrieve,cutlery,1,2.55
+P28_03_56,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open package,open package,199.57,200.32999999999998,P28_03,open,package,train,P28,3,26,open,package,access,containers,1,0.76
+P28_04_43,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,throw rubbish,throw rubbish,249.3,257.61,P28_04,throw,rubbish,train,P28,13,54,throw,rubbish,leave,rubbish,1,8.31
+P28_08_18,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put peeler and knife in drainer,put peeler and knife in drainer,73.11,74.0,P28_08,put-in,peeler,train,P28,5,87,insert,peeler:potato,leave,utensils,3,0.89
+P28_08_53,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,179.98,180.74,P28_08,turn-off,tap,train,P28,8,0,turn-off,tap,block,appliances,1,0.76
+P28_09_128,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,478.21,479.05,P28_09,open,cupboard,train,P28,3,3,open,cupboard,access,storage,1,0.84
+P28_101_50,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut tomato,cut tomato,233.61,251.98,P28_101,cut,tomato,train,P28,7,43,cut,tomato,split,vegetables,1,18.37
+P28_102_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put glass,put glass,46.74,48.64,P28_102,put,glass,train,P28,1,10,put,glass,leave,crockery,1,1.9
+P28_103_204,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,stir vegetables,stir vegetables,1212.75,1229.02,P28_103,stir,vegetable,train,P28,10,94,mix,vegetable,merge,vegetables,1,16.27
+P28_103_219,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take spatula,take spatula,1288.64,1289.5,P28_103,take,spatula,train,P28,0,20,take,spatula,retrieve,utensils,1,0.86
+P28_103_257,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put spatula,put spatula,1574.61,1576.35,P28_103,put,spatula,train,P28,1,20,put,spatula,leave,utensils,1,1.74
+P28_103_83,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,clean onion,clean onion,373.59,394.34000000000003,P28_103,clean,onion,train,P28,2,16,wash,onion,clean,vegetables,1,20.75
+P28_104_10,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn off tap,turn off tap,35.49,36.52,P28_104,turn-off,tap,train,P28,8,0,turn-off,tap,block,appliances,1,1.03
+P28_104_195,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pour water,pour water,669.18,669.96,P28_104,pour,water,train,P28,9,27,pour,water,merge,drinks,1,0.78
+P28_104_43,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take sponge,take sponge,127.89,128.65,P28_104,take,sponge,train,P28,0,9,take,sponge,retrieve,cleaning equipment and material,1,0.76
+P28_105_42,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put stuff in fridge,put stuff in fridge,175.04,192.09,P28_105,put-in,fridge,train,P28,5,12,insert,fridge,leave,appliances,1,17.05
+P28_108_23,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put butter in fridge,put butter in fridge,173.57,174.3,P28_108,put-in,butter,train,P28,5,78,insert,butter,leave,dairy and eggs,2,0.73
+P28_113_106,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take bell pepper,take bell pepper,324.8,325.52,P28_113,take,pepper:bell,train,P28,0,37,take,pepper,retrieve,vegetables,1,0.72
+P28_113_89,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take onion,take onion,253.37,255.56,P28_113,take,onion,train,P28,0,16,take,onion,retrieve,vegetables,1,2.19
+P28_14_18,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open bread,open bread,55.93,59.43,P28_14,open,bread,train,P28,3,33,open,bread,access,baked goods and grains,1,3.5
+P29_01_182,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up sausage,pick up sausage,681.92,682.56,P29_01,pick-up,sausage,train,P29,0,86,take,sausage,retrieve,meat and substitute,1,0.64
+P29_01_310,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put chopping board in sink,put chopping board in sink,1166.02,1167.51,P29_01,put-in,board:chopping,train,P29,5,18,insert,board:chopping,leave,utensils,2,1.49
+P29_03_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down mug,put down mug,42.53,44.03,P29_03,put-down,mug,train,P29,1,13,put,cup,leave,crockery,1,1.5
+P29_03_227,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash bowl,wash bowl,844.4,856.32,P29_03,wash,bowl,train,P29,2,7,wash,bowl,clean,crockery,1,11.92
+P29_03_422,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put whisk down,put whisk down,1637.64,1640.85,P29_03,put-down,whisk,train,P29,1,218,put,whisk,leave,utensils,1,3.21
+P29_05_149,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash mug,wash mug,458.22,465.94,P29_05,wash,mug,val,P29,2,13,wash,cup,clean,crockery,1,7.72
+P29_05_200,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put plates onto drying rack,put plates onto drying rack,586.55,588.14,P29_05,put-onto,plate,val,P29,1,2,put,plate,leave,crockery,2,1.59
+P29_05_207,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up knife,pick up knife,598.78,599.7,P29_05,pick-up,knife,val,P29,0,4,take,knife,retrieve,cutlery,1,0.92
+P29_05_272,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up bowl,pick up bowl,769.4,770.32,P29_05,pick-up,bowl,val,P29,0,7,take,bowl,retrieve,crockery,1,0.92
+P29_05_324,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up potato,pick up potato,945.11,946.36,P29_05,pick-up,potato,val,P29,0,30,take,potato,retrieve,vegetables,1,1.25
+P29_05_549,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,spread potatoes with spatula onto baking tray,spread potatoes with spatula onto baking tray,1773.31,1781.78,P29_05,spread-with,potato,val,P29,27,30,apply,potato,distribute,vegetables,3,8.47
+P30_04_63,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put box lid,put box lid,184.5,185.46,P30_04,put,lid:box,train,P30,1,6,put,lid,leave,containers,1,0.96
+P30_05_12,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take bag,take bag,40.95,42.71,P30_05,take,bag,train,P30,0,19,take,bag,retrieve,containers,1,1.76
+P30_05_291,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn tap off,turn tap off,1426.34,1426.92,P30_05,turn-off,tap,train,P30,8,0,turn-off,tap,block,appliances,1,0.58
+P30_05_318,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open box,open box,1554.12,1554.8,P30_05,open,box,train,P30,3,23,open,box,access,containers,1,0.68
+P30_05_385,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open cupboard,open cupboard,1848.28,1849.53,P30_05,open,cupboard,train,P30,3,3,open,cupboard,access,storage,1,1.25
+P30_05_386,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put tin,put tin,1849.56,1851.96,P30_05,put,tin,train,P30,1,61,put,can,leave,containers,1,2.4
+P30_05_534,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open fridge,open fridge,2433.51,2434.49,P30_05,open,fridge,train,P30,3,12,open,fridge,access,appliances,1,0.98
+P30_05_637,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put lid,put lid,2766.66,2768.49,P30_05,put,lid,train,P30,1,6,put,lid,leave,containers,1,1.83
+P30_06_86,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash plate,wash plate,214.12,217.93,P30_06,wash,plate,train,P30,2,2,wash,plate,clean,crockery,1,3.81
+P30_07_22,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put mug,put mug,51.07,52.41,P30_07,put,mug,val,P30,1,13,put,cup,leave,crockery,1,1.34
+P30_09_166,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put biscuit,put biscuit,414.74,416.1,P30_09,put,biscuit,val,P30,1,104,put,biscuit,leave,baked goods and grains,1,1.36
+P30_101_58,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up knife,pick up knife,108.34,108.96000000000001,P30_101,pick-up,knife,train,P30,0,4,take,knife,retrieve,cutlery,1,0.62
+P30_107_104,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put tub on top of stack of tubs,put tub on top of stack of tubs,280.0,285.0,P30_107,put-on,tub,train,P30,1,23,put,box,leave,containers,3,5.0
+P30_107_277,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up knife,pick up knife,895.31,896.18,P30_107,pick-up,knife,train,P30,0,4,take,knife,retrieve,cutlery,1,0.87
+P30_107_701,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up piece,pick up piece,2257.46,2258.71,P30_107,pick-up,meat,train,P30,0,28,take,meat,retrieve,meat and substitute,1,1.25
+P30_107_744,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put pan down,put pan down,2374.15,2375.5,P30_107,put-down,pan,train,P30,1,5,put,pan,leave,cookware,1,1.35
+P30_108_17,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put bowl,put bowl,45.33,46.01,P30_108,put,bowl,train,P30,1,7,put,bowl,leave,crockery,1,0.68
+P30_108_208,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close teapot lid,close teapot lid,547.14,548.62,P30_108,close,lid:teapot,train,P30,4,6,close,lid,block,containers,1,1.48
+P30_109_185,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up olive oil,pick up olive oil,393.4,393.88,P30_109,pick-up,oil:olive,train,P30,0,31,take,oil,retrieve,spices and herbs and sauces,1,0.48
+P30_109_23,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,smell noodles,smell noodles,39.3,40.9,P30_109,smell,noodle,train,P30,75,155,smell,noodle,sense,baked goods and grains,1,1.6
+P30_111_247,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put olive oil down,put olive oil down,609.06,610.2,P30_111,put-down,oil:olive,train,P30,1,31,put,oil,leave,spices and herbs and sauces,1,1.14
+P30_111_441,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,sprinkle cheese over pizza base,sprinkle cheese over pizza base,1145.79,1161.75,P30_111,sprinkle,cheese,train,P30,42,32,sprinkle,cheese,distribute,dairy and eggs,2,15.96
+P30_111_446,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,separate salami pieces,separate salami pieces,1192.43,1193.22,P30_111,separate,piece:salami,train,P30,52,156,divide,salami,split,meat and substitute,1,0.79
+P30_111_83,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take garlic,take garlic,166.54,169.79,P30_111,take,garlic,train,P30,0,51,take,garlic,retrieve,vegetables,1,3.25
+P30_112_29,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up pizza pieces,pick up pizza pieces,58.59,60.26,P30_112,pick-up,piece:pizza,train,P30,0,91,take,pizza,retrieve,prepared food,1,1.67
+P30_113_11,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take saucepan,take saucepan,18.65,19.69,P30_113,take,saucepan,train,P30,0,5,take,pan,retrieve,cookware,1,1.04
+P31_07_3,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,wash coffee stirrer,wash coffee stirrer,22.13,35.59,P31_07,wash,stirrer:coffee,train,P31,2,1,wash,spoon,clean,cutlery,1,13.46
+P31_08_20,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up knife,pick up knife,159.18,160.1,P31_08,pick-up,knife,train,P31,0,4,take,knife,retrieve,cutlery,1,0.92
+P32_10_14,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take alcohol,take alcohol,188.0,190.25,P32_10,take,alcohol,val,P32,0,22,take,liquid:washing,retrieve,cleaning equipment and material,1,2.25
+P32_10_36,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put down cloth,put down cloth,376.48,377.45,P32_10,put-down,cloth,val,P32,1,17,put,cloth,leave,cleaning equipment and material,1,0.97
+P35_103_70,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,open container,open container,470.47,471.33,P35_103,open,container,train,P35,3,21,open,container,access,containers,1,0.86
+P35_104_175,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,lather plate,lather plate,754.64,765.64,P35_104,lather,plate,train,P35,2,2,wash,plate,clean,crockery,1,11.0
+P35_104_393,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up sponge,pick up sponge,1586.64,1587.69,P35_104,pick-up,sponge,train,P35,0,9,take,sponge,retrieve,cleaning equipment and material,1,1.05
+P35_104_653,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,ball up cling film,ball up cling film,2722.87,2724.92,P35_104,ball-up,film:cling,train,P35,74,100,form,wrap:plastic,manipulate,materials,1,2.05
+P35_104_740,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,move bag,move bag,3126.94,3134.57,P35_104,move,bag,train,P35,11,19,move,bag,transition,containers,1,7.63
+P35_105_141,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up knife,pick up knife,614.3,616.68,P35_105,pick-up,knife,train,P35,0,4,take,knife,retrieve,cutlery,1,2.38
+P35_105_175,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close cupboard,close cupboard,777.36,778.08,P35_105,close,cupboard,train,P35,4,3,close,cupboard,block,storage,1,0.72
+P35_105_248,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse container,rinse container,1076.2,1083.29,P35_105,rinse,container,train,P35,2,21,wash,container,clean,containers,1,7.09
+P35_105_31,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up mushrooms,pick up mushrooms,92.7,93.69,P35_105,pick-up,mushroom,train,P35,0,56,take,mushroom,retrieve,vegetables,1,0.99
+P35_105_341,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,1596.68,1601.55,P35_105,turn-on,tap,train,P35,6,0,turn-on,tap,access,appliances,1,4.87
+P35_105_353,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,stir mushrooms,stir mushrooms,1642.84,1658.43,P35_105,stir,mushroom,train,P35,10,56,mix,mushroom,merge,vegetables,1,15.59
+P35_107_20,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,close bottle,close bottle,62.9,67.57,P35_107,close,bottle,train,P35,4,15,close,bottle,block,containers,1,4.67
+P35_107_6,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up cloths,pick up cloths,20.66,22.46,P35_107,pick-up,cloth,train,P35,0,17,take,cloth,retrieve,cleaning equipment and material,1,1.8
+P35_108_140,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up glass,pick up glass,514.44,515.39,P35_108,pick-up,glass,train,P35,0,10,take,glass,retrieve,crockery,1,0.95
+P35_108_363,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,pick up plate,pick up plate,1425.96,1427.77,P35_108,pick-up,plate,train,P35,0,2,take,plate,retrieve,crockery,1,1.81
+P35_109_185,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,turn on tap,turn on tap,740.7,741.7,P35_109,turn-on,tap,train,P35,6,0,turn-on,tap,access,appliances,1,1.0
+P37_101_180,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse bowls,rinse bowls,677.32,678.43,P37_101,rinse,bowl,train,P37,2,7,wash,bowl,clean,crockery,1,1.11
+P37_101_204,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,discard garlic skins,discard garlic skins,825.0,825.66,P37_101,discard,skin:garlic,train,P37,13,48,throw,skin,leave,rubbish,1,0.66
+P37_101_231,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,discard garlic skins,discard garlic skins,972.68,976.14,P37_101,discard,skin:garlic,train,P37,13,48,throw,skin,leave,rubbish,1,3.46
+P37_101_251,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,chop garlic,chop garlic,1111.28,1159.21,P37_101,chop,garlic,train,P37,7,51,cut,garlic,split,vegetables,1,47.93
+P37_101_267,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take chicken thighs,take chicken thighs,1250.99,1253.55,P37_101,take,thigh:chicken,train,P37,0,57,take,chicken,retrieve,meat and substitute,1,2.56
+P37_101_335,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,shake coriander to remove water,shake coriander to remove water,1469.14,1471.67,P37_101,shake,coriander,train,P37,15,173,shake,coriander,manipulate,spices and herbs and sauces,2,2.53
+P37_101_336,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put coriander on chopping board,put coriander on chopping board,1472.29,1475.01,P37_101,put-on,coriander,train,P37,1,173,put,coriander,leave,spices and herbs and sauces,2,2.72
+P37_101_337,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,shred coriander,shred coriander,1474.85,1482.97,P37_101,shred,coriander,train,P37,30,173,break,coriander,split,spices and herbs and sauces,1,8.12
+P37_101_363,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put sliced onions in bin,put sliced onions in bin,1567.43,1568.26,P37_101,put-in,onion:sliced,train,P37,5,16,insert,onion,leave,vegetables,2,0.83
+P37_101_63,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,rinse chicken thighs,rinse chicken thighs,153.59,154.59,P37_101,rinse,thigh:chicken,train,P37,2,57,wash,chicken,clean,meat and substitute,1,1.0
+P37_102_48,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,put carrots in plate,put carrots in plate,153.69,154.64,P37_102,put-in,carrot,train,P37,5,41,insert,carrot,leave,vegetables,2,0.95
+P37_102_92,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,cut carrots into sticks,cut carrots into sticks,421.48,434.89,P37_102,cut-into,carrot,train,P37,7,41,cut,carrot,split,vegetables,2,13.41
+P37_103_33,EPIC-KITCHENS-100,EPIC-KITCHENS-100,verb-noun-action,take chicken thighs,take chicken thighs,187.15,190.15,P37_103,take,thigh:chicken,train,P37,0,57,take,chicken,retrieve,meat and substitute,1,3.0

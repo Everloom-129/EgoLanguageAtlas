@@ -1,0 +1,614 @@
+{
+  "work": "EPIC-KITCHENS-100",
+  "annotation_type": [
+    "verb-noun-action",
+    "clip-narration"
+  ],
+  "counts": {
+    "labelled_segments": 76885,
+    "train_segments": 67217,
+    "val_segments": 9668,
+    "test_segments_no_text": 13092,
+    "total_segments_incl_test": 89977,
+    "unique_narrations_clean": 18002,
+    "unique_narrations_train": 15968,
+    "unique_narrations_val": 3835,
+    "vocab_size_tokens": 1736,
+    "verb_classes": 97,
+    "noun_classes": 300,
+    "distinct_verb_tokens": 902,
+    "distinct_noun_tokens": 2214,
+    "videos_total": 700,
+    "videos_labelled": 633,
+    "participants": 34
+  },
+  "length": {
+    "tokens_mean": 2.965,
+    "tokens_median": 3.0,
+    "tokens_p90": 4.0,
+    "tokens_max": 15,
+    "chars_mean": 15.098,
+    "chars_median": 13.0,
+    "multi_noun_share": 0.143,
+    "token_hist": [
+      [
+        1,
+        232
+      ],
+      [
+        2,
+        32429
+      ],
+      [
+        3,
+        26155
+      ],
+      [
+        4,
+        10816
+      ],
+      [
+        5,
+        4255
+      ],
+      [
+        6,
+        1842
+      ],
+      [
+        7,
+        766
+      ],
+      [
+        8,
+        213
+      ],
+      [
+        9,
+        89
+      ],
+      [
+        10,
+        48
+      ],
+      [
+        11,
+        20
+      ],
+      [
+        12,
+        10
+      ]
+    ]
+  },
+  "hours": {
+    "total_hours_all_videos": 100.028,
+    "labelled_video_hours": 87.903
+  },
+  "density": {
+    "segments_per_hour_labelled": 874.66,
+    "segments_per_labelled_video": 121.46,
+    "total_segments_per_hour_all": 899.52
+  },
+  "granularity_tier": "clip-narration / verb-noun-action (fine-grained, single-aspect)",
+  "verb_top": [
+    [
+      "take",
+      16785
+    ],
+    [
+      "put",
+      13934
+    ],
+    [
+      "wash",
+      8068
+    ],
+    [
+      "open",
+      5680
+    ],
+    [
+      "close",
+      3997
+    ],
+    [
+      "insert",
+      3624
+    ],
+    [
+      "turn-on",
+      2596
+    ],
+    [
+      "turn-off",
+      2072
+    ],
+    [
+      "cut",
+      2034
+    ],
+    [
+      "mix",
+      1861
+    ],
+    [
+      "pour",
+      1837
+    ],
+    [
+      "move",
+      1793
+    ],
+    [
+      "remove",
+      1288
+    ],
+    [
+      "throw",
+      902
+    ],
+    [
+      "dry",
+      834
+    ],
+    [
+      "shake",
+      658
+    ],
+    [
+      "adjust",
+      472
+    ],
+    [
+      "peel",
+      435
+    ],
+    [
+      "squeeze",
+      421
+    ],
+    [
+      "scoop",
+      420
+    ],
+    [
+      "empty",
+      384
+    ],
+    [
+      "press",
+      367
+    ],
+    [
+      "flip",
+      350
+    ],
+    [
+      "check",
+      305
+    ],
+    [
+      "turn",
+      298
+    ]
+  ],
+  "noun_top": [
+    [
+      "tap",
+      3997
+    ],
+    [
+      "plate",
+      2887
+    ],
+    [
+      "spoon",
+      2691
+    ],
+    [
+      "cupboard",
+      2676
+    ],
+    [
+      "knife",
+      2515
+    ],
+    [
+      "pan",
+      2472
+    ],
+    [
+      "lid",
+      1978
+    ],
+    [
+      "bowl",
+      1976
+    ],
+    [
+      "drawer",
+      1883
+    ],
+    [
+      "glass",
+      1692
+    ],
+    [
+      "sponge",
+      1630
+    ],
+    [
+      "hand",
+      1627
+    ],
+    [
+      "fridge",
+      1447
+    ],
+    [
+      "cup",
+      1329
+    ],
+    [
+      "fork",
+      1277
+    ],
+    [
+      "cloth",
+      1114
+    ],
+    [
+      "bag",
+      1070
+    ],
+    [
+      "bottle",
+      1059
+    ],
+    [
+      "board:chopping",
+      1045
+    ],
+    [
+      "container",
+      1000
+    ],
+    [
+      "onion",
+      999
+    ],
+    [
+      "spatula",
+      963
+    ],
+    [
+      "liquid:washing",
+      954
+    ],
+    [
+      "dough",
+      951
+    ],
+    [
+      "hob",
+      946
+    ]
+  ],
+  "verb_category_dist": [
+    [
+      "retrieve",
+      18731
+    ],
+    [
+      "leave",
+      18671
+    ],
+    [
+      "clean",
+      9577
+    ],
+    [
+      "access",
+      8493
+    ],
+    [
+      "block",
+      6342
+    ],
+    [
+      "merge",
+      4163
+    ],
+    [
+      "split",
+      3503
+    ],
+    [
+      "manipulate",
+      3092
+    ],
+    [
+      "transition",
+      1856
+    ],
+    [
+      "monitor",
+      1179
+    ],
+    [
+      "sense",
+      465
+    ],
+    [
+      "distribute",
+      464
+    ],
+    [
+      "order",
+      349
+    ]
+  ],
+  "noun_category_dist": [
+    [
+      "appliances",
+      9778
+    ],
+    [
+      "crockery",
+      8195
+    ],
+    [
+      "containers",
+      8013
+    ],
+    [
+      "cutlery",
+      6848
+    ],
+    [
+      "vegetables",
+      5793
+    ],
+    [
+      "utensils",
+      4547
+    ],
+    [
+      "cleaning equipment and material",
+      3910
+    ],
+    [
+      "cookware",
+      3907
+    ],
+    [
+      "baked goods and grains",
+      3249
+    ],
+    [
+      "furniture",
+      2959
+    ],
+    [
+      "spices and herbs and sauces",
+      2940
+    ],
+    [
+      "storage",
+      2781
+    ],
+    [
+      "materials",
+      2293
+    ],
+    [
+      "meat and substitute",
+      2132
+    ],
+    [
+      "dairy and eggs",
+      1895
+    ],
+    [
+      "prepared food",
+      1652
+    ],
+    [
+      "hand",
+      1627
+    ],
+    [
+      "rubbish",
+      1507
+    ],
+    [
+      "drinks",
+      1362
+    ],
+    [
+      "fruits and nuts",
+      1170
+    ],
+    [
+      "other",
+      327
+    ]
+  ],
+  "word_top": [
+    [
+      "put",
+      16163
+    ],
+    [
+      "up",
+      11420
+    ],
+    [
+      "pick",
+      10774
+    ],
+    [
+      "down",
+      8910
+    ],
+    [
+      "open",
+      6379
+    ],
+    [
+      "take",
+      4871
+    ],
+    [
+      "close",
+      4514
+    ],
+    [
+      "on",
+      4288
+    ],
+    [
+      "tap",
+      4021
+    ],
+    [
+      "in",
+      3580
+    ],
+    [
+      "turn",
+      3562
+    ],
+    [
+      "rinse",
+      3167
+    ],
+    [
+      "pan",
+      3019
+    ],
+    [
+      "spoon",
+      2799
+    ],
+    [
+      "plate",
+      2771
+    ],
+    [
+      "the",
+      2643
+    ],
+    [
+      "knife",
+      2622
+    ],
+    [
+      "bowl",
+      2556
+    ],
+    [
+      "wash",
+      2433
+    ],
+    [
+      "into",
+      2420
+    ],
+    [
+      "cupboard",
+      2384
+    ],
+    [
+      "drawer",
+      2144
+    ],
+    [
+      "off",
+      2127
+    ],
+    [
+      "lid",
+      2005
+    ],
+    [
+      "sponge",
+      1867
+    ],
+    [
+      "move",
+      1766
+    ],
+    [
+      "glass",
+      1754
+    ],
+    [
+      "pour",
+      1751
+    ],
+    [
+      "fridge",
+      1681
+    ],
+    [
+      "of",
+      1603
+    ],
+    [
+      "hands",
+      1482
+    ],
+    [
+      "stir",
+      1363
+    ],
+    [
+      "water",
+      1312
+    ],
+    [
+      "fork",
+      1307
+    ],
+    [
+      "pot",
+      1299
+    ],
+    [
+      "board",
+      1211
+    ],
+    [
+      "bag",
+      1211
+    ],
+    [
+      "spatula",
+      1181
+    ],
+    [
+      "from",
+      1152
+    ],
+    [
+      "bottle",
+      1137
+    ]
+  ],
+  "sanity": {
+    "verb_class_ids_unknown": [],
+    "noun_class_ids_unknown": [],
+    "narration_dropna": 0
+  },
+  "clusters": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "n_clusters": 111,
+    "noise_share_unique": 0.1705,
+    "noise_share_weighted": 0.1586,
+    "largest_total": 4124,
+    "median_total": 377
+  }
+}

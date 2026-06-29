@@ -1,0 +1,24 @@
+{
+  "name": "EPIC-KITCHENS-100",
+  "slug": "epic-kitchens-100",
+  "status": "built",
+  "work_type": "dataset (corpus + benchmark)",
+  "focus": "100 hours of unscripted egocentric kitchen activity, densely annotated as verb plus noun action segments parsed from participant narrations.",
+  "usage_methods": ["corpus", "eval-benchmark"],
+  "usage_downstream": ["perception-pretrain"],
+  "annotation_types": ["verb-noun-action", "clip-narration"],
+  "source_datasets": ["EPIC-KITCHENS (55 to 100)"],
+  "data_access": "epic-csv",
+  "downloadable": "open (CSV on GitHub)",
+  "license": "CC BY-NC 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "redistribution": "permitted with attribution, non-commercial",
+  "links": {
+    "paper": "https://arxiv.org/abs/2006.13256",
+    "repo": "https://github.com/epic-kitchens/epic-kitchens-100-annotations",
+    "project": "https://epic-kitchens.github.io/",
+    "atlas_en": "epic-kitchens-100/epic-kitchens-100_atlas.html",
+    "atlas_cn": "epic-kitchens-100/epic-kitchens-100_atlas_cn.html"
+  },
+  "stats_file": "epic-kitchens-100/epic-kitchens-100_stats.json"
+}

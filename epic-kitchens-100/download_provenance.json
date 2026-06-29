@@ -1,0 +1,129 @@
+{
+  "work": "EPIC-KITCHENS-100",
+  "route": "epic-csv",
+  "repo": "https://github.com/epic-kitchens/epic-kitchens-100-annotations",
+  "branch": "master",
+  "commit_sha": "ea8b40457a400c3fffa1c7f406ef3dc169cc2522",
+  "access_utc": "2026-06-29T00:52:18.286720+00:00",
+  "license": "CC BY-NC 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "files": [
+    {
+      "file": "EPIC_100_train.csv",
+      "bytes": 8415872,
+      "status": "downloaded",
+      "sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+      "rows": 67217,
+      "columns": [
+        "narration_id",
+        "participant_id",
+        "video_id",
+        "narration_timestamp",
+        "start_timestamp",
+        "stop_timestamp",
+        "start_frame",
+        "stop_frame",
+        "narration",
+        "verb",
+        "verb_class",
+        "noun",
+        "noun_class",
+        "all_nouns",
+        "all_noun_classes"
+      ],
+      "unique_narration": 15968
+    },
+    {
+      "file": "EPIC_100_validation.csv",
+      "bytes": 1184998,
+      "status": "downloaded",
+      "sha256": "35f7932ba0a1127a96cac215a98d35398946f343e3cea9ad6688ed17eee9d75d",
+      "rows": 9668,
+      "columns": [
+        "narration_id",
+        "participant_id",
+        "video_id",
+        "narration_timestamp",
+        "start_timestamp",
+        "stop_timestamp",
+        "start_frame",
+        "stop_frame",
+        "narration",
+        "verb",
+        "verb_class",
+        "noun",
+        "noun_class",
+        "all_nouns",
+        "all_noun_classes"
+      ],
+      "unique_narration": 3835
+    },
+    {
+      "file": "EPIC_100_test_timestamps.csv",
+      "bytes": 941501,
+      "status": "downloaded",
+      "sha256": "51760182029740428560d42661d1ac238d8b8878f442412d7ee268732d9af612",
+      "rows": 13092,
+      "columns": [
+        "narration_id",
+        "participant_id",
+        "video_id",
+        "narration_timestamp",
+        "start_timestamp",
+        "stop_timestamp",
+        "start_frame",
+        "stop_frame"
+      ]
+    },
+    {
+      "file": "EPIC_100_verb_classes.csv",
+      "bytes": 13402,
+      "status": "downloaded",
+      "sha256": "aab8bf210d0234b6facb9b191ae402c03a5f8965d123586b4762d3468a85033e",
+      "rows": 97,
+      "columns": [
+        "id",
+        "key",
+        "instances",
+        "category"
+      ]
+    },
+    {
+      "file": "EPIC_100_noun_classes.csv",
+      "bytes": 49357,
+      "status": "downloaded",
+      "sha256": "40f0a81c5bd06b33050df9f0bd17cd3c2fccd759f9581e4e5e04fec7562be893",
+      "rows": 300,
+      "columns": [
+        "id",
+        "key",
+        "instances",
+        "category"
+      ]
+    },
+    {
+      "file": "EPIC_100_video_info.csv",
+      "bytes": 27721,
+      "status": "downloaded",
+      "sha256": "75fd040f6662cb407b4ca2eed4811ca94df280a1aba00b6bf8a5cd286deff382",
+      "rows": 700,
+      "columns": [
+        "video_id",
+        "duration",
+        "fps",
+        "resolution"
+      ]
+    },
+    {
+      "file": "README.md",
+      "bytes": 57208,
+      "status": "downloaded",
+      "sha256": "e3f5eeb0d7c7908d55d43ad9fe8bc877c6717b89d22a94f8373f03ae158c523f"
+    },
+    {
+      "file": "LICENSE",
+      "status": "http_404"
+    }
+  ],
+  "labelled_segments_train_val": 76885
+}

@@ -1,0 +1,10194 @@
+{
+  "work": "EPIC-KITCHENS-100",
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "umap_viz": {
+      "n_components": 2,
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "umap_cluster": {
+      "n_components": 5,
+      "n_neighbors": 15,
+      "min_dist": 0.0,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "hdbscan": {
+      "min_cluster_size": 50,
+      "min_samples": 10,
+      "metric": "euclidean",
+      "cluster_selection_method": "eom"
+    },
+    "n_points": 18002
+  },
+  "n_clusters": 111,
+  "noise_unique": 3069,
+  "noise_share_unique": 0.1705,
+  "noise_share_weighted": 0.1586,
+  "clusters": [
+    {
+      "id": 100,
+      "label": "open / close: cupboard, drawer, stock",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 132,
+      "size_total": 4124,
+      "verb_top": [
+        [
+          "open",
+          2366
+        ],
+        [
+          "close",
+          1588
+        ],
+        [
+          "insert",
+          56
+        ],
+        [
+          "take",
+          32
+        ],
+        [
+          "put",
+          18
+        ]
+      ],
+      "noun_top": [
+        [
+          "cupboard",
+          2192
+        ],
+        [
+          "drawer",
+          1821
+        ],
+        [
+          "stock",
+          63
+        ],
+        [
+          "container",
+          13
+        ],
+        [
+          "lid",
+          11
+        ],
+        [
+          "food",
+          6
+        ]
+      ],
+      "medoid_text": "open cupboard",
+      "exemplars": [
+        {
+          "text": "open cupboard",
+          "count": 1160
+        },
+        {
+          "text": "open drawer",
+          "count": 1061
+        },
+        {
+          "text": "close cupboard",
+          "count": 769
+        },
+        {
+          "text": "close drawer",
+          "count": 705
+        },
+        {
+          "text": "open cabinet",
+          "count": 81
+        },
+        {
+          "text": "close cabinet",
+          "count": 55
+        },
+        {
+          "text": "open cupboards",
+          "count": 29
+        },
+        {
+          "text": "close cupboards",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "label": "take / put: spoon, rest, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 303,
+      "size_total": 2542,
+      "verb_top": [
+        [
+          "take",
+          1018
+        ],
+        [
+          "put",
+          821
+        ],
+        [
+          "wash",
+          393
+        ],
+        [
+          "insert",
+          76
+        ],
+        [
+          "scoop",
+          38
+        ]
+      ],
+      "noun_top": [
+        [
+          "spoon",
+          2379
+        ],
+        [
+          "rest",
+          71
+        ],
+        [
+          "food",
+          12
+        ],
+        [
+          "stock",
+          11
+        ],
+        [
+          "powder",
+          7
+        ],
+        [
+          "mixture",
+          5
+        ]
+      ],
+      "medoid_text": "place spoon",
+      "exemplars": [
+        {
+          "text": "place spoon",
+          "count": 25
+        },
+        {
+          "text": "pick up spoon",
+          "count": 463
+        },
+        {
+          "text": "put down spoon",
+          "count": 386
+        },
+        {
+          "text": "take spoon",
+          "count": 176
+        },
+        {
+          "text": "wash spoon",
+          "count": 144
+        },
+        {
+          "text": "rinse spoon",
+          "count": 117
+        },
+        {
+          "text": "put spoon",
+          "count": 109
+        },
+        {
+          "text": "pick up teaspoon",
+          "count": 76
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "label": "take / put: plate, food, fork",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 272,
+      "size_total": 2402,
+      "verb_top": [
+        [
+          "take",
+          852
+        ],
+        [
+          "put",
+          846
+        ],
+        [
+          "wash",
+          492
+        ],
+        [
+          "move",
+          67
+        ],
+        [
+          "insert",
+          27
+        ]
+      ],
+      "noun_top": [
+        [
+          "plate",
+          2243
+        ],
+        [
+          "food",
+          30
+        ],
+        [
+          "fork",
+          14
+        ],
+        [
+          "rice",
+          13
+        ],
+        [
+          "cover",
+          11
+        ],
+        [
+          "bowl",
+          11
+        ]
+      ],
+      "medoid_text": "put on plate",
+      "exemplars": [
+        {
+          "text": "put on plate",
+          "count": 9
+        },
+        {
+          "text": "pick up plate",
+          "count": 428
+        },
+        {
+          "text": "put down plate",
+          "count": 423
+        },
+        {
+          "text": "rinse plate",
+          "count": 234
+        },
+        {
+          "text": "take plate",
+          "count": 217
+        },
+        {
+          "text": "wash plate",
+          "count": 164
+        },
+        {
+          "text": "put plate",
+          "count": 147
+        },
+        {
+          "text": "pick up plates",
+          "count": 62
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "label": "take / put: knife, whetstone, scissors",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 213,
+      "size_total": 2290,
+      "verb_top": [
+        [
+          "take",
+          863
+        ],
+        [
+          "put",
+          692
+        ],
+        [
+          "wash",
+          476
+        ],
+        [
+          "sharpen",
+          75
+        ],
+        [
+          "insert",
+          52
+        ]
+      ],
+      "noun_top": [
+        [
+          "knife",
+          2246
+        ],
+        [
+          "whetstone",
+          14
+        ],
+        [
+          "scissors",
+          7
+        ],
+        [
+          "cover",
+          5
+        ],
+        [
+          "peeler:potato",
+          3
+        ],
+        [
+          "stand",
+          3
+        ]
+      ],
+      "medoid_text": "clean the knife",
+      "exemplars": [
+        {
+          "text": "clean the knife",
+          "count": 1
+        },
+        {
+          "text": "pick up knife",
+          "count": 507
+        },
+        {
+          "text": "put down knife",
+          "count": 461
+        },
+        {
+          "text": "take knife",
+          "count": 220
+        },
+        {
+          "text": "wash knife",
+          "count": 184
+        },
+        {
+          "text": "rinse knife",
+          "count": 154
+        },
+        {
+          "text": "put knife",
+          "count": 87
+        },
+        {
+          "text": "sharpening",
+          "count": 67
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "label": "take / put: lid, container, blender",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 188,
+      "size_total": 1917,
+      "verb_top": [
+        [
+          "take",
+          673
+        ],
+        [
+          "put",
+          653
+        ],
+        [
+          "open",
+          163
+        ],
+        [
+          "close",
+          156
+        ],
+        [
+          "remove",
+          71
+        ]
+      ],
+      "noun_top": [
+        [
+          "lid",
+          1201
+        ],
+        [
+          "container",
+          702
+        ],
+        [
+          "blender",
+          5
+        ],
+        [
+          "food",
+          3
+        ],
+        [
+          "box",
+          2
+        ],
+        [
+          "package",
+          1
+        ]
+      ],
+      "medoid_text": "place lid",
+      "exemplars": [
+        {
+          "text": "place lid",
+          "count": 14
+        },
+        {
+          "text": "pick up lid",
+          "count": 297
+        },
+        {
+          "text": "put down lid",
+          "count": 277
+        },
+        {
+          "text": "put down container",
+          "count": 159
+        },
+        {
+          "text": "pick up container",
+          "count": 152
+        },
+        {
+          "text": "open lid",
+          "count": 94
+        },
+        {
+          "text": "close lid",
+          "count": 76
+        },
+        {
+          "text": "close container",
+          "count": 66
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "label": "take / wash: sponge, liquid:washing, spoon",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 159,
+      "size_total": 1845,
+      "verb_top": [
+        [
+          "take",
+          561
+        ],
+        [
+          "wash",
+          529
+        ],
+        [
+          "put",
+          437
+        ],
+        [
+          "squeeze",
+          125
+        ],
+        [
+          "water",
+          42
+        ]
+      ],
+      "noun_top": [
+        [
+          "sponge",
+          1604
+        ],
+        [
+          "liquid:washing",
+          93
+        ],
+        [
+          "spoon",
+          21
+        ],
+        [
+          "bowl",
+          17
+        ],
+        [
+          "knife",
+          14
+        ],
+        [
+          "pan",
+          13
+        ]
+      ],
+      "medoid_text": "water the sponge",
+      "exemplars": [
+        {
+          "text": "water the sponge",
+          "count": 2
+        },
+        {
+          "text": "pick up sponge",
+          "count": 379
+        },
+        {
+          "text": "rinse sponge",
+          "count": 315
+        },
+        {
+          "text": "put down sponge",
+          "count": 303
+        },
+        {
+          "text": "take sponge",
+          "count": 126
+        },
+        {
+          "text": "squeeze sponge",
+          "count": 108
+        },
+        {
+          "text": "put sponge",
+          "count": 59
+        },
+        {
+          "text": "grab sponge",
+          "count": 32
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "label": "put / take: glass, water, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 212,
+      "size_total": 1709,
+      "verb_top": [
+        [
+          "put",
+          581
+        ],
+        [
+          "take",
+          580
+        ],
+        [
+          "wash",
+          268
+        ],
+        [
+          "pour",
+          52
+        ],
+        [
+          "move",
+          51
+        ]
+      ],
+      "noun_top": [
+        [
+          "glass",
+          1583
+        ],
+        [
+          "water",
+          49
+        ],
+        [
+          "bowl",
+          22
+        ],
+        [
+          "bottle",
+          14
+        ],
+        [
+          "wine",
+          14
+        ],
+        [
+          "gin",
+          8
+        ]
+      ],
+      "medoid_text": "put glass",
+      "exemplars": [
+        {
+          "text": "put glass",
+          "count": 58
+        },
+        {
+          "text": "pick up glass",
+          "count": 393
+        },
+        {
+          "text": "put down glass",
+          "count": 381
+        },
+        {
+          "text": "rinse glass",
+          "count": 165
+        },
+        {
+          "text": "wash glass",
+          "count": 79
+        },
+        {
+          "text": "take glass",
+          "count": 69
+        },
+        {
+          "text": "move glass",
+          "count": 36
+        },
+        {
+          "text": "put down glasses",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "label": "open / close: fridge, freezer, drawer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 119,
+      "size_total": 1693,
+      "verb_top": [
+        [
+          "open",
+          865
+        ],
+        [
+          "close",
+          670
+        ],
+        [
+          "insert",
+          89
+        ],
+        [
+          "take",
+          26
+        ],
+        [
+          "remove",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "fridge",
+          1432
+        ],
+        [
+          "freezer",
+          108
+        ],
+        [
+          "drawer",
+          39
+        ],
+        [
+          "ice",
+          32
+        ],
+        [
+          "container",
+          19
+        ],
+        [
+          "box",
+          16
+        ]
+      ],
+      "medoid_text": "put inside the fridge",
+      "exemplars": [
+        {
+          "text": "put inside the fridge",
+          "count": 1
+        },
+        {
+          "text": "open fridge",
+          "count": 726
+        },
+        {
+          "text": "close fridge",
+          "count": 559
+        },
+        {
+          "text": "open freezer",
+          "count": 55
+        },
+        {
+          "text": "close freezer",
+          "count": 45
+        },
+        {
+          "text": "open refrigerator",
+          "count": 35
+        },
+        {
+          "text": "close refrigerator",
+          "count": 25
+        },
+        {
+          "text": "put container into fridge",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "label": "wash / dry: hand, finger:lady, guard:hand",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 99,
+      "size_total": 1592,
+      "verb_top": [
+        [
+          "wash",
+          845
+        ],
+        [
+          "dry",
+          503
+        ],
+        [
+          "shake",
+          173
+        ],
+        [
+          "rub",
+          11
+        ],
+        [
+          "take",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "hand",
+          1553
+        ],
+        [
+          "finger:lady",
+          22
+        ],
+        [
+          "guard:hand",
+          11
+        ],
+        [
+          "water",
+          4
+        ],
+        [
+          "brush",
+          1
+        ],
+        [
+          "glove",
+          1
+        ]
+      ],
+      "medoid_text": "wash hand",
+      "exemplars": [
+        {
+          "text": "wash hand",
+          "count": 24
+        },
+        {
+          "text": "dry hands",
+          "count": 461
+        },
+        {
+          "text": "wash hands",
+          "count": 317
+        },
+        {
+          "text": "rinse hands",
+          "count": 298
+        },
+        {
+          "text": "shake hands",
+          "count": 156
+        },
+        {
+          "text": "rinse hand",
+          "count": 50
+        },
+        {
+          "text": "wipe hands",
+          "count": 45
+        },
+        {
+          "text": "wipe off hands",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "label": "put / take: pan, lid, plate",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 222,
+      "size_total": 1285,
+      "verb_top": [
+        [
+          "put",
+          419
+        ],
+        [
+          "take",
+          410
+        ],
+        [
+          "move",
+          122
+        ],
+        [
+          "insert",
+          102
+        ],
+        [
+          "remove",
+          65
+        ]
+      ],
+      "noun_top": [
+        [
+          "pan",
+          1116
+        ],
+        [
+          "lid",
+          100
+        ],
+        [
+          "plate",
+          10
+        ],
+        [
+          "food",
+          9
+        ],
+        [
+          "tray",
+          9
+        ],
+        [
+          "handle",
+          9
+        ]
+      ],
+      "medoid_text": "place pan",
+      "exemplars": [
+        {
+          "text": "place pan",
+          "count": 27
+        },
+        {
+          "text": "pick up pan",
+          "count": 237
+        },
+        {
+          "text": "put down pan",
+          "count": 206
+        },
+        {
+          "text": "move pan",
+          "count": 97
+        },
+        {
+          "text": "take pan",
+          "count": 69
+        },
+        {
+          "text": "hold pan",
+          "count": 51
+        },
+        {
+          "text": "put in pan",
+          "count": 42
+        },
+        {
+          "text": "put lid on pan",
+          "count": 36
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "label": "cut / take: onion, skin, onion:spring",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 399,
+      "size_total": 1216,
+      "verb_top": [
+        [
+          "cut",
+          343
+        ],
+        [
+          "take",
+          233
+        ],
+        [
+          "put",
+          125
+        ],
+        [
+          "mix",
+          118
+        ],
+        [
+          "peel",
+          100
+        ]
+      ],
+      "noun_top": [
+        [
+          "onion",
+          983
+        ],
+        [
+          "skin",
+          74
+        ],
+        [
+          "onion:spring",
+          60
+        ],
+        [
+          "bacon",
+          44
+        ],
+        [
+          "ring:onion",
+          8
+        ],
+        [
+          "bag",
+          5
+        ]
+      ],
+      "medoid_text": "cut onion",
+      "exemplars": [
+        {
+          "text": "cut onion",
+          "count": 101
+        },
+        {
+          "text": "peel onion",
+          "count": 87
+        },
+        {
+          "text": "pick up onion",
+          "count": 76
+        },
+        {
+          "text": "chop onion",
+          "count": 49
+        },
+        {
+          "text": "take onion",
+          "count": 43
+        },
+        {
+          "text": "put down onion",
+          "count": 42
+        },
+        {
+          "text": "slice onion",
+          "count": 39
+        },
+        {
+          "text": "stir onion",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "label": "take / put: bottle, milk, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 312,
+      "size_total": 1169,
+      "verb_top": [
+        [
+          "take",
+          294
+        ],
+        [
+          "put",
+          270
+        ],
+        [
+          "open",
+          116
+        ],
+        [
+          "close",
+          111
+        ],
+        [
+          "pour",
+          99
+        ]
+      ],
+      "noun_top": [
+        [
+          "bottle",
+          774
+        ],
+        [
+          "milk",
+          247
+        ],
+        [
+          "lid",
+          28
+        ],
+        [
+          "container",
+          20
+        ],
+        [
+          "water",
+          17
+        ],
+        [
+          "cap",
+          15
+        ]
+      ],
+      "medoid_text": "put down milk bottle",
+      "exemplars": [
+        {
+          "text": "put down milk bottle",
+          "count": 11
+        },
+        {
+          "text": "put down bottle",
+          "count": 106
+        },
+        {
+          "text": "pick up bottle",
+          "count": 94
+        },
+        {
+          "text": "close bottle",
+          "count": 75
+        },
+        {
+          "text": "open bottle",
+          "count": 74
+        },
+        {
+          "text": "take bottle",
+          "count": 51
+        },
+        {
+          "text": "put bottle",
+          "count": 34
+        },
+        {
+          "text": "fill bottle",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "label": "take / put: cloth, clothes, machine:washing",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 124,
+      "size_total": 1141,
+      "verb_top": [
+        [
+          "take",
+          375
+        ],
+        [
+          "put",
+          298
+        ],
+        [
+          "wash",
+          227
+        ],
+        [
+          "hang",
+          51
+        ],
+        [
+          "squeeze",
+          50
+        ]
+      ],
+      "noun_top": [
+        [
+          "cloth",
+          908
+        ],
+        [
+          "clothes",
+          136
+        ],
+        [
+          "machine:washing",
+          56
+        ],
+        [
+          "sponge",
+          10
+        ],
+        [
+          "hand",
+          6
+        ],
+        [
+          "water",
+          4
+        ]
+      ],
+      "medoid_text": "wash cloth",
+      "exemplars": [
+        {
+          "text": "wash cloth",
+          "count": 35
+        },
+        {
+          "text": "pick up cloth",
+          "count": 243
+        },
+        {
+          "text": "put down cloth",
+          "count": 242
+        },
+        {
+          "text": "rinse cloth",
+          "count": 154
+        },
+        {
+          "text": "take cloth",
+          "count": 56
+        },
+        {
+          "text": "put cloth",
+          "count": 27
+        },
+        {
+          "text": "wring cloth",
+          "count": 26
+        },
+        {
+          "text": "take clothes",
+          "count": 25
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "label": "take / put: bowl, water, blender",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 129,
+      "size_total": 1137,
+      "verb_top": [
+        [
+          "take",
+          518
+        ],
+        [
+          "put",
+          435
+        ],
+        [
+          "move",
+          60
+        ],
+        [
+          "pour",
+          25
+        ],
+        [
+          "insert",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "bowl",
+          1087
+        ],
+        [
+          "water",
+          37
+        ],
+        [
+          "blender",
+          3
+        ],
+        [
+          "plum",
+          2
+        ],
+        [
+          "food",
+          2
+        ],
+        [
+          "bin",
+          1
+        ]
+      ],
+      "medoid_text": "put bowl",
+      "exemplars": [
+        {
+          "text": "put bowl",
+          "count": 76
+        },
+        {
+          "text": "pick up bowl",
+          "count": 324
+        },
+        {
+          "text": "put down bowl",
+          "count": 236
+        },
+        {
+          "text": "take bowl",
+          "count": 99
+        },
+        {
+          "text": "move bowl",
+          "count": 39
+        },
+        {
+          "text": "place bowl",
+          "count": 31
+        },
+        {
+          "text": "get bowl",
+          "count": 28
+        },
+        {
+          "text": "pick up bowls",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "label": "take / put: fork, knife, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 84,
+      "size_total": 1122,
+      "verb_top": [
+        [
+          "take",
+          484
+        ],
+        [
+          "put",
+          415
+        ],
+        [
+          "wash",
+          193
+        ],
+        [
+          "insert",
+          13
+        ],
+        [
+          "move",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "fork",
+          1092
+        ],
+        [
+          "knife",
+          22
+        ],
+        [
+          "food",
+          3
+        ],
+        [
+          "cutlery",
+          2
+        ],
+        [
+          "bowl",
+          1
+        ],
+        [
+          "napkin",
+          1
+        ]
+      ],
+      "medoid_text": "put fork away",
+      "exemplars": [
+        {
+          "text": "put fork away",
+          "count": 1
+        },
+        {
+          "text": "put down fork",
+          "count": 291
+        },
+        {
+          "text": "take fork",
+          "count": 220
+        },
+        {
+          "text": "pick up fork",
+          "count": 181
+        },
+        {
+          "text": "wash fork",
+          "count": 98
+        },
+        {
+          "text": "rinse fork",
+          "count": 74
+        },
+        {
+          "text": "put fork",
+          "count": 44
+        },
+        {
+          "text": "get fork",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "label": "take / put: oil, olive, bottle",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 311,
+      "size_total": 1062,
+      "verb_top": [
+        [
+          "take",
+          281
+        ],
+        [
+          "put",
+          192
+        ],
+        [
+          "pour",
+          148
+        ],
+        [
+          "close",
+          82
+        ],
+        [
+          "open",
+          77
+        ]
+      ],
+      "noun_top": [
+        [
+          "oil",
+          638
+        ],
+        [
+          "olive",
+          179
+        ],
+        [
+          "bottle",
+          133
+        ],
+        [
+          "seed",
+          46
+        ],
+        [
+          "hand",
+          18
+        ],
+        [
+          "lid",
+          17
+        ]
+      ],
+      "medoid_text": "pour olive oil",
+      "exemplars": [
+        {
+          "text": "pour olive oil",
+          "count": 10
+        },
+        {
+          "text": "pick up oil",
+          "count": 58
+        },
+        {
+          "text": "put down oil",
+          "count": 56
+        },
+        {
+          "text": "pour oil",
+          "count": 43
+        },
+        {
+          "text": "close oil bottle",
+          "count": 32
+        },
+        {
+          "text": "open oil",
+          "count": 31
+        },
+        {
+          "text": "take oil",
+          "count": 27
+        },
+        {
+          "text": "pick up olive oil",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "label": "take / put: board:chopping, knife, cake",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 242,
+      "size_total": 1060,
+      "verb_top": [
+        [
+          "take",
+          326
+        ],
+        [
+          "put",
+          317
+        ],
+        [
+          "wash",
+          227
+        ],
+        [
+          "move",
+          62
+        ],
+        [
+          "insert",
+          32
+        ]
+      ],
+      "noun_top": [
+        [
+          "board:chopping",
+          975
+        ],
+        [
+          "knife",
+          39
+        ],
+        [
+          "cake",
+          6
+        ],
+        [
+          "napkin",
+          5
+        ],
+        [
+          "rubbish",
+          4
+        ],
+        [
+          "liquid:washing",
+          3
+        ]
+      ],
+      "medoid_text": "put chopping board",
+      "exemplars": [
+        {
+          "text": "put chopping board",
+          "count": 34
+        },
+        {
+          "text": "pick up chopping board",
+          "count": 104
+        },
+        {
+          "text": "put down cutting board",
+          "count": 94
+        },
+        {
+          "text": "pick up cutting board",
+          "count": 74
+        },
+        {
+          "text": "put down chopping board",
+          "count": 66
+        },
+        {
+          "text": "rinse chopping board",
+          "count": 48
+        },
+        {
+          "text": "take chopping board",
+          "count": 41
+        },
+        {
+          "text": "take cutting board",
+          "count": 38
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "label": "put / take: pan, sauce, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 295,
+      "size_total": 1025,
+      "verb_top": [
+        [
+          "put",
+          253
+        ],
+        [
+          "take",
+          236
+        ],
+        [
+          "wash",
+          143
+        ],
+        [
+          "insert",
+          66
+        ],
+        [
+          "pour",
+          60
+        ]
+      ],
+      "noun_top": [
+        [
+          "pan",
+          560
+        ],
+        [
+          "sauce",
+          202
+        ],
+        [
+          "lid",
+          107
+        ],
+        [
+          "plate",
+          61
+        ],
+        [
+          "bottle",
+          29
+        ],
+        [
+          "water",
+          24
+        ]
+      ],
+      "medoid_text": "put into saucepan",
+      "exemplars": [
+        {
+          "text": "put into saucepan",
+          "count": 1
+        },
+        {
+          "text": "put down saucepan",
+          "count": 77
+        },
+        {
+          "text": "pick up saucepan",
+          "count": 64
+        },
+        {
+          "text": "take saucepan",
+          "count": 57
+        },
+        {
+          "text": "wash saucepan",
+          "count": 43
+        },
+        {
+          "text": "rinse saucepan",
+          "count": 31
+        },
+        {
+          "text": "put saucepan",
+          "count": 29
+        },
+        {
+          "text": "move saucepan",
+          "count": 22
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "label": "take / put: cup, coffee, maker:coffee",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 289,
+      "size_total": 1003,
+      "verb_top": [
+        [
+          "take",
+          328
+        ],
+        [
+          "put",
+          258
+        ],
+        [
+          "insert",
+          68
+        ],
+        [
+          "open",
+          57
+        ],
+        [
+          "move",
+          40
+        ]
+      ],
+      "noun_top": [
+        [
+          "cup",
+          413
+        ],
+        [
+          "coffee",
+          269
+        ],
+        [
+          "maker:coffee",
+          221
+        ],
+        [
+          "bag",
+          35
+        ],
+        [
+          "holder",
+          30
+        ],
+        [
+          "water",
+          12
+        ]
+      ],
+      "medoid_text": "put coffee in coffee machine",
+      "exemplars": [
+        {
+          "text": "put coffee in coffee machine",
+          "count": 3
+        },
+        {
+          "text": "put down cup",
+          "count": 83
+        },
+        {
+          "text": "pick up cup",
+          "count": 80
+        },
+        {
+          "text": "take cup",
+          "count": 57
+        },
+        {
+          "text": "put cup",
+          "count": 32
+        },
+        {
+          "text": "pick up coffee",
+          "count": 29
+        },
+        {
+          "text": "pick up coffee cup",
+          "count": 26
+        },
+        {
+          "text": "put down coffee cup",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "label": "take / put: spatula, colander, pie",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 132,
+      "size_total": 922,
+      "verb_top": [
+        [
+          "take",
+          392
+        ],
+        [
+          "put",
+          324
+        ],
+        [
+          "wash",
+          105
+        ],
+        [
+          "pat",
+          30
+        ],
+        [
+          "insert",
+          19
+        ]
+      ],
+      "noun_top": [
+        [
+          "spatula",
+          841
+        ],
+        [
+          "colander",
+          30
+        ],
+        [
+          "pie",
+          17
+        ],
+        [
+          "pan",
+          17
+        ],
+        [
+          "food",
+          3
+        ],
+        [
+          "sponge",
+          2
+        ]
+      ],
+      "medoid_text": "put spatula away",
+      "exemplars": [
+        {
+          "text": "put spatula away",
+          "count": 2
+        },
+        {
+          "text": "put down spatula",
+          "count": 256
+        },
+        {
+          "text": "pick up spatula",
+          "count": 225
+        },
+        {
+          "text": "take spatula",
+          "count": 103
+        },
+        {
+          "text": "rinse spatula",
+          "count": 39
+        },
+        {
+          "text": "wash spatula",
+          "count": 28
+        },
+        {
+          "text": "tap spatula",
+          "count": 25
+        },
+        {
+          "text": "pick up pie using spatula",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "label": "open / close: bin, rubbish, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 206,
+      "size_total": 873,
+      "verb_top": [
+        [
+          "open",
+          242
+        ],
+        [
+          "close",
+          190
+        ],
+        [
+          "throw",
+          154
+        ],
+        [
+          "insert",
+          121
+        ],
+        [
+          "take",
+          80
+        ]
+      ],
+      "noun_top": [
+        [
+          "bin",
+          550
+        ],
+        [
+          "rubbish",
+          250
+        ],
+        [
+          "food",
+          40
+        ],
+        [
+          "bag",
+          4
+        ],
+        [
+          "package",
+          3
+        ],
+        [
+          "meat",
+          3
+        ]
+      ],
+      "medoid_text": "take trash to bin",
+      "exemplars": [
+        {
+          "text": "take trash to bin",
+          "count": 1
+        },
+        {
+          "text": "open bin",
+          "count": 119
+        },
+        {
+          "text": "close bin",
+          "count": 92
+        },
+        {
+          "text": "throw rubbish",
+          "count": 35
+        },
+        {
+          "text": "put rubbish in bin",
+          "count": 33
+        },
+        {
+          "text": "open food bin",
+          "count": 28
+        },
+        {
+          "text": "open garbage bin",
+          "count": 26
+        },
+        {
+          "text": "open trash bin",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "label": "take / unroll: dough, bowl, oil",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 173,
+      "size_total": 838,
+      "verb_top": [
+        [
+          "take",
+          108
+        ],
+        [
+          "unroll",
+          79
+        ],
+        [
+          "knead",
+          73
+        ],
+        [
+          "roll",
+          68
+        ],
+        [
+          "put",
+          67
+        ]
+      ],
+      "noun_top": [
+        [
+          "dough",
+          809
+        ],
+        [
+          "bowl",
+          12
+        ],
+        [
+          "oil",
+          11
+        ],
+        [
+          "mixture",
+          4
+        ],
+        [
+          "hand",
+          1
+        ],
+        [
+          "bread",
+          1
+        ]
+      ],
+      "medoid_text": "turn dough",
+      "exemplars": [
+        {
+          "text": "turn dough",
+          "count": 7
+        },
+        {
+          "text": "roll out dough",
+          "count": 65
+        },
+        {
+          "text": "pick up dough",
+          "count": 50
+        },
+        {
+          "text": "knead dough",
+          "count": 41
+        },
+        {
+          "text": "roll dough",
+          "count": 40
+        },
+        {
+          "text": "stretch dough",
+          "count": 36
+        },
+        {
+          "text": "squeeze dough",
+          "count": 34
+        },
+        {
+          "text": "fold dough",
+          "count": 33
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "label": "put / take: bread, peach, dough",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 378,
+      "size_total": 832,
+      "verb_top": [
+        [
+          "put",
+          216
+        ],
+        [
+          "take",
+          210
+        ],
+        [
+          "remove",
+          69
+        ],
+        [
+          "insert",
+          57
+        ],
+        [
+          "open",
+          40
+        ]
+      ],
+      "noun_top": [
+        [
+          "bread",
+          382
+        ],
+        [
+          "peach",
+          99
+        ],
+        [
+          "dough",
+          57
+        ],
+        [
+          "sandwich",
+          49
+        ],
+        [
+          "toaster",
+          35
+        ],
+        [
+          "salami",
+          30
+        ]
+      ],
+      "medoid_text": "put slice of bread",
+      "exemplars": [
+        {
+          "text": "put slice of bread",
+          "count": 1
+        },
+        {
+          "text": "remove slice",
+          "count": 49
+        },
+        {
+          "text": "pick up bread",
+          "count": 30
+        },
+        {
+          "text": "put down slice",
+          "count": 27
+        },
+        {
+          "text": "put down bread",
+          "count": 23
+        },
+        {
+          "text": "take bread",
+          "count": 18
+        },
+        {
+          "text": "open bread",
+          "count": 14
+        },
+        {
+          "text": "place ball of dough on tray",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "label": "take / put: pot, water, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 226,
+      "size_total": 815,
+      "verb_top": [
+        [
+          "take",
+          228
+        ],
+        [
+          "put",
+          194
+        ],
+        [
+          "wash",
+          129
+        ],
+        [
+          "insert",
+          47
+        ],
+        [
+          "pour",
+          37
+        ]
+      ],
+      "noun_top": [
+        [
+          "pot",
+          606
+        ],
+        [
+          "water",
+          50
+        ],
+        [
+          "lid",
+          49
+        ],
+        [
+          "hob",
+          27
+        ],
+        [
+          "cover",
+          16
+        ],
+        [
+          "rest",
+          14
+        ]
+      ],
+      "medoid_text": "place pot",
+      "exemplars": [
+        {
+          "text": "place pot",
+          "count": 3
+        },
+        {
+          "text": "pick up pot",
+          "count": 122
+        },
+        {
+          "text": "put down pot",
+          "count": 78
+        },
+        {
+          "text": "rinse pot",
+          "count": 58
+        },
+        {
+          "text": "take pot",
+          "count": 28
+        },
+        {
+          "text": "put pot",
+          "count": 27
+        },
+        {
+          "text": "wash pot",
+          "count": 24
+        },
+        {
+          "text": "move pot",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "label": "mix / shake: food, pan, mixture",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 183,
+      "size_total": 805,
+      "verb_top": [
+        [
+          "mix",
+          585
+        ],
+        [
+          "shake",
+          47
+        ],
+        [
+          "take",
+          47
+        ],
+        [
+          "pour",
+          25
+        ],
+        [
+          "eat",
+          19
+        ]
+      ],
+      "noun_top": [
+        [
+          "food",
+          316
+        ],
+        [
+          "pan",
+          181
+        ],
+        [
+          "mixture",
+          176
+        ],
+        [
+          "stock",
+          34
+        ],
+        [
+          "spoon",
+          18
+        ],
+        [
+          "water",
+          11
+        ]
+      ],
+      "medoid_text": "stir mixture",
+      "exemplars": [
+        {
+          "text": "stir mixture",
+          "count": 26
+        },
+        {
+          "text": "stir food",
+          "count": 139
+        },
+        {
+          "text": "stir pan",
+          "count": 112
+        },
+        {
+          "text": "continue stirring food",
+          "count": 50
+        },
+        {
+          "text": "shake pan",
+          "count": 42
+        },
+        {
+          "text": "stir",
+          "count": 39
+        },
+        {
+          "text": "take mixture",
+          "count": 23
+        },
+        {
+          "text": "stir ingredients",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "label": "take / put: meat, skin, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 247,
+      "size_total": 797,
+      "verb_top": [
+        [
+          "take",
+          211
+        ],
+        [
+          "put",
+          157
+        ],
+        [
+          "mix",
+          77
+        ],
+        [
+          "insert",
+          41
+        ],
+        [
+          "turn",
+          35
+        ]
+      ],
+      "noun_top": [
+        [
+          "meat",
+          716
+        ],
+        [
+          "skin",
+          18
+        ],
+        [
+          "package",
+          15
+        ],
+        [
+          "beef",
+          15
+        ],
+        [
+          "box",
+          12
+        ],
+        [
+          "stock",
+          3
+        ]
+      ],
+      "medoid_text": "put meat in pan",
+      "exemplars": [
+        {
+          "text": "put meat in pan",
+          "count": 3
+        },
+        {
+          "text": "pick up meat",
+          "count": 87
+        },
+        {
+          "text": "put down meat",
+          "count": 60
+        },
+        {
+          "text": "place meat on dough",
+          "count": 43
+        },
+        {
+          "text": "get meat from pan",
+          "count": 40
+        },
+        {
+          "text": "flip meat",
+          "count": 27
+        },
+        {
+          "text": "stir meat",
+          "count": 26
+        },
+        {
+          "text": "turn meat",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "label": "take / open: bag, backpack, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 204,
+      "size_total": 739,
+      "verb_top": [
+        [
+          "take",
+          187
+        ],
+        [
+          "open",
+          127
+        ],
+        [
+          "put",
+          127
+        ],
+        [
+          "close",
+          79
+        ],
+        [
+          "insert",
+          46
+        ]
+      ],
+      "noun_top": [
+        [
+          "bag",
+          712
+        ],
+        [
+          "backpack",
+          6
+        ],
+        [
+          "package",
+          3
+        ],
+        [
+          "drink",
+          2
+        ],
+        [
+          "rubbish",
+          2
+        ],
+        [
+          "cover",
+          2
+        ]
+      ],
+      "medoid_text": "put bag in bag",
+      "exemplars": [
+        {
+          "text": "put bag in bag",
+          "count": 1
+        },
+        {
+          "text": "open bag",
+          "count": 98
+        },
+        {
+          "text": "pick up bag",
+          "count": 87
+        },
+        {
+          "text": "put down bag",
+          "count": 62
+        },
+        {
+          "text": "close bag",
+          "count": 62
+        },
+        {
+          "text": "take bag",
+          "count": 26
+        },
+        {
+          "text": "move bag",
+          "count": 19
+        },
+        {
+          "text": "fold bag",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "label": "cut / take: potato, peeler:potato, skin",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 167,
+      "size_total": 730,
+      "verb_top": [
+        [
+          "cut",
+          160
+        ],
+        [
+          "take",
+          160
+        ],
+        [
+          "put",
+          98
+        ],
+        [
+          "peel",
+          64
+        ],
+        [
+          "mix",
+          60
+        ]
+      ],
+      "noun_top": [
+        [
+          "potato",
+          632
+        ],
+        [
+          "peeler:potato",
+          67
+        ],
+        [
+          "skin",
+          20
+        ],
+        [
+          "package",
+          6
+        ],
+        [
+          "knife",
+          2
+        ],
+        [
+          "bag",
+          1
+        ]
+      ],
+      "medoid_text": "take potato",
+      "exemplars": [
+        {
+          "text": "take potato",
+          "count": 20
+        },
+        {
+          "text": "stir potatoes",
+          "count": 55
+        },
+        {
+          "text": "cut potato",
+          "count": 55
+        },
+        {
+          "text": "chop potato",
+          "count": 40
+        },
+        {
+          "text": "peel potato",
+          "count": 34
+        },
+        {
+          "text": "pick up potato",
+          "count": 26
+        },
+        {
+          "text": "continue peeling potato",
+          "count": 24
+        },
+        {
+          "text": "put down potato slice",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "label": "take / put: salt, bean:green, container",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 190,
+      "size_total": 675,
+      "verb_top": [
+        [
+          "take",
+          198
+        ],
+        [
+          "put",
+          154
+        ],
+        [
+          "pour",
+          115
+        ],
+        [
+          "insert",
+          45
+        ],
+        [
+          "open",
+          39
+        ]
+      ],
+      "noun_top": [
+        [
+          "salt",
+          562
+        ],
+        [
+          "bean:green",
+          38
+        ],
+        [
+          "container",
+          19
+        ],
+        [
+          "tofu",
+          12
+        ],
+        [
+          "box",
+          8
+        ],
+        [
+          "lid",
+          8
+        ]
+      ],
+      "medoid_text": "put salt inside",
+      "exemplars": [
+        {
+          "text": "put salt inside",
+          "count": 2
+        },
+        {
+          "text": "pick up salt",
+          "count": 108
+        },
+        {
+          "text": "pour salt",
+          "count": 74
+        },
+        {
+          "text": "put down salt",
+          "count": 58
+        },
+        {
+          "text": "take salt",
+          "count": 46
+        },
+        {
+          "text": "put salt",
+          "count": 40
+        },
+        {
+          "text": "open salt",
+          "count": 24
+        },
+        {
+          "text": "close salt",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "label": "take / put: cup, coffee, water",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 137,
+      "size_total": 668,
+      "verb_top": [
+        [
+          "take",
+          203
+        ],
+        [
+          "put",
+          160
+        ],
+        [
+          "wash",
+          128
+        ],
+        [
+          "insert",
+          42
+        ],
+        [
+          "mix",
+          32
+        ]
+      ],
+      "noun_top": [
+        [
+          "cup",
+          615
+        ],
+        [
+          "coffee",
+          26
+        ],
+        [
+          "water",
+          14
+        ],
+        [
+          "beer",
+          3
+        ],
+        [
+          "cover",
+          3
+        ],
+        [
+          "maker:coffee",
+          2
+        ]
+      ],
+      "medoid_text": "place mug",
+      "exemplars": [
+        {
+          "text": "place mug",
+          "count": 5
+        },
+        {
+          "text": "pick up mug",
+          "count": 120
+        },
+        {
+          "text": "put down mug",
+          "count": 63
+        },
+        {
+          "text": "rinse mug",
+          "count": 58
+        },
+        {
+          "text": "take mug",
+          "count": 48
+        },
+        {
+          "text": "wash mug",
+          "count": 39
+        },
+        {
+          "text": "put mug",
+          "count": 39
+        },
+        {
+          "text": "stir coffee",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "label": "mix / take: pasta, noodle, bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 205,
+      "size_total": 667,
+      "verb_top": [
+        [
+          "mix",
+          175
+        ],
+        [
+          "take",
+          128
+        ],
+        [
+          "put",
+          97
+        ],
+        [
+          "pour",
+          92
+        ],
+        [
+          "insert",
+          46
+        ]
+      ],
+      "noun_top": [
+        [
+          "pasta",
+          503
+        ],
+        [
+          "noodle",
+          43
+        ],
+        [
+          "bag",
+          34
+        ],
+        [
+          "package",
+          19
+        ],
+        [
+          "plate",
+          17
+        ],
+        [
+          "sauce",
+          13
+        ]
+      ],
+      "medoid_text": "put pasta in the dish",
+      "exemplars": [
+        {
+          "text": "put pasta in the dish",
+          "count": 1
+        },
+        {
+          "text": "stir pasta",
+          "count": 118
+        },
+        {
+          "text": "pick up pasta",
+          "count": 68
+        },
+        {
+          "text": "pour pasta",
+          "count": 45
+        },
+        {
+          "text": "put down pasta",
+          "count": 33
+        },
+        {
+          "text": "mix pasta",
+          "count": 22
+        },
+        {
+          "text": "drain pasta",
+          "count": 15
+        },
+        {
+          "text": "stir spaghetti",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "cut / take: garlic, skin, ginger",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 280,
+      "size_total": 642,
+      "verb_top": [
+        [
+          "cut",
+          119
+        ],
+        [
+          "take",
+          95
+        ],
+        [
+          "peel",
+          68
+        ],
+        [
+          "remove",
+          64
+        ],
+        [
+          "put",
+          63
+        ]
+      ],
+      "noun_top": [
+        [
+          "garlic",
+          387
+        ],
+        [
+          "skin",
+          116
+        ],
+        [
+          "ginger",
+          65
+        ],
+        [
+          "presser",
+          39
+        ],
+        [
+          "paste",
+          15
+        ],
+        [
+          "bag",
+          6
+        ]
+      ],
+      "medoid_text": "take out garlic",
+      "exemplars": [
+        {
+          "text": "take out garlic",
+          "count": 1
+        },
+        {
+          "text": "chop garlic",
+          "count": 35
+        },
+        {
+          "text": "peel garlic",
+          "count": 29
+        },
+        {
+          "text": "discard garlic skins",
+          "count": 25
+        },
+        {
+          "text": "peel away garlic skins",
+          "count": 25
+        },
+        {
+          "text": "cut garlic",
+          "count": 20
+        },
+        {
+          "text": "press garlic",
+          "count": 19
+        },
+        {
+          "text": "pick up garlic",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "label": "take / put: cheese, package, grater",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 280,
+      "size_total": 642,
+      "verb_top": [
+        [
+          "take",
+          136
+        ],
+        [
+          "put",
+          74
+        ],
+        [
+          "cut",
+          64
+        ],
+        [
+          "insert",
+          56
+        ],
+        [
+          "fold",
+          46
+        ]
+      ],
+      "noun_top": [
+        [
+          "cheese",
+          511
+        ],
+        [
+          "package",
+          61
+        ],
+        [
+          "grater",
+          21
+        ],
+        [
+          "bag",
+          16
+        ],
+        [
+          "tofu",
+          7
+        ],
+        [
+          "liquid",
+          4
+        ]
+      ],
+      "medoid_text": "put cheese into cheese packet",
+      "exemplars": [
+        {
+          "text": "put cheese into cheese packet",
+          "count": 1
+        },
+        {
+          "text": "pick up cheese",
+          "count": 52
+        },
+        {
+          "text": "fold cheese",
+          "count": 46
+        },
+        {
+          "text": "stretch cheese",
+          "count": 32
+        },
+        {
+          "text": "put down cheese",
+          "count": 25
+        },
+        {
+          "text": "take cheese",
+          "count": 24
+        },
+        {
+          "text": "cut cheese",
+          "count": 17
+        },
+        {
+          "text": "slice cheese",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "take / cut: carrot, vegetable, skin",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 247,
+      "size_total": 640,
+      "verb_top": [
+        [
+          "take",
+          143
+        ],
+        [
+          "cut",
+          126
+        ],
+        [
+          "insert",
+          66
+        ],
+        [
+          "peel",
+          65
+        ],
+        [
+          "mix",
+          55
+        ]
+      ],
+      "noun_top": [
+        [
+          "carrot",
+          447
+        ],
+        [
+          "vegetable",
+          125
+        ],
+        [
+          "skin",
+          13
+        ],
+        [
+          "bag",
+          12
+        ],
+        [
+          "box",
+          12
+        ],
+        [
+          "cocktail",
+          10
+        ]
+      ],
+      "medoid_text": "chop carrot",
+      "exemplars": [
+        {
+          "text": "chop carrot",
+          "count": 3
+        },
+        {
+          "text": "continue skinning carrot",
+          "count": 31
+        },
+        {
+          "text": "take carrots",
+          "count": 25
+        },
+        {
+          "text": "stir vegetables",
+          "count": 23
+        },
+        {
+          "text": "pick up carrot",
+          "count": 21
+        },
+        {
+          "text": "peel carrot",
+          "count": 20
+        },
+        {
+          "text": "cut carrots",
+          "count": 19
+        },
+        {
+          "text": "slice carrot",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "label": "take / mix: egg, shell:egg, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 288,
+      "size_total": 639,
+      "verb_top": [
+        [
+          "take",
+          122
+        ],
+        [
+          "mix",
+          101
+        ],
+        [
+          "put",
+          65
+        ],
+        [
+          "break",
+          64
+        ],
+        [
+          "insert",
+          49
+        ]
+      ],
+      "noun_top": [
+        [
+          "egg",
+          426
+        ],
+        [
+          "shell:egg",
+          58
+        ],
+        [
+          "package",
+          31
+        ],
+        [
+          "spatula",
+          21
+        ],
+        [
+          "whisk",
+          21
+        ],
+        [
+          "box",
+          16
+        ]
+      ],
+      "medoid_text": "put egg into the pan",
+      "exemplars": [
+        {
+          "text": "put egg into the pan",
+          "count": 1
+        },
+        {
+          "text": "pick up egg",
+          "count": 39
+        },
+        {
+          "text": "crack egg",
+          "count": 33
+        },
+        {
+          "text": "pick up eggs",
+          "count": 22
+        },
+        {
+          "text": "stir eggs",
+          "count": 18
+        },
+        {
+          "text": "put down eggs",
+          "count": 16
+        },
+        {
+          "text": "stir egg in pan using spatula",
+          "count": 14
+        },
+        {
+          "text": "stir egg",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "label": "open / close: cupboard, cover, top",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 104,
+      "size_total": 593,
+      "verb_top": [
+        [
+          "open",
+          310
+        ],
+        [
+          "close",
+          208
+        ],
+        [
+          "remove",
+          15
+        ],
+        [
+          "put",
+          14
+        ],
+        [
+          "finish",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "cupboard",
+          452
+        ],
+        [
+          "cover",
+          50
+        ],
+        [
+          "top",
+          24
+        ],
+        [
+          "window",
+          8
+        ],
+        [
+          "tap",
+          6
+        ],
+        [
+          "box",
+          5
+        ]
+      ],
+      "medoid_text": "close the cover",
+      "exemplars": [
+        {
+          "text": "close the cover",
+          "count": 1
+        },
+        {
+          "text": "open door",
+          "count": 241
+        },
+        {
+          "text": "close door",
+          "count": 149
+        },
+        {
+          "text": "open the door",
+          "count": 12
+        },
+        {
+          "text": "close locker",
+          "count": 10
+        },
+        {
+          "text": "open locker",
+          "count": 9
+        },
+        {
+          "text": "close the door",
+          "count": 8
+        },
+        {
+          "text": "put down cover",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "label": "wash / put: plate, top, cloth",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 131,
+      "size_total": 580,
+      "verb_top": [
+        [
+          "wash",
+          288
+        ],
+        [
+          "put",
+          122
+        ],
+        [
+          "take",
+          113
+        ],
+        [
+          "insert",
+          11
+        ],
+        [
+          "dry",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "plate",
+          211
+        ],
+        [
+          "top",
+          194
+        ],
+        [
+          "cloth",
+          110
+        ],
+        [
+          "bowl",
+          12
+        ],
+        [
+          "liquid:washing",
+          11
+        ],
+        [
+          "wrap",
+          10
+        ]
+      ],
+      "medoid_text": "pick up dish rag",
+      "exemplars": [
+        {
+          "text": "pick up dish rag",
+          "count": 1
+        },
+        {
+          "text": "clean counter top",
+          "count": 67
+        },
+        {
+          "text": "wipe counter",
+          "count": 55
+        },
+        {
+          "text": "pick up dish",
+          "count": 34
+        },
+        {
+          "text": "take dish",
+          "count": 29
+        },
+        {
+          "text": "rinse dish",
+          "count": 22
+        },
+        {
+          "text": "clean counter",
+          "count": 22
+        },
+        {
+          "text": "place dish",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "label": "wash / insert: sink, colander, water",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 200,
+      "size_total": 575,
+      "verb_top": [
+        [
+          "wash",
+          271
+        ],
+        [
+          "insert",
+          64
+        ],
+        [
+          "empty",
+          49
+        ],
+        [
+          "take",
+          45
+        ],
+        [
+          "put",
+          41
+        ]
+      ],
+      "noun_top": [
+        [
+          "sink",
+          316
+        ],
+        [
+          "colander",
+          100
+        ],
+        [
+          "water",
+          26
+        ],
+        [
+          "pot",
+          22
+        ],
+        [
+          "container",
+          16
+        ],
+        [
+          "rubbish",
+          16
+        ]
+      ],
+      "medoid_text": "put in sink",
+      "exemplars": [
+        {
+          "text": "put in sink",
+          "count": 2
+        },
+        {
+          "text": "clean sink",
+          "count": 77
+        },
+        {
+          "text": "wash sink",
+          "count": 75
+        },
+        {
+          "text": "wipe sink",
+          "count": 31
+        },
+        {
+          "text": "empty sink",
+          "count": 28
+        },
+        {
+          "text": "pick up strainer",
+          "count": 15
+        },
+        {
+          "text": "rinse sink",
+          "count": 15
+        },
+        {
+          "text": "drain container",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "label": "put / take: kettle, water, wire",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 107,
+      "size_total": 565,
+      "verb_top": [
+        [
+          "put",
+          143
+        ],
+        [
+          "take",
+          139
+        ],
+        [
+          "turn-on",
+          67
+        ],
+        [
+          "fill",
+          50
+        ],
+        [
+          "pour",
+          40
+        ]
+      ],
+      "noun_top": [
+        [
+          "kettle",
+          507
+        ],
+        [
+          "water",
+          47
+        ],
+        [
+          "wire",
+          3
+        ],
+        [
+          "stand",
+          2
+        ],
+        [
+          "tap",
+          2
+        ],
+        [
+          "jug",
+          2
+        ]
+      ],
+      "medoid_text": "place kettle",
+      "exemplars": [
+        {
+          "text": "place kettle",
+          "count": 5
+        },
+        {
+          "text": "pick up kettle",
+          "count": 69
+        },
+        {
+          "text": "take kettle",
+          "count": 50
+        },
+        {
+          "text": "put down kettle",
+          "count": 50
+        },
+        {
+          "text": "turn on kettle",
+          "count": 48
+        },
+        {
+          "text": "open kettle",
+          "count": 31
+        },
+        {
+          "text": "put kettle",
+          "count": 29
+        },
+        {
+          "text": "close kettle",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "label": "turn-on / adjust: hob, pot, heat",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "monitor",
+      "size_unique": 102,
+      "size_total": 564,
+      "verb_top": [
+        [
+          "turn-on",
+          120
+        ],
+        [
+          "adjust",
+          98
+        ],
+        [
+          "wash",
+          93
+        ],
+        [
+          "turn-off",
+          80
+        ],
+        [
+          "put",
+          77
+        ]
+      ],
+      "noun_top": [
+        [
+          "hob",
+          500
+        ],
+        [
+          "pot",
+          31
+        ],
+        [
+          "heat",
+          25
+        ],
+        [
+          "maker:coffee",
+          2
+        ],
+        [
+          "lid",
+          1
+        ],
+        [
+          "liquid",
+          1
+        ]
+      ],
+      "medoid_text": "put down hob grill",
+      "exemplars": [
+        {
+          "text": "put down hob grill",
+          "count": 4
+        },
+        {
+          "text": "turn on hob",
+          "count": 100
+        },
+        {
+          "text": "adjust hob",
+          "count": 76
+        },
+        {
+          "text": "turn off hob",
+          "count": 72
+        },
+        {
+          "text": "clean hob",
+          "count": 40
+        },
+        {
+          "text": "turn down hob",
+          "count": 19
+        },
+        {
+          "text": "put down grid",
+          "count": 19
+        },
+        {
+          "text": "pick up grid",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "label": "take / put: box, lid, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 175,
+      "size_total": 543,
+      "verb_top": [
+        [
+          "take",
+          138
+        ],
+        [
+          "put",
+          103
+        ],
+        [
+          "insert",
+          84
+        ],
+        [
+          "wash",
+          52
+        ],
+        [
+          "open",
+          30
+        ]
+      ],
+      "noun_top": [
+        [
+          "box",
+          377
+        ],
+        [
+          "lid",
+          58
+        ],
+        [
+          "food",
+          21
+        ],
+        [
+          "pie",
+          13
+        ],
+        [
+          "coriander",
+          9
+        ],
+        [
+          "sauce",
+          5
+        ]
+      ],
+      "medoid_text": "put tupperware",
+      "exemplars": [
+        {
+          "text": "put tupperware",
+          "count": 16
+        },
+        {
+          "text": "pick up tupperware",
+          "count": 76
+        },
+        {
+          "text": "put down tupperware",
+          "count": 29
+        },
+        {
+          "text": "open tupperware",
+          "count": 28
+        },
+        {
+          "text": "rinse tupperware",
+          "count": 25
+        },
+        {
+          "text": "close tupperware",
+          "count": 24
+        },
+        {
+          "text": "take tupperware",
+          "count": 17
+        },
+        {
+          "text": "wash tupperware",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "cut / take: tomato, can, box",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 195,
+      "size_total": 530,
+      "verb_top": [
+        [
+          "cut",
+          147
+        ],
+        [
+          "take",
+          124
+        ],
+        [
+          "put",
+          61
+        ],
+        [
+          "wash",
+          38
+        ],
+        [
+          "insert",
+          36
+        ]
+      ],
+      "noun_top": [
+        [
+          "tomato",
+          491
+        ],
+        [
+          "can",
+          10
+        ],
+        [
+          "box",
+          8
+        ],
+        [
+          "sauce",
+          5
+        ],
+        [
+          "meat",
+          3
+        ],
+        [
+          "package",
+          3
+        ]
+      ],
+      "medoid_text": "put tomatoes away",
+      "exemplars": [
+        {
+          "text": "put tomatoes away",
+          "count": 1
+        },
+        {
+          "text": "cut tomato",
+          "count": 56
+        },
+        {
+          "text": "pick up tomato",
+          "count": 35
+        },
+        {
+          "text": "slice tomato",
+          "count": 18
+        },
+        {
+          "text": "take tomato",
+          "count": 18
+        },
+        {
+          "text": "pick up tomatoes",
+          "count": 13
+        },
+        {
+          "text": "scrape tomato",
+          "count": 12
+        },
+        {
+          "text": "put down tomatoes",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "label": "take / put: tray, rack:drying, oven",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 153,
+      "size_total": 525,
+      "verb_top": [
+        [
+          "take",
+          178
+        ],
+        [
+          "put",
+          166
+        ],
+        [
+          "insert",
+          39
+        ],
+        [
+          "wash",
+          26
+        ],
+        [
+          "move",
+          25
+        ]
+      ],
+      "noun_top": [
+        [
+          "tray",
+          491
+        ],
+        [
+          "rack:drying",
+          12
+        ],
+        [
+          "oven",
+          7
+        ],
+        [
+          "water",
+          4
+        ],
+        [
+          "foil",
+          4
+        ],
+        [
+          "sink",
+          2
+        ]
+      ],
+      "medoid_text": "put baking tray",
+      "exemplars": [
+        {
+          "text": "put baking tray",
+          "count": 1
+        },
+        {
+          "text": "pick up baking tray",
+          "count": 64
+        },
+        {
+          "text": "put down baking tray",
+          "count": 53
+        },
+        {
+          "text": "pick up tray",
+          "count": 49
+        },
+        {
+          "text": "put down tray",
+          "count": 25
+        },
+        {
+          "text": "rinse baking tray",
+          "count": 16
+        },
+        {
+          "text": "move tray",
+          "count": 16
+        },
+        {
+          "text": "slide tray",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "label": "pour / turn-on: water, tap, liquid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 119,
+      "size_total": 511,
+      "verb_top": [
+        [
+          "pour",
+          171
+        ],
+        [
+          "turn-on",
+          81
+        ],
+        [
+          "turn-off",
+          62
+        ],
+        [
+          "drink",
+          38
+        ],
+        [
+          "take",
+          32
+        ]
+      ],
+      "noun_top": [
+        [
+          "water",
+          316
+        ],
+        [
+          "tap",
+          155
+        ],
+        [
+          "liquid",
+          19
+        ],
+        [
+          "cup",
+          10
+        ],
+        [
+          "tray",
+          2
+        ],
+        [
+          "dishwasher",
+          1
+        ]
+      ],
+      "medoid_text": "pour water",
+      "exemplars": [
+        {
+          "text": "pour water",
+          "count": 105
+        },
+        {
+          "text": "drink water",
+          "count": 38
+        },
+        {
+          "text": "open water",
+          "count": 23
+        },
+        {
+          "text": "turn on water",
+          "count": 23
+        },
+        {
+          "text": "turn off water",
+          "count": 20
+        },
+        {
+          "text": "test water",
+          "count": 18
+        },
+        {
+          "text": "turn water on",
+          "count": 16
+        },
+        {
+          "text": "take water",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "label": "open / close: oven, alarm, heat",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 89,
+      "size_total": 489,
+      "verb_top": [
+        [
+          "open",
+          142
+        ],
+        [
+          "close",
+          128
+        ],
+        [
+          "set",
+          51
+        ],
+        [
+          "turn-on",
+          40
+        ],
+        [
+          "turn-off",
+          39
+        ]
+      ],
+      "noun_top": [
+        [
+          "oven",
+          364
+        ],
+        [
+          "alarm",
+          97
+        ],
+        [
+          "heat",
+          16
+        ],
+        [
+          "button",
+          3
+        ],
+        [
+          "hob",
+          3
+        ],
+        [
+          "machine:washing",
+          1
+        ]
+      ],
+      "medoid_text": "turn on oven timer",
+      "exemplars": [
+        {
+          "text": "turn on oven timer",
+          "count": 1
+        },
+        {
+          "text": "open oven",
+          "count": 131
+        },
+        {
+          "text": "close oven",
+          "count": 110
+        },
+        {
+          "text": "set timer",
+          "count": 24
+        },
+        {
+          "text": "turn on oven",
+          "count": 22
+        },
+        {
+          "text": "turn off oven",
+          "count": 21
+        },
+        {
+          "text": "close oven door",
+          "count": 17
+        },
+        {
+          "text": "set off timer",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "label": "take / put: package, box, wrap",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 162,
+      "size_total": 487,
+      "verb_top": [
+        [
+          "take",
+          123
+        ],
+        [
+          "put",
+          90
+        ],
+        [
+          "throw",
+          72
+        ],
+        [
+          "open",
+          69
+        ],
+        [
+          "insert",
+          44
+        ]
+      ],
+      "noun_top": [
+        [
+          "package",
+          239
+        ],
+        [
+          "box",
+          156
+        ],
+        [
+          "wrap",
+          36
+        ],
+        [
+          "mixture",
+          23
+        ],
+        [
+          "wrap:plastic",
+          15
+        ],
+        [
+          "rubbish",
+          5
+        ]
+      ],
+      "medoid_text": "throw plastic packaging",
+      "exemplars": [
+        {
+          "text": "throw plastic packaging",
+          "count": 1
+        },
+        {
+          "text": "open box",
+          "count": 34
+        },
+        {
+          "text": "put down package",
+          "count": 23
+        },
+        {
+          "text": "put mixture in wrap",
+          "count": 23
+        },
+        {
+          "text": "pick up box",
+          "count": 23
+        },
+        {
+          "text": "take box",
+          "count": 22
+        },
+        {
+          "text": "pick up package",
+          "count": 21
+        },
+        {
+          "text": "put down box",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "label": "take / throw: paper, foil, napkin",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 151,
+      "size_total": 485,
+      "verb_top": [
+        [
+          "take",
+          196
+        ],
+        [
+          "throw",
+          86
+        ],
+        [
+          "put",
+          67
+        ],
+        [
+          "rip",
+          28
+        ],
+        [
+          "cut",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "paper",
+          331
+        ],
+        [
+          "foil",
+          76
+        ],
+        [
+          "napkin",
+          37
+        ],
+        [
+          "towel:kitchen",
+          19
+        ],
+        [
+          "cake",
+          7
+        ],
+        [
+          "wrap:plastic",
+          6
+        ]
+      ],
+      "medoid_text": "pick up foil paper",
+      "exemplars": [
+        {
+          "text": "pick up foil paper",
+          "count": 2
+        },
+        {
+          "text": "pick up paper",
+          "count": 73
+        },
+        {
+          "text": "throw paper",
+          "count": 37
+        },
+        {
+          "text": "put down paper",
+          "count": 23
+        },
+        {
+          "text": "pick up tissue",
+          "count": 22
+        },
+        {
+          "text": "tear paper",
+          "count": 18
+        },
+        {
+          "text": "take paper",
+          "count": 18
+        },
+        {
+          "text": "throw away paper",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "label": "take / put: pepper, label, jar",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 184,
+      "size_total": 447,
+      "verb_top": [
+        [
+          "take",
+          103
+        ],
+        [
+          "put",
+          93
+        ],
+        [
+          "cut",
+          64
+        ],
+        [
+          "insert",
+          29
+        ],
+        [
+          "remove",
+          28
+        ]
+      ],
+      "noun_top": [
+        [
+          "pepper",
+          394
+        ],
+        [
+          "label",
+          10
+        ],
+        [
+          "jar",
+          7
+        ],
+        [
+          "lid",
+          7
+        ],
+        [
+          "cellar:salt",
+          7
+        ],
+        [
+          "chilli",
+          4
+        ]
+      ],
+      "medoid_text": "put pepper onto food",
+      "exemplars": [
+        {
+          "text": "put pepper onto food",
+          "count": 1
+        },
+        {
+          "text": "pick up pepper",
+          "count": 44
+        },
+        {
+          "text": "put down pepper",
+          "count": 28
+        },
+        {
+          "text": "take pepper",
+          "count": 19
+        },
+        {
+          "text": "chop pepper",
+          "count": 16
+        },
+        {
+          "text": "continue chopping pepper",
+          "count": 12
+        },
+        {
+          "text": "put pepper",
+          "count": 10
+        },
+        {
+          "text": "cut pepper",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "label": "take / put: colander, bean, pot",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 53,
+      "size_total": 411,
+      "verb_top": [
+        [
+          "take",
+          131
+        ],
+        [
+          "put",
+          119
+        ],
+        [
+          "wash",
+          86
+        ],
+        [
+          "insert",
+          24
+        ],
+        [
+          "move",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "colander",
+          404
+        ],
+        [
+          "bean",
+          2
+        ],
+        [
+          "pot",
+          2
+        ],
+        [
+          "water",
+          1
+        ],
+        [
+          "leek",
+          1
+        ],
+        [
+          "vegetable",
+          1
+        ]
+      ],
+      "medoid_text": "put colander away",
+      "exemplars": [
+        {
+          "text": "put colander away",
+          "count": 1
+        },
+        {
+          "text": "pick up colander",
+          "count": 78
+        },
+        {
+          "text": "put down colander",
+          "count": 72
+        },
+        {
+          "text": "rinse colander",
+          "count": 46
+        },
+        {
+          "text": "take colander",
+          "count": 37
+        },
+        {
+          "text": "wash colander",
+          "count": 27
+        },
+        {
+          "text": "put colander",
+          "count": 19
+        },
+        {
+          "text": "move colander",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "label": "put / take: jar, spreads, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 87,
+      "size_total": 407,
+      "verb_top": [
+        [
+          "put",
+          114
+        ],
+        [
+          "take",
+          90
+        ],
+        [
+          "open",
+          46
+        ],
+        [
+          "close",
+          45
+        ],
+        [
+          "move",
+          23
+        ]
+      ],
+      "noun_top": [
+        [
+          "jar",
+          355
+        ],
+        [
+          "spreads",
+          28
+        ],
+        [
+          "lid",
+          19
+        ],
+        [
+          "food",
+          1
+        ],
+        [
+          "water",
+          1
+        ],
+        [
+          "knife",
+          1
+        ]
+      ],
+      "medoid_text": "pick up jar of jam",
+      "exemplars": [
+        {
+          "text": "pick up jar of jam",
+          "count": 1
+        },
+        {
+          "text": "pick up jar",
+          "count": 63
+        },
+        {
+          "text": "put down jar",
+          "count": 62
+        },
+        {
+          "text": "close jar",
+          "count": 40
+        },
+        {
+          "text": "open jar",
+          "count": 39
+        },
+        {
+          "text": "move jar",
+          "count": 19
+        },
+        {
+          "text": "rinse jar",
+          "count": 14
+        },
+        {
+          "text": "put jar",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "take / put: mushroom, rubbish, apron",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 116,
+      "size_total": 397,
+      "verb_top": [
+        [
+          "take",
+          89
+        ],
+        [
+          "put",
+          65
+        ],
+        [
+          "insert",
+          52
+        ],
+        [
+          "cut",
+          41
+        ],
+        [
+          "mix",
+          39
+        ]
+      ],
+      "noun_top": [
+        [
+          "mushroom",
+          268
+        ],
+        [
+          "rubbish",
+          35
+        ],
+        [
+          "apron",
+          29
+        ],
+        [
+          "ladder",
+          18
+        ],
+        [
+          "pan:dust",
+          17
+        ],
+        [
+          "bin",
+          12
+        ]
+      ],
+      "medoid_text": "put down mushrooms and container",
+      "exemplars": [
+        {
+          "text": "put down mushrooms and container",
+          "count": 2
+        },
+        {
+          "text": "stir mushrooms",
+          "count": 38
+        },
+        {
+          "text": "put down mushroom",
+          "count": 30
+        },
+        {
+          "text": "take mushroom",
+          "count": 24
+        },
+        {
+          "text": "pick up mushroom",
+          "count": 23
+        },
+        {
+          "text": "slice mushroom",
+          "count": 19
+        },
+        {
+          "text": "wash mushroom",
+          "count": 18
+        },
+        {
+          "text": "pour mushrooms",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "label": "take / put: salad, bowl, sauce",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 174,
+      "size_total": 392,
+      "verb_top": [
+        [
+          "take",
+          102
+        ],
+        [
+          "put",
+          90
+        ],
+        [
+          "mix",
+          49
+        ],
+        [
+          "insert",
+          27
+        ],
+        [
+          "wash",
+          23
+        ]
+      ],
+      "noun_top": [
+        [
+          "salad",
+          196
+        ],
+        [
+          "bowl",
+          100
+        ],
+        [
+          "sauce",
+          19
+        ],
+        [
+          "leaf",
+          14
+        ],
+        [
+          "package",
+          13
+        ],
+        [
+          "oil",
+          12
+        ]
+      ],
+      "medoid_text": "put salad in the bowl",
+      "exemplars": [
+        {
+          "text": "put salad in the bowl",
+          "count": 1
+        },
+        {
+          "text": "put down salad bowl",
+          "count": 21
+        },
+        {
+          "text": "pick up salad",
+          "count": 20
+        },
+        {
+          "text": "stir salad",
+          "count": 18
+        },
+        {
+          "text": "pick up salad bowl",
+          "count": 18
+        },
+        {
+          "text": "mix salad",
+          "count": 16
+        },
+        {
+          "text": "take salad",
+          "count": 15
+        },
+        {
+          "text": "put down salad",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "label": "wash / empty: bowl, liquid:washing, water",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 91,
+      "size_total": 392,
+      "verb_top": [
+        [
+          "wash",
+          226
+        ],
+        [
+          "empty",
+          58
+        ],
+        [
+          "insert",
+          34
+        ],
+        [
+          "put",
+          32
+        ],
+        [
+          "take",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "bowl",
+          363
+        ],
+        [
+          "liquid:washing",
+          13
+        ],
+        [
+          "water",
+          5
+        ],
+        [
+          "clothes",
+          3
+        ],
+        [
+          "towel",
+          2
+        ],
+        [
+          "colander",
+          2
+        ]
+      ],
+      "medoid_text": "wash up bowl",
+      "exemplars": [
+        {
+          "text": "wash up bowl",
+          "count": 1
+        },
+        {
+          "text": "rinse bowl",
+          "count": 96
+        },
+        {
+          "text": "wash bowl",
+          "count": 63
+        },
+        {
+          "text": "empty washing up bowl",
+          "count": 28
+        },
+        {
+          "text": "empty bowl",
+          "count": 19
+        },
+        {
+          "text": "rinse washing up bowl",
+          "count": 14
+        },
+        {
+          "text": "put bowl in dishwasher",
+          "count": 12
+        },
+        {
+          "text": "pick up washing up bowl",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "label": "turn-on / press: button, light, phone",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 111,
+      "size_total": 387,
+      "verb_top": [
+        [
+          "turn-on",
+          101
+        ],
+        [
+          "press",
+          76
+        ],
+        [
+          "turn-off",
+          58
+        ],
+        [
+          "search",
+          40
+        ],
+        [
+          "turn",
+          26
+        ]
+      ],
+      "noun_top": [
+        [
+          "button",
+          99
+        ],
+        [
+          "light",
+          97
+        ],
+        [
+          "phone",
+          35
+        ],
+        [
+          "fan:extractor",
+          31
+        ],
+        [
+          "knob",
+          28
+        ],
+        [
+          "cupboard",
+          19
+        ]
+      ],
+      "medoid_text": "turn off",
+      "exemplars": [
+        {
+          "text": "turn off",
+          "count": 2
+        },
+        {
+          "text": "press button",
+          "count": 47
+        },
+        {
+          "text": "turn on light",
+          "count": 38
+        },
+        {
+          "text": "press switch",
+          "count": 24
+        },
+        {
+          "text": "turn off light",
+          "count": 23
+        },
+        {
+          "text": "turn knob",
+          "count": 19
+        },
+        {
+          "text": "searching",
+          "count": 13
+        },
+        {
+          "text": "turn on extractor fan",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "label": "take / break: chicken, package, stock",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 90,
+      "size_total": 383,
+      "verb_top": [
+        [
+          "take",
+          87
+        ],
+        [
+          "break",
+          51
+        ],
+        [
+          "cut",
+          49
+        ],
+        [
+          "put",
+          48
+        ],
+        [
+          "turn",
+          27
+        ]
+      ],
+      "noun_top": [
+        [
+          "chicken",
+          365
+        ],
+        [
+          "package",
+          11
+        ],
+        [
+          "stock",
+          2
+        ],
+        [
+          "water",
+          1
+        ],
+        [
+          "food",
+          1
+        ],
+        [
+          "burger",
+          1
+        ]
+      ],
+      "medoid_text": "put chicken into pan",
+      "exemplars": [
+        {
+          "text": "put chicken into pan",
+          "count": 1
+        },
+        {
+          "text": "shred chicken thighs",
+          "count": 27
+        },
+        {
+          "text": "take chicken thighs",
+          "count": 27
+        },
+        {
+          "text": "debone chicken thighs",
+          "count": 23
+        },
+        {
+          "text": "pick up chicken",
+          "count": 22
+        },
+        {
+          "text": "turn chicken",
+          "count": 21
+        },
+        {
+          "text": "slice chicken",
+          "count": 21
+        },
+        {
+          "text": "put down chicken",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "label": "take / pour: rice, container, bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 150,
+      "size_total": 377,
+      "verb_top": [
+        [
+          "take",
+          51
+        ],
+        [
+          "pour",
+          48
+        ],
+        [
+          "mix",
+          40
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "scoop",
+          31
+        ]
+      ],
+      "noun_top": [
+        [
+          "rice",
+          342
+        ],
+        [
+          "container",
+          11
+        ],
+        [
+          "bag",
+          10
+        ],
+        [
+          "water",
+          3
+        ],
+        [
+          "salt",
+          2
+        ],
+        [
+          "cup",
+          2
+        ]
+      ],
+      "medoid_text": "pour rice",
+      "exemplars": [
+        {
+          "text": "pour rice",
+          "count": 13
+        },
+        {
+          "text": "pick up rice",
+          "count": 26
+        },
+        {
+          "text": "stir rice",
+          "count": 25
+        },
+        {
+          "text": "put down rice",
+          "count": 18
+        },
+        {
+          "text": "continue breaking up rice",
+          "count": 16
+        },
+        {
+          "text": "taste rice",
+          "count": 12
+        },
+        {
+          "text": "take rice",
+          "count": 10
+        },
+        {
+          "text": "scoop rice",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "label": "put / take: butter, nut, bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 155,
+      "size_total": 354,
+      "verb_top": [
+        [
+          "put",
+          80
+        ],
+        [
+          "take",
+          71
+        ],
+        [
+          "apply",
+          42
+        ],
+        [
+          "insert",
+          21
+        ],
+        [
+          "cut",
+          17
+        ]
+      ],
+      "noun_top": [
+        [
+          "butter",
+          212
+        ],
+        [
+          "nut",
+          73
+        ],
+        [
+          "bag",
+          19
+        ],
+        [
+          "package",
+          10
+        ],
+        [
+          "box",
+          9
+        ],
+        [
+          "spreads",
+          8
+        ]
+      ],
+      "medoid_text": "put butter",
+      "exemplars": [
+        {
+          "text": "put butter",
+          "count": 5
+        },
+        {
+          "text": "put pine nuts on meat",
+          "count": 20
+        },
+        {
+          "text": "pick up butter",
+          "count": 19
+        },
+        {
+          "text": "spread butter on bread",
+          "count": 12
+        },
+        {
+          "text": "put down butter",
+          "count": 11
+        },
+        {
+          "text": "spread butter onto bread",
+          "count": 9
+        },
+        {
+          "text": "pick up pine nuts bag",
+          "count": 8
+        },
+        {
+          "text": "spread butter",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "label": "wash / scrub: pan, tray, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 52,
+      "size_total": 342,
+      "verb_top": [
+        [
+          "wash",
+          287
+        ],
+        [
+          "scrub",
+          19
+        ],
+        [
+          "dry",
+          18
+        ],
+        [
+          "scrape",
+          12
+        ],
+        [
+          "soak",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "pan",
+          323
+        ],
+        [
+          "tray",
+          7
+        ],
+        [
+          "food",
+          4
+        ],
+        [
+          "lid",
+          3
+        ],
+        [
+          "stock",
+          1
+        ],
+        [
+          "leaf",
+          1
+        ]
+      ],
+      "medoid_text": "wash pan",
+      "exemplars": [
+        {
+          "text": "wash pan",
+          "count": 80
+        },
+        {
+          "text": "rinse pan",
+          "count": 116
+        },
+        {
+          "text": "scrub pan",
+          "count": 16
+        },
+        {
+          "text": "wash frying pan",
+          "count": 16
+        },
+        {
+          "text": "dry pan",
+          "count": 15
+        },
+        {
+          "text": "continue washing pan",
+          "count": 8
+        },
+        {
+          "text": "still washing pan",
+          "count": 7
+        },
+        {
+          "text": "wash the pan",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "label": "open / close: dishwasher, plate, spoon",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 64,
+      "size_total": 329,
+      "verb_top": [
+        [
+          "open",
+          98
+        ],
+        [
+          "close",
+          93
+        ],
+        [
+          "insert",
+          75
+        ],
+        [
+          "pull",
+          19
+        ],
+        [
+          "put",
+          13
+        ]
+      ],
+      "noun_top": [
+        [
+          "dishwasher",
+          257
+        ],
+        [
+          "plate",
+          18
+        ],
+        [
+          "spoon",
+          16
+        ],
+        [
+          "liquid:washing",
+          10
+        ],
+        [
+          "tablet",
+          5
+        ],
+        [
+          "bowl",
+          4
+        ]
+      ],
+      "medoid_text": "take dishwasher out",
+      "exemplars": [
+        {
+          "text": "take dishwasher out",
+          "count": 1
+        },
+        {
+          "text": "open dishwasher",
+          "count": 79
+        },
+        {
+          "text": "close dishwasher",
+          "count": 69
+        },
+        {
+          "text": "close dishwasher drawer",
+          "count": 24
+        },
+        {
+          "text": "put in dishwasher",
+          "count": 21
+        },
+        {
+          "text": "open dishwasher drawer",
+          "count": 17
+        },
+        {
+          "text": "put plate in dishwasher",
+          "count": 13
+        },
+        {
+          "text": "pull out dishwasher drawer",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "label": "put / take: glove, water, spoon",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 97,
+      "size_total": 310,
+      "verb_top": [
+        [
+          "put",
+          104
+        ],
+        [
+          "take",
+          85
+        ],
+        [
+          "remove",
+          40
+        ],
+        [
+          "wear",
+          33
+        ],
+        [
+          "wash",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "glove",
+          297
+        ],
+        [
+          "water",
+          3
+        ],
+        [
+          "spoon",
+          2
+        ],
+        [
+          "liquid:washing",
+          2
+        ],
+        [
+          "rubber",
+          2
+        ],
+        [
+          "bag",
+          2
+        ]
+      ],
+      "medoid_text": "take off gloves",
+      "exemplars": [
+        {
+          "text": "take off gloves",
+          "count": 10
+        },
+        {
+          "text": "pick up oven glove",
+          "count": 14
+        },
+        {
+          "text": "put oven glove",
+          "count": 14
+        },
+        {
+          "text": "put on oven gloves",
+          "count": 13
+        },
+        {
+          "text": "take oven glove",
+          "count": 12
+        },
+        {
+          "text": "wear gloves",
+          "count": 12
+        },
+        {
+          "text": "wear glove",
+          "count": 11
+        },
+        {
+          "text": "take off glove",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "label": "take / put: liquid:washing, bottle, cap",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 56,
+      "size_total": 308,
+      "verb_top": [
+        [
+          "take",
+          123
+        ],
+        [
+          "put",
+          99
+        ],
+        [
+          "pour",
+          63
+        ],
+        [
+          "move",
+          8
+        ],
+        [
+          "close",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "liquid:washing",
+          284
+        ],
+        [
+          "bottle",
+          16
+        ],
+        [
+          "cap",
+          2
+        ],
+        [
+          "plate",
+          2
+        ],
+        [
+          "shelf",
+          1
+        ],
+        [
+          "top",
+          1
+        ]
+      ],
+      "medoid_text": "put washing up liquid",
+      "exemplars": [
+        {
+          "text": "put washing up liquid",
+          "count": 3
+        },
+        {
+          "text": "pick up washing up liquid",
+          "count": 64
+        },
+        {
+          "text": "put down washing up liquid",
+          "count": 54
+        },
+        {
+          "text": "pour washing up liquid",
+          "count": 47
+        },
+        {
+          "text": "pick up washing liquid",
+          "count": 21
+        },
+        {
+          "text": "put down washing liquid",
+          "count": 18
+        },
+        {
+          "text": "take washing up liquid",
+          "count": 16
+        },
+        {
+          "text": "pick up washing liquid bottle",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "take / flip: aubergine, celery, stalk",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 50,
+      "size_total": 301,
+      "verb_top": [
+        [
+          "take",
+          91
+        ],
+        [
+          "flip",
+          75
+        ],
+        [
+          "put",
+          75
+        ],
+        [
+          "cut",
+          25
+        ],
+        [
+          "wash",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "aubergine",
+          278
+        ],
+        [
+          "celery",
+          19
+        ],
+        [
+          "stalk",
+          2
+        ],
+        [
+          "leaf",
+          1
+        ],
+        [
+          "bin",
+          1
+        ]
+      ],
+      "medoid_text": "take out aubergine",
+      "exemplars": [
+        {
+          "text": "take out aubergine",
+          "count": 1
+        },
+        {
+          "text": "flip aubergine",
+          "count": 73
+        },
+        {
+          "text": "pick up aubergine",
+          "count": 65
+        },
+        {
+          "text": "put down aubergine",
+          "count": 58
+        },
+        {
+          "text": "take aubergine",
+          "count": 15
+        },
+        {
+          "text": "put aubergine onto plate",
+          "count": 8
+        },
+        {
+          "text": "cut aubergine",
+          "count": 7
+        },
+        {
+          "text": "wash aubergine",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "take / pour: flour, bag, dough",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 119,
+      "size_total": 301,
+      "verb_top": [
+        [
+          "take",
+          74
+        ],
+        [
+          "pour",
+          47
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "open",
+          14
+        ],
+        [
+          "mix",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "flour",
+          220
+        ],
+        [
+          "bag",
+          52
+        ],
+        [
+          "dough",
+          21
+        ],
+        [
+          "fish",
+          2
+        ],
+        [
+          "water",
+          2
+        ],
+        [
+          "hand",
+          1
+        ]
+      ],
+      "medoid_text": "put flour in bag",
+      "exemplars": [
+        {
+          "text": "put flour in bag",
+          "count": 1
+        },
+        {
+          "text": "pick up flour",
+          "count": 28
+        },
+        {
+          "text": "pour flour",
+          "count": 18
+        },
+        {
+          "text": "put down flour",
+          "count": 16
+        },
+        {
+          "text": "grab flour",
+          "count": 12
+        },
+        {
+          "text": "open flour",
+          "count": 10
+        },
+        {
+          "text": "spoon flour into tub",
+          "count": 8
+        },
+        {
+          "text": "take flour",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "label": "take / put: filter, jug, maker:coffee",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 126,
+      "size_total": 299,
+      "verb_top": [
+        [
+          "take",
+          65
+        ],
+        [
+          "put",
+          62
+        ],
+        [
+          "wash",
+          46
+        ],
+        [
+          "insert",
+          40
+        ],
+        [
+          "remove",
+          21
+        ]
+      ],
+      "noun_top": [
+        [
+          "filter",
+          192
+        ],
+        [
+          "jug",
+          47
+        ],
+        [
+          "maker:coffee",
+          46
+        ],
+        [
+          "water",
+          6
+        ],
+        [
+          "coffee",
+          5
+        ],
+        [
+          "lid",
+          1
+        ]
+      ],
+      "medoid_text": "put water filter",
+      "exemplars": [
+        {
+          "text": "put water filter",
+          "count": 4
+        },
+        {
+          "text": "rinse filter",
+          "count": 20
+        },
+        {
+          "text": "pick up water filter",
+          "count": 17
+        },
+        {
+          "text": "put down filter",
+          "count": 16
+        },
+        {
+          "text": "remove filter",
+          "count": 12
+        },
+        {
+          "text": "insert filter",
+          "count": 11
+        },
+        {
+          "text": "pick up filter",
+          "count": 11
+        },
+        {
+          "text": "put down water filter",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "label": "take / cut: peach, juicer, juice",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 95,
+      "size_total": 289,
+      "verb_top": [
+        [
+          "take",
+          72
+        ],
+        [
+          "cut",
+          58
+        ],
+        [
+          "peel",
+          46
+        ],
+        [
+          "put",
+          41
+        ],
+        [
+          "wash",
+          22
+        ]
+      ],
+      "noun_top": [
+        [
+          "peach",
+          171
+        ],
+        [
+          "juicer",
+          26
+        ],
+        [
+          "juice",
+          24
+        ],
+        [
+          "apple",
+          20
+        ],
+        [
+          "pear",
+          12
+        ],
+        [
+          "fruit",
+          9
+        ]
+      ],
+      "medoid_text": "pick up fruit juice",
+      "exemplars": [
+        {
+          "text": "pick up fruit juice",
+          "count": 6
+        },
+        {
+          "text": "cut peach",
+          "count": 49
+        },
+        {
+          "text": "peel peach",
+          "count": 46
+        },
+        {
+          "text": "pick up peach",
+          "count": 16
+        },
+        {
+          "text": "put down peach",
+          "count": 14
+        },
+        {
+          "text": "take peach",
+          "count": 9
+        },
+        {
+          "text": "rinse peach",
+          "count": 8
+        },
+        {
+          "text": "put peach",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "label": "adjust / turn-on: heat, hob, thermometer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "monitor",
+      "size_unique": 85,
+      "size_total": 288,
+      "verb_top": [
+        [
+          "adjust",
+          95
+        ],
+        [
+          "turn-on",
+          34
+        ],
+        [
+          "check",
+          29
+        ],
+        [
+          "turn-off",
+          25
+        ],
+        [
+          "feel",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "heat",
+          177
+        ],
+        [
+          "hob",
+          55
+        ],
+        [
+          "thermometer",
+          44
+        ],
+        [
+          "heater",
+          7
+        ],
+        [
+          "box",
+          2
+        ],
+        [
+          "hand",
+          1
+        ]
+      ],
+      "medoid_text": "put down thermometer",
+      "exemplars": [
+        {
+          "text": "put down thermometer",
+          "count": 12
+        },
+        {
+          "text": "adjust temperature",
+          "count": 30
+        },
+        {
+          "text": "adjust heat",
+          "count": 28
+        },
+        {
+          "text": "adjust gas",
+          "count": 16
+        },
+        {
+          "text": "adjust gas temperature",
+          "count": 14
+        },
+        {
+          "text": "pick up thermometer",
+          "count": 13
+        },
+        {
+          "text": "turn on gas",
+          "count": 10
+        },
+        {
+          "text": "turn off heat",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "label": "take / put: towel, towel:kitchen, kitchen",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 88,
+      "size_total": 281,
+      "verb_top": [
+        [
+          "take",
+          125
+        ],
+        [
+          "put",
+          58
+        ],
+        [
+          "fold",
+          13
+        ],
+        [
+          "insert",
+          13
+        ],
+        [
+          "throw",
+          12
+        ]
+      ],
+      "noun_top": [
+        [
+          "towel",
+          143
+        ],
+        [
+          "towel:kitchen",
+          134
+        ],
+        [
+          "kitchen",
+          1
+        ],
+        [
+          "pan",
+          1
+        ],
+        [
+          "hand",
+          1
+        ],
+        [
+          "roll",
+          1
+        ]
+      ],
+      "medoid_text": "get kitchen towel",
+      "exemplars": [
+        {
+          "text": "get kitchen towel",
+          "count": 17
+        },
+        {
+          "text": "pick up towel",
+          "count": 42
+        },
+        {
+          "text": "put down towel",
+          "count": 22
+        },
+        {
+          "text": "pick up kitchen roll",
+          "count": 18
+        },
+        {
+          "text": "put down kitchen roll",
+          "count": 15
+        },
+        {
+          "text": "take towel",
+          "count": 11
+        },
+        {
+          "text": "fold towel",
+          "count": 11
+        },
+        {
+          "text": "put towel",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "cut / take: cucumber, carrot, wrap:plastic",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 132,
+      "size_total": 266,
+      "verb_top": [
+        [
+          "cut",
+          59
+        ],
+        [
+          "take",
+          50
+        ],
+        [
+          "insert",
+          41
+        ],
+        [
+          "put",
+          25
+        ],
+        [
+          "wash",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "cucumber",
+          229
+        ],
+        [
+          "carrot",
+          24
+        ],
+        [
+          "wrap:plastic",
+          5
+        ],
+        [
+          "package",
+          4
+        ],
+        [
+          "salad",
+          2
+        ],
+        [
+          "soup",
+          1
+        ]
+      ],
+      "medoid_text": "cut the cucumber",
+      "exemplars": [
+        {
+          "text": "cut the cucumber",
+          "count": 2
+        },
+        {
+          "text": "slice cucumber",
+          "count": 24
+        },
+        {
+          "text": "pick up cucumber",
+          "count": 17
+        },
+        {
+          "text": "cut cucumber",
+          "count": 12
+        },
+        {
+          "text": "pick up piece of cucumber",
+          "count": 9
+        },
+        {
+          "text": "shovel up cucumbers",
+          "count": 7
+        },
+        {
+          "text": "put cucumbers in to bowl",
+          "count": 7
+        },
+        {
+          "text": "cut cucumbers",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "label": "take / put: rubbish, tomato, hob",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 126,
+      "size_total": 263,
+      "verb_top": [
+        [
+          "take",
+          95
+        ],
+        [
+          "put",
+          76
+        ],
+        [
+          "move",
+          39
+        ],
+        [
+          "throw",
+          27
+        ],
+        [
+          "remove",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "rubbish",
+          29
+        ],
+        [
+          "tomato",
+          24
+        ],
+        [
+          "hob",
+          20
+        ],
+        [
+          "drawer",
+          17
+        ],
+        [
+          "floor",
+          13
+        ],
+        [
+          "fridge",
+          12
+        ]
+      ],
+      "medoid_text": "put down stuff",
+      "exemplars": [
+        {
+          "text": "put down stuff",
+          "count": 1
+        },
+        {
+          "text": "throw away bits",
+          "count": 18
+        },
+        {
+          "text": "pick up",
+          "count": 15
+        },
+        {
+          "text": "put down",
+          "count": 9
+        },
+        {
+          "text": "put",
+          "count": 8
+        },
+        {
+          "text": "put down down support",
+          "count": 8
+        },
+        {
+          "text": "pick up object",
+          "count": 8
+        },
+        {
+          "text": "move objects",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "label": "put / take: oven, lid, cooker:slow",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 123,
+      "size_total": 259,
+      "verb_top": [
+        [
+          "put",
+          62
+        ],
+        [
+          "take",
+          33
+        ],
+        [
+          "turn-on",
+          29
+        ],
+        [
+          "adjust",
+          23
+        ],
+        [
+          "turn-off",
+          17
+        ]
+      ],
+      "noun_top": [
+        [
+          "oven",
+          75
+        ],
+        [
+          "lid",
+          63
+        ],
+        [
+          "cooker:slow",
+          46
+        ],
+        [
+          "bowl",
+          23
+        ],
+        [
+          "pan",
+          11
+        ],
+        [
+          "heat",
+          10
+        ]
+      ],
+      "medoid_text": "put on rice cooker",
+      "exemplars": [
+        {
+          "text": "put on rice cooker",
+          "count": 1
+        },
+        {
+          "text": "put down rice cooker lid",
+          "count": 16
+        },
+        {
+          "text": "pick up rice cooker lid",
+          "count": 13
+        },
+        {
+          "text": "turn off cooker",
+          "count": 13
+        },
+        {
+          "text": "adjust cooker",
+          "count": 13
+        },
+        {
+          "text": "turn on cooker",
+          "count": 12
+        },
+        {
+          "text": "light cooker",
+          "count": 9
+        },
+        {
+          "text": "change cooker temperature",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "put / take: fish, salmon, fishcakes",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 130,
+      "size_total": 258,
+      "verb_top": [
+        [
+          "put",
+          38
+        ],
+        [
+          "take",
+          36
+        ],
+        [
+          "insert",
+          34
+        ],
+        [
+          "remove",
+          28
+        ],
+        [
+          "cut",
+          21
+        ]
+      ],
+      "noun_top": [
+        [
+          "fish",
+          100
+        ],
+        [
+          "salmon",
+          67
+        ],
+        [
+          "fishcakes",
+          30
+        ],
+        [
+          "scale",
+          14
+        ],
+        [
+          "package",
+          12
+        ],
+        [
+          "stick:crab",
+          9
+        ]
+      ],
+      "medoid_text": "put the fish into the pan",
+      "exemplars": [
+        {
+          "text": "put the fish into the pan",
+          "count": 2
+        },
+        {
+          "text": "pick up salmon",
+          "count": 13
+        },
+        {
+          "text": "cut the fish",
+          "count": 12
+        },
+        {
+          "text": "remove the scale from the fish",
+          "count": 10
+        },
+        {
+          "text": "put down fish finger",
+          "count": 8
+        },
+        {
+          "text": "peel salmon",
+          "count": 7
+        },
+        {
+          "text": "stir vegetables into salmon",
+          "count": 7
+        },
+        {
+          "text": "unpack the crab stick",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "label": "take / put: lemon, juicer, lime",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 125,
+      "size_total": 258,
+      "verb_top": [
+        [
+          "take",
+          61
+        ],
+        [
+          "put",
+          39
+        ],
+        [
+          "squeeze",
+          32
+        ],
+        [
+          "cut",
+          23
+        ],
+        [
+          "wash",
+          19
+        ]
+      ],
+      "noun_top": [
+        [
+          "lemon",
+          113
+        ],
+        [
+          "juicer",
+          55
+        ],
+        [
+          "lime",
+          43
+        ],
+        [
+          "spreads",
+          15
+        ],
+        [
+          "skin",
+          10
+        ],
+        [
+          "mixture",
+          6
+        ]
+      ],
+      "medoid_text": "squeeze lemon",
+      "exemplars": [
+        {
+          "text": "squeeze lemon",
+          "count": 16
+        },
+        {
+          "text": "ladle lemon curd into clip top jar",
+          "count": 8
+        },
+        {
+          "text": "take lemon",
+          "count": 8
+        },
+        {
+          "text": "pick up lemon squeezer piece",
+          "count": 7
+        },
+        {
+          "text": "pick up lemon",
+          "count": 7
+        },
+        {
+          "text": "chop lime",
+          "count": 6
+        },
+        {
+          "text": "pick up lemon half",
+          "count": 5
+        },
+        {
+          "text": "get lemon",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "cut / mix: courgette, skin, pasta",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 53,
+      "size_total": 247,
+      "verb_top": [
+        [
+          "cut",
+          70
+        ],
+        [
+          "mix",
+          56
+        ],
+        [
+          "take",
+          39
+        ],
+        [
+          "wash",
+          17
+        ],
+        [
+          "put",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "courgette",
+          239
+        ],
+        [
+          "skin",
+          7
+        ],
+        [
+          "pasta",
+          1
+        ]
+      ],
+      "medoid_text": "get courgette",
+      "exemplars": [
+        {
+          "text": "get courgette",
+          "count": 1
+        },
+        {
+          "text": "stir courgette",
+          "count": 42
+        },
+        {
+          "text": "cut courgette",
+          "count": 28
+        },
+        {
+          "text": "stir courgettes",
+          "count": 14
+        },
+        {
+          "text": "slice courgette into pan",
+          "count": 11
+        },
+        {
+          "text": "put down courgette",
+          "count": 9
+        },
+        {
+          "text": "rinse courgette",
+          "count": 9
+        },
+        {
+          "text": "put courgette dice into wok",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "label": "take / put: towel, flour, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 61,
+      "size_total": 243,
+      "verb_top": [
+        [
+          "take",
+          87
+        ],
+        [
+          "put",
+          77
+        ],
+        [
+          "fold",
+          9
+        ],
+        [
+          "hang",
+          9
+        ],
+        [
+          "move",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "towel",
+          228
+        ],
+        [
+          "flour",
+          11
+        ],
+        [
+          "bowl",
+          2
+        ],
+        [
+          "dough",
+          1
+        ],
+        [
+          "liquid",
+          1
+        ]
+      ],
+      "medoid_text": "place tea towel",
+      "exemplars": [
+        {
+          "text": "place tea towel",
+          "count": 1
+        },
+        {
+          "text": "pick up tea towel",
+          "count": 62
+        },
+        {
+          "text": "put tea towel on oven door",
+          "count": 33
+        },
+        {
+          "text": "put down tea towel",
+          "count": 21
+        },
+        {
+          "text": "take tea towel",
+          "count": 14
+        },
+        {
+          "text": "fold tea towel",
+          "count": 9
+        },
+        {
+          "text": "hang tea towel",
+          "count": 7
+        },
+        {
+          "text": "rub flour into tea towel",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "label": "take / put: sugar, jar, spreads",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 119,
+      "size_total": 242,
+      "verb_top": [
+        [
+          "take",
+          78
+        ],
+        [
+          "put",
+          46
+        ],
+        [
+          "pour",
+          28
+        ],
+        [
+          "insert",
+          21
+        ],
+        [
+          "open",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "sugar",
+          118
+        ],
+        [
+          "jar",
+          33
+        ],
+        [
+          "spreads",
+          30
+        ],
+        [
+          "bowl",
+          14
+        ],
+        [
+          "box",
+          8
+        ],
+        [
+          "bread",
+          8
+        ]
+      ],
+      "medoid_text": "put sugar jar",
+      "exemplars": [
+        {
+          "text": "put sugar jar",
+          "count": 2
+        },
+        {
+          "text": "pick up sugar",
+          "count": 23
+        },
+        {
+          "text": "take sugar",
+          "count": 19
+        },
+        {
+          "text": "put sugar",
+          "count": 10
+        },
+        {
+          "text": "pour sugar",
+          "count": 9
+        },
+        {
+          "text": "put down sugar",
+          "count": 8
+        },
+        {
+          "text": "open sugar jar",
+          "count": 7
+        },
+        {
+          "text": "spoon sugar",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "label": "put / insert: plate, rack:drying, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 106,
+      "size_total": 236,
+      "verb_top": [
+        [
+          "put",
+          121
+        ],
+        [
+          "insert",
+          48
+        ],
+        [
+          "dry",
+          17
+        ],
+        [
+          "move",
+          12
+        ],
+        [
+          "wash",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "plate",
+          73
+        ],
+        [
+          "rack:drying",
+          67
+        ],
+        [
+          "lid",
+          17
+        ],
+        [
+          "glass",
+          9
+        ],
+        [
+          "colander",
+          9
+        ],
+        [
+          "cup",
+          9
+        ]
+      ],
+      "medoid_text": "put on dry rack",
+      "exemplars": [
+        {
+          "text": "put on dry rack",
+          "count": 1
+        },
+        {
+          "text": "dry plate",
+          "count": 16
+        },
+        {
+          "text": "put plate on drying rack",
+          "count": 12
+        },
+        {
+          "text": "put plate in drying rack",
+          "count": 10
+        },
+        {
+          "text": "put down drying rack",
+          "count": 8
+        },
+        {
+          "text": "move drying rack",
+          "count": 8
+        },
+        {
+          "text": "wash drying rack",
+          "count": 7
+        },
+        {
+          "text": "pull dish rack",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "label": "take / insert: tea, teapot, colander",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 160,
+      "size_total": 235,
+      "verb_top": [
+        [
+          "take",
+          74
+        ],
+        [
+          "insert",
+          40
+        ],
+        [
+          "put",
+          36
+        ],
+        [
+          "wash",
+          21
+        ],
+        [
+          "open",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "tea",
+          75
+        ],
+        [
+          "teapot",
+          57
+        ],
+        [
+          "colander",
+          39
+        ],
+        [
+          "rest",
+          22
+        ],
+        [
+          "box",
+          17
+        ],
+        [
+          "package",
+          8
+        ]
+      ],
+      "medoid_text": "put down teapot and teabag rest and mug",
+      "exemplars": [
+        {
+          "text": "put down teapot and teabag rest and mug",
+          "count": 1
+        },
+        {
+          "text": "pick up teapot",
+          "count": 10
+        },
+        {
+          "text": "put tea bag in cup",
+          "count": 5
+        },
+        {
+          "text": "pick up tea",
+          "count": 5
+        },
+        {
+          "text": "throw tea bag",
+          "count": 4
+        },
+        {
+          "text": "pick up tea infuser",
+          "count": 4
+        },
+        {
+          "text": "take tea box",
+          "count": 3
+        },
+        {
+          "text": "wash teabag holder",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "label": "shake / take: bottle, pot, powder",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 67,
+      "size_total": 232,
+      "verb_top": [
+        [
+          "shake",
+          179
+        ],
+        [
+          "take",
+          17
+        ],
+        [
+          "put",
+          13
+        ],
+        [
+          "lower",
+          6
+        ],
+        [
+          "turn-on",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "bottle",
+          48
+        ],
+        [
+          "pot",
+          46
+        ],
+        [
+          "powder",
+          25
+        ],
+        [
+          "lid",
+          19
+        ],
+        [
+          "glass",
+          15
+        ],
+        [
+          "filter",
+          8
+        ]
+      ],
+      "medoid_text": "shake container",
+      "exemplars": [
+        {
+          "text": "shake container",
+          "count": 8
+        },
+        {
+          "text": "shake bottle",
+          "count": 26
+        },
+        {
+          "text": "shake the pot",
+          "count": 23
+        },
+        {
+          "text": "shake lid",
+          "count": 19
+        },
+        {
+          "text": "shake glass",
+          "count": 15
+        },
+        {
+          "text": "shake pot",
+          "count": 9
+        },
+        {
+          "text": "shake filter",
+          "count": 8
+        },
+        {
+          "text": "put down powder",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "label": "take / put: chopstick, dough, cocktail",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 70,
+      "size_total": 220,
+      "verb_top": [
+        [
+          "take",
+          67
+        ],
+        [
+          "put",
+          60
+        ],
+        [
+          "wash",
+          19
+        ],
+        [
+          "slide",
+          16
+        ],
+        [
+          "fold",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "chopstick",
+          181
+        ],
+        [
+          "dough",
+          24
+        ],
+        [
+          "cocktail",
+          6
+        ],
+        [
+          "food",
+          4
+        ],
+        [
+          "oil",
+          2
+        ],
+        [
+          "hand",
+          1
+        ]
+      ],
+      "medoid_text": "use a chopstick",
+      "exemplars": [
+        {
+          "text": "use a chopstick",
+          "count": 1
+        },
+        {
+          "text": "pick up chopstick",
+          "count": 36
+        },
+        {
+          "text": "put down chopstick",
+          "count": 23
+        },
+        {
+          "text": "fold dough over chopstick",
+          "count": 15
+        },
+        {
+          "text": "put chopstick on dough",
+          "count": 14
+        },
+        {
+          "text": "move chopstick",
+          "count": 13
+        },
+        {
+          "text": "slide chopstick out of dough",
+          "count": 11
+        },
+        {
+          "text": "put down chopsticks",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "label": "take / move: tofu, towel:kitchen, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 65,
+      "size_total": 219,
+      "verb_top": [
+        [
+          "take",
+          52
+        ],
+        [
+          "move",
+          40
+        ],
+        [
+          "insert",
+          36
+        ],
+        [
+          "flip",
+          27
+        ],
+        [
+          "cut",
+          17
+        ]
+      ],
+      "noun_top": [
+        [
+          "tofu",
+          202
+        ],
+        [
+          "towel:kitchen",
+          6
+        ],
+        [
+          "package",
+          5
+        ],
+        [
+          "container",
+          3
+        ],
+        [
+          "wrap:plastic",
+          1
+        ],
+        [
+          "water",
+          1
+        ]
+      ],
+      "medoid_text": "put tofu in the pan",
+      "exemplars": [
+        {
+          "text": "put tofu in the pan",
+          "count": 1
+        },
+        {
+          "text": "pick up piece of tofu",
+          "count": 31
+        },
+        {
+          "text": "put piece of tofu in pan",
+          "count": 25
+        },
+        {
+          "text": "flip over piece of tofu",
+          "count": 24
+        },
+        {
+          "text": "move piece of tofu with spatula",
+          "count": 19
+        },
+        {
+          "text": "pick up tofu",
+          "count": 13
+        },
+        {
+          "text": "slice tofu",
+          "count": 12
+        },
+        {
+          "text": "put down tofu",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "take / put: leaf, choi:pak, sausage",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 106,
+      "size_total": 219,
+      "verb_top": [
+        [
+          "take",
+          67
+        ],
+        [
+          "put",
+          40
+        ],
+        [
+          "cut",
+          29
+        ],
+        [
+          "insert",
+          23
+        ],
+        [
+          "wash",
+          16
+        ]
+      ],
+      "noun_top": [
+        [
+          "leaf",
+          68
+        ],
+        [
+          "choi:pak",
+          59
+        ],
+        [
+          "sausage",
+          38
+        ],
+        [
+          "salami",
+          22
+        ],
+        [
+          "paprika",
+          18
+        ],
+        [
+          "package",
+          10
+        ]
+      ],
+      "medoid_text": "cut pak choi",
+      "exemplars": [
+        {
+          "text": "cut pak choi",
+          "count": 8
+        },
+        {
+          "text": "pick up pak choi leaf",
+          "count": 19
+        },
+        {
+          "text": "wash pak choi leaf",
+          "count": 12
+        },
+        {
+          "text": "pick up pak choi leaves",
+          "count": 9
+        },
+        {
+          "text": "put pak choi leaf into bowl",
+          "count": 8
+        },
+        {
+          "text": "put down pak choi leaf",
+          "count": 7
+        },
+        {
+          "text": "pick up pak choi",
+          "count": 7
+        },
+        {
+          "text": "move pak choi",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "label": "put / take: pizza, package, cutter:pizza",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 97,
+      "size_total": 212,
+      "verb_top": [
+        [
+          "put",
+          60
+        ],
+        [
+          "take",
+          57
+        ],
+        [
+          "cut",
+          32
+        ],
+        [
+          "insert",
+          17
+        ],
+        [
+          "remove",
+          12
+        ]
+      ],
+      "noun_top": [
+        [
+          "pizza",
+          156
+        ],
+        [
+          "package",
+          16
+        ],
+        [
+          "cutter:pizza",
+          15
+        ],
+        [
+          "tray",
+          11
+        ],
+        [
+          "food",
+          7
+        ],
+        [
+          "pepper",
+          3
+        ]
+      ],
+      "medoid_text": "put pizza onto tray",
+      "exemplars": [
+        {
+          "text": "put pizza onto tray",
+          "count": 1
+        },
+        {
+          "text": "cut pizza",
+          "count": 21
+        },
+        {
+          "text": "put down pizza",
+          "count": 13
+        },
+        {
+          "text": "pick up pizza",
+          "count": 11
+        },
+        {
+          "text": "take pizza",
+          "count": 8
+        },
+        {
+          "text": "put pizza in oven",
+          "count": 7
+        },
+        {
+          "text": "take pizza slice",
+          "count": 7
+        },
+        {
+          "text": "put pizza slice onto plate",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "label": "open / close: microwave, plate, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 62,
+      "size_total": 212,
+      "verb_top": [
+        [
+          "open",
+          65
+        ],
+        [
+          "close",
+          45
+        ],
+        [
+          "turn-on",
+          32
+        ],
+        [
+          "insert",
+          25
+        ],
+        [
+          "wash",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "microwave",
+          177
+        ],
+        [
+          "plate",
+          9
+        ],
+        [
+          "bowl",
+          8
+        ],
+        [
+          "cup",
+          7
+        ],
+        [
+          "food",
+          4
+        ],
+        [
+          "cover",
+          2
+        ]
+      ],
+      "medoid_text": "put food in microwave",
+      "exemplars": [
+        {
+          "text": "put food in microwave",
+          "count": 2
+        },
+        {
+          "text": "open microwave",
+          "count": 52
+        },
+        {
+          "text": "close microwave",
+          "count": 31
+        },
+        {
+          "text": "turn on microwave",
+          "count": 11
+        },
+        {
+          "text": "clean microwave",
+          "count": 10
+        },
+        {
+          "text": "close microwave door",
+          "count": 6
+        },
+        {
+          "text": "start microwave",
+          "count": 6
+        },
+        {
+          "text": "turn on microwave oven",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "take / put: cereal, box, bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 94,
+      "size_total": 207,
+      "verb_top": [
+        [
+          "take",
+          46
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "pour",
+          32
+        ],
+        [
+          "open",
+          29
+        ],
+        [
+          "insert",
+          28
+        ]
+      ],
+      "noun_top": [
+        [
+          "cereal",
+          135
+        ],
+        [
+          "box",
+          32
+        ],
+        [
+          "bag",
+          26
+        ],
+        [
+          "bar",
+          5
+        ],
+        [
+          "milk",
+          3
+        ],
+        [
+          "spoon",
+          2
+        ]
+      ],
+      "medoid_text": "take out cereal",
+      "exemplars": [
+        {
+          "text": "take out cereal",
+          "count": 1
+        },
+        {
+          "text": "pick up cereal",
+          "count": 12
+        },
+        {
+          "text": "put down cereals",
+          "count": 12
+        },
+        {
+          "text": "open cereal box",
+          "count": 8
+        },
+        {
+          "text": "put down cereal",
+          "count": 7
+        },
+        {
+          "text": "open cereal",
+          "count": 7
+        },
+        {
+          "text": "pour cereals",
+          "count": 6
+        },
+        {
+          "text": "take cereals",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "label": "take / put: package, box, tablet",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 103,
+      "size_total": 206,
+      "verb_top": [
+        [
+          "take",
+          65
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "insert",
+          25
+        ],
+        [
+          "open",
+          21
+        ],
+        [
+          "cut",
+          17
+        ]
+      ],
+      "noun_top": [
+        [
+          "package",
+          67
+        ],
+        [
+          "box",
+          63
+        ],
+        [
+          "tablet",
+          29
+        ],
+        [
+          "chocolate",
+          28
+        ],
+        [
+          "crisp",
+          12
+        ],
+        [
+          "fork",
+          2
+        ]
+      ],
+      "medoid_text": "grab crisp packet",
+      "exemplars": [
+        {
+          "text": "grab crisp packet",
+          "count": 1
+        },
+        {
+          "text": "open packet",
+          "count": 15
+        },
+        {
+          "text": "put lunch box",
+          "count": 13
+        },
+        {
+          "text": "cut chocolate piece",
+          "count": 12
+        },
+        {
+          "text": "pick up lunch box",
+          "count": 10
+        },
+        {
+          "text": "grab lunch box",
+          "count": 7
+        },
+        {
+          "text": "pick up packet",
+          "count": 6
+        },
+        {
+          "text": "take packet",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "label": "take / put: spice, jar, container",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 89,
+      "size_total": 197,
+      "verb_top": [
+        [
+          "take",
+          47
+        ],
+        [
+          "put",
+          40
+        ],
+        [
+          "pour",
+          26
+        ],
+        [
+          "open",
+          18
+        ],
+        [
+          "close",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "spice",
+          151
+        ],
+        [
+          "jar",
+          26
+        ],
+        [
+          "container",
+          7
+        ],
+        [
+          "paste",
+          4
+        ],
+        [
+          "drawer",
+          2
+        ],
+        [
+          "lid",
+          2
+        ]
+      ],
+      "medoid_text": "put spices",
+      "exemplars": [
+        {
+          "text": "put spices",
+          "count": 3
+        },
+        {
+          "text": "pick up spices",
+          "count": 8
+        },
+        {
+          "text": "close spice",
+          "count": 7
+        },
+        {
+          "text": "take spice",
+          "count": 7
+        },
+        {
+          "text": "open spice",
+          "count": 7
+        },
+        {
+          "text": "pour spice",
+          "count": 7
+        },
+        {
+          "text": "pick up spice",
+          "count": 6
+        },
+        {
+          "text": "pick up spice jar",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "take / throw: skin, peeler:potato, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 58,
+      "size_total": 194,
+      "verb_top": [
+        [
+          "take",
+          61
+        ],
+        [
+          "throw",
+          37
+        ],
+        [
+          "put",
+          27
+        ],
+        [
+          "remove",
+          18
+        ],
+        [
+          "wash",
+          16
+        ]
+      ],
+      "noun_top": [
+        [
+          "skin",
+          94
+        ],
+        [
+          "peeler:potato",
+          80
+        ],
+        [
+          "package",
+          6
+        ],
+        [
+          "knife",
+          5
+        ],
+        [
+          "rubbish",
+          3
+        ],
+        [
+          "melon",
+          3
+        ]
+      ],
+      "medoid_text": "put away peeler",
+      "exemplars": [
+        {
+          "text": "put away peeler",
+          "count": 1
+        },
+        {
+          "text": "put down peeler",
+          "count": 19
+        },
+        {
+          "text": "pick up peel",
+          "count": 18
+        },
+        {
+          "text": "pick up peeler",
+          "count": 17
+        },
+        {
+          "text": "throw peel",
+          "count": 12
+        },
+        {
+          "text": "remove peel",
+          "count": 12
+        },
+        {
+          "text": "take peeler",
+          "count": 12
+        },
+        {
+          "text": "rinse peeler",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "label": "wash / put: liquid:washing, glass, fork",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 55,
+      "size_total": 191,
+      "verb_top": [
+        [
+          "wash",
+          53
+        ],
+        [
+          "put",
+          45
+        ],
+        [
+          "take",
+          42
+        ],
+        [
+          "use",
+          16
+        ],
+        [
+          "pour",
+          15
+        ]
+      ],
+      "noun_top": [
+        [
+          "liquid:washing",
+          145
+        ],
+        [
+          "glass",
+          12
+        ],
+        [
+          "fork",
+          6
+        ],
+        [
+          "cup",
+          6
+        ],
+        [
+          "plate",
+          4
+        ],
+        [
+          "pan",
+          3
+        ]
+      ],
+      "medoid_text": "put soap on hand",
+      "exemplars": [
+        {
+          "text": "put soap on hand",
+          "count": 4
+        },
+        {
+          "text": "pick up soap",
+          "count": 34
+        },
+        {
+          "text": "use soap",
+          "count": 16
+        },
+        {
+          "text": "put on soap",
+          "count": 13
+        },
+        {
+          "text": "put down soap",
+          "count": 11
+        },
+        {
+          "text": "soap glass",
+          "count": 11
+        },
+        {
+          "text": "pour soap",
+          "count": 9
+        },
+        {
+          "text": "put soap on hands",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "label": "cut / take: chilli, oil, pith",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 85,
+      "size_total": 191,
+      "verb_top": [
+        [
+          "cut",
+          56
+        ],
+        [
+          "take",
+          48
+        ],
+        [
+          "put",
+          31
+        ],
+        [
+          "insert",
+          15
+        ],
+        [
+          "remove",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "chilli",
+          165
+        ],
+        [
+          "oil",
+          13
+        ],
+        [
+          "pith",
+          5
+        ],
+        [
+          "sausage",
+          3
+        ],
+        [
+          "jar",
+          2
+        ],
+        [
+          "lid",
+          1
+        ]
+      ],
+      "medoid_text": "put chilli in food",
+      "exemplars": [
+        {
+          "text": "put chilli in food",
+          "count": 1
+        },
+        {
+          "text": "chop chilli",
+          "count": 13
+        },
+        {
+          "text": "take green chilli",
+          "count": 11
+        },
+        {
+          "text": "pick up chilli",
+          "count": 9
+        },
+        {
+          "text": "continue chopping chilli",
+          "count": 9
+        },
+        {
+          "text": "slice chilli",
+          "count": 8
+        },
+        {
+          "text": "put green chilli",
+          "count": 7
+        },
+        {
+          "text": "put red chilli",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "cut / take: lettuce, avocado, leaf",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 86,
+      "size_total": 186,
+      "verb_top": [
+        [
+          "cut",
+          40
+        ],
+        [
+          "take",
+          36
+        ],
+        [
+          "put",
+          27
+        ],
+        [
+          "wash",
+          21
+        ],
+        [
+          "insert",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "lettuce",
+          104
+        ],
+        [
+          "avocado",
+          43
+        ],
+        [
+          "leaf",
+          26
+        ],
+        [
+          "package",
+          3
+        ],
+        [
+          "skin",
+          2
+        ],
+        [
+          "chilli",
+          2
+        ]
+      ],
+      "medoid_text": "put lettuce",
+      "exemplars": [
+        {
+          "text": "put lettuce",
+          "count": 7
+        },
+        {
+          "text": "pick up lettuce",
+          "count": 13
+        },
+        {
+          "text": "cut lettuce",
+          "count": 12
+        },
+        {
+          "text": "cut avocado",
+          "count": 9
+        },
+        {
+          "text": "wash lettuce leaf",
+          "count": 8
+        },
+        {
+          "text": "rinse lettuce",
+          "count": 8
+        },
+        {
+          "text": "take lettuce leaf",
+          "count": 6
+        },
+        {
+          "text": "cut lettuce into colander",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "label": "turn-on / wash: hob, heat, candle",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 53,
+      "size_total": 180,
+      "verb_top": [
+        [
+          "turn-on",
+          51
+        ],
+        [
+          "wash",
+          50
+        ],
+        [
+          "adjust",
+          37
+        ],
+        [
+          "turn-off",
+          25
+        ],
+        [
+          "set",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "hob",
+          159
+        ],
+        [
+          "heat",
+          14
+        ],
+        [
+          "candle",
+          5
+        ],
+        [
+          "clothes",
+          1
+        ],
+        [
+          "oil",
+          1
+        ]
+      ],
+      "medoid_text": "turn off stove",
+      "exemplars": [
+        {
+          "text": "turn off stove",
+          "count": 14
+        },
+        {
+          "text": "turn on stove",
+          "count": 30
+        },
+        {
+          "text": "clean stove top",
+          "count": 28
+        },
+        {
+          "text": "adjust flame",
+          "count": 17
+        },
+        {
+          "text": "adjust heat on stove",
+          "count": 10
+        },
+        {
+          "text": "wash stove",
+          "count": 9
+        },
+        {
+          "text": "adjust stove",
+          "count": 4
+        },
+        {
+          "text": "clean stove",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "label": "take / put: yoghurt, lid, spoon",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 61,
+      "size_total": 176,
+      "verb_top": [
+        [
+          "take",
+          46
+        ],
+        [
+          "put",
+          45
+        ],
+        [
+          "scoop",
+          25
+        ],
+        [
+          "open",
+          13
+        ],
+        [
+          "insert",
+          13
+        ]
+      ],
+      "noun_top": [
+        [
+          "yoghurt",
+          162
+        ],
+        [
+          "lid",
+          10
+        ],
+        [
+          "spoon",
+          2
+        ],
+        [
+          "bowl",
+          1
+        ],
+        [
+          "meat",
+          1
+        ]
+      ],
+      "medoid_text": "put yoghurt",
+      "exemplars": [
+        {
+          "text": "put yoghurt",
+          "count": 8
+        },
+        {
+          "text": "pick up yoghurt",
+          "count": 22
+        },
+        {
+          "text": "pick up yogurt",
+          "count": 13
+        },
+        {
+          "text": "put down yogurt",
+          "count": 10
+        },
+        {
+          "text": "scoop yoghurt",
+          "count": 9
+        },
+        {
+          "text": "open yoghurt",
+          "count": 8
+        },
+        {
+          "text": "put yoghurt onto plate",
+          "count": 7
+        },
+        {
+          "text": "put down yoghurt",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "label": "take / put: can, opener:bottle, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 95,
+      "size_total": 163,
+      "verb_top": [
+        [
+          "take",
+          44
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "wash",
+          31
+        ],
+        [
+          "open",
+          8
+        ],
+        [
+          "move",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "can",
+          108
+        ],
+        [
+          "opener:bottle",
+          22
+        ],
+        [
+          "lid",
+          10
+        ],
+        [
+          "tray",
+          10
+        ],
+        [
+          "knife",
+          4
+        ],
+        [
+          "cover",
+          3
+        ]
+      ],
+      "medoid_text": "pick up tin can",
+      "exemplars": [
+        {
+          "text": "pick up tin can",
+          "count": 9
+        },
+        {
+          "text": "put down tin can",
+          "count": 11
+        },
+        {
+          "text": "rinse can",
+          "count": 10
+        },
+        {
+          "text": "pick up can opener",
+          "count": 8
+        },
+        {
+          "text": "pick up tin",
+          "count": 5
+        },
+        {
+          "text": "open tin",
+          "count": 3
+        },
+        {
+          "text": "move tin",
+          "count": 3
+        },
+        {
+          "text": "pick up condensed milk tin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "put / take: wrap, hummus, bread",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 92,
+      "size_total": 157,
+      "verb_top": [
+        [
+          "put",
+          32
+        ],
+        [
+          "take",
+          23
+        ],
+        [
+          "open",
+          15
+        ],
+        [
+          "coat",
+          14
+        ],
+        [
+          "flip",
+          13
+        ]
+      ],
+      "noun_top": [
+        [
+          "wrap",
+          69
+        ],
+        [
+          "hummus",
+          40
+        ],
+        [
+          "bread",
+          12
+        ],
+        [
+          "sauce",
+          11
+        ],
+        [
+          "package",
+          9
+        ],
+        [
+          "cheese",
+          3
+        ]
+      ],
+      "medoid_text": "take tortilla",
+      "exemplars": [
+        {
+          "text": "take tortilla",
+          "count": 2
+        },
+        {
+          "text": "dip pitta piece into hummus",
+          "count": 12
+        },
+        {
+          "text": "flip tortilla",
+          "count": 10
+        },
+        {
+          "text": "open hummus",
+          "count": 9
+        },
+        {
+          "text": "closing the tortilla pack",
+          "count": 5
+        },
+        {
+          "text": "pick up hummus",
+          "count": 4
+        },
+        {
+          "text": "close hummus",
+          "count": 4
+        },
+        {
+          "text": "apply hummus",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "label": "take / put: cheese, bag, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 64,
+      "size_total": 150,
+      "verb_top": [
+        [
+          "take",
+          39
+        ],
+        [
+          "put",
+          26
+        ],
+        [
+          "cut",
+          23
+        ],
+        [
+          "open",
+          12
+        ],
+        [
+          "squeeze",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "cheese",
+          118
+        ],
+        [
+          "bag",
+          22
+        ],
+        [
+          "package",
+          8
+        ],
+        [
+          "liquid",
+          1
+        ],
+        [
+          "tomato",
+          1
+        ]
+      ],
+      "medoid_text": "take out mozzarella",
+      "exemplars": [
+        {
+          "text": "take out mozzarella",
+          "count": 1
+        },
+        {
+          "text": "pick up mozzarella",
+          "count": 19
+        },
+        {
+          "text": "cut mozzarella",
+          "count": 11
+        },
+        {
+          "text": "put down mozzarella",
+          "count": 11
+        },
+        {
+          "text": "take mozzarella",
+          "count": 10
+        },
+        {
+          "text": "put mozzarella",
+          "count": 5
+        },
+        {
+          "text": "squeeze bottom of mozzarella ball",
+          "count": 4
+        },
+        {
+          "text": "open mozzarella package",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "label": "press / put: scale, button, battery",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 50,
+      "size_total": 150,
+      "verb_top": [
+        [
+          "press",
+          37
+        ],
+        [
+          "put",
+          35
+        ],
+        [
+          "take",
+          30
+        ],
+        [
+          "turn-on",
+          9
+        ],
+        [
+          "move",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "scale",
+          84
+        ],
+        [
+          "button",
+          35
+        ],
+        [
+          "battery",
+          16
+        ],
+        [
+          "package",
+          7
+        ],
+        [
+          "bowl",
+          3
+        ],
+        [
+          "cover",
+          2
+        ]
+      ],
+      "medoid_text": "put down scales",
+      "exemplars": [
+        {
+          "text": "put down scales",
+          "count": 9
+        },
+        {
+          "text": "press button on scales",
+          "count": 24
+        },
+        {
+          "text": "pick up scale",
+          "count": 12
+        },
+        {
+          "text": "put down scale",
+          "count": 11
+        },
+        {
+          "text": "press button on scale",
+          "count": 11
+        },
+        {
+          "text": "pick up scales",
+          "count": 10
+        },
+        {
+          "text": "turn on scale",
+          "count": 5
+        },
+        {
+          "text": "move scales",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "take / put: broccoli, package, pan",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 80,
+      "size_total": 146,
+      "verb_top": [
+        [
+          "take",
+          32
+        ],
+        [
+          "put",
+          20
+        ],
+        [
+          "insert",
+          19
+        ],
+        [
+          "rip",
+          18
+        ],
+        [
+          "cut",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "broccoli",
+          136
+        ],
+        [
+          "package",
+          3
+        ],
+        [
+          "pan",
+          2
+        ],
+        [
+          "plate",
+          1
+        ],
+        [
+          "board:chopping",
+          1
+        ],
+        [
+          "water",
+          1
+        ]
+      ],
+      "medoid_text": "put broccoli down",
+      "exemplars": [
+        {
+          "text": "put broccoli down",
+          "count": 1
+        },
+        {
+          "text": "pick up broccoli",
+          "count": 10
+        },
+        {
+          "text": "tear floret off broccoli",
+          "count": 6
+        },
+        {
+          "text": "grab broccoli",
+          "count": 6
+        },
+        {
+          "text": "put down broccoli",
+          "count": 6
+        },
+        {
+          "text": "stir broccoli in pan",
+          "count": 5
+        },
+        {
+          "text": "tear broccoli floret in two",
+          "count": 4
+        },
+        {
+          "text": "put broccoli into pan",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "label": "take / turn: sausage, package, roll",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 64,
+      "size_total": 142,
+      "verb_top": [
+        [
+          "take",
+          35
+        ],
+        [
+          "turn",
+          17
+        ],
+        [
+          "cut",
+          14
+        ],
+        [
+          "put",
+          13
+        ],
+        [
+          "flip",
+          11
+        ]
+      ],
+      "noun_top": [
+        [
+          "sausage",
+          121
+        ],
+        [
+          "package",
+          9
+        ],
+        [
+          "roll",
+          6
+        ],
+        [
+          "quorn",
+          3
+        ],
+        [
+          "food",
+          1
+        ],
+        [
+          "dough",
+          1
+        ]
+      ],
+      "medoid_text": "take sausage",
+      "exemplars": [
+        {
+          "text": "take sausage",
+          "count": 2
+        },
+        {
+          "text": "pick up sausage",
+          "count": 14
+        },
+        {
+          "text": "flip sausage",
+          "count": 11
+        },
+        {
+          "text": "peel sausage",
+          "count": 10
+        },
+        {
+          "text": "turn sausage",
+          "count": 8
+        },
+        {
+          "text": "turn sausages",
+          "count": 7
+        },
+        {
+          "text": "slice sausage",
+          "count": 6
+        },
+        {
+          "text": "take sausages",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "label": "insert / take: spoon, fork, cutlery",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 60,
+      "size_total": 141,
+      "verb_top": [
+        [
+          "insert",
+          114
+        ],
+        [
+          "take",
+          11
+        ],
+        [
+          "put",
+          9
+        ],
+        [
+          "move",
+          3
+        ],
+        [
+          "turn",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "spoon",
+          91
+        ],
+        [
+          "fork",
+          23
+        ],
+        [
+          "cutlery",
+          9
+        ],
+        [
+          "knife",
+          6
+        ],
+        [
+          "tray",
+          5
+        ],
+        [
+          "tongs",
+          2
+        ]
+      ],
+      "medoid_text": "put spoon in cutlery tray",
+      "exemplars": [
+        {
+          "text": "put spoon in cutlery tray",
+          "count": 2
+        },
+        {
+          "text": "put spoon in drawer",
+          "count": 19
+        },
+        {
+          "text": "put fork in drawer",
+          "count": 15
+        },
+        {
+          "text": "put spoon in drying rack",
+          "count": 14
+        },
+        {
+          "text": "put teaspoon in drawer",
+          "count": 9
+        },
+        {
+          "text": "put spoon into drawer",
+          "count": 6
+        },
+        {
+          "text": "put cutlery in drawer",
+          "count": 4
+        },
+        {
+          "text": "put spoons in drawer",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "label": "mix / scoop: soup, sauce, spoon",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 67,
+      "size_total": 139,
+      "verb_top": [
+        [
+          "mix",
+          55
+        ],
+        [
+          "scoop",
+          28
+        ],
+        [
+          "pour",
+          24
+        ],
+        [
+          "put",
+          8
+        ],
+        [
+          "take",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "soup",
+          63
+        ],
+        [
+          "sauce",
+          48
+        ],
+        [
+          "spoon",
+          8
+        ],
+        [
+          "cheese",
+          8
+        ],
+        [
+          "bowl",
+          4
+        ],
+        [
+          "package",
+          2
+        ]
+      ],
+      "medoid_text": "stir sauce soup with spoon",
+      "exemplars": [
+        {
+          "text": "stir sauce soup with spoon",
+          "count": 1
+        },
+        {
+          "text": "stir sauce",
+          "count": 31
+        },
+        {
+          "text": "pour soup from mug into plastic bag",
+          "count": 11
+        },
+        {
+          "text": "scoop up soup into mug from saucepan",
+          "count": 7
+        },
+        {
+          "text": "stir soup using spoon",
+          "count": 7
+        },
+        {
+          "text": "stir soup",
+          "count": 4
+        },
+        {
+          "text": "scoop up soup into bowl using spoon",
+          "count": 4
+        },
+        {
+          "text": "scoop up sauce into bowl using spoon",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "take / put: biscuit, package, mixture",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 69,
+      "size_total": 128,
+      "verb_top": [
+        [
+          "take",
+          45
+        ],
+        [
+          "put",
+          17
+        ],
+        [
+          "insert",
+          14
+        ],
+        [
+          "open",
+          10
+        ],
+        [
+          "pour",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "biscuit",
+          100
+        ],
+        [
+          "package",
+          26
+        ],
+        [
+          "mixture",
+          2
+        ]
+      ],
+      "medoid_text": "put biscuits",
+      "exemplars": [
+        {
+          "text": "put biscuits",
+          "count": 2
+        },
+        {
+          "text": "pick up biscuits",
+          "count": 14
+        },
+        {
+          "text": "put down biscuits",
+          "count": 8
+        },
+        {
+          "text": "scoop biscuit powder from food processor into glass using spoon",
+          "count": 6
+        },
+        {
+          "text": "pick up biscuit",
+          "count": 5
+        },
+        {
+          "text": "put biscuits in cupboard",
+          "count": 4
+        },
+        {
+          "text": "move biscuits",
+          "count": 4
+        },
+        {
+          "text": "open cookies package",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "label": "mix / take: curry, leaf, powder",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 59,
+      "size_total": 127,
+      "verb_top": [
+        [
+          "mix",
+          62
+        ],
+        [
+          "take",
+          13
+        ],
+        [
+          "put",
+          13
+        ],
+        [
+          "insert",
+          9
+        ],
+        [
+          "squeeze",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "curry",
+          89
+        ],
+        [
+          "leaf",
+          21
+        ],
+        [
+          "powder",
+          9
+        ],
+        [
+          "salt",
+          3
+        ],
+        [
+          "chilli",
+          2
+        ],
+        [
+          "pepper",
+          1
+        ]
+      ],
+      "medoid_text": "mix the curry",
+      "exemplars": [
+        {
+          "text": "mix the curry",
+          "count": 5
+        },
+        {
+          "text": "mix curry",
+          "count": 30
+        },
+        {
+          "text": "mixing the curry",
+          "count": 20
+        },
+        {
+          "text": "take curry leaves",
+          "count": 4
+        },
+        {
+          "text": "put curry leaves",
+          "count": 4
+        },
+        {
+          "text": "take the curry leaves",
+          "count": 3
+        },
+        {
+          "text": "mixing in the curry",
+          "count": 3
+        },
+        {
+          "text": "continue transferring fish curry into box",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "label": "take / put: brush, liquid:washing, presser",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 56,
+      "size_total": 127,
+      "verb_top": [
+        [
+          "take",
+          50
+        ],
+        [
+          "put",
+          41
+        ],
+        [
+          "wash",
+          21
+        ],
+        [
+          "insert",
+          6
+        ],
+        [
+          "brush",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "brush",
+          118
+        ],
+        [
+          "liquid:washing",
+          5
+        ],
+        [
+          "presser",
+          2
+        ],
+        [
+          "liquid",
+          1
+        ],
+        [
+          "top",
+          1
+        ]
+      ],
+      "medoid_text": "clean with the brush",
+      "exemplars": [
+        {
+          "text": "clean with the brush",
+          "count": 2
+        },
+        {
+          "text": "pick up pastry brush",
+          "count": 22
+        },
+        {
+          "text": "put down pastry brush",
+          "count": 16
+        },
+        {
+          "text": "pick up brush",
+          "count": 8
+        },
+        {
+          "text": "take brush",
+          "count": 7
+        },
+        {
+          "text": "take the brush",
+          "count": 5
+        },
+        {
+          "text": "put down brush",
+          "count": 5
+        },
+        {
+          "text": "pick up washing up brush",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "take / mix: oatmeal, bread, package",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 76,
+      "size_total": 126,
+      "verb_top": [
+        [
+          "take",
+          25
+        ],
+        [
+          "mix",
+          17
+        ],
+        [
+          "insert",
+          14
+        ],
+        [
+          "put",
+          14
+        ],
+        [
+          "eat",
+          12
+        ]
+      ],
+      "noun_top": [
+        [
+          "oatmeal",
+          64
+        ],
+        [
+          "bread",
+          45
+        ],
+        [
+          "package",
+          4
+        ],
+        [
+          "bag",
+          3
+        ],
+        [
+          "water",
+          2
+        ],
+        [
+          "egg",
+          1
+        ]
+      ],
+      "medoid_text": "put oats in bowl",
+      "exemplars": [
+        {
+          "text": "put oats in bowl",
+          "count": 1
+        },
+        {
+          "text": "stir oats",
+          "count": 11
+        },
+        {
+          "text": "eat pitta piece",
+          "count": 10
+        },
+        {
+          "text": "take oats",
+          "count": 7
+        },
+        {
+          "text": "pick up pitta piece",
+          "count": 6
+        },
+        {
+          "text": "put oats in saucepan",
+          "count": 5
+        },
+        {
+          "text": "shake oats",
+          "count": 4
+        },
+        {
+          "text": "pick up pitta bread",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "take / flip: burger, tuna, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 54,
+      "size_total": 123,
+      "verb_top": [
+        [
+          "take",
+          37
+        ],
+        [
+          "flip",
+          19
+        ],
+        [
+          "put",
+          14
+        ],
+        [
+          "remove",
+          10
+        ],
+        [
+          "squeeze",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "burger",
+          68
+        ],
+        [
+          "tuna",
+          50
+        ],
+        [
+          "lid",
+          1
+        ],
+        [
+          "water",
+          1
+        ],
+        [
+          "mixture",
+          1
+        ],
+        [
+          "oregano",
+          1
+        ]
+      ],
+      "medoid_text": "take tuna patty out of pan",
+      "exemplars": [
+        {
+          "text": "take tuna patty out of pan",
+          "count": 6
+        },
+        {
+          "text": "pick up tuna mixture",
+          "count": 19
+        },
+        {
+          "text": "flip tuna burger",
+          "count": 11
+        },
+        {
+          "text": "flip tuna patty",
+          "count": 8
+        },
+        {
+          "text": "pick up tuna patty",
+          "count": 7
+        },
+        {
+          "text": "shape tuna patty",
+          "count": 6
+        },
+        {
+          "text": "squeeze into patty",
+          "count": 5
+        },
+        {
+          "text": "pick up tuna",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "take / put: blueberry, grape, blackberry",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 88,
+      "size_total": 117,
+      "verb_top": [
+        [
+          "take",
+          28
+        ],
+        [
+          "put",
+          19
+        ],
+        [
+          "wash",
+          17
+        ],
+        [
+          "insert",
+          15
+        ],
+        [
+          "remove",
+          11
+        ]
+      ],
+      "noun_top": [
+        [
+          "blueberry",
+          39
+        ],
+        [
+          "grape",
+          28
+        ],
+        [
+          "blackberry",
+          21
+        ],
+        [
+          "strawberry",
+          7
+        ],
+        [
+          "bag",
+          4
+        ],
+        [
+          "package",
+          4
+        ]
+      ],
+      "medoid_text": "taking out the blueberries and grapes",
+      "exemplars": [
+        {
+          "text": "taking out the blueberries and grapes",
+          "count": 1
+        },
+        {
+          "text": "pick up blackberry",
+          "count": 6
+        },
+        {
+          "text": "pick up grapes",
+          "count": 4
+        },
+        {
+          "text": "wash blackberry",
+          "count": 4
+        },
+        {
+          "text": "put blueberries in bowl",
+          "count": 4
+        },
+        {
+          "text": "rinse blueberries",
+          "count": 3
+        },
+        {
+          "text": "spoon blueberries",
+          "count": 3
+        },
+        {
+          "text": "put down blackberries",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "take / put: leaf, spinach, mint",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 65,
+      "size_total": 113,
+      "verb_top": [
+        [
+          "take",
+          36
+        ],
+        [
+          "put",
+          24
+        ],
+        [
+          "remove",
+          21
+        ],
+        [
+          "wash",
+          12
+        ],
+        [
+          "insert",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "leaf",
+          81
+        ],
+        [
+          "spinach",
+          19
+        ],
+        [
+          "mint",
+          7
+        ],
+        [
+          "stalk",
+          5
+        ],
+        [
+          "pepper",
+          1
+        ]
+      ],
+      "medoid_text": "remove the leaves",
+      "exemplars": [
+        {
+          "text": "remove the leaves",
+          "count": 1
+        },
+        {
+          "text": "remove leaf",
+          "count": 12
+        },
+        {
+          "text": "put down leaf",
+          "count": 9
+        },
+        {
+          "text": "pick up leaf",
+          "count": 8
+        },
+        {
+          "text": "pick up spinach",
+          "count": 5
+        },
+        {
+          "text": "put leaf",
+          "count": 4
+        },
+        {
+          "text": "wash spinach leaves",
+          "count": 4
+        },
+        {
+          "text": "place spinach",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "label": "pour / insert: pan, water, kettle",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 52,
+      "size_total": 107,
+      "verb_top": [
+        [
+          "pour",
+          51
+        ],
+        [
+          "insert",
+          26
+        ],
+        [
+          "fill",
+          7
+        ],
+        [
+          "put",
+          6
+        ],
+        [
+          "take",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "pan",
+          47
+        ],
+        [
+          "water",
+          44
+        ],
+        [
+          "kettle",
+          4
+        ],
+        [
+          "leek",
+          2
+        ],
+        [
+          "sauce",
+          2
+        ],
+        [
+          "food",
+          2
+        ]
+      ],
+      "medoid_text": "pour water into pan",
+      "exemplars": [
+        {
+          "text": "pour water into pan",
+          "count": 17
+        },
+        {
+          "text": "put pan in sink",
+          "count": 8
+        },
+        {
+          "text": "fill pan with water",
+          "count": 6
+        },
+        {
+          "text": "put pan in drainer",
+          "count": 6
+        },
+        {
+          "text": "pour kettle into pan",
+          "count": 4
+        },
+        {
+          "text": "place pan in sink",
+          "count": 4
+        },
+        {
+          "text": "pick up pan from drainer",
+          "count": 3
+        },
+        {
+          "text": "pour water in pan",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "label": "take / put: processor:food, cover, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 60,
+      "size_total": 100,
+      "verb_top": [
+        [
+          "take",
+          22
+        ],
+        [
+          "put",
+          14
+        ],
+        [
+          "lock",
+          11
+        ],
+        [
+          "turn-on",
+          10
+        ],
+        [
+          "open",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "processor:food",
+          55
+        ],
+        [
+          "cover",
+          21
+        ],
+        [
+          "bowl",
+          17
+        ],
+        [
+          "seed",
+          3
+        ],
+        [
+          "blender",
+          2
+        ],
+        [
+          "lid",
+          1
+        ]
+      ],
+      "medoid_text": "place away food processor",
+      "exemplars": [
+        {
+          "text": "place away food processor",
+          "count": 1
+        },
+        {
+          "text": "turn on food processor",
+          "count": 6
+        },
+        {
+          "text": "turn off food processor",
+          "count": 6
+        },
+        {
+          "text": "pick up food processor cover",
+          "count": 6
+        },
+        {
+          "text": "pick up food processor bowl",
+          "count": 5
+        },
+        {
+          "text": "get food processor",
+          "count": 4
+        },
+        {
+          "text": "open food processor",
+          "count": 4
+        },
+        {
+          "text": "open food processor cover",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "label": "take / put: wrap:plastic, roll, box",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 53,
+      "size_total": 98,
+      "verb_top": [
+        [
+          "take",
+          31
+        ],
+        [
+          "put",
+          18
+        ],
+        [
+          "remove",
+          13
+        ],
+        [
+          "unroll",
+          9
+        ],
+        [
+          "cut",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "wrap:plastic",
+          88
+        ],
+        [
+          "roll",
+          3
+        ],
+        [
+          "box",
+          2
+        ],
+        [
+          "lid",
+          2
+        ],
+        [
+          "bowl",
+          1
+        ],
+        [
+          "lime",
+          1
+        ]
+      ],
+      "medoid_text": "put down cling film",
+      "exemplars": [
+        {
+          "text": "put down cling film",
+          "count": 6
+        },
+        {
+          "text": "pick up cling film",
+          "count": 18
+        },
+        {
+          "text": "cut cling film",
+          "count": 7
+        },
+        {
+          "text": "unroll cling film",
+          "count": 6
+        },
+        {
+          "text": "pick up film",
+          "count": 4
+        },
+        {
+          "text": "put cling film on tub",
+          "count": 3
+        },
+        {
+          "text": "remove cling film",
+          "count": 3
+        },
+        {
+          "text": "put down film",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "put / insert: corn, package, water",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 65,
+      "size_total": 85,
+      "verb_top": [
+        [
+          "put",
+          13
+        ],
+        [
+          "insert",
+          12
+        ],
+        [
+          "take",
+          12
+        ],
+        [
+          "turn",
+          10
+        ],
+        [
+          "remove",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "corn",
+          70
+        ],
+        [
+          "package",
+          9
+        ],
+        [
+          "water",
+          2
+        ],
+        [
+          "container",
+          1
+        ],
+        [
+          "cupboard",
+          1
+        ],
+        [
+          "pan",
+          1
+        ]
+      ],
+      "medoid_text": "turn corn",
+      "exemplars": [
+        {
+          "text": "turn corn",
+          "count": 1
+        },
+        {
+          "text": "put corn pieces into bowl",
+          "count": 4
+        },
+        {
+          "text": "turn corncob",
+          "count": 3
+        },
+        {
+          "text": "turn cobs",
+          "count": 3
+        },
+        {
+          "text": "put sweet corn",
+          "count": 3
+        },
+        {
+          "text": "take sweet corn",
+          "count": 2
+        },
+        {
+          "text": "move corn cobs",
+          "count": 2
+        },
+        {
+          "text": "put on corncob",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}
