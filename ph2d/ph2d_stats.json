@@ -1,0 +1,397 @@
+{
+  "work": "HAT / PH2D",
+  "annotation_type": [
+    "task-instruction"
+  ],
+  "counts": {
+    "labelled_segments": 1848,
+    "sessions": 42,
+    "unique_narrations_clean": 28,
+    "vocab_size_tokens": 67,
+    "distinct_verbs": 2,
+    "human_episodes": 1184,
+    "humanoid_episodes": 614,
+    "sim_other_episodes": 50
+  },
+  "length": {
+    "tokens_mean": 21.036,
+    "tokens_median": 16.0,
+    "tokens_p90": 35.10000000000001,
+    "tokens_max": 40,
+    "chars_mean": 103.214,
+    "chars_median": 81.0,
+    "token_hist": [
+      [
+        4,
+        1
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        17,
+        2
+      ],
+      [
+        19,
+        1
+      ],
+      [
+        20,
+        2
+      ]
+    ]
+  },
+  "density": {
+    "episodes_per_session": 44.0
+  },
+  "granularity_tier": "task-instruction: one task description per session (coarse, task-level), shared across many episodes; human and humanoid embodiments",
+  "verb_top": [
+    [
+      "grasp",
+      16
+    ],
+    [
+      "pick",
+      12
+    ]
+  ],
+  "noun_top": [
+    [
+      "black",
+      9
+    ],
+    [
+      "bottle",
+      4
+    ],
+    [
+      "white",
+      3
+    ],
+    [
+      "red",
+      2
+    ],
+    [
+      "pepsi",
+      2
+    ],
+    [
+      "blue",
+      1
+    ],
+    [
+      "pink",
+      1
+    ],
+    [
+      "clementine",
+      1
+    ],
+    [
+      "colorful",
+      1
+    ],
+    [
+      "brown",
+      1
+    ],
+    [
+      "plastic",
+      1
+    ],
+    [
+      "transfer",
+      1
+    ],
+    [
+      "coca",
+      1
+    ]
+  ],
+  "verb_category_dist": [
+    [
+      "grasp",
+      16
+    ],
+    [
+      "pick",
+      12
+    ]
+  ],
+  "noun_category_dist": [
+    [
+      "black",
+      9
+    ],
+    [
+      "bottle",
+      4
+    ],
+    [
+      "white",
+      3
+    ],
+    [
+      "red",
+      2
+    ],
+    [
+      "pepsi",
+      2
+    ],
+    [
+      "blue",
+      1
+    ],
+    [
+      "pink",
+      1
+    ],
+    [
+      "clementine",
+      1
+    ],
+    [
+      "colorful",
+      1
+    ],
+    [
+      "brown",
+      1
+    ],
+    [
+      "plastic",
+      1
+    ],
+    [
+      "transfer",
+      1
+    ],
+    [
+      "coca",
+      1
+    ]
+  ],
+  "word_top": [
+    [
+      "plastic",
+      23
+    ],
+    [
+      "bottle",
+      22
+    ],
+    [
+      "black",
+      16
+    ],
+    [
+      "bin",
+      16
+    ],
+    [
+      "hand,",
+      16
+    ],
+    [
+      "cup",
+      16
+    ],
+    [
+      "chocolate",
+      10
+    ],
+    [
+      "box",
+      8
+    ],
+    [
+      "pour",
+      8
+    ],
+    [
+      "cup,",
+      8
+    ],
+    [
+      "plate",
+      6
+    ],
+    [
+      "yellow",
+      5
+    ],
+    [
+      "table",
+      5
+    ],
+    [
+      "blue",
+      4
+    ],
+    [
+      "purple",
+      4
+    ],
+    [
+      "white",
+      4
+    ],
+    [
+      "gray",
+      4
+    ],
+    [
+      "tea",
+      4
+    ],
+    [
+      "dynamixel",
+      3
+    ],
+    [
+      "back,",
+      3
+    ],
+    [
+      "water",
+      3
+    ],
+    [
+      "red",
+      3
+    ],
+    [
+      "mat",
+      2
+    ],
+    [
+      "cube",
+      2
+    ],
+    [
+      "zed",
+      2
+    ],
+    [
+      "glass",
+      2
+    ],
+    [
+      "mtn",
+      2
+    ],
+    [
+      "pepsi",
+      2
+    ],
+    [
+      "green",
+      2
+    ],
+    [
+      "coke",
+      1
+    ],
+    [
+      "pink",
+      1
+    ],
+    [
+      "cylindrical",
+      1
+    ],
+    [
+      "container",
+      1
+    ],
+    [
+      "camera",
+      1
+    ],
+    [
+      "clementine",
+      1
+    ],
+    [
+      "socket",
+      1
+    ],
+    [
+      "party",
+      1
+    ],
+    [
+      "colorful",
+      1
+    ],
+    [
+      "toy",
+      1
+    ],
+    [
+      "brown",
+      1
+    ]
+  ],
+  "embodiment_dist": [
+    [
+      "human",
+      1184
+    ],
+    [
+      "humanoid",
+      614
+    ],
+    [
+      "sim/other",
+      50
+    ]
+  ],
+  "embodiment_raw_dist": [
+    [
+      "human_avp",
+      1140
+    ],
+    [
+      "h1_inspire",
+      560
+    ],
+    [
+      "h1_inspire_sim",
+      54
+    ],
+    [
+      "sim_aloha",
+      50
+    ],
+    [
+      "human_zed",
+      44
+    ]
+  ],
+  "clusters": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "n_clusters": 3,
+    "noise_share_unique": 0.0,
+    "noise_share_weighted": 0.0,
+    "largest_total": 1482,
+    "median_total": 253
+  }
+}

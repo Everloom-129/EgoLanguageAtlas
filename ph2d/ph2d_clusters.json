@@ -1,0 +1,202 @@
+{
+  "work": "HAT / PH2D",
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "umap_viz": {
+      "n_components": 2,
+      "n_neighbors": 8,
+      "min_dist": 0.1,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "umap_cluster": {
+      "n_components": 5,
+      "n_neighbors": 8,
+      "min_dist": 0.0,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "hdbscan": {
+      "min_cluster_size": 2,
+      "min_samples": 1,
+      "metric": "euclidean",
+      "cluster_selection_method": "eom"
+    },
+    "n_points": 28
+  },
+  "n_clusters": 3,
+  "noise_unique": 0,
+  "noise_share_unique": 0.0,
+  "noise_share_weighted": 0.0,
+  "clusters": [
+    {
+      "id": 0,
+      "label": "pick / grasp: black, white, blue",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 20,
+      "size_total": 1482,
+      "verb_top": [
+        [
+          "pick",
+          881
+        ],
+        [
+          "grasp",
+          601
+        ]
+      ],
+      "noun_top": [
+        [
+          "black",
+          506
+        ],
+        [
+          "white",
+          207
+        ],
+        [
+          "blue",
+          161
+        ],
+        [
+          "pink",
+          111
+        ],
+        [
+          "pepsi",
+          110
+        ],
+        [
+          "clementine",
+          74
+        ]
+      ],
+      "medoid_text": "grasp a blue coke bottle with the right hand and place it in the plastic bin",
+      "exemplars": [
+        {
+          "text": "grasp a blue coke bottle with the right hand and place it in the plastic bin",
+          "count": 161
+        },
+        {
+          "text": "pick a black dynamixel box with the right hand on the yellow mat and place it in the plastic bin",
+          "count": 165
+        },
+        {
+          "text": "pick a pink cube with the right hand and place it in the plastic bin",
+          "count": 111
+        },
+        {
+          "text": "pick a black dynamixel box with the right hand on the purple mat and place it in the plastic bin",
+          "count": 109
+        },
+        {
+          "text": "grasp a white cylindrical container with the right hand and place it in the plastic bin",
+          "count": 96
+        },
+        {
+          "text": "grasp a black and white ZED camera box with the right hand and place it in a plastic box",
+          "count": 89
+        },
+        {
+          "text": "pick up a clementine and place it in the plastic bin",
+          "count": 74
+        },
+        {
+          "text": "pick a white black dynamixel box with the right hand and place it in the plastic bin",
+          "count": 59
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "grasp: black, red, bottle",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "grasp",
+      "size_unique": 5,
+      "size_total": 253,
+      "verb_top": [
+        [
+          "grasp",
+          253
+        ]
+      ],
+      "noun_top": [
+        [
+          "black",
+          176
+        ],
+        [
+          "red",
+          58
+        ],
+        [
+          "bottle",
+          19
+        ]
+      ],
+      "medoid_text": "grasp a black chocolate bottle on the yellow plate with the right hand, grasp a gray plastic cup with the left hand, pour the black chocolate into the cup, place the cup back, place the bottle on the purple plate",
+      "exemplars": [
+        {
+          "text": "grasp a black chocolate bottle on the yellow plate with the right hand, grasp a gray plastic cup with the left hand, pour the black chocolate into the cup, place the cup back, place the bottle on the purple plate",
+          "count": 94
+        },
+        {
+          "text": "grasp a red mtn bottle on the yellow plate with the right hand, grasp a gray plastic cup with the left hand, pour the black chocolate into the cup, place the cup back, place the bottle on the purple plate",
+          "count": 58
+        },
+        {
+          "text": "grasp a black chocolate bottle on the yellow plate with the right hand, grasp a red party cup with the left hand, pour the black chocolate into the cup, place the cup back, place the bottle on the purple plate",
+          "count": 58
+        },
+        {
+          "text": "grasp a black chocolate bottle with the right hand, grasp a gray plastic cup with the left hand, pour black chocolate into the cup, place the cup and the bottle on the table",
+          "count": 24
+        },
+        {
+          "text": "grasp a bottle of black chocolate with the right hand, grasp a black plastic cup with the left hand, pour chocolate into the cup, place the cup and the bottle on the table",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "grasp: bottle",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "grasp",
+      "size_unique": 3,
+      "size_total": 113,
+      "verb_top": [
+        [
+          "grasp",
+          113
+        ]
+      ],
+      "noun_top": [
+        [
+          "bottle",
+          113
+        ]
+      ],
+      "medoid_text": "grasp a bottle of green tea with the right hand, grasp a blue glass cup with the left hand, pour tea into the cup, place the cup and the bottle on the table",
+      "exemplars": [
+        {
+          "text": "grasp a bottle of green tea with the right hand, grasp a blue glass cup with the left hand, pour tea into the cup, place the cup and the bottle on the table",
+          "count": 20
+        },
+        {
+          "text": "grasp a bottle of water with the right hand, grasp a blue glass cup with the left hand, pour water into the cup, place the cup and the bottle on the table",
+          "count": 72
+        },
+        {
+          "text": "grasp a bottle of green tea with the right hand, grasp a blue plastic cup with the left hand, pour tea into the cup, place the cup and the bottle on the table",
+          "count": 21
+        }
+      ]
+    }
+  ]
+}

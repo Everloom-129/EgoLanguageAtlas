@@ -1,0 +1,14 @@
+{
+  "work": "HAT / PH2D",
+  "route": "huggingface (hdf5 attributes only)",
+  "repo": "https://huggingface.co/datasets/RogerQi/PH2D",
+  "episodes_total": 1848,
+  "sessions": 42,
+  "sessions_read": 42,
+  "per_session_sampled": 2,
+  "access_utc": "2026-06-29T23:36:02.821978+00:00",
+  "license": "MIT",
+  "license_url": "https://opensource.org/license/mit",
+  "language_attr": "description",
+  "source_dataset": "PH2D (own egocentric capture)"
+}
