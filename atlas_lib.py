@@ -17,7 +17,11 @@ from __future__ import annotations
 import html
 import json
 
-# Semantic-family colors (verb categories), restrained palette on light paper.
+# Semantic-family colors (the EPIC verb categories), restrained palette on light
+# paper. Works that color by EPIC verb family hit these directly; works that color
+# by a derived category (head verb, question type) fall back to PALETTE by a stable
+# hash so each distinct category still gets its own color. JS uses the identical
+# palette and hash so the cluster-table chips (Python) and scatter (JS) match.
 CATCOLORS = {
     "retrieve": "#2b6cb0", "leave": "#dd6b20", "clean": "#38a169",
     "access": "#805ad5", "split": "#d53f8c", "merge": "#d69e2e",
@@ -25,14 +29,36 @@ CATCOLORS = {
     "transition": "#4a5568", "sense": "#3182ce", "distribute": "#2c7a7b",
     "order": "#975a16", "_noise": "#c2cad6",
 }
+PALETTE = ["#2b6cb0", "#dd6b20", "#38a169", "#805ad5", "#d53f8c", "#d69e2e",
+           "#319795", "#e53e3e", "#3182ce", "#2c7a7b", "#975a16", "#b83280",
+           "#4c51bf", "#0987a0", "#9c4221", "#5a67d8"]
+
+
+def hash_color(cat):
+    return PALETTE[sum(ord(c) for c in str(cat)) % len(PALETTE)]
 
 
 def cat_color(cat):
-    return CATCOLORS.get(cat, "#64748b")
+    if cat in CATCOLORS:
+        return CATCOLORS[cat]
+    if cat == "_noise" or not cat:
+        return "#c2cad6"
+    return hash_color(cat)
+
+
+# House style: no em/en/figure/minus dashes in visible text. Normalize any to a
+# plain hyphen so even raw annotation data (e.g. an EgoSchema question with an
+# em-dash) renders within house style. Applied to all rendered HTML via esc and
+# to the embedded JSON via data_scripts.
+_DASH = {0x2012: "-", 0x2013: "-", 0x2014: "-", 0x2015: "-", 0x2212: "-", 0x2011: "-"}
+
+
+def dedash(s):
+    return str(s).translate(_DASH)
 
 
 def esc(s):
-    return html.escape(str(s), quote=True)
+    return html.escape(dedash(s), quote=True)
 
 
 def chip(text, cls=""):
@@ -347,8 +373,8 @@ def footer(num, meta, t, cfg):
 def data_scripts(points, clusters, ljs):
     cmap = {str(c["id"]): {"l": c["label"], "c": c["verb_category"],
                           "n": c["size_total"], "u": c["size_unique"]} for c in clusters}
-    pj = json.dumps(points, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    cj = json.dumps(cmap, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    pj = dedash(json.dumps(points, ensure_ascii=False, separators=(",", ":"))).replace("</", "<\\/")
+    cj = dedash(json.dumps(cmap, ensure_ascii=False, separators=(",", ":"))).replace("</", "<\\/")
     catj = json.dumps(CATCOLORS, ensure_ascii=False)
     lj = json.dumps(ljs, ensure_ascii=False)
     return (
@@ -495,8 +521,11 @@ label{font-size:11px;color:var(--muted);display:inline-flex;gap:5px;align-items:
 
 JS_APP = r"""
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const PALETTE=["#2b6cb0","#dd6b20","#38a169","#805ad5","#d53f8c","#d69e2e","#319795","#e53e3e","#3182ce","#2c7a7b","#975a16","#b83280","#4c51bf","#0987a0","#9c4221","#5a67d8"];
+function hashColor(cat){let s=0;const t=String(cat);for(let i=0;i<t.length;i++)s+=t.charCodeAt(i);return PALETTE[s%PALETTE.length];}
+function catColor(cat){if(cat==='_noise'||!cat)return '#c2cad6';if(CATCOLORS[cat])return CATCOLORS[cat];return hashColor(cat);}
 function catOf(cid){if(cid<0)return '_noise';const m=CMAP[cid];return m?m.c:'_noise';}
-function colorOf(cid){return CATCOLORS[catOf(cid)]||'#64748b';}
+function colorOf(cid){return catColor(catOf(cid));}
 let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity;
 for(const p of POINTS){if(p[0]<minX)minX=p[0];if(p[0]>maxX)maxX=p[0];if(p[1]<minY)minY=p[1];if(p[1]>maxY)maxY=p[1];}
 {const dx=(maxX-minX)*0.04||1,dy=(maxY-minY)*0.04||1;minX-=dx;maxX+=dx;minY-=dy;maxY+=dy;}
@@ -582,7 +611,7 @@ function hover(){
   for(const cat of cats){
     const el=document.createElement('span');el.className='legitem';
     const nm=cat==='_noise'?L.noise:cat;
-    el.innerHTML='<span class="sw" style="background:'+(CATCOLORS[cat]||'#64748b')+'"></span>'+escapeHtml(nm);
+    el.innerHTML='<span class="sw" style="background:'+catColor(cat)+'"></span>'+escapeHtml(nm);
     el.onclick=()=>{if(state.offCats.has(cat)){state.offCats.delete(cat);el.classList.remove('off');}else{state.offCats.add(cat);el.classList.add('off');}renderBase();blit();};
     leg.appendChild(el);
   }

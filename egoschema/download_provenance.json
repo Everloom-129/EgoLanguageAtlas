@@ -1,0 +1,30 @@
+{
+  "work": "EgoSchema",
+  "route": "github-raw",
+  "repo": "https://github.com/egoschema/EgoSchema",
+  "branch": "main",
+  "commit_sha": "505c787376b5e066d0ae406d0e0d41245cebba15",
+  "access_utc": "2026-06-29T20:24:15.370489+00:00",
+  "files": [
+    {
+      "file": "questions.json",
+      "bytes": 4562127,
+      "status": "ok"
+    },
+    {
+      "file": "subset_answers.json",
+      "bytes": 21500,
+      "status": "ok"
+    },
+    {
+      "file": "uid_to_ego4d.json",
+      "bytes": 682800,
+      "status": "ok"
+    }
+  ],
+  "n_questions": 5031,
+  "n_public_answers": 500,
+  "license": "Ego4D License (questions LLM-generated then human-curated)",
+  "license_url": "https://ego4ddataset.com/",
+  "source_dataset": "Ego4D"
+}

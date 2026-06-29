@@ -1,0 +1,5970 @@
+{
+  "work": "EgoSchema",
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "umap_viz": {
+      "n_components": 2,
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "umap_cluster": {
+      "n_components": 5,
+      "n_neighbors": 15,
+      "min_dist": 0.0,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "hdbscan": {
+      "min_cluster_size": 12,
+      "min_samples": 4,
+      "metric": "euclidean",
+      "cluster_selection_method": "eom"
+    },
+    "n_points": 5027
+  },
+  "n_clusters": 67,
+  "noise_unique": 1028,
+  "noise_share_unique": 0.2045,
+  "noise_share_weighted": 0.2043,
+  "clusters": [
+    {
+      "id": 1,
+      "label": "describe / what: objective, process, context",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 847,
+      "size_total": 847,
+      "verb_top": [
+        [
+          "describe",
+          377
+        ],
+        [
+          "what",
+          295
+        ],
+        [
+          "which",
+          73
+        ],
+        [
+          "how",
+          71
+        ],
+        [
+          "other",
+          17
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          35
+        ],
+        [
+          "process",
+          35
+        ],
+        [
+          "context",
+          31
+        ],
+        [
+          "events",
+          25
+        ],
+        [
+          "goal",
+          22
+        ],
+        [
+          "three",
+          20
+        ]
+      ],
+      "medoid_text": "Could you provide a concise summary of the two main categories of actions that occur throughout the video, illustrating their significance to the overall objective?",
+      "exemplars": [
+        {
+          "text": "Could you provide a concise summary of the two main categories of actions that occur throughout the video, illustrating their significance to the overall objective?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, which moments, or series of moments, can be considered most significant in determining the main character's purpose for engaging with the clothes and the hamper in the various rooms?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching theme of the video, considering the activities performed by both characters?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary activity that occurs multiple times in the video, and how does it relate to the overall context?",
+          "count": 1
+        },
+        {
+          "text": "Which key sequence of actions can be inferred as the most critical in the video, based on the way various items are organized or processed before being put away?",
+          "count": 1
+        },
+        {
+          "text": "From the actions observed in the video, what do you think is the primary setting and purpose of the scene? explain your reasoning without listing individual actions.",
+          "count": 1
+        },
+        {
+          "text": "What is the overall goal of the actions demonstrated in the video, and how does the character accomplish that goal?",
+          "count": 1
+        },
+        {
+          "text": "Based on important moments and actions, what would you conclude is the primary goal/objective of the video's content?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "describe / what: steps, process, compare",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 208,
+      "size_total": 208,
+      "verb_top": [
+        [
+          "describe",
+          93
+        ],
+        [
+          "what",
+          67
+        ],
+        [
+          "how",
+          18
+        ],
+        [
+          "which",
+          17
+        ],
+        [
+          "other",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "steps",
+          24
+        ],
+        [
+          "process",
+          18
+        ],
+        [
+          "compare",
+          8
+        ],
+        [
+          "ingredients",
+          8
+        ],
+        [
+          "cooking",
+          7
+        ],
+        [
+          "context",
+          6
+        ]
+      ],
+      "medoid_text": "Based on c's actions in the video, which actions were essential to the overall cooking process, and how do these actions contribute to the dish preparation?",
+      "exemplars": [
+        {
+          "text": "Based on c's actions in the video, which actions were essential to the overall cooking process, and how do these actions contribute to the dish preparation?",
+          "count": 1
+        },
+        {
+          "text": "Based on the character's actions, what progression of actions led to consuming a snack and preparing a hot beverage? summarize the essential steps the character took in order to achieve these objectives.",
+          "count": 1
+        },
+        {
+          "text": "Based on the repeated actions and emphasis on certain tasks, identify the most crucial elements of c's food preparation technique that contribute to the final dish's quality.",
+          "count": 1
+        },
+        {
+          "text": "Can you summarize the main steps c took to cook the dish with cream both at the beginning and later stages of the video?",
+          "count": 1
+        },
+        {
+          "text": "How did c ensure the final mixture was well-blended and ready, and what indications were there that it was complete?",
+          "count": 1
+        },
+        {
+          "text": "Out of all the actions that took place, identify the most significant one related to food preparation and explain its importance in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Which parts of this video sequence would you consider the most essential for successful food preparation,? provide a brief rationale for your choices.",
+          "count": 1
+        },
+        {
+          "text": "What sequence of events led to the cooking pan being covered with a lid, and how did the process reflect the character's organizational skills when performing these actions?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "label": "describe / what: process, significant, steps",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 179,
+      "size_total": 179,
+      "verb_top": [
+        [
+          "describe",
+          96
+        ],
+        [
+          "what",
+          48
+        ],
+        [
+          "how",
+          21
+        ],
+        [
+          "which",
+          5
+        ],
+        [
+          "other",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          25
+        ],
+        [
+          "significant",
+          7
+        ],
+        [
+          "steps",
+          7
+        ],
+        [
+          "compare",
+          7
+        ],
+        [
+          "techniques",
+          6
+        ],
+        [
+          "painting",
+          4
+        ]
+      ],
+      "medoid_text": "Describe the overall progression and pattern of c's actions related to painting throughout the video and how their strategy might contribute to the creative process.",
+      "exemplars": [
+        {
+          "text": "Describe the overall progression and pattern of c's actions related to painting throughout the video and how their strategy might contribute to the creative process.",
+          "count": 1
+        },
+        {
+          "text": "What was the primary purpose of the cup of water in this video, and how did it contribute to the overall painting process?",
+          "count": 1
+        },
+        {
+          "text": "Based on the reoccurring process seen in the video, describe the typical sequence of actions performed by c relating to the coconut shell and paintbrush. why might c be doing this?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the video and identify the most significant actions c performed, explaining why they were important to the art creation process as a whole.",
+          "count": 1
+        },
+        {
+          "text": "Describe the process c used to prepare the paint and brush for painting and how he minimized mess throughout the preparation.",
+          "count": 1
+        },
+        {
+          "text": "Considering c's interaction with their tools and their environment, what role do the laptop and the cellphone play in c's creation process and how do they influence the way the individual paints on the canvas?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the process c uses to prepare her brush for painting and how it contributes to the artwork's quality.",
+          "count": 1
+        },
+        {
+          "text": "Considering the main actions involving the paint sprayer, summarize the key steps c took to utilize and manipulate the device without listing all the individual actions.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "label": "what / describe: between, compare, roles",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 171,
+      "size_total": 172,
+      "verb_top": [
+        [
+          "what",
+          72
+        ],
+        [
+          "describe",
+          64
+        ],
+        [
+          "how",
+          26
+        ],
+        [
+          "other",
+          4
+        ],
+        [
+          "which",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "between",
+          36
+        ],
+        [
+          "compare",
+          9
+        ],
+        [
+          "roles",
+          6
+        ],
+        [
+          "engaged",
+          5
+        ],
+        [
+          "central",
+          3
+        ],
+        [
+          "your",
+          3
+        ]
+      ],
+      "medoid_text": "What are the key interactions between c and the man throughout the video, and how do these interactions contribute to the main activity they are engaged in?",
+      "exemplars": [
+        {
+          "text": "What are the key interactions between c and the man throughout the video, and how do these interactions contribute to the main activity they are engaged in?",
+          "count": 1
+        },
+        {
+          "text": "What were the two main activities the man and c were engaged in throughout the video?",
+          "count": 2
+        },
+        {
+          "text": "Considering the various interactions between character c and the man, how did their relationship evolve throughout the video? provide a summary focusing on the nature of their exchanges.",
+          "count": 1
+        },
+        {
+          "text": "In the context of this video, identify and explain the significance of the interpersonal communication between the man and c throughout the video. how does their interaction affect the overall progress of their task?",
+          "count": 1
+        },
+        {
+          "text": "Can you provide a compressed summary of the key events that occur between c and the man on the wooden bridge?",
+          "count": 1
+        },
+        {
+          "text": "Throughout the video, there is an interaction between c and a man. in the context of the entire video, how significant is this interaction? explain the impact it might have on the overall understanding of the video.",
+          "count": 1
+        },
+        {
+          "text": "Describe the primary interaction between the male and c throughout the video. how does this interaction contribute to the overall sequence of events?",
+          "count": 1
+        },
+        {
+          "text": "What is the central theme of the video, and how do the interactions between c and the man evolve in terms of their cooperation throughout the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "label": "describe / what: moments, turning, critical",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 171,
+      "size_total": 171,
+      "verb_top": [
+        [
+          "describe",
+          140
+        ],
+        [
+          "what",
+          16
+        ],
+        [
+          "which",
+          12
+        ],
+        [
+          "who",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "moments",
+          33
+        ],
+        [
+          "turning",
+          21
+        ],
+        [
+          "critical",
+          13
+        ],
+        [
+          "three",
+          13
+        ],
+        [
+          "significant",
+          11
+        ],
+        [
+          "moment",
+          7
+        ]
+      ],
+      "medoid_text": "Identify the key turning points in the video where c takes new actions, and explain the potential significance of these moments in the overall narrative of the video.",
+      "exemplars": [
+        {
+          "text": "Identify the key turning points in the video where c takes new actions, and explain the potential significance of these moments in the overall narrative of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify one or two key moments in the video where c's actions stand out as unique or especially significant, and explain why these moments are important in the context of the overall video.",
+          "count": 1
+        },
+        {
+          "text": "In the context of the video, what key moments or turning points are indicative of progress or change in c's actions? explain the significance of these moments.",
+          "count": 1
+        },
+        {
+          "text": "Identify and analyze two critical moments in the video where c deviates from the repeated task of painting the cornice, explaining the possible reasons for those deviations.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video, identify the two most critical actions/events c engages in, and explain the significance of these moments.",
+          "count": 1
+        },
+        {
+          "text": "Identify one crucial moment in the video where c makes a significant transition in their actions, and explain how this change affects the subsequent events.",
+          "count": 1
+        },
+        {
+          "text": "Taking into account all of c's actions and the sequence of events in the video, describe the critical turning points in the video and explain how they determine the direction and outcome of c's actions.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the video and identify a key moment in which the character c's actions reveal a change in their behavior or focus. explain the significance of this shift in the context of the video.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "label": "describe / what: steps, process, compare",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 153,
+      "size_total": 153,
+      "verb_top": [
+        [
+          "describe",
+          61
+        ],
+        [
+          "what",
+          38
+        ],
+        [
+          "how",
+          28
+        ],
+        [
+          "which",
+          21
+        ],
+        [
+          "other",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "steps",
+          9
+        ],
+        [
+          "process",
+          7
+        ],
+        [
+          "compare",
+          7
+        ],
+        [
+          "context",
+          6
+        ],
+        [
+          "ensure",
+          6
+        ],
+        [
+          "cleaning",
+          6
+        ]
+      ],
+      "medoid_text": "Can you briefly describe the primary task performed by c throughout the video, and explain the steps they took to ensure cleanliness in the process?",
+      "exemplars": [
+        {
+          "text": "Can you briefly describe the primary task performed by c throughout the video, and explain the steps they took to ensure cleanliness in the process?",
+          "count": 1
+        },
+        {
+          "text": "Which key steps in the video indicate c's attention to maintaining cleanliness and order in his/her environment aside from directly cleaning the objects?",
+          "count": 1
+        },
+        {
+          "text": "What were the key steps c took in cleaning the dog mat from start to finish, and what tools were used in the process?",
+          "count": 1
+        },
+        {
+          "text": "Describe the process c uses to clean objects in the video while focusing on the recurring pattern of actions.",
+          "count": 1
+        },
+        {
+          "text": "Compare and contrast the different techniques c used for cleaning various items within the video, and explain why each one was appropriate for the situation.",
+          "count": 1
+        },
+        {
+          "text": "Can you identify and summarize the key stages that c goes through in cleaning and organizing the kitchen items?",
+          "count": 1
+        },
+        {
+          "text": "Can you provide a comprehensive yet concise summary of the cleaning activities in the video while emphasizing the role of the various cleaning tools utilized by c?",
+          "count": 1
+        },
+        {
+          "text": "What sequence of tools and techniques does c use to clean the bicycle throughout the video, and why might this order be significant for an effective cleaning process?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "label": "what / describe: between, woman, context",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 145,
+      "size_total": 145,
+      "verb_top": [
+        [
+          "what",
+          57
+        ],
+        [
+          "describe",
+          53
+        ],
+        [
+          "how",
+          24
+        ],
+        [
+          "other",
+          7
+        ],
+        [
+          "which",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "between",
+          33
+        ],
+        [
+          "woman",
+          13
+        ],
+        [
+          "context",
+          6
+        ],
+        [
+          "woman's",
+          5
+        ],
+        [
+          "objective",
+          5
+        ],
+        [
+          "ways",
+          3
+        ]
+      ],
+      "medoid_text": "What is the primary focus of the interactions between c and the woman in the video, and how do their actions complement one another?",
+      "exemplars": [
+        {
+          "text": "What is the primary focus of the interactions between c and the woman in the video, and how do their actions complement one another?",
+          "count": 1
+        },
+        {
+          "text": "What are the most noticeable activities by the lady and the letter \"c\" character in the video, and how do they interact?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching task that c is performing throughout the video and how does the lady's brief appearance contribute to this process?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions observed in the video, what underlying theme is shared between the actions of c and the woman? extraize the overarching purpose which unifies these actions.",
+          "count": 1
+        },
+        {
+          "text": "Taking into account the actions and interactions between c, the woman, and the other characters, outline the key progression of events and the role that the communication played in this development.",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the primary goal or process that c and the woman are engaged in as they interact with the onions and potatoes within the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the interactions between the woman and c, and considering their actions and the objects they interact with, what is the most likely context of the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the players' actions with the pool cue and their movements around the table, what can you infer about the dynamic between c and the woman and their respective gameplay strategies?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "label": "describe / what: process, steps, infer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 119,
+      "size_total": 119,
+      "verb_top": [
+        [
+          "describe",
+          50
+        ],
+        [
+          "what",
+          47
+        ],
+        [
+          "how",
+          13
+        ],
+        [
+          "which",
+          5
+        ],
+        [
+          "other",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          20
+        ],
+        [
+          "steps",
+          15
+        ],
+        [
+          "infer",
+          6
+        ],
+        [
+          "compare",
+          5
+        ],
+        [
+          "context",
+          3
+        ],
+        [
+          "terms",
+          3
+        ]
+      ],
+      "medoid_text": "Based on what you observed in the video, describe the overall process c went through in order to work with the wood. what were the main steps and tools utilized by c?",
+      "exemplars": [
+        {
+          "text": "Based on what you observed in the video, describe the overall process c went through in order to work with the wood. what were the main steps and tools utilized by c?",
+          "count": 1
+        },
+        {
+          "text": "How could you describe the overall process c goes through when working with the wood and the glue gun?",
+          "count": 1
+        },
+        {
+          "text": "How would you summarize the process of preparing and assembling the wooden objects in the video?",
+          "count": 1
+        },
+        {
+          "text": "Considering the different actions c performed on the wooden rack, what was the main goal and how did the method change over time?",
+          "count": 1
+        },
+        {
+          "text": "What are the main steps in the process demonstrated in the video, from selecting the piece of wood to shaping it on the lathe machine?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the significance of the actions related to different objects, such as planks, the rack, and the circular saw, in the completion of c's task. why are these objects important?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main tasks completed by c while working with the wood and accompanying tools.",
+          "count": 1
+        },
+        {
+          "text": "Describe the general pattern of c's actions in the video in relation to preparing and reinforcing the wood used on the construction site.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "describe / what: process, compare, turning",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 118,
+      "size_total": 118,
+      "verb_top": [
+        [
+          "describe",
+          56
+        ],
+        [
+          "what",
+          38
+        ],
+        [
+          "how",
+          13
+        ],
+        [
+          "other",
+          5
+        ],
+        [
+          "which",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          8
+        ],
+        [
+          "compare",
+          4
+        ],
+        [
+          "turning",
+          4
+        ],
+        [
+          "steps",
+          4
+        ],
+        [
+          "events",
+          4
+        ],
+        [
+          "crucial",
+          3
+        ]
+      ],
+      "medoid_text": "Explain how c systematically performed the task of dealing with clothes from the beginning to the end of the video.",
+      "exemplars": [
+        {
+          "text": "Explain how c systematically performed the task of dealing with clothes from the beginning to the end of the video.",
+          "count": 1
+        },
+        {
+          "text": "Compare and contrast the ways in which c uses the sewing machine, scissors, and other tools throughout the video, and discuss how these actions contribute to the end product.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the process c goes through to collect the roses and explain why he uses a cloth in this process, considering the information from the video.",
+          "count": 1
+        },
+        {
+          "text": "How would you summarize c's interactions with the pillowcase and the sewing process in a comprehensive manner?",
+          "count": 1
+        },
+        {
+          "text": "Identify two key moments in the video that demonstrate c's skill in sewing, and explain why these moments are considered crucial to the overall activity.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the key techniques and tools that c employs to accomplish the sewing task, reflecting on their importance in the overall process.",
+          "count": 1
+        },
+        {
+          "text": "In this video, what was the most crucial sequence of actions performed by c in relation to the clothes, and what conclusion can be drawn about the purpose of these actions?",
+          "count": 1
+        },
+        {
+          "text": "Summarize and compare the key stages of the sewing process in the video, emphasizing how the cloth was prepared and the sewing machine was used.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "what / describe: objective, goal, infer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 112,
+      "size_total": 112,
+      "verb_top": [
+        [
+          "what",
+          55
+        ],
+        [
+          "describe",
+          42
+        ],
+        [
+          "how",
+          8
+        ],
+        [
+          "which",
+          3
+        ],
+        [
+          "other",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          12
+        ],
+        [
+          "goal",
+          7
+        ],
+        [
+          "infer",
+          5
+        ],
+        [
+          "process",
+          4
+        ],
+        [
+          "discuss",
+          3
+        ],
+        [
+          "pattern",
+          3
+        ]
+      ],
+      "medoid_text": "What is the primary objective of c's actions throughout the video, and how do her activities contribute to achieving this goal?",
+      "exemplars": [
+        {
+          "text": "What is the primary objective of c's actions throughout the video, and how do her activities contribute to achieving this goal?",
+          "count": 1
+        },
+        {
+          "text": "Identify and discuss the three most crucial actions that c performs in the video, explaining their significance in her overall activity.",
+          "count": 1
+        },
+        {
+          "text": "Based on c's actions and interactions with various objects throughout the video, what can you infer about the main goal and critical steps involved in her tasks? explain why these steps are the most important, ensuring a concise answer.",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what is the main activity being performed by c and how do her actions contribute to the outcome of this activity?",
+          "count": 1
+        },
+        {
+          "text": "What can you infer about c's main goal in this video, and how does she achieve this goal through her actions?",
+          "count": 1
+        },
+        {
+          "text": "From the observed actions in this video, what can you conclude about the primary focus of c's activities and how her attention shifts between different tasks?",
+          "count": 1
+        },
+        {
+          "text": "What essential tasks does c perform at different stages of the process, and how do these tasks connect to her larger goal in the video?",
+          "count": 1
+        },
+        {
+          "text": "Considering the main activity in the video, what can be inferred about c's thought process or intention behind her constant adjustments, placements, and dropping of items?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "label": "what / describe: objective, goal, objectives",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 91,
+      "size_total": 91,
+      "verb_top": [
+        [
+          "what",
+          81
+        ],
+        [
+          "describe",
+          6
+        ],
+        [
+          "how",
+          3
+        ],
+        [
+          "who",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          37
+        ],
+        [
+          "goal",
+          22
+        ],
+        [
+          "objectives",
+          5
+        ],
+        [
+          "context",
+          3
+        ],
+        [
+          "infer",
+          2
+        ],
+        [
+          "evolve",
+          2
+        ]
+      ],
+      "medoid_text": "What was the primary objective of c's actions throughout the video, and how did the successive steps contribute to achieving that objective?",
+      "exemplars": [
+        {
+          "text": "What was the primary objective of c's actions throughout the video, and how did the successive steps contribute to achieving that objective?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what can you infer about c's overall objective or task, and what actions were essential to accomplish that?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary objective of c's actions throughout the video, and how did their technique evolve to achieve this goal?",
+          "count": 1
+        },
+        {
+          "text": "How did c's actions evolve over the course of the video, and what significant changes did you notice that led to the final result?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions in the video, what was the primary objective that c was trying to accomplish and what tool did he use repeatedly to check the accuracy of his work?",
+          "count": 1
+        },
+        {
+          "text": "Keeping the entire video in mind, summarize the main process that occurs and answer: what was c's ultimate goal?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video's series of actions, how did c and the man cooperate to accomplish the main goal? how did their actions complement each other?",
+          "count": 1
+        },
+        {
+          "text": "What was the main objective of the person named c throughout the video, and how did their actions contribute towards that objective?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "describe / what: kitchen, context, events",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 83,
+      "size_total": 83,
+      "verb_top": [
+        [
+          "describe",
+          36
+        ],
+        [
+          "what",
+          30
+        ],
+        [
+          "how",
+          7
+        ],
+        [
+          "other",
+          4
+        ],
+        [
+          "which",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "kitchen",
+          6
+        ],
+        [
+          "context",
+          4
+        ],
+        [
+          "events",
+          4
+        ],
+        [
+          "objective",
+          3
+        ],
+        [
+          "organized",
+          2
+        ],
+        [
+          "three",
+          2
+        ]
+      ],
+      "medoid_text": "Considering various actions performed by c in the video, describe the overarching story of what they are doing in the kitchen, summarizing multiple actions in one concise answer.",
+      "exemplars": [
+        {
+          "text": "Considering various actions performed by c in the video, describe the overarching story of what they are doing in the kitchen, summarizing multiple actions in one concise answer.",
+          "count": 1
+        },
+        {
+          "text": "Explain how c organized and used the items in the kitchen, emphasizing the critical steps that highlight efficient use of space and tools.",
+          "count": 1
+        },
+        {
+          "text": "As observed throughout the video, how does character c demonstrate organization and preparation in the context of the kitchen?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the overall video, what is the purpose of c's actions in the kitchen, and how do they contribute to the final scene?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary objective of c's actions involving the bucket, the dough, and the wooden objects on the table?",
+          "count": 1
+        },
+        {
+          "text": "Considering the video as a whole, what three key activities or elements best represent the essence of the interactions between the man, c, and the restaurant setting?",
+          "count": 1
+        },
+        {
+          "text": "Provide a comparison of the tasks completed by c in the kitchen, bathroom, and sitting room. focus on a high-level analysis of the activities.",
+          "count": 1
+        },
+        {
+          "text": "From the video, identify three dishes or tasks being performed by 'c' and the lady. discuss the significance of these tasks to the overall video and explain any relationship or dependencies among them.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "label": "what / how: objective, infer, analyzing",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 79,
+      "size_total": 79,
+      "verb_top": [
+        [
+          "what",
+          69
+        ],
+        [
+          "how",
+          3
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          "where/when",
+          2
+        ],
+        [
+          "describe",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          38
+        ],
+        [
+          "infer",
+          7
+        ],
+        [
+          "analyzing",
+          4
+        ],
+        [
+          "significant",
+          2
+        ],
+        [
+          "events",
+          2
+        ],
+        [
+          "deduce",
+          1
+        ]
+      ],
+      "medoid_text": "What is the primary objective of c's actions in the video, and how do these tasks contribute to that objective?",
+      "exemplars": [
+        {
+          "text": "What is the primary objective of c's actions in the video, and how do these tasks contribute to that objective?",
+          "count": 1
+        },
+        {
+          "text": "Taking into account all the actions performed by c, what can you deduce about the primary objective and focus within the video content?",
+          "count": 1
+        },
+        {
+          "text": "What are the two main recurring movements of c throughout the video and their purpose in undermining c's main objective?",
+          "count": 1
+        },
+        {
+          "text": "Considering the entirety of the video, what can you infer about the primary objective of the individual c and the central theme of the video?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary objective of c's actions throughout the video, and how can you concisely describe the two main methods he employs?",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the overall objective of c's actions in the video? what is the primary focus?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary objective of c's actions throughout the video, and how do his methods evolve over time to achieve it?",
+          "count": 1
+        },
+        {
+          "text": "What is the main objective of the actions performed by c in the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "describe / what: process, steps, compare",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 76,
+      "size_total": 76,
+      "verb_top": [
+        [
+          "describe",
+          33
+        ],
+        [
+          "what",
+          28
+        ],
+        [
+          "how",
+          6
+        ],
+        [
+          "which",
+          6
+        ],
+        [
+          "other",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          8
+        ],
+        [
+          "steps",
+          7
+        ],
+        [
+          "compare",
+          4
+        ],
+        [
+          "objective",
+          3
+        ],
+        [
+          "three",
+          3
+        ],
+        [
+          "techniques",
+          3
+        ]
+      ],
+      "medoid_text": "Summarize the key steps involved in the preparation of the dough in this video, and explain how c's actions contribute to this process.",
+      "exemplars": [
+        {
+          "text": "Summarize the key steps involved in the preparation of the dough in this video, and explain how c's actions contribute to this process.",
+          "count": 1
+        },
+        {
+          "text": "In the process of creating the final dough piece, can you identify three main stages that c goes through, and explain how her methods and techniques change during each stage?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main stages of the workflow displayed in the video and discuss any variations during the bread-making process.",
+          "count": 1
+        },
+        {
+          "text": "Throughout the majority of the video, what is the character's primary objective when working with the dough, and how does it evolve over the course of the video?",
+          "count": 1
+        },
+        {
+          "text": "Identify and explain the most critical moments in the process, where specific actions by c ensured the successful preparation of the dough for the next step in the process.",
+          "count": 1
+        },
+        {
+          "text": "How would you briefly describe the sequential order of the process that c performed on the dough, from initial handling to final placement on the tray?",
+          "count": 1
+        },
+        {
+          "text": "What are the key differences between how c interacts with the bread in the initial and later stages of the video? consider factors such as placement, gestures, and tools used.",
+          "count": 1
+        },
+        {
+          "text": "Which actions can be considered as key steps in the flatbread-making process and contribute the most to the overall result?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "label": "what / how: context, these, general",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 66,
+      "size_total": 68,
+      "verb_top": [
+        [
+          "what",
+          53
+        ],
+        [
+          "how",
+          5
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          "who",
+          3
+        ],
+        [
+          "describe",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "context",
+          6
+        ],
+        [
+          "these",
+          6
+        ],
+        [
+          "general",
+          5
+        ],
+        [
+          "infer",
+          4
+        ],
+        [
+          "achieve",
+          3
+        ],
+        [
+          "whole",
+          2
+        ]
+      ],
+      "medoid_text": "What is the primary purpose of c's actions in the video, and how do these actions contribute to that purpose?",
+      "exemplars": [
+        {
+          "text": "What is the primary purpose of c's actions in the video, and how do these actions contribute to that purpose?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary purpose of the actions performed by c throughout the video?",
+          "count": 3
+        },
+        {
+          "text": "Based on the overall content and actions of the video, deduce the possible purpose or intention behind c's recording of this video.",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching purpose of the series of actions performed by c in this video?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary purpose of c's actions in the video, specifically related to the various objects he interacts with throughout the sequence?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what can you infer about the main purpose of c's actions in relation to objects he interacts with and where he places them?",
+          "count": 1
+        },
+        {
+          "text": "Can you provide a concise summary of the primary purpose of the actions performed by 'c' throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the whole video, what is the primary purpose of c interacting with different objects throughout the house, and how is the sequence of actions related to achieving this purpose?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "label": "what / describe: engages, character, compare",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 54,
+      "size_total": 54,
+      "verb_top": [
+        [
+          "what",
+          28
+        ],
+        [
+          "describe",
+          15
+        ],
+        [
+          "how",
+          8
+        ],
+        [
+          "where/when",
+          1
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "engages",
+          4
+        ],
+        [
+          "character",
+          3
+        ],
+        [
+          "compare",
+          3
+        ],
+        [
+          "engaged",
+          3
+        ],
+        [
+          "context",
+          2
+        ],
+        [
+          "classify",
+          2
+        ]
+      ],
+      "medoid_text": "What is the primary activity that c engages in throughout the video, and how does this activity relate to other actions they perform?",
+      "exemplars": [
+        {
+          "text": "What is the primary activity that c engages in throughout the video, and how does this activity relate to other actions they perform?",
+          "count": 1
+        },
+        {
+          "text": "In terms of importance, what would you consider the central activity in this video? please explain your choice by comparing it to other activities carried out by c.",
+          "count": 1
+        },
+        {
+          "text": "How does c alternate between two activities throughout the video, and what is the significance of this pattern to the overall video?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the entire video's theme, summarize in one sentence what activity c is primarily engaged in.",
+          "count": 1
+        },
+        {
+          "text": "What are the two most frequent activities c performs in the video, and how are they related?",
+          "count": 1
+        },
+        {
+          "text": "Identify and describe the primary activity the subject, c, is engaged in throughout the video. how is this activity carried out, and why might c engage in this specific behavior repeatedly?",
+          "count": 1
+        },
+        {
+          "text": "In the video, what is the primary activity that c engages in and what is the significance of the various methods they use to interact with the tools involved in this activity?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the primary activity that character c is engaged in throughout the video and how does it evolve over time?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "label": "what / how: performs, differ, major",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 48,
+      "size_total": 48,
+      "verb_top": [
+        [
+          "what",
+          37
+        ],
+        [
+          "how",
+          4
+        ],
+        [
+          "describe",
+          4
+        ],
+        [
+          "which",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "performs",
+          3
+        ],
+        [
+          "differ",
+          2
+        ],
+        [
+          "major",
+          2
+        ],
+        [
+          "compare",
+          2
+        ],
+        [
+          "trying",
+          2
+        ],
+        [
+          "process",
+          2
+        ]
+      ],
+      "medoid_text": "Which two primary tasks is c performing throughout the video, and how are they related?",
+      "exemplars": [
+        {
+          "text": "Which two primary tasks is c performing throughout the video, and how are they related?",
+          "count": 1
+        },
+        {
+          "text": "Based on the various activities executed by c, what is the overarching task being performed in the video, and how do different elements of this task come together to achieve the desired outcome?",
+          "count": 1
+        },
+        {
+          "text": "What are the main components c works with throughout the video, and how do they relate to each other?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary task that c is performing throughout the video, and what are the different stages involved in completing this task?",
+          "count": 1
+        },
+        {
+          "text": "Based on the overall video, how would you broadly describe the relation between the different tasks conducted by c and their primary purpose?",
+          "count": 1
+        },
+        {
+          "text": "What are the primary tasks performed by c in this video, and how do they differ from one another in terms of priority and context?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary task c is engaged in throughout the video, and how does the pattern of c's actions demonstrate efficiency?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what are the key steps involved in c's primary task, and how do c's actions reflect their concentration on those steps?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "describe / what: objective, high-level, infer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 45,
+      "size_total": 45,
+      "verb_top": [
+        [
+          "describe",
+          16
+        ],
+        [
+          "what",
+          15
+        ],
+        [
+          "how",
+          10
+        ],
+        [
+          "other",
+          2
+        ],
+        [
+          "who",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          13
+        ],
+        [
+          "high-level",
+          6
+        ],
+        [
+          "infer",
+          2
+        ],
+        [
+          "context",
+          2
+        ],
+        [
+          "behavior",
+          2
+        ],
+        [
+          "objectives",
+          1
+        ]
+      ],
+      "medoid_text": "Summarize the primary objective of c in the video and explain how their actions progress towards achieving it.",
+      "exemplars": [
+        {
+          "text": "Summarize the primary objective of c in the video and explain how their actions progress towards achieving it.",
+          "count": 1
+        },
+        {
+          "text": "In this video, what is the primary objective that c is trying to accomplish with the bicycle pedal and the tools he uses?",
+          "count": 1
+        },
+        {
+          "text": "Can you identify the main objectives of both c and the man in the video in regard to flower pots and their secondary objectives, such as adjusting the cone, tape, and manual on the staircase?",
+          "count": 1
+        },
+        {
+          "text": "What can you infer is the primary objective for c in this video, and what tools does he use to achieve that objective?",
+          "count": 1
+        },
+        {
+          "text": "How would you summarize the main objective of c throughout the video, and what are the key actions that contribute to achieving this goal?",
+          "count": 1
+        },
+        {
+          "text": "Considering the high-level details of the video, identify the most significant and defining aspect of c's harvesting technique. explain why it stands out.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entirety of the video, what could you infer about c's primary objective and the role of the steel frame in achieving that objective?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, suggest a possible objective of the actions carried out by c. how do the main actions contribute to achieving this objective?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "label": "describe / which: three, parts, entirety",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 44,
+      "size_total": 44,
+      "verb_top": [
+        [
+          "describe",
+          28
+        ],
+        [
+          "which",
+          9
+        ],
+        [
+          "what",
+          3
+        ],
+        [
+          "who",
+          3
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "three",
+          11
+        ],
+        [
+          "parts",
+          3
+        ],
+        [
+          "entirety",
+          3
+        ],
+        [
+          "discuss",
+          3
+        ],
+        [
+          "critical",
+          3
+        ],
+        [
+          "essential",
+          2
+        ]
+      ],
+      "medoid_text": "Considering the entire video, identify the three most crucial actions performed by c, and explain why those actions were pivotal in achieving the video's primary objectives.",
+      "exemplars": [
+        {
+          "text": "Considering the entire video, identify the three most crucial actions performed by c, and explain why those actions were pivotal in achieving the video's primary objectives.",
+          "count": 1
+        },
+        {
+          "text": "Considering the video's entirety, what can you infer about c's main priority or the central theme of their actions? provide a concise analysis of the most important parts of the video that informed your conclusion.",
+          "count": 1
+        },
+        {
+          "text": "Based on c's actions throughout the video, which parts of the routine seem most critical to completing their task properly?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions performed by c in the video, which parts do you think are the most critical to achieving the desired outcome? please explain your reasoning.",
+          "count": 1
+        },
+        {
+          "text": "Given the sequence of events in the video, what seems to be the most critical item c is focused on preparing? explain your reasoning. (abilities 2 and 3)",
+          "count": 1
+        },
+        {
+          "text": "Identify which activities in the video were most essential to achieving c's goal and discuss their significance in the overall context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Can you identify three pivotal actions in the video that were most crucial to c's progress in the workshop, and explain why you chose those specific actions?",
+          "count": 1
+        },
+        {
+          "text": "Considering the entirety of the video, which specific sequence(s) of c's actions do you consider to be the most important in achieving the primary goal? explain your reasoning without listing the detailed actions performed during those sequences.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "label": "describe / what: steps, critical, three",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 44,
+      "size_total": 44,
+      "verb_top": [
+        [
+          "describe",
+          21
+        ],
+        [
+          "what",
+          14
+        ],
+        [
+          "which",
+          4
+        ],
+        [
+          "how",
+          4
+        ],
+        [
+          "why",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "steps",
+          5
+        ],
+        [
+          "critical",
+          4
+        ],
+        [
+          "three",
+          3
+        ],
+        [
+          "your",
+          3
+        ],
+        [
+          "challenges",
+          3
+        ],
+        [
+          "process",
+          2
+        ]
+      ],
+      "medoid_text": "Taking into account all steps performed by c, which techniques and tools were crucial for achieving the desired outcome? explain why these were vital in c's process.",
+      "exemplars": [
+        {
+          "text": "Taking into account all steps performed by c, which techniques and tools were crucial for achieving the desired outcome? explain why these were vital in c's process.",
+          "count": 1
+        },
+        {
+          "text": "Which of the actions c performed could be considered as preparatory tasks, directly related to achieving the main goal? explain your reasoning.",
+          "count": 1
+        },
+        {
+          "text": "What key actions signified the completion of one task before transitioning to the next throughout the assembly process?",
+          "count": 1
+        },
+        {
+          "text": "Based on the techniques and tools used by c, what would you identify as the two most crucial stages of the process, and why do these steps hold more significance than the others?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the importance of c checking and adjusting equipment in various steps, and discuss the significance of these actions in achieving his main goal.",
+          "count": 1
+        },
+        {
+          "text": "What were the three most crucial stages or actions that defined the project's completion, and how do these stages contribute to the final result?",
+          "count": 1
+        },
+        {
+          "text": "Identify and summarize the two most crucial steps taken by c in order to successfully complete the task involving the pipes.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the critical steps taken by c and the man to complete their tasks, and explain the overall purpose of these actions.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "describe / what: process, sand, steps",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 41,
+      "size_total": 41,
+      "verb_top": [
+        [
+          "describe",
+          18
+        ],
+        [
+          "what",
+          15
+        ],
+        [
+          "how",
+          5
+        ],
+        [
+          "which",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          4
+        ],
+        [
+          "sand",
+          3
+        ],
+        [
+          "steps",
+          2
+        ],
+        [
+          "uses",
+          2
+        ],
+        [
+          "performs",
+          2
+        ],
+        [
+          "ensure",
+          2
+        ]
+      ],
+      "medoid_text": "Considering the steps that c repeats throughout the video, what could be considered the most crucial parts of the brick-making process?",
+      "exemplars": [
+        {
+          "text": "Considering the steps that c repeats throughout the video, what could be considered the most crucial parts of the brick-making process?",
+          "count": 1
+        },
+        {
+          "text": "In the process of working with cement, which tasks did c perform and how can you explain the relationship between these tasks to describe the overall goal of c's actions?",
+          "count": 1
+        },
+        {
+          "text": "Describe the overall goal achieved by c throughout the video and explain how the various trowels were used in working with the cement cast.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the primary techniques used by c to work with sand and mortar throughout the video. how do these methods differ and what is the purpose of each?",
+          "count": 1
+        },
+        {
+          "text": "What were the primary tools and techniques c employed to apply and manipulate the cement mortar on the wall?",
+          "count": 1
+        },
+        {
+          "text": "Based on the observed actions in the video, what is the primary technique c uses to apply and smooth out the cement mortar on the wall?",
+          "count": 1
+        },
+        {
+          "text": "What is the main purpose of the repeated process followed by c, involving the use of brickmould, mortar, and sand?",
+          "count": 1
+        },
+        {
+          "text": "What is the key significance of sand in this video, and how does it contribute to the overall brick-making process?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "label": "describe / other: performs, compare, working",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 41,
+      "size_total": 41,
+      "verb_top": [
+        [
+          "describe",
+          34
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "what",
+          1
+        ],
+        [
+          "who",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "performs",
+          4
+        ],
+        [
+          "compare",
+          3
+        ],
+        [
+          "working",
+          2
+        ],
+        [
+          "secondary",
+          2
+        ],
+        [
+          "being",
+          2
+        ],
+        [
+          "interrelated",
+          1
+        ]
+      ],
+      "medoid_text": "Summarize the primary tasks that c performs throughout the video and explain how they relate to each other.",
+      "exemplars": [
+        {
+          "text": "Summarize the primary tasks that c performs throughout the video and explain how they relate to each other.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video sequence, can you identify and compare two main tasks c performed with the vehicle? provide a detailed summary and comparison.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the two primary tasks that c performs repeatedly and discuss their significance in maintaining order within the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify and summarize the two primary tasks that c performed throughout the video, and briefly describe how they were interrelated.",
+          "count": 1
+        },
+        {
+          "text": "Identify and compare the two main tasks c performs throughout the video, and describe how these tasks are interconnected.",
+          "count": 1
+        },
+        {
+          "text": "Describe in one sentence the primary task c undertakes throughout this video and how it progresses from start to finish.",
+          "count": 1
+        },
+        {
+          "text": "Describe the main focus of the video and how it progresses from beginning to end. pay attention to the primary tasks c completes.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the primary task that c is working on throughout the video and explain the main steps involved in accomplishing this task.+3)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "what / describe: deduce, compare, between",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 40,
+      "size_total": 40,
+      "verb_top": [
+        [
+          "what",
+          23
+        ],
+        [
+          "describe",
+          13
+        ],
+        [
+          "how",
+          3
+        ],
+        [
+          "where/when",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "deduce",
+          2
+        ],
+        [
+          "compare",
+          2
+        ],
+        [
+          "between",
+          2
+        ],
+        [
+          "process",
+          2
+        ],
+        [
+          "course",
+          2
+        ],
+        [
+          "analyzing",
+          2
+        ]
+      ],
+      "medoid_text": "Determine the main purpose of c's actions with regards to how they interact with the books, and explain how this is demonstrated throughout the video.",
+      "exemplars": [
+        {
+          "text": "Determine the main purpose of c's actions with regards to how they interact with the books, and explain how this is demonstrated throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "Discuss the overall pattern of c's behavior with the books after analyzing their actions throughout the video. what were the primary tasks they performed?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what can you deduce about the importance of newspapers to c's entire process, and what role does it play in the sequence of activities?",
+          "count": 1
+        },
+        {
+          "text": "Considering the video, what do you think is the most important aspect of c's actions in relation to handling the books, and why?",
+          "count": 1
+        },
+        {
+          "text": "Compare and contrast the different ways c engaged with the books in the video. what can you deduce about c's motivations or intentions from these interactions?",
+          "count": 1
+        },
+        {
+          "text": "Describe the relationship between the hand, pen, and book throughout the video. what was the primary purpose of the hand's interaction with the pen and book?",
+          "count": 1
+        },
+        {
+          "text": "From the series of actions, what can be concluded about the condition of the books before they were placed on the shelf, and the steps c took to address it?",
+          "count": 1
+        },
+        {
+          "text": "After the first major section of the video, what can you infer was the main motivation behind c's decision to wipe each book individually?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "label": "what / describe: theme, central, progression",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 40,
+      "size_total": 40,
+      "verb_top": [
+        [
+          "what",
+          21
+        ],
+        [
+          "describe",
+          10
+        ],
+        [
+          "how",
+          5
+        ],
+        [
+          "which",
+          3
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "theme",
+          12
+        ],
+        [
+          "central",
+          5
+        ],
+        [
+          "progression",
+          2
+        ],
+        [
+          "discuss",
+          2
+        ],
+        [
+          "taken",
+          2
+        ],
+        [
+          "despite",
+          2
+        ]
+      ],
+      "medoid_text": "What is the main focus or recurring theme of the actions performed by c throughout the video?",
+      "exemplars": [
+        {
+          "text": "What is the main focus or recurring theme of the actions performed by c throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "In this video, what is the overarching theme or focus of the actions performed by the individual, c?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the progression of c's actions with the cat in the video. can you identify any overarching pattern or theme in those actions?",
+          "count": 1
+        },
+        {
+          "text": "What is the central theme of the video, and how does c's behavior reflect this theme?",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the main theme of this video, focusing on the most important actions carried out by c?",
+          "count": 1
+        },
+        {
+          "text": "Considering the various actions performed by c in the video, what do you think is the overarching theme or objective of the video, and how are these individual actions related to that objective?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, identify and discuss the main theme or overall purpose of c's actions throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the overall activity of c in the video, and can you identify any prevalent themes or patterns in their actions?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "label": "describe / what: process, objectives, steps",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 40,
+      "size_total": 40,
+      "verb_top": [
+        [
+          "describe",
+          35
+        ],
+        [
+          "what",
+          3
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          3
+        ],
+        [
+          "objectives",
+          3
+        ],
+        [
+          "steps",
+          2
+        ],
+        [
+          "performs",
+          2
+        ],
+        [
+          "goal",
+          2
+        ],
+        [
+          "your",
+          2
+        ]
+      ],
+      "medoid_text": "Describe the main objectives of the actions performed by c in the video, and explain how they connect to the overall process.",
+      "exemplars": [
+        {
+          "text": "Describe the main objectives of the actions performed by c in the video, and explain how they connect to the overall process.",
+          "count": 1
+        },
+        {
+          "text": "Analyze how c's actions progress in the video, and discuss how they indicate the main objective of the video.",
+          "count": 1
+        },
+        {
+          "text": "Describe the primary aim of the actions that c is performing in the video, and address how his techniques for completing the task evolve throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "In what ways can you convey the key progression of events in the video in a concise manner, focusing on how \"c\" prepared and carried out the main task?",
+          "count": 1
+        },
+        {
+          "text": "By analyzing c's activities in this video, determine their overall focus or intention, and describe the progression of tasks leading to its fulfillment.",
+          "count": 1
+        },
+        {
+          "text": "Considering the overall process demonstrated in the video, how would you describe c's main goal and the series of actions taken to achieve it? focus on summarizing and comparing long parts of the video, while avoiding listing individual actions.",
+          "count": 1
+        },
+        {
+          "text": "What are the main objectives and activities that c is performing throughout the video? keep your answer concise and avoid listing all the actions.",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main steps c takes to accomplish the primary action in the video. how do their actions demonstrate their expertise or lack thereof in performing the task?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "describe / what: woman, significant, compare",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 38,
+      "size_total": 38,
+      "verb_top": [
+        [
+          "describe",
+          21
+        ],
+        [
+          "what",
+          8
+        ],
+        [
+          "which",
+          4
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "woman",
+          3
+        ],
+        [
+          "significant",
+          3
+        ],
+        [
+          "compare",
+          2
+        ],
+        [
+          "involving",
+          2
+        ],
+        [
+          "differences",
+          2
+        ],
+        [
+          "process",
+          2
+        ]
+      ],
+      "medoid_text": "Describe the progression of the card-related actions in the video and outline the key differences in c's and the man's approach towards handling them.",
+      "exemplars": [
+        {
+          "text": "Describe the progression of the card-related actions in the video and outline the key differences in c's and the man's approach towards handling them.",
+          "count": 1
+        },
+        {
+          "text": "What is the central purpose of the lady's actions involving cards on the table, and how does this relate to c's behavior in the video?",
+          "count": 1
+        },
+        {
+          "text": "Analyze how the woman engaged with the objects on the table (excluding the cards) and discuss which actions were incidental and which were significant to the overall scene.",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, which elements of the card game seem to carry the most significance for the characters, and why?",
+          "count": 1
+        },
+        {
+          "text": "Compare and contrast the roles of the woman and c in the video. explain their interactions with the cards, each other, and their environment. describe their contribution to the video's main theme without providing explicit narrative details.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video, discuss the significance of the chocolate drinking and card-dice interactions in terms of building a central theme or narrative.",
+          "count": 1
+        },
+        {
+          "text": "In this video, there are two primary activities involving cards and dice. summarize these activities and how they are related.",
+          "count": 1
+        },
+        {
+          "text": "Identify an underlying motivation or goal for both the person and c's interactions with the playing cards and briefly explain the reasoning behind your interpretation.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "label": "what / which: change, these, co-worker",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 38,
+      "size_total": 38,
+      "verb_top": [
+        [
+          "what",
+          30
+        ],
+        [
+          "which",
+          4
+        ],
+        [
+          "describe",
+          2
+        ],
+        [
+          "who",
+          1
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "change",
+          2
+        ],
+        [
+          "these",
+          2
+        ],
+        [
+          "co-worker",
+          2
+        ],
+        [
+          "completed",
+          2
+        ],
+        [
+          "engaged",
+          2
+        ],
+        [
+          "entirety",
+          1
+        ]
+      ],
+      "medoid_text": "What was the central task that c performed throughout the video, and how did their actions change as the task progressed?",
+      "exemplars": [
+        {
+          "text": "What was the central task that c performed throughout the video, and how did their actions change as the task progressed?",
+          "count": 1
+        },
+        {
+          "text": "Considering the entirety of the video, which part of the process do you believe was the most difficult or time-consuming task for c and why? please provide a reason based on their actions.",
+          "count": 1
+        },
+        {
+          "text": "What were the main actions c performed in the sink throughout the video, and how did these actions contribute to the final result?",
+          "count": 1
+        },
+        {
+          "text": "What were the main tasks that c performed throughout the video and how did they change over time?",
+          "count": 1
+        },
+        {
+          "text": "Considering the overall process of c working on the sculpture, what was the key repetitive action throughout the video, and what important change happened near the end of the video?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary sequence of tasks that c performed in the video in order to achieve the final outcome?",
+          "count": 1
+        },
+        {
+          "text": "Which tasks performed by c throughout the video were the most crucial and why?",
+          "count": 1
+        },
+        {
+          "text": "What are the notable non-grinding actions performed by 'c' throughout the video and why might he have done them?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "describe / what: process, techniques, steps",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 33,
+      "size_total": 33,
+      "verb_top": [
+        [
+          "describe",
+          19
+        ],
+        [
+          "what",
+          11
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          7
+        ],
+        [
+          "techniques",
+          3
+        ],
+        [
+          "steps",
+          3
+        ],
+        [
+          "critical",
+          2
+        ],
+        [
+          "clay",
+          2
+        ],
+        [
+          "your",
+          1
+        ]
+      ],
+      "medoid_text": "Describe the overall process used by c to manipulate the clay in order to create the ceramic piece, including the use of water and napkins. focus on summarizing the entire sequence.",
+      "exemplars": [
+        {
+          "text": "Describe the overall process used by c to manipulate the clay in order to create the ceramic piece, including the use of water and napkins. focus on summarizing the entire sequence.",
+          "count": 1
+        },
+        {
+          "text": "What are the key techniques and steps c utilized to work with the clay and clay mould throughout the video? please summarize them succinctly.",
+          "count": 1
+        },
+        {
+          "text": "What is the overall process and purpose of c's actions involving moulds and clay, and why does the bicycle scene deviate from this process?",
+          "count": 1
+        },
+        {
+          "text": "Identify two critical phases that contributed to the pottery's completion and explain why they are essential to the overall process.",
+          "count": 1
+        },
+        {
+          "text": "In your own words, describe the significance and progression of the clay and sawdust mixture process that c undertakes.",
+          "count": 1
+        },
+        {
+          "text": "What tools and techniques does c utilize to ensure that the pottery clay maintains the desired consistency and smoothness during the shaping process?",
+          "count": 1
+        },
+        {
+          "text": "Describe the process c follows in creating and refining the pottery artwork, summarizing the key tools and techniques he uses throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "What is the main purpose of c's actions with the clay pots throughout the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "label": "describe / what: tools, compare, different",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 33,
+      "size_total": 33,
+      "verb_top": [
+        [
+          "describe",
+          24
+        ],
+        [
+          "what",
+          5
+        ],
+        [
+          "other",
+          2
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "tools",
+          12
+        ],
+        [
+          "compare",
+          5
+        ],
+        [
+          "different",
+          4
+        ],
+        [
+          "assess",
+          2
+        ],
+        [
+          "discuss",
+          2
+        ],
+        [
+          "both",
+          1
+        ]
+      ],
+      "medoid_text": "Assess the importance of the tools used by c in the video and explain how they contributed to achieving the overall purpose of the tasks performed.",
+      "exemplars": [
+        {
+          "text": "Assess the importance of the tools used by c in the video and explain how they contributed to achieving the overall purpose of the tasks performed.",
+          "count": 1
+        },
+        {
+          "text": "Considering both tools c used in the video, explain the purposes and differences between the hoe and axe in relation to the tasks performed by c.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the importance of the different tools c uses throughout the video and explain how each tool contributes to the final outcome of the task.",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary tools and methods c used in the video, and explain how they were utilized for efficiency.",
+          "count": 1
+        },
+        {
+          "text": "Assess the significance of c's use of tools throughout the video and explain how their effectiveness contributes to accomplishing the primary objective.",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary and secondary tools used by c throughout the video and explain how their roles were complementary in executing the main objective.",
+          "count": 1
+        },
+        {
+          "text": "Evaluate the importance of measurements, marking, and welding in c's process, and assess their relationship to one another in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the key tools and techniques used by c in the video, and elaborate on their significance in achieving the main objective.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "label": "describe / what: goal, character, sentence",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 32,
+      "size_total": 32,
+      "verb_top": [
+        [
+          "describe",
+          22
+        ],
+        [
+          "what",
+          6
+        ],
+        [
+          "how",
+          3
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "goal",
+          15
+        ],
+        [
+          "character",
+          2
+        ],
+        [
+          "sentence",
+          2
+        ],
+        [
+          "described",
+          1
+        ],
+        [
+          "majority",
+          1
+        ],
+        [
+          "discuss",
+          1
+        ]
+      ],
+      "medoid_text": "Describe the main goal of c in the video and how their actions contribute to achieving that goal.",
+      "exemplars": [
+        {
+          "text": "Describe the main goal of c in the video and how their actions contribute to achieving that goal.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions described in the video, what can be inferred as the primary goal or task being performed by the character c?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions in the video, can you identify and describe the primary goal or task that \"c\" was working on throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main goal of c's actions throughout the video by identifying the primary focus of his activities.",
+          "count": 1
+        },
+        {
+          "text": "Considering the majority of the actions performed by person c, how would you summarize the primary goal of this individual in the video?",
+          "count": 1
+        },
+        {
+          "text": "Describe the main goal of the video, including any significant collaborations and interactions between c and the other participants.",
+          "count": 1
+        },
+        {
+          "text": "Considering the actions of c and the man, discuss the crucial stages of the process to understand the main goal of this video.",
+          "count": 1
+        },
+        {
+          "text": "Based on the recurring actions in the video, what would you say is the primary goal of the individuals (c and person) and how do their actions differ in achieving this goal?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "what / describe: phone, behavior, between",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 31,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "what",
+          12
+        ],
+        [
+          "describe",
+          9
+        ],
+        [
+          "how",
+          9
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "phone",
+          3
+        ],
+        [
+          "behavior",
+          2
+        ],
+        [
+          "between",
+          2
+        ],
+        [
+          "evaluate",
+          1
+        ],
+        [
+          "make",
+          1
+        ],
+        [
+          "mobile",
+          1
+        ]
+      ],
+      "medoid_text": "Compare the interactions of c and the man with their respective phones. how did c handle the phone differently than the man, and what does this reveal about their actions during the video?",
+      "exemplars": [
+        {
+          "text": "Compare the interactions of c and the man with their respective phones. how did c handle the phone differently than the man, and what does this reveal about their actions during the video?",
+          "count": 1
+        },
+        {
+          "text": "Evaluate the significance of c's shifting between different activities, particularly focusing on the relationship between reading the paper and using the phone. what might this reveal about c's primary objective in the video?",
+          "count": 1
+        },
+        {
+          "text": "Explain how c's interaction with the phone evolves over time and transition into their primary activity in the video. provide a high-level summary that demonstrates your understanding of the video's narrative.",
+          "count": 1
+        },
+        {
+          "text": "How does c make use of the phone during the cooking process, and how does it affect their actions throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Describe the role of the mobile phone throughout the video and how it affected the man and woman's interaction during the game they were playing.",
+          "count": 1
+        },
+        {
+          "text": "Establish the significance of the man's phone usage within the context of the video, including its relation to both the man's and c's actions.",
+          "count": 1
+        },
+        {
+          "text": "Without listing all the actions, describe the man's overall behavior concerning his hands and phone interaction during the initial part of the video.",
+          "count": 1
+        },
+        {
+          "text": "Summarize and analyze c's overall behavior in relation to the phone and tablet throughout the video, keeping in mind their approach and the actions they take.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "describe / what: process, compare, steps",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 31,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "describe",
+          17
+        ],
+        [
+          "what",
+          8
+        ],
+        [
+          "other",
+          5
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          6
+        ],
+        [
+          "compare",
+          5
+        ],
+        [
+          "steps",
+          2
+        ],
+        [
+          "objectives",
+          1
+        ],
+        [
+          "prepare",
+          1
+        ],
+        [
+          "analyzing",
+          1
+        ]
+      ],
+      "medoid_text": "Despite repetitive actions, which specific steps in c's fruit handling process are vital to understanding the overall purpose and outcome of her actions in the video?",
+      "exemplars": [
+        {
+          "text": "Despite repetitive actions, which specific steps in c's fruit handling process are vital to understanding the overall purpose and outcome of her actions in the video?",
+          "count": 1
+        },
+        {
+          "text": "Identify two key objectives that 'c' is focused on achieving while working with the vegetable plants, and explain how her actions facilitate these goals.",
+          "count": 1
+        },
+        {
+          "text": "What is the main recurring sequence of actions performed by c to prepare the spinach for bundling, and what tool does she use for cutting the spinach?",
+          "count": 1
+        },
+        {
+          "text": "Analyzing the entire video, what are the most essential steps in c's process of preparing the dried lime fruits, and how would you briefly summarize these actions?",
+          "count": 1
+        },
+        {
+          "text": "What were the key actions performed by c in the process of selecting, preparing, and cutting the avocados?",
+          "count": 1
+        },
+        {
+          "text": "Provide a brief summarization of the significant steps c took to prepare the mango, highlighting only the key moments that contributed to the overall process.",
+          "count": 1
+        },
+        {
+          "text": "Compare c's techniques and strategies while working with the mango, focusing on her precision and efficiency. explain how they contribute to the final outcome.",
+          "count": 1
+        },
+        {
+          "text": "Without listing each individual action, describe the steps c performs in the process of preparing and dicing the green peas.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "describe / what: objects, different, least",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 31,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "describe",
+          27
+        ],
+        [
+          "what",
+          1
+        ],
+        [
+          "which",
+          1
+        ],
+        [
+          "how",
+          1
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "objects",
+          8
+        ],
+        [
+          "different",
+          4
+        ],
+        [
+          "least",
+          2
+        ],
+        [
+          "video's",
+          1
+        ],
+        [
+          "related",
+          1
+        ],
+        [
+          "three",
+          1
+        ]
+      ],
+      "medoid_text": "Describe how c interacted with various objects in the video, and determine which interactions were most crucial for achieving their goals.",
+      "exemplars": [
+        {
+          "text": "Describe how c interacted with various objects in the video, and determine which interactions were most crucial for achieving their goals.",
+          "count": 1
+        },
+        {
+          "text": "Identify the key objects c interacts with during the video. explain how c's interactions with these objects progress and evolve throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "Throughout the video's unfolding, c interacted with several elements, including books, bookshelves, and a cloth. determine and describe the most important elements and provide a brief explanation of their relevance.",
+          "count": 1
+        },
+        {
+          "text": "From the various objects c interacted with, identify the key items that were crucial for c to achieve their objective in the video. describe their role in c's actions.",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary activity related to the lego toy in the video and discuss how c's approach varies throughout the duration of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the purpose of the different objects that c interacts with in the video and explain how their use contributes to the overall context or theme of the video.",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, identify the three most important objects c interacts with during the last part of the video, and briefly explain the significance of these three objects.",
+          "count": 1
+        },
+        {
+          "text": "Comparing the items c interacts with in the video, what is the general sequence of their arrangement in terms of categories?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "label": "what / how: general, central, these",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 30,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "what",
+          27
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "describe",
+          1
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "general",
+          4
+        ],
+        [
+          "central",
+          2
+        ],
+        [
+          "these",
+          2
+        ],
+        [
+          "context",
+          2
+        ],
+        [
+          "infer",
+          2
+        ],
+        [
+          "reason",
+          1
+        ]
+      ],
+      "medoid_text": "What was the main purpose of c's actions in the video, and how do these actions contribute to the overall goal?",
+      "exemplars": [
+        {
+          "text": "What was the main purpose of c's actions in the video, and how do these actions contribute to the overall goal?",
+          "count": 1
+        },
+        {
+          "text": "What was the main purpose of the actions performed by c throughout the video?",
+          "count": 2
+        },
+        {
+          "text": "Overall, what was the main reason for c's interaction with the railing during the course of the video, and how does it relate to the resistance band exercises?",
+          "count": 1
+        },
+        {
+          "text": "Considering the variety of actions performed by c with and around the post, what conclusions can be drawn about the relationship between c and the post?",
+          "count": 1
+        },
+        {
+          "text": "What was the central purpose of the video, considering the wide range of actions performed by \"c\"?",
+          "count": 1
+        },
+        {
+          "text": "What was the overall purpose of the actions performed by c in the video, and how do these actions contribute to achieving that purpose?",
+          "count": 1
+        },
+        {
+          "text": "What was the overall purpose and main event of the video, and how does it relate to c's actions throughout the scene?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the entire video, how can c's actions related to the grinder be compressed into one concise statement regarding his intentions?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "label": "what / describe: events, deduce, infer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 31,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "what",
+          27
+        ],
+        [
+          "describe",
+          3
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "events",
+          5
+        ],
+        [
+          "deduce",
+          2
+        ],
+        [
+          "infer",
+          2
+        ],
+        [
+          "goal",
+          2
+        ],
+        [
+          "observing",
+          1
+        ],
+        [
+          "behind",
+          1
+        ]
+      ],
+      "medoid_text": "Based on the pattern of actions, what could be concluded about c's primary goal in the video?",
+      "exemplars": [
+        {
+          "text": "Based on the pattern of actions, what could be concluded about c's primary goal in the video?",
+          "count": 1
+        },
+        {
+          "text": "By observing the main actions in the video, what can you conclude is the primary goal that c is trying to achieve?",
+          "count": 1
+        },
+        {
+          "text": "Based on the events that transpired throughout the video, what do you believe is c's main goal during this process?",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video, identify the primary purpose behind the majority of the actions pertaining to the engine. what can be concluded about the main goal of both c and the man throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the high-level events depicted in the video, what would you say is the central goal for both c and the man, and how do they work towards achieving this goal?",
+          "count": 1
+        },
+        {
+          "text": "Considering the array of actions performed, what can you infer about the primary goal c and the man are trying to accomplish?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the entire video, what can you conclude about the main task being performed by c? be concise and focus on the central goal.",
+          "count": 1
+        },
+        {
+          "text": "Based upon the sequence of events and c's actions, what conclusion can we draw about his overall goals throughout the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "what / describe: critical, steps, changes",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 30,
+      "size_total": 30,
+      "verb_top": [
+        [
+          "what",
+          12
+        ],
+        [
+          "describe",
+          11
+        ],
+        [
+          "how",
+          6
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "critical",
+          4
+        ],
+        [
+          "steps",
+          3
+        ],
+        [
+          "changes",
+          2
+        ],
+        [
+          "three",
+          2
+        ],
+        [
+          "adjustments",
+          2
+        ],
+        [
+          "major",
+          1
+        ]
+      ],
+      "medoid_text": "In the overall structure of the video, what would you identify as the most crucial actions c took to ensure proper functioning of the lawn mower after completing the maintenance tasks?",
+      "exemplars": [
+        {
+          "text": "In the overall structure of the video, what would you identify as the most crucial actions c took to ensure proper functioning of the lawn mower after completing the maintenance tasks?",
+          "count": 1
+        },
+        {
+          "text": "Identify the critical steps taken by c to organize and prepare the engine oil for use on the lawn mower, and highlight the importance of these actions in the overall video narrative.",
+          "count": 1
+        },
+        {
+          "text": "Describe the changes made to the grass trimmer and its parts throughout the video. what was the main purpose of these adjustments?",
+          "count": 1
+        },
+        {
+          "text": "Can you identify any major turning points in the video that alter c's approach to working with the straw grass and rope? explain your reasoning.",
+          "count": 1
+        },
+        {
+          "text": "What can be said about the main focus of c's activity throughout the video, considering the tools utilized and the parts of the lawn mower they interacted with?",
+          "count": 1
+        },
+        {
+          "text": "Identify the critical moments in the video where the individual interacts with and manipulates tools or items in order to affect changes to the mower. describe the significance of these actions in accomplishing the task at hand.",
+          "count": 1
+        },
+        {
+          "text": "Given the sequence of actions c performed with multiple ride-on lawn mowers, what could be a possible motive or goal behind these actions?",
+          "count": 1
+        },
+        {
+          "text": "Describe the main steps of c's process for maintaining the lawn mower, focusing especially on the application and organization of the grease gun.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "label": "describe / other: process, steps, concise",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 28,
+      "size_total": 28,
+      "verb_top": [
+        [
+          "describe",
+          19
+        ],
+        [
+          "other",
+          4
+        ],
+        [
+          "what",
+          3
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          16
+        ],
+        [
+          "steps",
+          2
+        ],
+        [
+          "concise",
+          2
+        ],
+        [
+          "compare",
+          2
+        ],
+        [
+          "summary",
+          2
+        ],
+        [
+          "analyzing",
+          1
+        ]
+      ],
+      "medoid_text": "Describe the primary process being demonstrated in the video, focusing on the key steps and tools utilized by c.",
+      "exemplars": [
+        {
+          "text": "Describe the primary process being demonstrated in the video, focusing on the key steps and tools utilized by c.",
+          "count": 1
+        },
+        {
+          "text": "Can you describe the main process c performs in the video? please summarize and compare the different stages of the process.",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, identify and describe the most important steps in the process c follows to accomplish his task. how does each step contribute to the final output?",
+          "count": 1
+        },
+        {
+          "text": "Provide a concise explanation that captures the essence of c's process in creating the final product.",
+          "count": 1
+        },
+        {
+          "text": "Describe the overarching process followed by the character \"c\" in the video, focusing on the main stages of creating the final product.",
+          "count": 1
+        },
+        {
+          "text": "Describe the overall process c goes through multiple times in this video for creating kaliche ladoo balls, and discuss any steps she repeats throughout the process.",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, summarize the key steps in the process that c undertook while preparing the tray and working with the foil.",
+          "count": 1
+        },
+        {
+          "text": "Describe the main process in this video that c follows to accomplish the task.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "describe / what: terms, steps, critical",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 27,
+      "size_total": 27,
+      "verb_top": [
+        [
+          "describe",
+          12
+        ],
+        [
+          "what",
+          9
+        ],
+        [
+          "how",
+          3
+        ],
+        [
+          "which",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "terms",
+          2
+        ],
+        [
+          "steps",
+          2
+        ],
+        [
+          "critical",
+          2
+        ],
+        [
+          "major",
+          1
+        ],
+        [
+          "there",
+          1
+        ],
+        [
+          "inferred",
+          1
+        ]
+      ],
+      "medoid_text": "What was the main objective of c's actions throughout the video, and how does this objective relate to the various interactions with the plants?",
+      "exemplars": [
+        {
+          "text": "What was the main objective of c's actions throughout the video, and how does this objective relate to the various interactions with the plants?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the major patterns of actions c performs in the video, and discuss how they relate to the process of planting collard greens.",
+          "count": 1
+        },
+        {
+          "text": "In this video, there are repeated actions involving the leaves. identify the key, repeated actions and explain their significance in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "What can be inferred about c's assessment of the plants during the video? explain how their actions reflect their evaluations.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions described in the video, what could you infer about the overall goal and strategy of c's gardening effort?",
+          "count": 1
+        },
+        {
+          "text": "Analyze how the process c goes through for handling the maize evolves from beginning to end, and in what way is it different at the conclusion of the video as opposed to the start?",
+          "count": 1
+        },
+        {
+          "text": "Among the various actions in the video, which activities can be considered most crucial for achieving the main purpose of c's garden work? explain why.",
+          "count": 1
+        },
+        {
+          "text": "What is the main sequence of actions performed by c throughout the video to gather stems from the plants?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "label": "what / describe: between, theme, place",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 27,
+      "size_total": 27,
+      "verb_top": [
+        [
+          "what",
+          12
+        ],
+        [
+          "describe",
+          11
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "other",
+          1
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "between",
+          7
+        ],
+        [
+          "theme",
+          2
+        ],
+        [
+          "place",
+          2
+        ],
+        [
+          "communication",
+          2
+        ],
+        [
+          "give",
+          1
+        ],
+        [
+          "both",
+          1
+        ]
+      ],
+      "medoid_text": "How would you summarize the main activities of both c and the person in the video, and how do their interactions relate to one another?",
+      "exemplars": [
+        {
+          "text": "How would you summarize the main activities of both c and the person in the video, and how do their interactions relate to one another?",
+          "count": 1
+        },
+        {
+          "text": "Describe the overall theme of the video and the relationship between the actions of c and the other person.",
+          "count": 1
+        },
+        {
+          "text": "If you were to give a title to this video that captures the main activities of c and the boy, what would it be and why?",
+          "count": 1
+        },
+        {
+          "text": "Describe the primary interaction between the child and c throughout the video and explain how it showcases their roles in learning.",
+          "count": 1
+        },
+        {
+          "text": "What is the primary focus of activity in the video and how does interaction between c and the child contribute to this?",
+          "count": 1
+        },
+        {
+          "text": "What was the main collaborative activity between c and the child throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "In this video, what are the main activities taking place, and how does the interaction between c and the boy contribute to the overall goal?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the interactions and outcomes between c and the boy throughout the entire video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "what / describe: process, infer, between",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 26,
+      "size_total": 26,
+      "verb_top": [
+        [
+          "what",
+          10
+        ],
+        [
+          "describe",
+          9
+        ],
+        [
+          "how",
+          4
+        ],
+        [
+          "other",
+          2
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          2
+        ],
+        [
+          "infer",
+          2
+        ],
+        [
+          "between",
+          2
+        ],
+        [
+          "events",
+          1
+        ],
+        [
+          "crucial",
+          1
+        ],
+        [
+          "pattern",
+          1
+        ]
+      ],
+      "medoid_text": "Based on c's actions and interactions in the store, what can you infer about c's priorities and decision-making process during this shopping trip?",
+      "exemplars": [
+        {
+          "text": "Based on c's actions and interactions in the store, what can you infer about c's priorities and decision-making process during this shopping trip?",
+          "count": 1
+        },
+        {
+          "text": "Based on the events of the video, how would you describe c's behavior in the grocery store and its purpose, without listing every action?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the process of c exploring the content of the box and describe their strategy in selecting and handling items. what is the general pattern they followed after finding an item of interest?",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video, what would you identify as the most crucial moments in c's shopping experience and why?",
+          "count": 1
+        },
+        {
+          "text": "Describe the pattern of actions taken by c in relation to the shopping items and how their actions changed over time.",
+          "count": 1
+        },
+        {
+          "text": "Determine the primary purpose of c's visit to the shop from the actions observed, and explain how that purpose was accomplished.",
+          "count": 1
+        },
+        {
+          "text": "Considering the various sections of the store that c visited, which sections were visited most often and how were these sections explored differently?",
+          "count": 1
+        },
+        {
+          "text": "Based on c's actions in the video, what can you infer about their decision-making process when shopping?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "label": "which / describe: significant, your, process",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "which",
+      "size_unique": 26,
+      "size_total": 26,
+      "verb_top": [
+        [
+          "which",
+          8
+        ],
+        [
+          "describe",
+          8
+        ],
+        [
+          "what",
+          7
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "significant",
+          3
+        ],
+        [
+          "your",
+          3
+        ],
+        [
+          "process",
+          2
+        ],
+        [
+          "among",
+          2
+        ],
+        [
+          "considered",
+          1
+        ],
+        [
+          "consideration",
+          1
+        ]
+      ],
+      "medoid_text": "What are the most significant actions undertaken by c that contribute to the overall goal of the task, and why are they important?",
+      "exemplars": [
+        {
+          "text": "What are the most significant actions undertaken by c that contribute to the overall goal of the task, and why are they important?",
+          "count": 1
+        },
+        {
+          "text": "Which actions can be considered as the most crucial in achieving c's objective, and why?",
+          "count": 1
+        },
+        {
+          "text": "Taking into consideration the primary tasks completed by c, can you provide a succinct summary of the intended goal of these actions without enumerating each specific task?",
+          "count": 1
+        },
+        {
+          "text": "Which actions were the most critical to the overall task c performed, and why do you believe these actions are more important than others?",
+          "count": 1
+        },
+        {
+          "text": "Analyzing the steps taken by c, what can you deduce about their goals and the reasoning behind the choice and sequence of actions?",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the most significant actions c takes in order to navigate the environment, and what conclusions can you draw about c's goal?",
+          "count": 1
+        },
+        {
+          "text": "Describe the underlying objective of c's actions and how their method helps to achieve this purpose.",
+          "count": 1
+        },
+        {
+          "text": "Assess the most crucial set of actions performed by c that played a significant role in shaping the basket. explain your choice.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "label": "describe / what: pattern, patterns, progression",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 25,
+      "size_total": 25,
+      "verb_top": [
+        [
+          "describe",
+          12
+        ],
+        [
+          "what",
+          6
+        ],
+        [
+          "how",
+          6
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "pattern",
+          6
+        ],
+        [
+          "patterns",
+          3
+        ],
+        [
+          "progression",
+          3
+        ],
+        [
+          "analyzing",
+          1
+        ],
+        [
+          "evolve",
+          1
+        ],
+        [
+          "indicate",
+          1
+        ]
+      ],
+      "medoid_text": "Can you identify the main pattern of c's actions throughout the video and explain how this pattern affects the final outcome?",
+      "exemplars": [
+        {
+          "text": "Can you identify the main pattern of c's actions throughout the video and explain how this pattern affects the final outcome?",
+          "count": 1
+        },
+        {
+          "text": "Analyzing c's actions of adjusting, cutting, and passing objects, can you deduce the overall theme or task being demonstrated in the video?",
+          "count": 1
+        },
+        {
+          "text": "Can you summarize the overarching pattern of c's actions throughout the video while illustrating how their process evolved over time?",
+          "count": 1
+        },
+        {
+          "text": "In the video, what patterns can you identify in terms of c and the person's behaviors that relate to how they play and engage with the ball?",
+          "count": 1
+        },
+        {
+          "text": "Describe how c's actions evolve throughout the video, focusing on the main actions related to the posters and the progression of surrounding activities.",
+          "count": 1
+        },
+        {
+          "text": "Indicate the recurring patterns observed in c's actions, and outline how they contribute to the overall progression of the video. what are the key moments where c adapts or changes their approach?",
+          "count": 1
+        },
+        {
+          "text": "How would you describe the pattern of behavior c exhibits while interacting with the various items in the video?",
+          "count": 1
+        },
+        {
+          "text": "How would you characterize the general progression of c's actions throughout the video, and what might have motivated these actions?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "label": "what / describe: objective, discuss, concise",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 24,
+      "size_total": 24,
+      "verb_top": [
+        [
+          "what",
+          17
+        ],
+        [
+          "describe",
+          3
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          10
+        ],
+        [
+          "discuss",
+          2
+        ],
+        [
+          "concise",
+          1
+        ],
+        [
+          "central",
+          1
+        ],
+        [
+          "conclude",
+          1
+        ],
+        [
+          "executed",
+          1
+        ]
+      ],
+      "medoid_text": "What is the primary objective c is trying to achieve in the video, and how do the various actions throughout the video contribute to that goal?",
+      "exemplars": [
+        {
+          "text": "What is the primary objective c is trying to achieve in the video, and how do the various actions throughout the video contribute to that goal?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching objective c seems to be accomplishing with the books, and how is he incorporating the cloth into this process?",
+          "count": 1
+        },
+        {
+          "text": "In a concise manner, describe the main objective c achieved in this video by carrying out the various actions.",
+          "count": 1
+        },
+        {
+          "text": "What was the central objective c was trying to achieve throughout the video based on their actions?",
+          "count": 1
+        },
+        {
+          "text": "How would you summarize the primary objective c is trying to achieve throughout the video in one sentence, considering the recurring drilling and removing actions they performed?",
+          "count": 1
+        },
+        {
+          "text": "Based on the recurring actions throughout the video, what can you conclude as the main objective c is trying to accomplish?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary objective c was trying to achieve with the various tools and materials in the video?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary objective c was working towards throughout the video, taking into consideration the repetitive actions?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "describe / what: character, between, entering",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 23,
+      "size_total": 23,
+      "verb_top": [
+        [
+          "describe",
+          13
+        ],
+        [
+          "what",
+          8
+        ],
+        [
+          "which",
+          1
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "character",
+          2
+        ],
+        [
+          "between",
+          2
+        ],
+        [
+          "entering",
+          1
+        ],
+        [
+          "differences",
+          1
+        ],
+        [
+          "addition",
+          1
+        ],
+        [
+          "build",
+          1
+        ]
+      ],
+      "medoid_text": "What recurring activity takes place throughout the video, and how does it demonstrate the relationship between c and the dog?",
+      "exemplars": [
+        {
+          "text": "What recurring activity takes place throughout the video, and how does it demonstrate the relationship between c and the dog?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the role and significance of the dog entering the scene and how it affects c's actions.",
+          "count": 1
+        },
+        {
+          "text": "What are the key differences between the interactions c has with the dog and the doll throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "In addition to the main tasks c performed in the kitchen, what role did the dog play throughout the video, and how did it impact or affect the overall ambience and actions occurring in the kitchen?",
+          "count": 1
+        },
+        {
+          "text": "What does c do in the video to build rapport with the dog before entering the elevator, and how do these actions establish a connection between them?",
+          "count": 1
+        },
+        {
+          "text": "What shifts in c's actions indicate a progression or change in the way they handle the dog's fur?",
+          "count": 1
+        },
+        {
+          "text": "Provide a general summary of the main character's actions throughout the video, focusing on significant events related to clothes handling in the bedroom, and explaining the dog's reactions during those events.",
+          "count": 1
+        },
+        {
+          "text": "What would you identify as the most significant elements of the video with regard to c's interaction with the white dog? justify your choices.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "label": "what / how: goal, ensure, contribute",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 23,
+      "size_total": 23,
+      "verb_top": [
+        [
+          "what",
+          22
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "goal",
+          14
+        ],
+        [
+          "ensure",
+          1
+        ],
+        [
+          "contribute",
+          1
+        ],
+        [
+          "video's",
+          1
+        ],
+        [
+          "goals",
+          1
+        ],
+        [
+          "your",
+          1
+        ]
+      ],
+      "medoid_text": "What is the overarching goal of c's actions throughout the video and how do the different steps contribute to that purpose?",
+      "exemplars": [
+        {
+          "text": "What is the overarching goal of c's actions throughout the video and how do the different steps contribute to that purpose?",
+          "count": 1
+        },
+        {
+          "text": "How does c ensure the completion of their primary goal in the video? consider the steps they take to finalize or secure the outcome, including interactions with the environment and other objects.",
+          "count": 1
+        },
+        {
+          "text": "What is the overall purpose of c's actions in the video, and how does the sequence of tasks contribute to accomplishing that goal?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary goal of the actions performed by c and the man throughout the video, and how does it evolve over time?",
+          "count": 1
+        },
+        {
+          "text": "What is the overall goal achieved by c throughout the video and how do their actions evolve over time to accomplish this?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary goal of the actions performed by \"c\" throughout the video, and how do these actions contribute to achieving that goal?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching goal of the video, and how does c's interaction with the other person influence this process?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching goal of c's actions throughout the video, and how do his efforts to gather or manipulate materials contribute to achieving this goal?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "label": "which / what: considered, your, items",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "which",
+      "size_unique": 22,
+      "size_total": 22,
+      "verb_top": [
+        [
+          "which",
+          15
+        ],
+        [
+          "what",
+          5
+        ],
+        [
+          "describe",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "considered",
+          5
+        ],
+        [
+          "your",
+          2
+        ],
+        [
+          "items",
+          2
+        ],
+        [
+          "objects",
+          2
+        ],
+        [
+          "undertaken",
+          1
+        ],
+        [
+          "terms",
+          1
+        ]
+      ],
+      "medoid_text": "In your opinion, which are the most crucial actions performed by c in the video, and why do you think they hold significance in the context of the overall activity?",
+      "exemplars": [
+        {
+          "text": "In your opinion, which are the most crucial actions performed by c in the video, and why do you think they hold significance in the context of the overall activity?",
+          "count": 1
+        },
+        {
+          "text": "Based on your understanding of the video, which actions performed by c appear most critical to the completion and quality of c's work? explain your reasoning without listing specific events.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions c has undertaken, what would you deduce to be the most significant part of the video, and why should that be considered as such?",
+          "count": 1
+        },
+        {
+          "text": "In terms of importance, which can be considered as the two main categories of actions performed by c in the video? briefly explain your reasoning.",
+          "count": 1
+        },
+        {
+          "text": "What could be considered the most critical phase or task character c executed in the video, and how does it connect to the overall video's purpose?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions performed by c and the man, what would you consider the most critical aspect of their ongoing project, and why? offer a concise conclusion with a clear reference to the video content.",
+          "count": 1
+        },
+        {
+          "text": "Identify which elements and actions appear to be most significant for c in the video and explain why.",
+          "count": 1
+        },
+        {
+          "text": "Which actions can be considered the most crucial in leading to the culmination of the activity being carried out by c in the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "describe / what: crucial, peeler, paper",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 21,
+      "size_total": 21,
+      "verb_top": [
+        [
+          "describe",
+          8
+        ],
+        [
+          "what",
+          6
+        ],
+        [
+          "how",
+          6
+        ],
+        [
+          "why",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "crucial",
+          1
+        ],
+        [
+          "peeler",
+          1
+        ],
+        [
+          "paper",
+          1
+        ],
+        [
+          "knife",
+          1
+        ],
+        [
+          "repeated",
+          1
+        ],
+        [
+          "reflecting",
+          1
+        ]
+      ],
+      "medoid_text": "How would you describe the significance of using the ruler, pencil, and pocket knife in this video, and how do they contribute to the overall task being conducted by c?",
+      "exemplars": [
+        {
+          "text": "How would you describe the significance of using the ruler, pencil, and pocket knife in this video, and how do they contribute to the overall task being conducted by c?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what crucial points indicate a change in c's approach to knife sharpening and handling? explain their significance in relation to the video's overall goal.",
+          "count": 1
+        },
+        {
+          "text": "Explain the significance of the peeler and the knife in the video and their respective roles in the preparation process.",
+          "count": 1
+        },
+        {
+          "text": "Explain the significance of c's interactions with the paper tape and the ruler, giving special consideration to each tool's utility in achieving the desired outcome.",
+          "count": 1
+        },
+        {
+          "text": "Explain the significance of c's actions with the knife and the spring onions. how do these actions contribute to the central objective in the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the repeated actions and series of steps in the video, describe the importance of the knife's role and how it contributes to the final result of the process.",
+          "count": 1
+        },
+        {
+          "text": "Reflecting on the video, what is the significance of the knife in relation to the primary activity that c is performing?",
+          "count": 1
+        },
+        {
+          "text": "Throughout the video, how does c interact with and use the different objects (scissors, paper, phone, and plastic) in their process of creating something?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "label": "describe / which: three, considered, justify",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 21,
+      "size_total": 21,
+      "verb_top": [
+        [
+          "describe",
+          12
+        ],
+        [
+          "which",
+          7
+        ],
+        [
+          "what",
+          1
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "three",
+          3
+        ],
+        [
+          "considered",
+          2
+        ],
+        [
+          "justify",
+          1
+        ],
+        [
+          "rated",
+          1
+        ],
+        [
+          "choose",
+          1
+        ],
+        [
+          "concise",
+          1
+        ]
+      ],
+      "medoid_text": "Based on the actions taken by c in the video, which tasks can be considered most essential to the overall process? explain the importance of these tasks in the context of the video as a whole.",
+      "exemplars": [
+        {
+          "text": "Based on the actions taken by c in the video, which tasks can be considered most essential to the overall process? explain the importance of these tasks in the context of the video as a whole.",
+          "count": 1
+        },
+        {
+          "text": "Out of all the tasks performed by c in the video, identify the key task and justify its importance compared to the other tasks.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire video, what would be rated as the top priority based on the time and effort put into different tasks? explain the significance of these tasks in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "From the various activities performed by c, choose the most significant task and justify your choice by explaining its importance in the context of the overall video.",
+          "count": 1
+        },
+        {
+          "text": "Identify and explain the three most important tasks c carries out in the video, taking into account their significance in the greater context of the scene.",
+          "count": 1
+        },
+        {
+          "text": "Based on c's actions, which tasks can be considered the most important or time-consuming in the video, and why do you think these tasks require greater attention or effort?",
+          "count": 1
+        },
+        {
+          "text": "Can you provide a concise summary of the main tasks that c and the man performed in the video? assess these tasks in terms of their importance within the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Considering the various tasks c performs in the video, which actions can be considered the most important for achieving the intended outcome and why?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "label": "what / describe: bucket, discuss, reason",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 20,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "what",
+          8
+        ],
+        [
+          "describe",
+          5
+        ],
+        [
+          "how",
+          4
+        ],
+        [
+          "other",
+          2
+        ],
+        [
+          "who",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "bucket",
+          1
+        ],
+        [
+          "discuss",
+          1
+        ],
+        [
+          "reason",
+          1
+        ],
+        [
+          "water",
+          1
+        ],
+        [
+          "compare",
+          1
+        ],
+        [
+          "between",
+          1
+        ]
+      ],
+      "medoid_text": "What is the significance of c's interaction with certain objects, such as the detergent bottle, sponge, and utensils rack, and how does their manipulation contribute to the overall objective of the video?",
+      "exemplars": [
+        {
+          "text": "What is the significance of c's interaction with certain objects, such as the detergent bottle, sponge, and utensils rack, and how does their manipulation contribute to the overall objective of the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on c's interaction with the bucket, the tap, and the powder, discuss the significance of these elements in this video, and how they contribute to understanding c's primary goal in the video.",
+          "count": 1
+        },
+        {
+          "text": "Discuss the most significant actions performed by c with the pipe and the likely purpose of these actions in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "What is the primary reason behind c's interactions with the bucket and the water throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "How is water utilized throughout the video, and why might this be important for the task that c is completing?",
+          "count": 1
+        },
+        {
+          "text": "Compare and contrast c's actions towards tail lights before and after interacting with the drawer, and explain the possible motivation behind the changes.",
+          "count": 1
+        },
+        {
+          "text": "What was the primary purpose of the various interactions between c and the tiny balls throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main actions performed by the man regarding the hose, including any interactions with c.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "what / describe: woman, objective, pattern",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 19,
+      "size_total": 19,
+      "verb_top": [
+        [
+          "what",
+          11
+        ],
+        [
+          "describe",
+          5
+        ],
+        [
+          "how",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "woman",
+          3
+        ],
+        [
+          "objective",
+          2
+        ],
+        [
+          "pattern",
+          2
+        ],
+        [
+          "think",
+          1
+        ],
+        [
+          "pivotal",
+          1
+        ],
+        [
+          "taken",
+          1
+        ]
+      ],
+      "medoid_text": "What is the primary objective of the woman's actions in the video, and what similarities can you find between her various activities to achieve this goal?",
+      "exemplars": [
+        {
+          "text": "What is the primary objective of the woman's actions in the video, and what similarities can you find between her various activities to achieve this goal?",
+          "count": 1
+        },
+        {
+          "text": "What role do you think the actions performed by the woman in the video serve in the larger context of the video, and how do they contribute to the overall story?",
+          "count": 1
+        },
+        {
+          "text": "What is the overall objective of the woman's actions throughout the video and how do her actions contribute to that objective?",
+          "count": 1
+        },
+        {
+          "text": "What was the most pivotal moment of the video, and how do the woman's preceding and subsequent actions relate to this moment?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions taken by the woman in the video, what are her primary responsibilities in this scene and how does she fulfill them?",
+          "count": 1
+        },
+        {
+          "text": "Based on the pattern of actions, what can be inferred about the lady's behavior and her possible goal in the video?",
+          "count": 1
+        },
+        {
+          "text": "What is the significance of the interaction with the woman in the context of the whole video, and how does it contribute to understanding the main purpose or theme of the video? discuss the importance of this event in relation to the rest of the video actions.",
+          "count": 1
+        },
+        {
+          "text": "Considering the main actions in the video, how would you summarize the video's central activity, and what role does the interaction with the girl play in this context?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "label": "what / how: tools, utilize, tool",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 19,
+      "size_total": 19,
+      "verb_top": [
+        [
+          "what",
+          10
+        ],
+        [
+          "how",
+          4
+        ],
+        [
+          "which",
+          2
+        ],
+        [
+          "describe",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "tools",
+          7
+        ],
+        [
+          "utilize",
+          2
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "materials",
+          1
+        ],
+        [
+          "instead",
+          1
+        ],
+        [
+          "choice",
+          1
+        ]
+      ],
+      "medoid_text": "What were the main tools used by c and their primary purpose throughout the video?",
+      "exemplars": [
+        {
+          "text": "What were the main tools used by c and their primary purpose throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "What was the primary tool used by c in the video, and how did c utilize this tool in order to create a desired outcome?",
+          "count": 1
+        },
+        {
+          "text": "Throughout the video, which two tools did c use repeatedly, and what was their primary purpose in relation to the task with the paper and camera lens?",
+          "count": 1
+        },
+        {
+          "text": "What were the primary materials and tools c utilized while working throughout the video, and how were they used to modify her creations?",
+          "count": 1
+        },
+        {
+          "text": "Instead of listing every instance c used the knob on the 3d printer, describe the general significance of him adjusting the knob repeatedly throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "How did the choice and use of tools throughout the video contribute to c's final product, keeping in mind the various tasks c completed?",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions performed by c, what were the primary tools used and their purposes throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what was the primary problem with the printer and what specific actions did c take to resolve the issue?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "label": "what / describe: objective, context, character",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 19,
+      "size_total": 19,
+      "verb_top": [
+        [
+          "what",
+          12
+        ],
+        [
+          "describe",
+          4
+        ],
+        [
+          "how",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "objective",
+          8
+        ],
+        [
+          "context",
+          2
+        ],
+        [
+          "character",
+          2
+        ],
+        [
+          "objectives",
+          1
+        ],
+        [
+          "deduce",
+          1
+        ],
+        [
+          "process",
+          1
+        ]
+      ],
+      "medoid_text": "Considering the various actions performed by c, what is the main objective of the character in the video?",
+      "exemplars": [
+        {
+          "text": "Considering the various actions performed by c, what is the main objective of the character in the video?",
+          "count": 1
+        },
+        {
+          "text": "Describe the main objectives and actions of this character (c) throughout the video, without listing every action, but focusing on the primary ones related to eating.",
+          "count": 1
+        },
+        {
+          "text": "What can you deduce about the primary and secondary objectives of the character c throughout the video, and how do these objectives shift as the video progresses?",
+          "count": 1
+        },
+        {
+          "text": "In the process of working with the yellow rubber, mechanical model, and puzzle pieces, what can you infer about the overall objective of the character c in this video?",
+          "count": 1
+        },
+        {
+          "text": "In the context of the video, how would you describe the primary objective of the character c?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary objective that character c seems to have throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary objective of the main character (c) in this video and highlight the major steps c took to achieve it.",
+          "count": 1
+        },
+        {
+          "text": "Explain the overall objective of the character 'c' in this video, and how they interacted with the other man to achieve it.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "label": "describe / how: three, different, significant",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 17,
+      "size_total": 17,
+      "verb_top": [
+        [
+          "describe",
+          16
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "three",
+          3
+        ],
+        [
+          "different",
+          2
+        ],
+        [
+          "significant",
+          2
+        ],
+        [
+          "movements",
+          1
+        ],
+        [
+          "aspects",
+          1
+        ],
+        [
+          "apart",
+          1
+        ]
+      ],
+      "medoid_text": "Based on the various actions performed by c in different locations, identify and explain the three most significant actions that contribute to the overall narrative of the video.",
+      "exemplars": [
+        {
+          "text": "Based on the various actions performed by c in different locations, identify and explain the three most significant actions that contribute to the overall narrative of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify three actions or interactions performed by c which played a significant role in the unfolding of the video's narrative, and explain their importance.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the movements and actions that c takes throughout the video and derive the most important actions performed by c that are significant to the central narrative.",
+          "count": 1
+        },
+        {
+          "text": "Analyze c's actions across different parts of the video, and identify one primary focus. explain its significance in the context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the video and identify which aspects of c's actions were most crucial in understanding the overall narrative. please provide an explanation for your choice.",
+          "count": 1
+        },
+        {
+          "text": "Apart from c's primary focus on the cardboard tubes, identify two notable occurrences or distractions during the video and describe their potential impact on c's overall process.",
+          "count": 1
+        },
+        {
+          "text": "Identify the two most significant actions or interactions from the video that provide the clearest insights into c's character and the overall narrative. explain your choices.",
+          "count": 1
+        },
+        {
+          "text": "Construct a narrative that includes at least three key points showcasing c's transition between different areas of the workshop, how it correlates with the cleaning process, and indicate the purpose of each transition in the context of the video.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "label": "describe / how: repetitive, importance, repeated",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 17,
+      "size_total": 17,
+      "verb_top": [
+        [
+          "describe",
+          13
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "where/when",
+          1
+        ],
+        [
+          "why",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "repetitive",
+          3
+        ],
+        [
+          "importance",
+          2
+        ],
+        [
+          "repeated",
+          2
+        ],
+        [
+          "your",
+          1
+        ],
+        [
+          "sequences",
+          1
+        ],
+        [
+          "there",
+          1
+        ]
+      ],
+      "medoid_text": "Determine the primary purpose of c's actions in the video, and explain the importance of the repetitive actions involved in this process.",
+      "exemplars": [
+        {
+          "text": "Determine the primary purpose of c's actions in the video, and explain the importance of the repetitive actions involved in this process.",
+          "count": 1
+        },
+        {
+          "text": "In your own words, explain the thought process and reasoning behind c's actions throughout the video, making sure to compress the information without just listing the actions that occurred.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the importance of the repetitive sequence of events in the video as a whole. what insight can you gather about the process c is following and the desired outcome of these actions?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the repetitive actions of c and the overall scenario they navigated throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "Considering the sequences of actions done by c in the video, can you identify and summarize the two major themes or stages that the tasks can be grouped into?",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary repeated actions of \"c\" in this video and explain the purpose of these actions in relation to the overall objective of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the repeated actions performed by c throughout the video, and explain the likely purpose behind these actions without listing each instance.",
+          "count": 1
+        },
+        {
+          "text": "In the video, there are various points where c repeats certain actions! identify two significant actions that were repeated and explain why they may have been crucial for the main goal of the video. remember to compress the information from the video and provide a concise explanation.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "label": "describe / what: context, significant, crucial",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 16,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "describe",
+          14
+        ],
+        [
+          "what",
+          1
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "context",
+          5
+        ],
+        [
+          "significant",
+          2
+        ],
+        [
+          "crucial",
+          2
+        ],
+        [
+          "events",
+          1
+        ],
+        [
+          "rest",
+          1
+        ],
+        [
+          "list",
+          1
+        ]
+      ],
+      "medoid_text": "Identify the two most crucial actions c performs in the video and explain their significance in the context of the overall activity.",
+      "exemplars": [
+        {
+          "text": "Identify the two most crucial actions c performs in the video and explain their significance in the context of the overall activity.",
+          "count": 1
+        },
+        {
+          "text": "Identify the most significant action that c performed in the video and explain the impact of that action on the overall situation.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions performed by c, identify the two most important actions in the video and explain their significance in the context of the video's high-level details.",
+          "count": 1
+        },
+        {
+          "text": "In the sequence of events, identify the key moments or actions that showcase what was most important for c during the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the most important action c performed at the end of the video, and explain its significance and relationship to the rest of the events in the video.",
+          "count": 1
+        },
+        {
+          "text": "From the list of different actions performed by c in the video, identify three critical or recurring activities, and discuss their significance in the overall context of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the most crucial actions \"c\" executed during the video and explain their significance in achieving the video's overall purpose.",
+          "count": 1
+        },
+        {
+          "text": "Identify two instances in the video where c's actions are relatively less significant or relevant to the primary task at hand, and explain why these actions might be considered less important.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "label": "what / describe: process, happening, goal",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 15,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "what",
+          8
+        ],
+        [
+          "describe",
+          6
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "process",
+          9
+        ],
+        [
+          "happening",
+          1
+        ],
+        [
+          "goal",
+          1
+        ],
+        [
+          "core",
+          1
+        ],
+        [
+          "compress",
+          1
+        ],
+        [
+          "steps",
+          1
+        ]
+      ],
+      "medoid_text": "What is the overarching process c is involved in during the video, and how do they consistently approach it?",
+      "exemplars": [
+        {
+          "text": "What is the overarching process c is involved in during the video, and how do they consistently approach it?",
+          "count": 1
+        },
+        {
+          "text": "Can you describe the overarching process that c follows throughout the video and explain its purpose?",
+          "count": 1
+        },
+        {
+          "text": "Based on the overall actions in the video, can you describe the main process c is performing, and how does it change or remain consistent throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Describe the overarching process that c is performing throughout the video and indicate its purpose.",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching process that c is engaged in throughout the video, and how does it evolve from beginning to end?",
+          "count": 1
+        },
+        {
+          "text": "What is the primary activity happening throughout the video, and how does c maintain consistency while performing this activity?",
+          "count": 1
+        },
+        {
+          "text": "In this video, what is c's overarching process that includes molding, filling, pouring, and scraping?",
+          "count": 1
+        },
+        {
+          "text": "What is the overarching goal of the repeated process c executes throughout the video, and how is this process systematically organized?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "label": "how / what: behavior, point, possible",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "how",
+      "size_unique": 15,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "how",
+          6
+        ],
+        [
+          "what",
+          6
+        ],
+        [
+          "which",
+          2
+        ],
+        [
+          "describe",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "behavior",
+          5
+        ],
+        [
+          "point",
+          1
+        ],
+        [
+          "possible",
+          1
+        ],
+        [
+          "significant",
+          1
+        ],
+        [
+          "potentially",
+          1
+        ],
+        [
+          "video's",
+          1
+        ]
+      ],
+      "medoid_text": "How does c's behavior evolve throughout the video, and why might these changes in activities be significant?",
+      "exemplars": [
+        {
+          "text": "How does c's behavior evolve throughout the video, and why might these changes in activities be significant?",
+          "count": 1
+        },
+        {
+          "text": "How did c's behavior evolve throughout the video, and what stages of engagement with the tasks can you identify?",
+          "count": 1
+        },
+        {
+          "text": "How does c's behavior evolve as he manages different tasks throughout the video, and what underlying pattern or purpose can you identify from his actions?",
+          "count": 1
+        },
+        {
+          "text": "At what point in the video does an abnormality occur, and how does c handle the situation?",
+          "count": 1
+        },
+        {
+          "text": "What possible reasons could there be for c's intermittent behavior and how might their actions be related to their overall goal?",
+          "count": 1
+        },
+        {
+          "text": "How does c's behavior change throughout the video? consider his actions and focus on notable shifts in his engagement or the way he participates in the activity.",
+          "count": 1
+        },
+        {
+          "text": "What significant change in c's process occurs around the middle of the video, and why might this have been necessary?",
+          "count": 1
+        },
+        {
+          "text": "What actions could potentially have long-term consequences for c's learning or organizational behavior throughout the video?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "label": "describe / other: three, events, discuss",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 15,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "describe",
+          13
+        ],
+        [
+          "other",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "three",
+          4
+        ],
+        [
+          "events",
+          2
+        ],
+        [
+          "discuss",
+          1
+        ],
+        [
+          "importance",
+          1
+        ],
+        [
+          "define",
+          1
+        ],
+        [
+          "observed",
+          1
+        ]
+      ],
+      "medoid_text": "From observing c's actions in the video, identify the three most significant stages in their process and explain why they are crucial to achieving their goal.",
+      "exemplars": [
+        {
+          "text": "From observing c's actions in the video, identify the three most significant stages in their process and explain why they are crucial to achieving their goal.",
+          "count": 1
+        },
+        {
+          "text": "Based on the sequence of events, describe the main steps taken by c to achieve their goal in the video while focusing on the most important parts.",
+          "count": 1
+        },
+        {
+          "text": "Identify and discuss the three most critical steps taken by c and the man during the video. explain why these steps are particularly important in accomplishing their goal.",
+          "count": 1
+        },
+        {
+          "text": "Considering the importance to the overall outcome, identify the three primary steps in c's routine throughout the video, and explain why they are essential.",
+          "count": 1
+        },
+        {
+          "text": "Based on c's actions, define the main task he was performing without listing the individual steps he took.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions observed in the video, can you rank the three most crucial steps in completing the task that c was attempting to accomplish, and provide reasoning for your choices?",
+          "count": 1
+        },
+        {
+          "text": "Based on the patterns in the video, identify three key steps c followed to ensure accuracy and safety during the process. describe each step and its significance in the overall context of the video without mentioning individual actions.",
+          "count": 1
+        },
+        {
+          "text": "Identify the three most critical steps \"c\" took to complete their responsibilities in the video, and explain why you believe these particular steps were essential.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "label": "describe / what: events, evaluating, observed",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 15,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "describe",
+          8
+        ],
+        [
+          "what",
+          3
+        ],
+        [
+          "which",
+          2
+        ],
+        [
+          "how",
+          1
+        ],
+        [
+          "who",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "events",
+          3
+        ],
+        [
+          "evaluating",
+          1
+        ],
+        [
+          "observed",
+          1
+        ],
+        [
+          "character",
+          1
+        ],
+        [
+          "adjusts",
+          1
+        ],
+        [
+          "repetitive",
+          1
+        ]
+      ],
+      "medoid_text": "What sequence of events led c to perform the action that can be considered the most crucial in terms of progressing the task?",
+      "exemplars": [
+        {
+          "text": "What sequence of events led c to perform the action that can be considered the most crucial in terms of progressing the task?",
+          "count": 1
+        },
+        {
+          "text": "By evaluating c's actions, identify which sequences signify crucial turning points, and explain their significance in the overall process carried out by c.",
+          "count": 1
+        },
+        {
+          "text": "Based on the actions observed, identify the three most crucial tasks that c performs to ensure the desired outcome.",
+          "count": 1
+        },
+        {
+          "text": "How does the character c demonstrate both precision and efficiency in the process? think about the way actions are performed and how c uses different tools for various tasks.",
+          "count": 1
+        },
+        {
+          "text": "Describe the sequence of actions in which c adjusts the tools he uses and switches them between hands to efficiently achieve his goals.",
+          "count": 1
+        },
+        {
+          "text": "Considering the sequence of events, what are the major tasks that c carries out, and how can you narrate the overall process concisely?",
+          "count": 1
+        },
+        {
+          "text": "What were the repetitive actions and techniques c employed in order to complete the task, and why might they be significant?",
+          "count": 1
+        },
+        {
+          "text": "Which of c's activity transitions could be considered most significant for his creative process? explain your reasoning.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "describe / how: behind, compare, switching",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 14,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "describe",
+          7
+        ],
+        [
+          "how",
+          5
+        ],
+        [
+          "what",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "behind",
+          1
+        ],
+        [
+          "compare",
+          1
+        ],
+        [
+          "switching",
+          1
+        ],
+        [
+          "make",
+          1
+        ],
+        [
+          "effectively",
+          1
+        ],
+        [
+          "alternating",
+          1
+        ]
+      ],
+      "medoid_text": "What was the main purpose behind c moving his/her right hand frequently and interacting with various objects throughout the video?",
+      "exemplars": [
+        {
+          "text": "What was the main purpose behind c moving his/her right hand frequently and interacting with various objects throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Compare the significance of c rubbing her right hand together with her other actions in the video, and identify why she might have been doing this frequently.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the significance of c switching between her left and right hands while handling the collard green vegetables throughout the video.",
+          "count": 1
+        },
+        {
+          "text": "How did c make use of both their hands and legs throughout the video to accomplish their tasks efficiently, and what was the significance of these actions?",
+          "count": 1
+        },
+        {
+          "text": "How does c effectively utilize both their left and right hands during the course of the video, and what is the significance of this in achieving the objective?",
+          "count": 1
+        },
+        {
+          "text": "Can you identify the main purpose of alternating between left and right hand use during the wrapping process, and provide an overall summary of its effects on the final product?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what is the likely purpose of snapping fingers during the course of the card game, and how does it affect the overall mood of the interaction between the man and 'c'?",
+          "count": 1
+        },
+        {
+          "text": "How does c use her right leg and her right hand in a coordinated manner, and what conclusions can you draw about the purpose of these movements?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "label": "describe / what: between, pattern, lady",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 14,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "describe",
+          9
+        ],
+        [
+          "what",
+          4
+        ],
+        [
+          "which",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "between",
+          2
+        ],
+        [
+          "pattern",
+          2
+        ],
+        [
+          "lady",
+          1
+        ],
+        [
+          "predominant",
+          1
+        ],
+        [
+          "woman",
+          1
+        ],
+        [
+          "differences",
+          1
+        ]
+      ],
+      "medoid_text": "Analyze the pattern of interactions between the woman and c and explain the significance of these interactions in achieving their overall objective.",
+      "exemplars": [
+        {
+          "text": "Analyze the pattern of interactions between the woman and c and explain the significance of these interactions in achieving their overall objective.",
+          "count": 1
+        },
+        {
+          "text": "Analyze c's interactions with the man and the lady. what are some similarities and differences in these interactions?",
+          "count": 1
+        },
+        {
+          "text": "Based on the predominant actions exhibited by c and the lady, what would you infer about the environment they are in?",
+          "count": 1
+        },
+        {
+          "text": "Based on c's interactions with the man and the woman as well as their response to these interactions, what can be inferred about c's relationship to them and the shared activity they are engaged in?",
+          "count": 1
+        },
+        {
+          "text": "Analyze how the interaction between c and the woman in the laboratory evolves. what can we deduce from their actions and the items they handle?",
+          "count": 1
+        },
+        {
+          "text": "Analyze the pattern of c's body language and hand movements during his interactions with the woman. how do these movements contribute to the overall communication between c and the woman?",
+          "count": 1
+        },
+        {
+          "text": "What are the key differences between c's actions and the actions of the other women in the supermarket?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, describe the overall atmosphere at the table and how it might affect the way c, the man, and the girl eat.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "label": "describe / what: steps, method, process",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 14,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "describe",
+          7
+        ],
+        [
+          "what",
+          5
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "steps",
+          2
+        ],
+        [
+          "method",
+          2
+        ],
+        [
+          "process",
+          2
+        ],
+        [
+          "concisely",
+          1
+        ],
+        [
+          "summary",
+          1
+        ],
+        [
+          "referring",
+          1
+        ]
+      ],
+      "medoid_text": "Referring to the video, what are the key steps c uses to prepare and manipulate the leaves?",
+      "exemplars": [
+        {
+          "text": "Referring to the video, what are the key steps c uses to prepare and manipulate the leaves?",
+          "count": 1
+        },
+        {
+          "text": "Summarize the main steps taken by c while preparing the soil and planting the seeds throughout the video. focus specifically on the different actions taken to facilitate the planting process.",
+          "count": 1
+        },
+        {
+          "text": "How would you concisely describe the overall process that c undertakes in order to prepare the plantain flower throughout this video?",
+          "count": 1
+        },
+        {
+          "text": "As a general summary, what is the main activity that c is performing throughout the video, and what two types of seeds does he deal with using the same process?",
+          "count": 1
+        },
+        {
+          "text": "Identify and summarize the key steps c takes to prepare materials and tools before and during their work with the leaves. how do these steps contribute to the overall leaf-folding process?",
+          "count": 1
+        },
+        {
+          "text": "Identify and elaborate on any recurring actions or patterns in c's approach towards processing the jute mallow and the leaf stick.",
+          "count": 1
+        },
+        {
+          "text": "How does \"c\" utilize the scissors and pins to manipulate the leaves? explain the technique in a condensed and comprehensive manner, mentioning only the key steps.",
+          "count": 1
+        },
+        {
+          "text": "What is the primary method c uses for preparing the leaves, and why might they need to complete this process multiple times?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "label": "what / describe: infer, deduced, distinct",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 14,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "what",
+          8
+        ],
+        [
+          "describe",
+          4
+        ],
+        [
+          "how",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "infer",
+          3
+        ],
+        [
+          "deduced",
+          1
+        ],
+        [
+          "distinct",
+          1
+        ],
+        [
+          "concise",
+          1
+        ],
+        [
+          "observer's",
+          1
+        ],
+        [
+          "taken",
+          1
+        ]
+      ],
+      "medoid_text": "Analyze the significance of c's actions in the context of the entire video, and identify which tasks may have been pivotal to achieving the desired outcome.",
+      "exemplars": [
+        {
+          "text": "Analyze the significance of c's actions in the context of the entire video, and identify which tasks may have been pivotal to achieving the desired outcome.",
+          "count": 1
+        },
+        {
+          "text": "What can be deduced about c's level of expertise in the task by observing the kind of adjustments made throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video actions, identify and describe two distinct aspects of c's expertise, emphasizing their importance in accomplishing the primary goal of the video.",
+          "count": 1
+        },
+        {
+          "text": "Analyze c's actions in the video and provide a concise explanation of their decision-making process as they assess different items.",
+          "count": 1
+        },
+        {
+          "text": "Based on the observer's actions, how can you infer their role in the video and how might it impact the effectiveness of c's actions in achieving a successfully completed task?",
+          "count": 1
+        },
+        {
+          "text": "Considering the actions taken by person c throughout the video, what can you infer about the main task person c was trying to accomplish? aim to summarize and compare the long parts of the video.",
+          "count": 1
+        },
+        {
+          "text": "In what ways does c showcase their thought process regarding the different tasks performed in the video? focus on inferring the underlying decision-making that connects the actions rather than listing each task individually.",
+          "count": 1
+        },
+        {
+          "text": "What could you infer about the skills and attention to detail of the individual (c) in the video? use the various actions in the video to support your answer.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "label": "what / describe: several, deduce, likely",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "what",
+      "size_unique": 13,
+      "size_total": 13,
+      "verb_top": [
+        [
+          "what",
+          10
+        ],
+        [
+          "describe",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "several",
+          2
+        ],
+        [
+          "deduce",
+          1
+        ],
+        [
+          "likely",
+          1
+        ],
+        [
+          "insights",
+          1
+        ],
+        [
+          "possible",
+          1
+        ],
+        [
+          "some",
+          1
+        ]
+      ],
+      "medoid_text": "What is the main purpose of c's actions in this video? briefly explain the importance of the repetitive nature of their actions.",
+      "exemplars": [
+        {
+          "text": "What is the main purpose of c's actions in this video? briefly explain the importance of the repetitive nature of their actions.",
+          "count": 1
+        },
+        {
+          "text": "From the video, deduce the main purpose of c's actions, considering both the repetitive and the intermittent activities.",
+          "count": 1
+        },
+        {
+          "text": "What is the most likely reason behind c's repetitive actions involving taps, and what overarching goal can you infer from these actions?",
+          "count": 1
+        },
+        {
+          "text": "Based on the video, what insights can you gather about the importance of the repetitive actions c engages in?",
+          "count": 1
+        },
+        {
+          "text": "What could be a possible reasoning behind c's repetitive action of picking up and throwing cloths, and how does this action evolve over the course of the video?",
+          "count": 1
+        },
+        {
+          "text": "What are some possible reasons for c's repeated interactions with washers throughout the video?",
+          "count": 1
+        },
+        {
+          "text": "What might be c's primary reason for repeatedly picking up and putting down items, and how do these actions contribute to the video's overall purpose?",
+          "count": 1
+        },
+        {
+          "text": "At several points, c repeatedly performs the same actions on the dresses. what is the purpose and significance of these repetitions, and how do they contribute to the video's overall goal?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "label": "describe / what: tools, secondary, discuss",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 13,
+      "size_total": 13,
+      "verb_top": [
+        [
+          "describe",
+          8
+        ],
+        [
+          "what",
+          3
+        ],
+        [
+          "which",
+          1
+        ],
+        [
+          "how",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "tools",
+          5
+        ],
+        [
+          "secondary",
+          1
+        ],
+        [
+          "discuss",
+          1
+        ],
+        [
+          "order",
+          1
+        ],
+        [
+          "critical",
+          1
+        ],
+        [
+          "different",
+          1
+        ]
+      ],
+      "medoid_text": "Explain the significance of the tools used by c and their role in the completion of the project.",
+      "exemplars": [
+        {
+          "text": "Explain the significance of the tools used by c and their role in the completion of the project.",
+          "count": 1
+        },
+        {
+          "text": "What is the primary and secondary tools used by c in the creative process, and how do they relate to one another?",
+          "count": 1
+        },
+        {
+          "text": "Identify and discuss the key steps taken by c to securely install the dust cap on the axle.",
+          "count": 1
+        },
+        {
+          "text": "In what order does c handle the different tools, such as the fork, spoon, and scraper, throughout the process and for what purposes?",
+          "count": 1
+        },
+        {
+          "text": "Describe the critical steps in disassembling and reassembling the generator's engine components.",
+          "count": 1
+        },
+        {
+          "text": "Considering all the tools used by c, which two tools are used most frequently and in what specific manner do they assist in c's main task?",
+          "count": 1
+        },
+        {
+          "text": "Explain the purpose and significance of the various tools used by c during the repair process, and how their usage contributes to the successful completion of the task.",
+          "count": 1
+        },
+        {
+          "text": "What are the different types of equipment and tools that c uses throughout the process, and how do they contribute to his overall efficiency and productivity?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "label": "describe / what: involving, events, referring",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 12,
+      "size_total": 12,
+      "verb_top": [
+        [
+          "describe",
+          7
+        ],
+        [
+          "what",
+          2
+        ],
+        [
+          "how",
+          2
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "involving",
+          1
+        ],
+        [
+          "events",
+          1
+        ],
+        [
+          "referring",
+          1
+        ],
+        [
+          "infer",
+          1
+        ],
+        [
+          "process",
+          1
+        ],
+        [
+          "small",
+          1
+        ]
+      ],
+      "medoid_text": "Describe the relationships between the cardboard, transparent paper, and kraft paper in the video, and explain how c interacts with and works on these materials. focus on the main techniques used to manipulate these materials.",
+      "exemplars": [
+        {
+          "text": "Describe the relationships between the cardboard, transparent paper, and kraft paper in the video, and explain how c interacts with and works on these materials. focus on the main techniques used to manipulate these materials.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the sequence of actions involving the brown paper pieces and provide a concise summary of the process that can be deduced from these actions.",
+          "count": 1
+        },
+        {
+          "text": "Considering the entire sequence of events, can you determine which particular actions or objects were essential to obtaining the desired result from the brown papers and why?",
+          "count": 1
+        },
+        {
+          "text": "Referring to the actions taken while dealing with multiple garlands and hanging decorations, describe the approaches used to ensure the correct placement and arrangement of these items?",
+          "count": 1
+        },
+        {
+          "text": "What can you infer about c's methodical approach to handling and organizing the kraft papers throughout the video? explain how this approach affects the outcome of the task.",
+          "count": 1
+        },
+        {
+          "text": "How did the process of decorating the window transition from using garlands to incorporating other decoration items and what might have been the purpose of this change?",
+          "count": 1
+        },
+        {
+          "text": "Explain the purpose of the small pieces of brown paper in relation to the larger brown papers, and describe how they contributed to the overall project.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the video and describe the relationship between the paper craft and the emboss board, explaining their significance in the process demonstrated in the video.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "label": "describe / other: alongside, performs, engaged",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "describe",
+      "size_unique": 12,
+      "size_total": 12,
+      "verb_top": [
+        [
+          "describe",
+          11
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "alongside",
+          1
+        ],
+        [
+          "performs",
+          1
+        ],
+        [
+          "engaged",
+          1
+        ],
+        [
+          "context",
+          1
+        ],
+        [
+          "concisely",
+          1
+        ],
+        [
+          "progression",
+          1
+        ]
+      ],
+      "medoid_text": "Identify and concisely summarize the primary activity c is engaged in throughout the video, as well as any minor variations in the process.",
+      "exemplars": [
+        {
+          "text": "Identify and concisely summarize the primary activity c is engaged in throughout the video, as well as any minor variations in the process.",
+          "count": 1
+        },
+        {
+          "text": "Alongside weed removal, identify a secondary activity c performed in the video, and discuss how it relates to the main action of the video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the recurring actions c performs between exercise activities and discuss their significance within the context of the overall video.",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary activity c is engaged in throughout the video and explain the steps taken to prepare for that activity.",
+          "count": 1
+        },
+        {
+          "text": "In the context of this video, summarize the primary activity c focuses on throughout the video while also highlighting the secondary tools used during the process.",
+          "count": 1
+        },
+        {
+          "text": "Identify the primary activity in this video and explain c's progression in performing this activity from start to finish. make sure to compress the information provided and mention any significant variations or interruptions in the process.",
+          "count": 1
+        },
+        {
+          "text": "Analyze the structure of the video and summarize the primary phases of the activity that c is engaging in.",
+          "count": 1
+        },
+        {
+          "text": "Recognizing the repetitive actions in the video, can you provide a concise summary of the overall activity c was engaged in?",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
