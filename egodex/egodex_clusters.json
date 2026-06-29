@@ -1,0 +1,3810 @@
+{
+  "work": "EgoDex",
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "umap_viz": {
+      "n_components": 2,
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "umap_cluster": {
+      "n_components": 5,
+      "n_neighbors": 15,
+      "min_dist": 0.0,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "hdbscan": {
+      "min_cluster_size": 12,
+      "min_samples": 4,
+      "metric": "euclidean",
+      "cluster_selection_method": "eom"
+    },
+    "n_points": 1281
+  },
+  "n_clusters": 50,
+  "noise_unique": 129,
+  "noise_share_unique": 0.1007,
+  "noise_share_weighted": 0.1036,
+  "clusters": [
+    {
+      "id": 14,
+      "label": "disassemble / assemble: square table, round table, squaretable",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "disassemble",
+      "size_unique": 54,
+      "size_total": 212,
+      "verb_top": [
+        [
+          "disassemble",
+          84
+        ],
+        [
+          "assemble",
+          75
+        ],
+        [
+          "remove",
+          26
+        ],
+        [
+          "insert",
+          24
+        ],
+        [
+          "set up",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "square table",
+          96
+        ],
+        [
+          "round table",
+          50
+        ],
+        [
+          "squaretable",
+          25
+        ],
+        [
+          "desk",
+          16
+        ],
+        [
+          "furniture",
+          9
+        ],
+        [
+          "tiles",
+          7
+        ]
+      ],
+      "medoid_text": "Disassemble a square table while sitting at a wooden table with a brown background.",
+      "exemplars": [
+        {
+          "text": "Disassemble a square table while sitting at a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Remove the round table from the wooden table while sitting against a white background.",
+          "count": 25
+        },
+        {
+          "text": "Insert the round table into the wooden table while sitting against a white background.",
+          "count": 24
+        },
+        {
+          "text": "Disassemble a square table while sitting at a green tablecloth-covered table with a white background.",
+          "count": 21
+        },
+        {
+          "text": "Disassemble the square table while sitting at a green tablecloth-covered table with a white background.",
+          "count": 16
+        },
+        {
+          "text": "Assemble a square table while sitting at a green tablecloth-covered table with a white background.",
+          "count": 15
+        },
+        {
+          "text": "Assemble a square table on a wooden table in a sitting position with a brown background.",
+          "count": 12
+        },
+        {
+          "text": "Assemble a square table on a wooden table while sitting with a brown background.",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "assemble / disassemble: lamp, leg, stool",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "assemble",
+      "size_unique": 50,
+      "size_total": 151,
+      "verb_top": [
+        [
+          "assemble",
+          68
+        ],
+        [
+          "disassemble",
+          54
+        ],
+        [
+          "unscrew",
+          16
+        ],
+        [
+          "screw",
+          13
+        ]
+      ],
+      "noun_top": [
+        [
+          "lamp",
+          45
+        ],
+        [
+          "leg",
+          34
+        ],
+        [
+          "stool",
+          27
+        ],
+        [
+          "fixture",
+          17
+        ],
+        [
+          "screw",
+          12
+        ],
+        [
+          "furniture",
+          11
+        ]
+      ],
+      "medoid_text": "Disassemble a furniture bench stool with a bulb while sitting at a green tablecloth against a blue background.",
+      "exemplars": [
+        {
+          "text": "Disassemble a furniture bench stool with a bulb while sitting at a green tablecloth against a blue background.",
+          "count": 1
+        },
+        {
+          "text": "Assemble the shade onto the lamp while sitting at a wooden table with a red background using the right hand.",
+          "count": 14
+        },
+        {
+          "text": "Assemble a stool from furniture bench while sitting at a table with a green tablecloth and a blue background.",
+          "count": 11
+        },
+        {
+          "text": "Disassemble the shade from the lamp while sitting at a wooden table with a red background using the right hand.",
+          "count": 10
+        },
+        {
+          "text": "Assemble the leg onto the stool while sitting at a table with a green tablecloth and blue background.",
+          "count": 8
+        },
+        {
+          "text": "Unscrew the screw from the fixture using fingers while sitting at a table with a pink tablecloth and lavender background.",
+          "count": 7
+        },
+        {
+          "text": "Disassemble the lamp by removing the bulb while sitting at a wooden table with a red background using the right hand.",
+          "count": 6
+        },
+        {
+          "text": "Assemble a lamp by attaching a bulb while sitting at a wooden table with a red background using the right hand.",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "unstack / stack: plates, bowl, strings",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "unstack",
+      "size_unique": 23,
+      "size_total": 129,
+      "verb_top": [
+        [
+          "unstack",
+          64
+        ],
+        [
+          "stack",
+          58
+        ],
+        [
+          "use",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "plates",
+          86
+        ],
+        [
+          "bowl",
+          36
+        ],
+        [
+          "strings",
+          3
+        ],
+        [
+          "chopsticks",
+          2
+        ],
+        [
+          "cubes",
+          2
+        ]
+      ],
+      "medoid_text": "Stack four bowls on a green tablecloth while sitting against a blue background.",
+      "exemplars": [
+        {
+          "text": "Stack four bowls on a green tablecloth while sitting against a blue background.",
+          "count": 3
+        },
+        {
+          "text": "Unstack four plates on a green tablecloth while sitting against a brown background.",
+          "count": 25
+        },
+        {
+          "text": "Stack four plates on a green tablecloth while sitting against a brown background.",
+          "count": 21
+        },
+        {
+          "text": "Stack four plates on a green tablecloth while sitting against a white background.",
+          "count": 18
+        },
+        {
+          "text": "Unstack four plates on a green tablecloth while sitting against a white background.",
+          "count": 13
+        },
+        {
+          "text": "Unstack four plates from a green tablecloth while sitting against a white background.",
+          "count": 8
+        },
+        {
+          "text": "Stack three bowls on a green tablecloth while sitting against a blue background.",
+          "count": 7
+        },
+        {
+          "text": "Unstack four bowls on a blue tablecloth while sitting against a pink background.",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "fold / ?: tshirt, ?, cloths",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "fold",
+      "size_unique": 31,
+      "size_total": 126,
+      "verb_top": [
+        [
+          "fold",
+          83
+        ],
+        [
+          "?",
+          26
+        ],
+        [
+          "stack",
+          11
+        ],
+        [
+          "cleanup",
+          5
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "tshirt",
+          77
+        ],
+        [
+          "?",
+          26
+        ],
+        [
+          "cloths",
+          17
+        ],
+        [
+          "tablecloth",
+          6
+        ]
+      ],
+      "medoid_text": "Fold a small tshirt on a green tablecloth while sitting against a blue background.",
+      "exemplars": [
+        {
+          "text": "Fold a small tshirt on a green tablecloth while sitting against a blue background.",
+          "count": 2
+        },
+        {
+          "text": "Description unavailable.",
+          "count": 26
+        },
+        {
+          "text": "Fold a small tshirt on a wooden table while sitting.",
+          "count": 14
+        },
+        {
+          "text": "Fold a small tshirt on a wooden table while sitting against a white background.",
+          "count": 13
+        },
+        {
+          "text": "Fold a small tshirt on a green tablecloth while sitting.",
+          "count": 9
+        },
+        {
+          "text": "Fold a medium-sized tshirt on a blue tablecloth while sitting against a pink background.",
+          "count": 8
+        },
+        {
+          "text": "Unstack and unfold cloths on a green tablecloth while sitting against a brown background.",
+          "count": 8
+        },
+        {
+          "text": "Fold a small tshirt on a blue tablecloth.",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "label": "pick / color: block, coloringpage, bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 72,
+      "size_total": 125,
+      "verb_top": [
+        [
+          "pick",
+          91
+        ],
+        [
+          "color",
+          24
+        ],
+        [
+          "put down",
+          6
+        ],
+        [
+          "pick up",
+          3
+        ],
+        [
+          "wash",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "block",
+          28
+        ],
+        [
+          "coloringpage",
+          24
+        ],
+        [
+          "bag",
+          9
+        ],
+        [
+          "lego brick",
+          5
+        ],
+        [
+          "banana",
+          4
+        ],
+        [
+          "container of slime",
+          3
+        ]
+      ],
+      "medoid_text": "Pick up the beige and blue and red block from the table with the right hand and place it in the green bowl.",
+      "exemplars": [
+        {
+          "text": "Pick up the beige and blue and red block from the table with the right hand and place it in the green bowl.",
+          "count": 2
+        },
+        {
+          "text": "Take the crayon out of the box, color on the coloring page, and place the crayon on the table.",
+          "count": 12
+        },
+        {
+          "text": "Take the crayon out of the box, color on the coloring page, and put the crayon on the table.",
+          "count": 12
+        },
+        {
+          "text": "Put down the orange bag onto the wooden table using the right hand while sitting.",
+          "count": 6
+        },
+        {
+          "text": "Pick up the big green block from the table with the right hand and place it into the yellow bowl.",
+          "count": 4
+        },
+        {
+          "text": "Pick up the white block from the table with the right hand and place it in the blue bowl.",
+          "count": 4
+        },
+        {
+          "text": "Pick up the orange bag from the wooden table using the right hand while sitting.",
+          "count": 3
+        },
+        {
+          "text": "Pick up a blue container of slime from the metal table and place it in the bowl.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "label": "pick / stack: plush, box, tupperware",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 27,
+      "size_total": 102,
+      "verb_top": [
+        [
+          "pick",
+          49
+        ],
+        [
+          "stack",
+          22
+        ],
+        [
+          "open",
+          12
+        ],
+        [
+          "place",
+          10
+        ],
+        [
+          "close",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "plush",
+          79
+        ],
+        [
+          "box",
+          12
+        ],
+        [
+          "tupperware",
+          11
+        ]
+      ],
+      "medoid_text": "Pick up the plush object from the wooden table and place it vertically at another location.",
+      "exemplars": [
+        {
+          "text": "Pick up the plush object from the wooden table and place it vertically at another location.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the plush object from the wooden table and place it vertically.",
+          "count": 20
+        },
+        {
+          "text": "Stack the plush object while sitting at a blue tablecloth with a pink background.",
+          "count": 14
+        },
+        {
+          "text": "Pick up a plush object from a wooden table and place it vertically.",
+          "count": 14
+        },
+        {
+          "text": "Pick up the plush object from the vertical position and place it back onto the wooden table.",
+          "count": 8
+        },
+        {
+          "text": "Stack the plush object on top of another plush object while sitting at a blue tablecloth with a pink background.",
+          "count": 5
+        },
+        {
+          "text": "Pick up the plush object from the red tablecloth and place it vertically at a higher position.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the plush object from the red tablecloth and place it vertically.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "label": "clean / remove: utensils, sponge, plates",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 24,
+      "size_total": 99,
+      "verb_top": [
+        [
+          "clean",
+          58
+        ],
+        [
+          "remove",
+          21
+        ],
+        [
+          "insert",
+          17
+        ],
+        [
+          "wash",
+          2
+        ],
+        [
+          "put",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "utensils",
+          39
+        ],
+        [
+          "sponge",
+          30
+        ],
+        [
+          "plates",
+          28
+        ],
+        [
+          "kitchen2",
+          1
+        ],
+        [
+          "kitchen",
+          1
+        ]
+      ],
+      "medoid_text": "Remove utensils from the container while sitting at a table with a green tablecloth and white background.",
+      "exemplars": [
+        {
+          "text": "Remove utensils from the container while sitting at a table with a green tablecloth and white background.",
+          "count": 2
+        },
+        {
+          "text": "Clean plates, forks, spoons, and knives using sponge and dish soap while sitting at a wooden table with a white background.",
+          "count": 14
+        },
+        {
+          "text": "Clean plates, forks, spoons, and knives placed on a wooden table while sitting against a white background.",
+          "count": 11
+        },
+        {
+          "text": "Clean four cups using a sponge and soap bottle on a pink tablecloth with a lavender background.",
+          "count": 10
+        },
+        {
+          "text": "Insert utensils into a container on a green tablecloth while sitting against a white background.",
+          "count": 8
+        },
+        {
+          "text": "Remove utensils from a wooden table while sitting against a white background.",
+          "count": 7
+        },
+        {
+          "text": "Clean cups using sponge and soapbottle on a pink tablecloth with lavender background.",
+          "count": 6
+        },
+        {
+          "text": "Insert utensils into a wooden table while sitting against a white background.",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "label": "assemble / disassemble: chair, structure",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "assemble",
+      "size_unique": 14,
+      "size_total": 91,
+      "verb_top": [
+        [
+          "assemble",
+          55
+        ],
+        [
+          "disassemble",
+          36
+        ]
+      ],
+      "noun_top": [
+        [
+          "chair",
+          90
+        ],
+        [
+          "structure",
+          1
+        ]
+      ],
+      "medoid_text": "Assemble the chair while sitting at a table with a blue tablecloth and pink background.",
+      "exemplars": [
+        {
+          "text": "Assemble the chair while sitting at a table with a blue tablecloth and pink background.",
+          "count": 2
+        },
+        {
+          "text": "Assemble a chair while sitting at a table with a blue tablecloth and pink background.",
+          "count": 26
+        },
+        {
+          "text": "Disassemble a chair while sitting at a table with a blue tablecloth and pink background.",
+          "count": 18
+        },
+        {
+          "text": "Assemble a chair while sitting against a lavender background.",
+          "count": 16
+        },
+        {
+          "text": "Disassemble a chair while sitting against a lavender background.",
+          "count": 12
+        },
+        {
+          "text": "Assemble a chair from furniture bench while sitting at a table with a blue tablecloth and pink background.",
+          "count": 4
+        },
+        {
+          "text": "Assemble a chair from stage 2 to stage 4 while sitting against a lavender background.",
+          "count": 3
+        },
+        {
+          "text": "Disassemble a chair from stage 4 back to stage 2 while sitting against a lavender background.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "label": "pick / place: food, block, macaron",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 33,
+      "size_total": 90,
+      "verb_top": [
+        [
+          "pick",
+          62
+        ],
+        [
+          "place",
+          28
+        ]
+      ],
+      "noun_top": [
+        [
+          "food",
+          49
+        ],
+        [
+          "block",
+          11
+        ],
+        [
+          "macaron",
+          2
+        ],
+        [
+          "cup",
+          2
+        ],
+        [
+          "clove shape",
+          2
+        ],
+        [
+          "pen",
+          2
+        ]
+      ],
+      "medoid_text": "Pick up the green block from the table with the right hand and place it onto the yellow plate.",
+      "exemplars": [
+        {
+          "text": "Pick up the green block from the table with the right hand and place it onto the yellow plate.",
+          "count": 1
+        },
+        {
+          "text": "Pick the food item from the plate and place it back into the food basket.",
+          "count": 28
+        },
+        {
+          "text": "Pick a food item from the food basket and place it onto the plate next to it.",
+          "count": 21
+        },
+        {
+          "text": "Pick up a pink macaron from the table and place it onto the yellow plate.",
+          "count": 2
+        },
+        {
+          "text": "Pick up a yellow cup from the table and place it on a baking tray.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the green clove shape from the table with the right hand and place it in the yellow plate.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the blue pen from the white round table with the left hand and place it on the white square table.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the big purple block from the table with the left hand and place it on the gray plate.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "charge / uncharge: phone, key, iphone",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "charge",
+      "size_unique": 35,
+      "size_total": 89,
+      "verb_top": [
+        [
+          "charge",
+          32
+        ],
+        [
+          "uncharge",
+          31
+        ],
+        [
+          "unlock",
+          12
+        ],
+        [
+          "lock",
+          9
+        ],
+        [
+          "pick",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "phone",
+          63
+        ],
+        [
+          "key",
+          21
+        ],
+        [
+          "iphone",
+          4
+        ],
+        [
+          "iphones",
+          1
+        ]
+      ],
+      "medoid_text": "Plug the pink small phone into the usb-c cable while sitting at the green tablecloth.",
+      "exemplars": [
+        {
+          "text": "Plug the pink small phone into the usb-c cable while sitting at the green tablecloth.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the pink lock and lock it using the key.",
+          "count": 7
+        },
+        {
+          "text": "Plug the white phone into the lightning cable on the blue tablecloth.",
+          "count": 7
+        },
+        {
+          "text": "Unlock the pink lock using the key.",
+          "count": 6
+        },
+        {
+          "text": "Unlock the silver lock using the key.",
+          "count": 6
+        },
+        {
+          "text": "Unplug the white phone from the lightning cable while sitting at a green tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Unplug the gray large phone from the usb-c cable while sitting at the green tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Plug the white phone into the lightning cable while sitting at a green tablecloth.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "wrap / fold: paper, box, plastic wrap",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "wrap",
+      "size_unique": 45,
+      "size_total": 79,
+      "verb_top": [
+        [
+          "wrap",
+          22
+        ],
+        [
+          "fold",
+          17
+        ],
+        [
+          "unfold",
+          11
+        ],
+        [
+          "unwrap",
+          9
+        ],
+        [
+          "wrapping",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "paper",
+          30
+        ],
+        [
+          "box",
+          17
+        ],
+        [
+          "plastic wrap",
+          17
+        ],
+        [
+          "papers",
+          5
+        ],
+        [
+          "croissant",
+          5
+        ],
+        [
+          "paper caterpillar",
+          3
+        ]
+      ],
+      "medoid_text": "Fold the paper while sitting at a table with a pink tablecloth and lavender background.",
+      "exemplars": [
+        {
+          "text": "Fold the paper while sitting at a table with a pink tablecloth and lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Wrap a box with wrapping paper on a pink tablecloth with a lavender background while sitting.",
+          "count": 11
+        },
+        {
+          "text": "Wrapping a box with wrapping paper on a pink tablecloth with a lavender background while sitting.",
+          "count": 5
+        },
+        {
+          "text": "Fold a piece of paper while sitting at a pink tablecloth with a lavender background.",
+          "count": 4
+        },
+        {
+          "text": "Fold a piece of paper on a wooden table while sitting against a white background.",
+          "count": 3
+        },
+        {
+          "text": "Fold a paper crane origami on a wooden table with a white background while sitting.",
+          "count": 3
+        },
+        {
+          "text": "Unclip papers by removing paperclips while sitting at a table with a white background.",
+          "count": 3
+        },
+        {
+          "text": "Unfold the paper caterpillar origami on the wooden table.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "assemble / disassemble: drawer",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "assemble",
+      "size_unique": 20,
+      "size_total": 72,
+      "verb_top": [
+        [
+          "assemble",
+          39
+        ],
+        [
+          "disassemble",
+          33
+        ]
+      ],
+      "noun_top": [
+        [
+          "drawer",
+          72
+        ]
+      ],
+      "medoid_text": "Disassemble the drawer from furniture bench while sitting at a table with a red tablecloth and lavender background.",
+      "exemplars": [
+        {
+          "text": "Disassemble the drawer from furniture bench while sitting at a table with a red tablecloth and lavender background.",
+          "count": 8
+        },
+        {
+          "text": "Assemble the drawer from furniture bench while sitting against a lavender background.",
+          "count": 12
+        },
+        {
+          "text": "Assemble the drawer from furniture bench on a blue tablecloth with a pink background while sitting.",
+          "count": 7
+        },
+        {
+          "text": "Disassemble the drawer from furniture bench while sitting against a lavender background.",
+          "count": 7
+        },
+        {
+          "text": "Assemble the drawer from furniture bench while sitting at a table with a red tablecloth and lavender background.",
+          "count": 6
+        },
+        {
+          "text": "Disassemble the drawer from furniture bench on a blue tablecloth with a pink background while sitting.",
+          "count": 5
+        },
+        {
+          "text": "Disassemble the drawer from the furniture bench while sitting at a table with a blue tablecloth and pink background.",
+          "count": 4
+        },
+        {
+          "text": "Disassemble the drawer from the furniture bench while sitting against a lavender background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "label": "close / take: case, brown glasses, sunglasses",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "close",
+      "size_unique": 35,
+      "size_total": 67,
+      "verb_top": [
+        [
+          "close",
+          19
+        ],
+        [
+          "take",
+          15
+        ],
+        [
+          "put",
+          13
+        ],
+        [
+          "pick",
+          10
+        ],
+        [
+          "open",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "case",
+          28
+        ],
+        [
+          "brown glasses",
+          16
+        ],
+        [
+          "sunglasses",
+          12
+        ],
+        [
+          "mouse",
+          5
+        ],
+        [
+          "box",
+          1
+        ],
+        [
+          "stapler",
+          1
+        ]
+      ],
+      "medoid_text": "Open the case, remove or insert the pad, duck, and plush objects, then close the case on the wooden table with a red background.",
+      "exemplars": [
+        {
+          "text": "Open the case, remove or insert the pad, duck, and plush objects, then close the case on the wooden table with a red background.",
+          "count": 1
+        },
+        {
+          "text": "Take the brown glasses out of the beige case while sitting against a blue background.",
+          "count": 10
+        },
+        {
+          "text": "Put the brown glasses into the beige case while sitting against a blue background.",
+          "count": 6
+        },
+        {
+          "text": "Put the sunglasses into the beige case on a table with a blue background while sitting.",
+          "count": 5
+        },
+        {
+          "text": "Put down the black case onto the wooden table using the right hand while sitting.",
+          "count": 4
+        },
+        {
+          "text": "Remove or insert the pad, duck, and plush, then close the case while sitting at a wooden table with a red background.",
+          "count": 3
+        },
+        {
+          "text": "Open the case, remove the pad and plush from the case, then close the case on a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Pick up a black computer mouse from the metal table and place it in a small box.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "label": "thread / sort: beads",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "thread",
+      "size_unique": 16,
+      "size_total": 63,
+      "verb_top": [
+        [
+          "thread",
+          34
+        ],
+        [
+          "sort",
+          12
+        ],
+        [
+          "unthread",
+          12
+        ],
+        [
+          "sweep",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "beads",
+          63
+        ]
+      ],
+      "medoid_text": "Pick up beads and thread them onto the thread while sitting at a table with a brown background.",
+      "exemplars": [
+        {
+          "text": "Pick up beads and thread them onto the thread while sitting at a table with a brown background.",
+          "count": 2
+        },
+        {
+          "text": "Thread beads onto a thread while sitting at a table with a green tablecloth.",
+          "count": 27
+        },
+        {
+          "text": "Sort beads from a mixed group into separate piles by color on a wooden tablecloth while sitting against a white background.",
+          "count": 6
+        },
+        {
+          "text": "Unthread beads from a thread while sitting at a table with a green tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Unthread beads from the thread while sitting at a table with a green tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Gather beads using a sweeper brush and push them into a dustpan.",
+          "count": 4
+        },
+        {
+          "text": "Pick up beads and thread them onto the thread.",
+          "count": 2
+        },
+        {
+          "text": "Thread beads onto a thread while sitting at a green tablecloth.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "label": "pick / stack: duck, bag, rubber duck",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 32,
+      "size_total": 63,
+      "verb_top": [
+        [
+          "pick",
+          35
+        ],
+        [
+          "stack",
+          18
+        ],
+        [
+          "insert",
+          5
+        ],
+        [
+          "open",
+          2
+        ],
+        [
+          "remove",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "duck",
+          48
+        ],
+        [
+          "bag",
+          5
+        ],
+        [
+          "rubber duck",
+          5
+        ],
+        [
+          "tupperware",
+          2
+        ],
+        [
+          "tote",
+          2
+        ],
+        [
+          "box",
+          1
+        ]
+      ],
+      "medoid_text": "Pick up the pink duck from the table with the right hand and place it in the green bowl.",
+      "exemplars": [
+        {
+          "text": "Pick up the pink duck from the table with the right hand and place it in the green bowl.",
+          "count": 1
+        },
+        {
+          "text": "Stack the duck on top of another duck while sitting at a blue tablecloth with a pink background.",
+          "count": 7
+        },
+        {
+          "text": "Stack the duck on top of another duck.",
+          "count": 6
+        },
+        {
+          "text": "Pick up the duck from the wooden table and place it vertically at a new location.",
+          "count": 5
+        },
+        {
+          "text": "Pick the duck from the wooden table and place it vertically at a new location.",
+          "count": 4
+        },
+        {
+          "text": "Pick up the duck from the pink tablecloth and place it vertically.",
+          "count": 4
+        },
+        {
+          "text": "Pick up the yellow duck from the table with the right hand and place it into the green bowl.",
+          "count": 4
+        },
+        {
+          "text": "Insert a bunny into a tote bag on a pink tablecloth with a lavender background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "label": "unzip / zip: big plastic bag, block, small plastic bag",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "unzip",
+      "size_unique": 36,
+      "size_total": 59,
+      "verb_top": [
+        [
+          "unzip",
+          18
+        ],
+        [
+          "zip",
+          17
+        ],
+        [
+          "insert",
+          14
+        ],
+        [
+          "stack",
+          9
+        ],
+        [
+          "remove",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "big plastic bag",
+          28
+        ],
+        [
+          "block",
+          20
+        ],
+        [
+          "small plastic bag",
+          7
+        ],
+        [
+          "bag",
+          4
+        ]
+      ],
+      "medoid_text": "Zip a small plastic bag containing a block on a blue tablecloth with a pink background.",
+      "exemplars": [
+        {
+          "text": "Zip a small plastic bag containing a block on a blue tablecloth with a pink background.",
+          "count": 1
+        },
+        {
+          "text": "Insert eight blocks into a dump container on a blue tablecloth with a pink background.",
+          "count": 6
+        },
+        {
+          "text": "Stack the block on top of another block on a blue tablecloth with a pink background while sitting.",
+          "count": 4
+        },
+        {
+          "text": "Unzip a big plastic bag containing a block and a duck on a blue tablecloth with a pink background.",
+          "count": 4
+        },
+        {
+          "text": "Zip a big plastic bag containing a donut and a red sharpie while sitting at a table with a green tablecloth and white background.",
+          "count": 3
+        },
+        {
+          "text": "Zip a small plastic bag containing a block and a duck on a green tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Unzip a big plastic bag placed on a box on a blue tablecloth with a pink background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Unzip a big plastic bag containing a block and a plush while sitting at a table with a green tablecloth and white background.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "assemble / disassemble: legos, lego, soft legos",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "assemble",
+      "size_unique": 26,
+      "size_total": 58,
+      "verb_top": [
+        [
+          "assemble",
+          23
+        ],
+        [
+          "disassemble",
+          22
+        ],
+        [
+          "build",
+          8
+        ],
+        [
+          "unstake",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "legos",
+          37
+        ],
+        [
+          "lego",
+          13
+        ],
+        [
+          "soft legos",
+          8
+        ]
+      ],
+      "medoid_text": "Disassemble six legos while sitting at a green tablecloth with a blue background.",
+      "exemplars": [
+        {
+          "text": "Disassemble six legos while sitting at a green tablecloth with a blue background.",
+          "count": 1
+        },
+        {
+          "text": "Disassemble six legos on a blue tablecloth while sitting against a pink background.",
+          "count": 7
+        },
+        {
+          "text": "Stake lego bricks to build freely in any form on a blue tablecloth.",
+          "count": 6
+        },
+        {
+          "text": "Assemble five legos on a blue tablecloth while sitting against a pink background.",
+          "count": 6
+        },
+        {
+          "text": "Assemble three legos on a green tablecloth while sitting against a blue background.",
+          "count": 5
+        },
+        {
+          "text": "Unstake lego bricks to disassemble the built structure on a blue tablecloth.",
+          "count": 4
+        },
+        {
+          "text": "Disassemble five legos on a green tablecloth while sitting against a blue background.",
+          "count": 3
+        },
+        {
+          "text": "Disassemble five legos on a blue tablecloth while sitting against a pink background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "charge / uncharge: airpods",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "charge",
+      "size_unique": 23,
+      "size_total": 58,
+      "verb_top": [
+        [
+          "charge",
+          32
+        ],
+        [
+          "uncharge",
+          26
+        ]
+      ],
+      "noun_top": [
+        [
+          "airpods",
+          58
+        ]
+      ],
+      "medoid_text": "Charge the AirPods using the lightning connector on a green tablecloth with a white background while sitting.",
+      "exemplars": [
+        {
+          "text": "Charge the AirPods using the lightning connector on a green tablecloth with a white background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Charge the lightning-sized airpods on the green tablecloth.",
+          "count": 6
+        },
+        {
+          "text": "Charge the lightning-sized airpods while sitting at a green tablecloth with a white background.",
+          "count": 5
+        },
+        {
+          "text": "Uncharge the AirPods by disconnecting the lightning connector with the right hand while sitting at a pink tablecloth against a lavender background.",
+          "count": 5
+        },
+        {
+          "text": "Uncharge the AirPods by disconnecting the lightning connector with the left hand while sitting at a pink tablecloth against a lavender background.",
+          "count": 4
+        },
+        {
+          "text": "Uncharge the AirPods by disconnecting the lightning connector while sitting at a table with a pink tablecloth and lavender background.",
+          "count": 4
+        },
+        {
+          "text": "Charge AirPods with a lightning connector on a green tablecloth.",
+          "count": 3
+        },
+        {
+          "text": "Charge the AirPods using the lightning connector with the left hand while sitting at a pink tablecloth with a lavender background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "label": "pour / unscrew: gray cup, graycup, bottle cap",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pour",
+      "size_unique": 24,
+      "size_total": 57,
+      "verb_top": [
+        [
+          "pour",
+          27
+        ],
+        [
+          "unscrew",
+          15
+        ],
+        [
+          "screw",
+          14
+        ],
+        [
+          "pick",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "gray cup",
+          15
+        ],
+        [
+          "graycup",
+          12
+        ],
+        [
+          "bottle cap",
+          12
+        ],
+        [
+          "metal water bottle",
+          11
+        ],
+        [
+          "bottle",
+          4
+        ],
+        [
+          "gatorade",
+          2
+        ]
+      ],
+      "medoid_text": "Unscrew the cap from the Gatorade bottle placed on a wooden table while sitting against a white background.",
+      "exemplars": [
+        {
+          "text": "Unscrew the cap from the Gatorade bottle placed on a wooden table while sitting against a white background.",
+          "count": 2
+        },
+        {
+          "text": "Pour tea from the gray cup onto the green tablecloth while standing.",
+          "count": 6
+        },
+        {
+          "text": "Pour water from the evian bottle into the gray cup while sitting at a green tablecloth with a pink background.",
+          "count": 6
+        },
+        {
+          "text": "Screw the cap back onto the Gatorade bottle placed on the wooden table.",
+          "count": 5
+        },
+        {
+          "text": "Pour coke into the gray cup placed on the green tablecloth.",
+          "count": 4
+        },
+        {
+          "text": "Unscrew the cap from the metal water bottle placed on the wooden table.",
+          "count": 4
+        },
+        {
+          "text": "Unscrew the cap from the Gatorade bottle placed on the wooden table.",
+          "count": 3
+        },
+        {
+          "text": "Screw the cap back onto the metal water bottle placed on a wooden table.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "label": "untie / tie: pens, cards, sticker",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "untie",
+      "size_unique": 16,
+      "size_total": 57,
+      "verb_top": [
+        [
+          "untie",
+          23
+        ],
+        [
+          "tie",
+          19
+        ],
+        [
+          "peel",
+          11
+        ],
+        [
+          "sleeve",
+          3
+        ],
+        [
+          "unsleeve",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "pens",
+          23
+        ],
+        [
+          "cards",
+          15
+        ],
+        [
+          "sticker",
+          11
+        ],
+        [
+          "rubber band",
+          4
+        ],
+        [
+          "vanguard cards",
+          4
+        ]
+      ],
+      "medoid_text": "Remove the short rubber band from around the group of cards while sitting at a table with a lavender background.",
+      "exemplars": [
+        {
+          "text": "Remove the short rubber band from around the group of cards while sitting at a table with a lavender background.",
+          "count": 1
+        },
+        {
+          "text": "Peel off the sticker and place it in the stickerbook.",
+          "count": 11
+        },
+        {
+          "text": "Stretch a short rubber band and wrap it around a group of pens while sitting at a table with a lavender background.",
+          "count": 9
+        },
+        {
+          "text": "Remove the short rubber band from around the group of pens while sitting at a table with a lavender background.",
+          "count": 8
+        },
+        {
+          "text": "Remove the rubber band from around the group of pens.",
+          "count": 6
+        },
+        {
+          "text": "Stretch a short rubber band and wrap it around a group of small objects like cards while sitting at a table with a lavender background.",
+          "count": 4
+        },
+        {
+          "text": "Stretch a short rubber band and wrap it around a group of small objects like cards.",
+          "count": 4
+        },
+        {
+          "text": "Remove the short rubber band from around the group of pens.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "insert / remove: white usb, usb, black usb",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "insert",
+      "size_unique": 33,
+      "size_total": 56,
+      "verb_top": [
+        [
+          "insert",
+          32
+        ],
+        [
+          "remove",
+          23
+        ],
+        [
+          "pick",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "white usb",
+          25
+        ],
+        [
+          "usb",
+          10
+        ],
+        [
+          "black usb",
+          10
+        ],
+        [
+          "own usb",
+          7
+        ],
+        [
+          "usb bank",
+          3
+        ],
+        [
+          "charger",
+          1
+        ]
+      ],
+      "medoid_text": "Insert the white USB into a port while sitting at a table with a white background.",
+      "exemplars": [
+        {
+          "text": "Insert the white USB into a port while sitting at a table with a white background.",
+          "count": 1
+        },
+        {
+          "text": "Remove the white USB from the port while sitting at a table with a green tablecloth and blue background.",
+          "count": 6
+        },
+        {
+          "text": "Insert the USB into its port while sitting at a table with a green tablecloth and blue background.",
+          "count": 5
+        },
+        {
+          "text": "Insert the black USB into the USB bank while sitting against a blue background.",
+          "count": 4
+        },
+        {
+          "text": "Remove own USB from white USB while sitting at a green tablecloth with a blue background.",
+          "count": 3
+        },
+        {
+          "text": "Insert a USB into a port while sitting at a table with a white background.",
+          "count": 3
+        },
+        {
+          "text": "Insert the white USB into a port while sitting against a white background.",
+          "count": 3
+        },
+        {
+          "text": "Insert the white USB into the own USB while sitting at a table with a green tablecloth and blue background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "remove / insert: plug, connect four",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 22,
+      "size_total": 56,
+      "verb_top": [
+        [
+          "remove",
+          27
+        ],
+        [
+          "insert",
+          22
+        ],
+        [
+          "play",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "plug",
+          49
+        ],
+        [
+          "connect four",
+          7
+        ]
+      ],
+      "medoid_text": "Remove the plug from the socket while sitting at a table with a blue tablecloth and pink background.",
+      "exemplars": [
+        {
+          "text": "Remove the plug from the socket while sitting at a table with a blue tablecloth and pink background.",
+          "count": 1
+        },
+        {
+          "text": "Reset the connect four game on a green tablecloth while sitting.",
+          "count": 7
+        },
+        {
+          "text": "Insert the white plug into the socket on the blue tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Remove the white plug from the socket.",
+          "count": 4
+        },
+        {
+          "text": "Insert the white plug into the socket.",
+          "count": 4
+        },
+        {
+          "text": "Remove the plug from the socket while sitting at a table with a green tablecloth and blue background.",
+          "count": 4
+        },
+        {
+          "text": "Insert own plug into socket while sitting at a blue tablecloth with a pink background.",
+          "count": 3
+        },
+        {
+          "text": "Remove the white plug from the socket on the green tablecloth.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "remove / insert: dice",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 13,
+      "size_total": 54,
+      "verb_top": [
+        [
+          "remove",
+          44
+        ],
+        [
+          "insert",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "dice",
+          54
+        ]
+      ],
+      "medoid_text": "Remove the dice from the cabinet while sitting at a table with a blue tablecloth and pink background.",
+      "exemplars": [
+        {
+          "text": "Remove the dice from the cabinet while sitting at a table with a blue tablecloth and pink background.",
+          "count": 3
+        },
+        {
+          "text": "Remove dice from the cabinet on a blue tablecloth with a pink background.",
+          "count": 23
+        },
+        {
+          "text": "Remove the dice from the cabinet on the furniture bench.",
+          "count": 6
+        },
+        {
+          "text": "Remove the dice from the cabinet while sitting at a blue tablecloth with a pink background.",
+          "count": 5
+        },
+        {
+          "text": "Insert dice into the cabinet on a blue tablecloth with a pink background.",
+          "count": 4
+        },
+        {
+          "text": "Remove the dice from the cabinet while seated at a table with a blue tablecloth and pink background.",
+          "count": 2
+        },
+        {
+          "text": "Insert the dice into the cabinet on the furniture bench.",
+          "count": 2
+        },
+        {
+          "text": "Insert the dice into the cabinet while sitting at a table with a blue tablecloth and pink background.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "label": "clean / wipe: roller, cloth, scrub",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 22,
+      "size_total": 52,
+      "verb_top": [
+        [
+          "clean",
+          44
+        ],
+        [
+          "wipe",
+          6
+        ],
+        [
+          "sweep",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "roller",
+          21
+        ],
+        [
+          "cloth",
+          15
+        ],
+        [
+          "scrub",
+          8
+        ],
+        [
+          "rag",
+          5
+        ],
+        [
+          "beads",
+          2
+        ],
+        [
+          "dish soap",
+          1
+        ]
+      ],
+      "medoid_text": "Roll roller over medium shirt to clean surface while sitting.",
+      "exemplars": [
+        {
+          "text": "Roll roller over medium shirt to clean surface while sitting.",
+          "count": 1
+        },
+        {
+          "text": "Clean a large shirt surface using a roller while sitting.",
+          "count": 8
+        },
+        {
+          "text": "Wipe the surface clean using a cloth while sitting.",
+          "count": 8
+        },
+        {
+          "text": "Scrub the surface while sitting with no tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Roll large shirt with roller while sitting.",
+          "count": 4
+        },
+        {
+          "text": "Scrub the surface while sitting.",
+          "count": 3
+        },
+        {
+          "text": "Clean a medium shirt surface using a roller while sitting.",
+          "count": 3
+        },
+        {
+          "text": "Clean a medium shirt surface using a roller while sitting with no tablecloth.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "label": "stack / pick: box, creamer, lid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "stack",
+      "size_unique": 21,
+      "size_total": 52,
+      "verb_top": [
+        [
+          "stack",
+          22
+        ],
+        [
+          "pick",
+          22
+        ],
+        [
+          "place",
+          5
+        ],
+        [
+          "unstack",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "box",
+          22
+        ],
+        [
+          "creamer",
+          17
+        ],
+        [
+          "lid",
+          13
+        ]
+      ],
+      "medoid_text": "Place the lid on top of the box on the red tablecloth.",
+      "exemplars": [
+        {
+          "text": "Place the lid on top of the box on the red tablecloth.",
+          "count": 3
+        },
+        {
+          "text": "Place the Creamer on top of the box on the red tablecloth.",
+          "count": 8
+        },
+        {
+          "text": "Pick up the creamer from the pink tablecloth and place it vertically at a new location.",
+          "count": 5
+        },
+        {
+          "text": "Place the lid vertically back onto the pink tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Pick up the creamer from the wooden table and place it vertically at a different location.",
+          "count": 5
+        },
+        {
+          "text": "Place the lid on top of the box.",
+          "count": 5
+        },
+        {
+          "text": "Pick up the lid vertically from the pink tablecloth.",
+          "count": 4
+        },
+        {
+          "text": "Pick up the creamer from the wooden table and place it vertically at another location.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "play / type: piano, keyboard",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "play",
+      "size_unique": 13,
+      "size_total": 48,
+      "verb_top": [
+        [
+          "play",
+          36
+        ],
+        [
+          "type",
+          12
+        ]
+      ],
+      "noun_top": [
+        [
+          "piano",
+          36
+        ],
+        [
+          "keyboard",
+          12
+        ]
+      ],
+      "medoid_text": "Use the fingers of the right hand to play the piano while sitting at a green tablecloth with a blue background.",
+      "exemplars": [
+        {
+          "text": "Use the fingers of the right hand to play the piano while sitting at a green tablecloth with a blue background.",
+          "count": 6
+        },
+        {
+          "text": "Use one or both hands and fingers to play the piano while sitting at a green tablecloth with a blue background.",
+          "count": 12
+        },
+        {
+          "text": "Use fingers of one or both hands to type on a keyboard while sitting against a blue background without a tablecloth.",
+          "count": 5
+        },
+        {
+          "text": "Use fingers of the left hand to play the piano while sitting at a green tablecloth with a blue background.",
+          "count": 4
+        },
+        {
+          "text": "Use fingers of one hand or both hands to type on a keyboard while sitting against a blue background.",
+          "count": 3
+        },
+        {
+          "text": "Use one or both hands to play the piano keys with fingers while sitting at a green tablecloth with a blue background.",
+          "count": 3
+        },
+        {
+          "text": "Use the right hand to play the song 'happy birthday' on the piano while sitting in front of a white background with no tablecloth.",
+          "count": 3
+        },
+        {
+          "text": "Use the right hand to play the song 'Twinkle Twinkle Little Star' on the piano while sitting in front of a white background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "label": "pick / close: tupperware, bread, donut",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 19,
+      "size_total": 47,
+      "verb_top": [
+        [
+          "pick",
+          20
+        ],
+        [
+          "close",
+          14
+        ],
+        [
+          "open",
+          12
+        ],
+        [
+          "fry",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "tupperware",
+          26
+        ],
+        [
+          "bread",
+          15
+        ],
+        [
+          "donut",
+          5
+        ],
+        [
+          "kitchen2",
+          1
+        ]
+      ],
+      "medoid_text": "Open the medium-sized tupperware, insert bread, and close it while sitting at a table with a green tablecloth and brown background.",
+      "exemplars": [
+        {
+          "text": "Open the medium-sized tupperware, insert bread, and close it while sitting at a table with a green tablecloth and brown background.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the bread from the wooden table and place it vertically.",
+          "count": 8
+        },
+        {
+          "text": "Open the medium-sized tupperware, remove the bread, and close the tupperware on a green tablecloth with a brown background while sitting.",
+          "count": 5
+        },
+        {
+          "text": "Pick up a pink donut from the baking tray and place it in a Tupperware.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the brown bread from the metal table and place it in the bowl.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the white bread from the yellow plate with the right hand and place it on the clear Tupperware.",
+          "count": 3
+        },
+        {
+          "text": "Remove the bread from the medium-sized tupperware and close it while sitting at a table with a green tablecloth and brown background.",
+          "count": 3
+        },
+        {
+          "text": "Open the medium-sized tupperware, insert the bread, then close the tupperware on a green tablecloth with a brown background while sitting.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "remove / insert: airpods, airpod, airpods case",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 13,
+      "size_total": 45,
+      "verb_top": [
+        [
+          "remove",
+          26
+        ],
+        [
+          "insert",
+          17
+        ],
+        [
+          "pick",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "airpods",
+          24
+        ],
+        [
+          "airpod",
+          19
+        ],
+        [
+          "airpods case",
+          2
+        ]
+      ],
+      "medoid_text": "Remove blacktip AirPods while sitting at a wood table with a red background.",
+      "exemplars": [
+        {
+          "text": "Remove blacktip AirPods while sitting at a wood table with a red background.",
+          "count": 4
+        },
+        {
+          "text": "Insert blacktip AirPods while sitting at a wood table with a red background.",
+          "count": 8
+        },
+        {
+          "text": "Remove the AirPod without tip from the ear while sitting at a wood table with a red background.",
+          "count": 6
+        },
+        {
+          "text": "Insert AirPods into ears while sitting at a wooden table with a brown background.",
+          "count": 6
+        },
+        {
+          "text": "Remove the AirPod without tip from the ear while sitting at a wooden table with a brown background.",
+          "count": 6
+        },
+        {
+          "text": "Remove AirPods from ears while sitting at a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Remove the AirPod without tip from the ear while sitting at a wooden table with a red background.",
+          "count": 2
+        },
+        {
+          "text": "Remove a blacktip AirPod while sitting at a wood table with a red background.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "play / pick: dice, coins, dice box",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "play",
+      "size_unique": 25,
+      "size_total": 45,
+      "verb_top": [
+        [
+          "play",
+          15
+        ],
+        [
+          "pick",
+          14
+        ],
+        [
+          "roll",
+          8
+        ],
+        [
+          "gather",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "dice",
+          24
+        ],
+        [
+          "coins",
+          15
+        ],
+        [
+          "dice box",
+          6
+        ]
+      ],
+      "medoid_text": "Pick up the blue dice from the table with the right hand and place it in the blue bowl.",
+      "exemplars": [
+        {
+          "text": "Pick up the blue dice from the table with the right hand and place it in the blue bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pick up coins and put them into the Connect Four game until the game is completed.",
+          "count": 12
+        },
+        {
+          "text": "Pick up the blue dice box from the table with the right hand and place it in the tupperware.",
+          "count": 3
+        },
+        {
+          "text": "Pick up coins and put them into the Connect Four game until the game is complete.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the rolled dice from the brown background and gather them back into one hand.",
+          "count": 2
+        },
+        {
+          "text": "Gather the dice with one hand and roll the dice on a brown background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Pick up a blue dice from the blue plate and place it in the clear jar.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the blue dice box from the turquoise bowl and place it in the blue bowl.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "label": "unzip / insert: drawer, plushie, pad",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "unzip",
+      "size_unique": 23,
+      "size_total": 41,
+      "verb_top": [
+        [
+          "unzip",
+          13
+        ],
+        [
+          "insert",
+          12
+        ],
+        [
+          "zip",
+          11
+        ],
+        [
+          "remove",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "drawer",
+          17
+        ],
+        [
+          "plushie",
+          11
+        ],
+        [
+          "pad",
+          3
+        ],
+        [
+          "duck",
+          2
+        ],
+        [
+          "chessboard",
+          2
+        ],
+        [
+          "sponge",
+          2
+        ]
+      ],
+      "medoid_text": "Unzip a long case containing a plushie while sitting against a lavender background.",
+      "exemplars": [
+        {
+          "text": "Unzip a long case containing a plushie while sitting against a lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Zip up a long case containing a plushie while sitting against a lavender background.",
+          "count": 7
+        },
+        {
+          "text": "Insert a plushie into a drawer while sitting against a lavender background.",
+          "count": 6
+        },
+        {
+          "text": "Remove a plushie from a drawer while sitting against a lavender background.",
+          "count": 3
+        },
+        {
+          "text": "Insert the plushie into the drawer.",
+          "count": 3
+        },
+        {
+          "text": "Zip a short case containing a duck while sitting against a lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Insert the drawer containing the plushie into its slot while sitting against a lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Unzip a short case placed on a lavender background without tablecloth using a pad.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "put / paint: paint, toothpaste",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "put",
+      "size_unique": 15,
+      "size_total": 40,
+      "verb_top": [
+        [
+          "put",
+          20
+        ],
+        [
+          "paint",
+          18
+        ],
+        [
+          "clean",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "paint",
+          20
+        ],
+        [
+          "toothpaste",
+          20
+        ]
+      ],
+      "medoid_text": "Dip paintbrush or water brush in paint, paint on the printer paper, and clean the water brush by squeezing its handle or clean the paintbrush by swishing it in the water cup.",
+      "exemplars": [
+        {
+          "text": "Dip paintbrush or water brush in paint, paint on the printer paper, and clean the water brush by squeezing its handle or clean the paintbrush by swishing it in the water cup.",
+          "count": 1
+        },
+        {
+          "text": "Dip paintbrush or wet brush in paint and paint on the printer paper.",
+          "count": 8
+        },
+        {
+          "text": "Take toothbrush from coffee cup, unscrew toothpaste cap, put toothpaste on toothbrush, screw cap back on toothpaste, put toothpaste down, and put toothbrush back into coffee cup.",
+          "count": 6
+        },
+        {
+          "text": "Take toothbrush from red cup, unscrew toothpaste cap, put toothpaste on toothbrush, screw cap back on toothpaste, put toothpaste down, and put toothbrush back into red cup.",
+          "count": 4
+        },
+        {
+          "text": "Take toothbrush from gray cup, unscrew toothpaste cap, put toothpaste on toothbrush, screw cap back on toothpaste, put toothpaste down, and put toothbrush back into gray cup.",
+          "count": 3
+        },
+        {
+          "text": "Take toothbrush from black cup, unscrew toothpaste cap, put toothpaste on toothbrush, screw cap back on toothpaste, put toothpaste down, and put toothbrush back into black cup.",
+          "count": 3
+        },
+        {
+          "text": "Clean the paintbrush by dipping it in the water cup and wiping it on the paper towel.",
+          "count": 2
+        },
+        {
+          "text": "Dip the paintbrush or wet brush into paint and paint on the printer paper.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "label": "dry: cloth, towel",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "dry",
+      "size_unique": 16,
+      "size_total": 39,
+      "verb_top": [
+        [
+          "dry",
+          39
+        ]
+      ],
+      "noun_top": [
+        [
+          "cloth",
+          32
+        ],
+        [
+          "towel",
+          7
+        ]
+      ],
+      "medoid_text": "Dry hands using a pink cloth while sitting at a green tablecloth with a blue background.",
+      "exemplars": [
+        {
+          "text": "Dry hands using a pink cloth while sitting at a green tablecloth with a blue background.",
+          "count": 1
+        },
+        {
+          "text": "Dry hands using a green cloth while sitting at a table with a green tablecloth and blue background.",
+          "count": 5
+        },
+        {
+          "text": "Dry hands using the yellow cloth while sitting at a green tablecloth with a blue background.",
+          "count": 4
+        },
+        {
+          "text": "Dry hands using a blue cloth while sitting at a wooden table with a brown background.",
+          "count": 4
+        },
+        {
+          "text": "Dry hands using a pink cloth while sitting at a table with a green tablecloth and blue background.",
+          "count": 4
+        },
+        {
+          "text": "Dry hands using a yellow cloth while sitting at a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Dry hands using a pink cloth while sitting at a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Dry hands using the pink cloth while sitting at a table with a green tablecloth and blue background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "label": "pick / measure: box, tape, medium box",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 20,
+      "size_total": 37,
+      "verb_top": [
+        [
+          "pick",
+          26
+        ],
+        [
+          "measure",
+          8
+        ],
+        [
+          "stack",
+          2
+        ],
+        [
+          "place",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "box",
+          22
+        ],
+        [
+          "tape",
+          6
+        ],
+        [
+          "medium box",
+          3
+        ],
+        [
+          "small box",
+          2
+        ],
+        [
+          "laptop box",
+          2
+        ],
+        [
+          "keyboard",
+          1
+        ]
+      ],
+      "medoid_text": "Pick up the box from the wooden table and place it vertically at a different location.",
+      "exemplars": [
+        {
+          "text": "Pick up the box from the wooden table and place it vertically at a different location.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the box from the pink tablecloth and place it vertically at a new location.",
+          "count": 6
+        },
+        {
+          "text": "Pick up a box from a wooden table and place it vertically at another location.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the measuring tape and measure the dimensions of the medium box while sitting at a table with a white background.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the measuring tape and measure the dimensions of the small box.",
+          "count": 2
+        },
+        {
+          "text": "Pick up a box vertically from a pink tablecloth while sitting against a lavender background and place it down at another location.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the box vertically from the pink tablecloth and place it down at another location.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the tape from the table and place it vertically at a designated location.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "label": "point / slot: monitor, remote",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "point",
+      "size_unique": 16,
+      "size_total": 35,
+      "verb_top": [
+        [
+          "point",
+          22
+        ],
+        [
+          "slot",
+          12
+        ],
+        [
+          "pick",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "monitor",
+          22
+        ],
+        [
+          "remote",
+          13
+        ]
+      ],
+      "medoid_text": "Point the white remote at the monitor and click while sitting at a wooden table with a red background.",
+      "exemplars": [
+        {
+          "text": "Point the white remote at the monitor and click while sitting at a wooden table with a red background.",
+          "count": 1
+        },
+        {
+          "text": "Point the white remote at the monitor and click.",
+          "count": 9
+        },
+        {
+          "text": "Remove batteries from a remote while sitting at a wooden table with a white background.",
+          "count": 5
+        },
+        {
+          "text": "Insert batteries into a remote while sitting at a wooden table with a white background.",
+          "count": 4
+        },
+        {
+          "text": "Point the white remote at the monitor and click it while sitting at a wooden table with a red background.",
+          "count": 3
+        },
+        {
+          "text": "Point at the monitor and click the gray remote while sitting at a wooden table with a red background.",
+          "count": 2
+        },
+        {
+          "text": "Point at the monitor and click the gray remote while sitting at a wooden table.",
+          "count": 2
+        },
+        {
+          "text": "Point at the monitor with the gray remote and click.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "label": "flip / remove: book, magazine, paper",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "flip",
+      "size_unique": 13,
+      "size_total": 35,
+      "verb_top": [
+        [
+          "flip",
+          15
+        ],
+        [
+          "remove",
+          10
+        ],
+        [
+          "insert",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "book",
+          31
+        ],
+        [
+          "magazine",
+          3
+        ],
+        [
+          "paper",
+          1
+        ]
+      ],
+      "medoid_text": "Insert a stack of three books into a bookshelf while sitting at a table with a white background.",
+      "exemplars": [
+        {
+          "text": "Insert a stack of three books into a bookshelf while sitting at a table with a white background.",
+          "count": 1
+        },
+        {
+          "text": "Flip pages of a hardcover book placed on a wooden table.",
+          "count": 7
+        },
+        {
+          "text": "Remove three books from a bookshelf while sitting at a table with a blue tablecloth and pink background.",
+          "count": 4
+        },
+        {
+          "text": "Remove three unstacked books from a bookshelf using the right hand.",
+          "count": 4
+        },
+        {
+          "text": "Insert three unstacked books onto a brown shelf using the right hand.",
+          "count": 4
+        },
+        {
+          "text": "Flip pages of a magazine placed on a wooden table while sitting with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Flip pages of a paperback book placed on a wooden table while sitting against a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Insert three books into a bookshelf while sitting at a table with a blue tablecloth and pink background.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "throw / declutter: box, towel, knickknack",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "throw",
+      "size_unique": 21,
+      "size_total": 33,
+      "verb_top": [
+        [
+          "throw",
+          15
+        ],
+        [
+          "declutter",
+          12
+        ],
+        [
+          "collect",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "box",
+          15
+        ],
+        [
+          "towel",
+          11
+        ],
+        [
+          "knickknack",
+          4
+        ],
+        [
+          "rubber ducks",
+          2
+        ],
+        [
+          "plastic lemon",
+          1
+        ]
+      ],
+      "medoid_text": "Collect towel, knickknack, and toys scattered across the metal tablecloth and then throw them into a box.",
+      "exemplars": [
+        {
+          "text": "Collect towel, knickknack, and toys scattered across the metal tablecloth and then throw them into a box.",
+          "count": 4
+        },
+        {
+          "text": "Identify and remove objects including a red shirt, green shirt, cup, snack wrapper, and bottle from a student desk with a pink tablecloth and lavender background, placing them into a box.",
+          "count": 4
+        },
+        {
+          "text": "Collect the towel, knickknack, and toys scattered across the metal tablecloth and throw them into the box.",
+          "count": 3
+        },
+        {
+          "text": "Collect knickknacks and toys scattered across the metal tablecloth and throw them into a box.",
+          "count": 2
+        },
+        {
+          "text": "Take towel, knickknack, and toys out of the box and scatter them back onto the metal tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Collect rubber ducks and towels scattered across the metal tablecloth and then throw them into a box.",
+          "count": 2
+        },
+        {
+          "text": "Identify and remove objects including a red shirt, green shirt, cup, snack wrapper, and bottle from a student desk with a computer, notebook, pens, and pink tablecloth, placing them into a box.",
+          "count": 2
+        },
+        {
+          "text": "Identify and remove objects including red shirts, cup, snack wrapper, and bottle from a student desk with computer, notebook, pens, and pink tablecloth, placing them into a box.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "label": "remove / insert: cups, coffee cup, solo cup",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 14,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "remove",
+          10
+        ],
+        [
+          "insert",
+          9
+        ],
+        [
+          "stack",
+          6
+        ],
+        [
+          "unstack",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "cups",
+          19
+        ],
+        [
+          "coffee cup",
+          9
+        ],
+        [
+          "solo cup",
+          3
+        ]
+      ],
+      "medoid_text": "Unstack three coffee cups on a wooden table with a white background while sitting.",
+      "exemplars": [
+        {
+          "text": "Unstack three coffee cups on a wooden table with a white background while sitting.",
+          "count": 1
+        },
+        {
+          "text": "Remove four cups from a dish rack placed on a green tablecloth with a brown background while sitting.",
+          "count": 6
+        },
+        {
+          "text": "Insert four cups into a dish rack placed on a green tablecloth with a brown background while sitting.",
+          "count": 4
+        },
+        {
+          "text": "Insert four cups into a rack on a green tablecloth with a white background while sitting.",
+          "count": 3
+        },
+        {
+          "text": "Remove four cups from a rack on a green tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Remove four cups from a rack on a green tablecloth with a white background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Stack three solo cups on a wooden table with a white background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Unstack six coffee cups on a wooden table while sitting against a white background.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "insert / remove: cabinet",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "insert",
+      "size_unique": 23,
+      "size_total": 30,
+      "verb_top": [
+        [
+          "insert",
+          16
+        ],
+        [
+          "remove",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "cabinet",
+          30
+        ]
+      ],
+      "medoid_text": "Insert a block into a cabinet with both doors open, while sitting against a white background without a tablecloth.",
+      "exemplars": [
+        {
+          "text": "Insert a block into a cabinet with both doors open, while sitting against a white background without a tablecloth.",
+          "count": 1
+        },
+        {
+          "text": "Insert a block into a cabinet from the furniture bench while sitting against a white background.",
+          "count": 2
+        },
+        {
+          "text": "Insert a block into a cabinet with both doors open.",
+          "count": 2
+        },
+        {
+          "text": "Remove a block from a cabinet with both doors open, while sitting against a white background without a tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Remove the cabinet from the furniture bench.",
+          "count": 2
+        },
+        {
+          "text": "Remove the block from the cabinet while sitting at a table with a pink tablecloth and lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Insert a block into a cabinet from the furniture bench with both doors opened, then close both doors.",
+          "count": 2
+        },
+        {
+          "text": "Remove the block from the cabinet with both doors open.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "label": "stack / assemble: block, jenga block",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "stack",
+      "size_unique": 15,
+      "size_total": 30,
+      "verb_top": [
+        [
+          "stack",
+          16
+        ],
+        [
+          "assemble",
+          7
+        ],
+        [
+          "remove",
+          5
+        ],
+        [
+          "pick",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "block",
+          28
+        ],
+        [
+          "jenga block",
+          2
+        ]
+      ],
+      "medoid_text": "Remove a block from the Jenga tower and place the block on the table.",
+      "exemplars": [
+        {
+          "text": "Remove a block from the Jenga tower and place the block on the table.",
+          "count": 6
+        },
+        {
+          "text": "Remove a block from the jenga tower and place it on the table.",
+          "count": 6
+        },
+        {
+          "text": "Pick up a jenga block from the pink bowl and place it in the blue bowl.",
+          "count": 2
+        },
+        {
+          "text": "Assemble blocks into a Jenga tower on a brown background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Assemble block pieces into a Jenga tower on a brown background while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Take out a block from the jenga tower and place the block on the table.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the block from the table and place it back into the jenga tower.",
+          "count": 2
+        },
+        {
+          "text": "Remove a block from a stack of 18 Jenga blocks on a wooden table.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "catch / throw: ball, red ball, orange ball",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "catch",
+      "size_unique": 16,
+      "size_total": 30,
+      "verb_top": [
+        [
+          "catch",
+          11
+        ],
+        [
+          "throw",
+          11
+        ],
+        [
+          "roll",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "ball",
+          22
+        ],
+        [
+          "red ball",
+          6
+        ],
+        [
+          "orange ball",
+          2
+        ]
+      ],
+      "medoid_text": "Throw the green ball from the right hand and catch it with the left hand while sitting at a wooden table.",
+      "exemplars": [
+        {
+          "text": "Throw the green ball from the right hand and catch it with the left hand while sitting at a wooden table.",
+          "count": 2
+        },
+        {
+          "text": "Roll the red ball across the green tablecloth while sitting against a white background.",
+          "count": 6
+        },
+        {
+          "text": "Catch a green ball with the right hand while sitting at a wooden table.",
+          "count": 4
+        },
+        {
+          "text": "Throw the green ball from the left hand and catch it with both hands while sitting at a wooden table.",
+          "count": 3
+        },
+        {
+          "text": "Throw a green ball upward from the left hand while sitting at a wooden table, then catch it with the same hand.",
+          "count": 2
+        },
+        {
+          "text": "Release the green ball from the left hand after catching it, returning it to the initial throwing position.",
+          "count": 2
+        },
+        {
+          "text": "Roll the orange ball across the green tablecloth while sitting against a white background.",
+          "count": 2
+        },
+        {
+          "text": "Throw the green ball upward from the right hand while sitting at a wooden table.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "push / pop: circle fidget, square fidget",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "push",
+      "size_unique": 13,
+      "size_total": 29,
+      "verb_top": [
+        [
+          "push",
+          21
+        ],
+        [
+          "pop",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "circle fidget",
+          25
+        ],
+        [
+          "square fidget",
+          4
+        ]
+      ],
+      "medoid_text": "Press the bubbles on the circle fidget toy one by one using your fingers.",
+      "exemplars": [
+        {
+          "text": "Press the bubbles on the circle fidget toy one by one using your fingers.",
+          "count": 1
+        },
+        {
+          "text": "Press the bubbles on the circle fidget Pop It toy one by one using your fingers.",
+          "count": 7
+        },
+        {
+          "text": "Press each bubble on the circle fidget Pop It toy one by one using your fingers.",
+          "count": 6
+        },
+        {
+          "text": "Flip the circle fidget Pop It toy over and press the bubbles back to their original position.",
+          "count": 3
+        },
+        {
+          "text": "Press each bubble on the circle fidget toy one by one using your fingers.",
+          "count": 2
+        },
+        {
+          "text": "Flip the circle fidget Pop It toy over and press the bubbles back to their original position using your fingers while sitting at a blue tablecloth with a pink background.",
+          "count": 2
+        },
+        {
+          "text": "Press each bubble on the circle fidget toy individually using your fingers while sitting against a lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Flip the square fidget Pop It toy over and press the bubbles back to their original position one by one using your fingers while sitting against a lavender background.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "label": "pick / stack: purell",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 14,
+      "size_total": 26,
+      "verb_top": [
+        [
+          "pick",
+          22
+        ],
+        [
+          "stack",
+          3
+        ],
+        [
+          "place",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "purell",
+          26
+        ]
+      ],
+      "medoid_text": "Pick up the purell from the pink tablecloth and place it vertically at another location.",
+      "exemplars": [
+        {
+          "text": "Pick up the purell from the pink tablecloth and place it vertically at another location.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the purell from the wooden table and place it vertically at a new location.",
+          "count": 7
+        },
+        {
+          "text": "Pick up the purell from the table and place it vertically at a different location.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the purell from the yellow bowl and place it on the blue plate.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the purell bottle from the table and place it vertically at a different location.",
+          "count": 2
+        },
+        {
+          "text": "Stack the purell on the green tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Stack the purell on top of another object on the green tablecloth.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the purell from the brown table and place it vertically at a new location.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "label": "remove / add: cup",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 15,
+      "size_total": 26,
+      "verb_top": [
+        [
+          "remove",
+          14
+        ],
+        [
+          "add",
+          12
+        ]
+      ],
+      "noun_top": [
+        [
+          "cup",
+          26
+        ]
+      ],
+      "medoid_text": "Place lids onto three cups on a wooden table while sitting with a brown background.",
+      "exemplars": [
+        {
+          "text": "Place lids onto three cups on a wooden table while sitting with a brown background.",
+          "count": 2
+        },
+        {
+          "text": "Remove the lid from the cup on the wooden table.",
+          "count": 4
+        },
+        {
+          "text": "Remove lids from four cups placed on a wooden table with a red background.",
+          "count": 4
+        },
+        {
+          "text": "Place lids onto four cups on a wooden table with a red background.",
+          "count": 3
+        },
+        {
+          "text": "Remove lids from three cups on a wooden table while sitting with a brown background.",
+          "count": 2
+        },
+        {
+          "text": "Remove the lid from the cup on a wooden table while sitting.",
+          "count": 2
+        },
+        {
+          "text": "Add the lid onto the cup on a wooden table while sitting with a brown background.",
+          "count": 1
+        },
+        {
+          "text": "Remove the lid from the cup placed on a wooden table while sitting against a brown background.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "label": "pick / unstack: clear tupperware, tupperware, plate",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 17,
+      "size_total": 24,
+      "verb_top": [
+        [
+          "pick",
+          10
+        ],
+        [
+          "unstack",
+          9
+        ],
+        [
+          "stack",
+          3
+        ],
+        [
+          "open",
+          1
+        ],
+        [
+          "close",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "clear tupperware",
+          11
+        ],
+        [
+          "tupperware",
+          3
+        ],
+        [
+          "plate",
+          2
+        ],
+        [
+          "ring",
+          2
+        ],
+        [
+          "block",
+          2
+        ],
+        [
+          "donut",
+          1
+        ]
+      ],
+      "medoid_text": "Pick up the clear tupperware from the shelf with the right hand and unstack it onto the table.",
+      "exemplars": [
+        {
+          "text": "Pick up the clear tupperware from the shelf with the right hand and unstack it onto the table.",
+          "count": 1
+        },
+        {
+          "text": "Unstack the clear tupperware from the shelf with the right hand and place it back on the table.",
+          "count": 4
+        },
+        {
+          "text": "Unstack the clear tupperware from the shelf with the right hand and place it back onto the table.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the pink plate from the wood table with the right hand and place it on the gray Tupperware.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the white ring from the metal table and place it in the tupperware.",
+          "count": 2
+        },
+        {
+          "text": "Open the large tupperware, insert the 3ducks inside, and close the tupperware on a green tablecloth with a white background while sitting.",
+          "count": 1
+        },
+        {
+          "text": "Open the large tupperware, remove the 3ducks, and close the tupperware on the green tablecloth.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the pink donut from the wood table with the right hand and place it on the clear Tupperware.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "stock / unstock: fridge, food",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "stock",
+      "size_unique": 16,
+      "size_total": 23,
+      "verb_top": [
+        [
+          "stock",
+          13
+        ],
+        [
+          "unstock",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "fridge",
+          15
+        ],
+        [
+          "food",
+          8
+        ]
+      ],
+      "medoid_text": "Open the fridge door, pick up two food items from the table, place the food items into the fridge, and close the fridge door.",
+      "exemplars": [
+        {
+          "text": "Open the fridge door, pick up two food items from the table, place the food items into the fridge, and close the fridge door.",
+          "count": 1
+        },
+        {
+          "text": "Open the fridge door, pick up food items from the table, place food items into the fridge, and close the fridge door.",
+          "count": 3
+        },
+        {
+          "text": "Open the fridge door, remove food from the fridge, place food onto the table, and close the fridge door.",
+          "count": 2
+        },
+        {
+          "text": "Open the fridge door, remove two food items from the fridge, place the food items onto the table, and close the fridge door.",
+          "count": 2
+        },
+        {
+          "text": "Open the fridge door, pick up two food items from the table, place the food into the fridge, and close the fridge door.",
+          "count": 2
+        },
+        {
+          "text": "Open the fridge door, pick up four food items from the table, place the food into the fridge, and close the fridge door.",
+          "count": 2
+        },
+        {
+          "text": "Open the fridge door, remove food items from the fridge, place food items onto the table, and close the fridge door.",
+          "count": 2
+        },
+        {
+          "text": "Open the fridge door, pick up five food items from the table, place the food items into the fridge, and close the fridge door.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "label": "remove / roll: tennis ball",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "remove",
+      "size_unique": 14,
+      "size_total": 21,
+      "verb_top": [
+        [
+          "remove",
+          10
+        ],
+        [
+          "roll",
+          5
+        ],
+        [
+          "insert",
+          4
+        ],
+        [
+          "pick",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "tennis ball",
+          21
+        ]
+      ],
+      "medoid_text": "Remove a tennis ball from among three tennis balls on a pink tablecloth while sitting against a lavender background.",
+      "exemplars": [
+        {
+          "text": "Remove a tennis ball from among three tennis balls on a pink tablecloth while sitting against a lavender background.",
+          "count": 2
+        },
+        {
+          "text": "Roll the tennis ball across the green tablecloth while sitting against a white background.",
+          "count": 5
+        },
+        {
+          "text": "Remove a tennis ball from among three tennis balls using the right hand while sitting at a table with a white background.",
+          "count": 2
+        },
+        {
+          "text": "Remove a tennis ball from a group of three tennis balls on a pink tablecloth.",
+          "count": 2
+        },
+        {
+          "text": "Insert a tennis ball among three tennis balls using the right hand while sitting against a lavender background.",
+          "count": 1
+        },
+        {
+          "text": "Insert a tennis ball into a container while sitting against a lavender background.",
+          "count": 1
+        },
+        {
+          "text": "Remove a tennis ball from among three tennis balls.",
+          "count": 1
+        },
+        {
+          "text": "Insert a tennis ball among two other tennis balls while sitting against a lavender background.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "label": "write: paper",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "write",
+      "size_unique": 13,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "write",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "paper",
+          20
+        ]
+      ],
+      "medoid_text": "Write on small paper using blue ink and an expo tool while sitting at a wooden table with a brown background.",
+      "exemplars": [
+        {
+          "text": "Write on small paper using blue ink and an expo tool while sitting at a wooden table with a brown background.",
+          "count": 2
+        },
+        {
+          "text": "Write something on big paper using an expo tool with green ink while sitting at a wooden table with a red background.",
+          "count": 4
+        },
+        {
+          "text": "Write on big paper using a pencil with black ink while sitting at a wooden table with a brown background.",
+          "count": 3
+        },
+        {
+          "text": "Write something on a small paper using an expo tool with blue ink while sitting at a wooden table with a red background.",
+          "count": 2
+        },
+        {
+          "text": "Write on a small paper using a pen with black ink while sitting at a wooden table.",
+          "count": 1
+        },
+        {
+          "text": "Write with a pen using black ink on big paper placed on a wooden table while sitting against a brown background.",
+          "count": 1
+        },
+        {
+          "text": "Write on big paper using an expo tool with green ink while sitting at a wooden table with a brown background.",
+          "count": 1
+        },
+        {
+          "text": "Write on the big paper using a pencil with black ink while sitting at a wooden table.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "label": "pick / place: plushie, puppy, plush",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 14,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "pick",
+          19
+        ],
+        [
+          "place",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "plushie",
+          14
+        ],
+        [
+          "puppy",
+          3
+        ],
+        [
+          "plush",
+          2
+        ],
+        [
+          "rabbit plush",
+          1
+        ]
+      ],
+      "medoid_text": "Pick up the yellow plushie from the table with the right hand and place it in the gray bowl.",
+      "exemplars": [
+        {
+          "text": "Pick up the yellow plushie from the table with the right hand and place it in the gray bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the orange plushie from the table with the right hand and place it in the yellow plate.",
+          "count": 3
+        },
+        {
+          "text": "Pick up a white puppy plush from the blue bowl and place it in the purple scoop.",
+          "count": 3
+        },
+        {
+          "text": "Pick up the white plushie from the table with the right hand and place it on the blue plate.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the pink plushie from the table with the right hand and place it onto the yellow plate.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the pink plushie from the table with the right hand and place it in the blue bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the white plushie from the table with the right hand and place it in the orange bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the blue plushie from the table with the right hand and place it in the white dustpan.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "knead: crystal slime, slime, cloud slime",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "knead",
+      "size_unique": 14,
+      "size_total": 19,
+      "verb_top": [
+        [
+          "knead",
+          19
+        ]
+      ],
+      "noun_top": [
+        [
+          "crystal slime",
+          8
+        ],
+        [
+          "slime",
+          7
+        ],
+        [
+          "cloud slime",
+          3
+        ],
+        [
+          "butter slime",
+          1
+        ]
+      ],
+      "medoid_text": "Knead, poke, tear the crystal slime, insert the tree or accessories provided into it.",
+      "exemplars": [
+        {
+          "text": "Knead, poke, tear the crystal slime, insert the tree or accessories provided into it.",
+          "count": 1
+        },
+        {
+          "text": "Knead cloud slime, poke it, tear it, insert the tree or any included accessories, and place it back into its container.",
+          "count": 2
+        },
+        {
+          "text": "Knead, poke, tear the crystal slime, insert the polar bear or any accessories, and place it into its container.",
+          "count": 2
+        },
+        {
+          "text": "Knead, poke, tear the crystal slime, insert the polar bear or any accessories into it.",
+          "count": 2
+        },
+        {
+          "text": "Remove the polar bear or accessories from the crystal slime, reshape the slime, and return it to its container.",
+          "count": 2
+        },
+        {
+          "text": "Knead, poke, and tear the cloud slime, and put the christmas tree or accessories into it.",
+          "count": 2
+        },
+        {
+          "text": "Knead, poke, tear the water slime, insert accessories such as the tree, and place it back into its container while sitting against a white background without a tablecloth.",
+          "count": 1
+        },
+        {
+          "text": "Knead, poke, tear the water slime, insert accessories such as the tree, and place it back into its container.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "label": "pick / boil: egg, kitchen",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "pick",
+      "size_unique": 13,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "pick",
+          10
+        ],
+        [
+          "boil",
+          5
+        ],
+        [
+          "fry",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "egg",
+          10
+        ],
+        [
+          "kitchen",
+          6
+        ]
+      ],
+      "medoid_text": "Boil water in pot, remove egg from carton, boil the egg, serve egg in gray bowl on round table, and place pot and ladle in sink.",
+      "exemplars": [
+        {
+          "text": "Boil water in pot, remove egg from carton, boil the egg, serve egg in gray bowl on round table, and place pot and ladle in sink.",
+          "count": 1
+        },
+        {
+          "text": "Pick up the brown egg from the table with the right hand and place it into the orange bowl.",
+          "count": 2
+        },
+        {
+          "text": "Pick up the brown egg from the wood table with the right hand and place it into the yellow bowl.",
+          "count": 2
+        },
+        {
+          "text": "Pick up a brown egg from the teacup and place it in the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Place pan on stove, add oil, crack egg into pan, fry egg, flip with spatula, and serve onto plate placed on round table, or scramble egg in bowl or cup using fork, pour into oiled pan, scramble, and serve onto plate placed on round table.",
+          "count": 1
+        },
+        {
+          "text": "Boil water in pot, take egg from carton, boil egg, serve egg in gray bowl on round table, and place pot and ladle in sink.",
+          "count": 1
+        },
+        {
+          "text": "Boil water in pot, take egg from carton, boil egg, cover pot with lid, then serve egg in gray bowl placed on round table.",
+          "count": 1
+        },
+        {
+          "text": "Boil water in a pot, take an egg from the carton and boil it, serve the boiled egg in a gray bowl placed on the round table, and place the pot and ladle in the sink.",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

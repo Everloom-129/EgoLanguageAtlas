@@ -1,28 +1,24 @@
 {
   "name": "EgoDex",
   "slug": "egodex",
-  "status": "descriptive",
-  "work_type": "dataset (corpus + benchmark)",
-  "focus": "829 hours of Apple Vision Pro egocentric video with native 3D hand pose over 194 tabletop tasks, each with a GPT-generated task description.",
-  "usage_methods": [
-    "corpus",
-    "hand-pose",
-    "vla-pretrain",
-    "eval-benchmark"
-  ],
-  "annotation_types": [
-    "task-instruction"
-  ],
-  "source_datasets": [
-    "original capture (Apple Vision Pro)"
-  ],
-  "downloadable": "open download (Apple CDN); redistribution barred",
-  "license": "CC BY-NC-ND: annotation-text redistribution NOT permitted",
+  "status": "built",
+  "work_type": "dataset (corpus)",
+  "focus": "Per-episode task instructions over Apple Vision Pro egocentric manipulation with native 3D hand pose (test split), with reversible tasks carrying both directions.",
+  "usage_methods": ["corpus", "hand-pose", "vla-pretrain"],
+  "usage_downstream": [],
+  "annotation_types": ["task-instruction"],
+  "source_datasets": ["EgoDex (Apple Vision Pro capture)"],
+  "data_access": "project-script (partial-zip over HTTP)",
+  "downloadable": "open download (Apple CDN); CC BY-NC-ND, internal use",
+  "license": "CC BY-NC-ND 4.0 (internal analysis)",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "redistribution": "no-derivatives; analyzed internally, derived text not redistributed externally",
   "links": {
     "paper": "https://arxiv.org/abs/2505.11709",
     "repo": "https://github.com/apple/ml-egodex",
-    "project": "https://machinelearning.apple.com/research/egodex-learning-dexterous-manipulation",
+    "project": "https://huggingface.co/spaces/pablovela5620/ego-dex-viewer",
     "atlas_en": "egodex/egodex_atlas.html",
     "atlas_cn": "egodex/egodex_atlas_cn.html"
-  }
+  },
+  "stats_file": "egodex/egodex_stats.json"
 }

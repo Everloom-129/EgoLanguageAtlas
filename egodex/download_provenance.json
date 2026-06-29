@@ -1,0 +1,26 @@
+{
+  "work": "EgoDex",
+  "route": "project-script (partial-zip over HTTP)",
+  "repo": "https://github.com/apple/ml-egodex",
+  "archive": "https://ml-site.cdn-apple.com/datasets/egodex/test.zip",
+  "split": "test",
+  "archive_bytes": 17304529397,
+  "access_utc": "2026-06-29T16:17:52.250630+00:00",
+  "license": "CC BY-NC-ND 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "license_note": "no-derivatives; internal non-commercial analysis only, derived text not redistributed externally",
+  "episodes_cached": 3243,
+  "episodes_failed": 0,
+  "fields": [
+    "llm_description",
+    "llm_description2",
+    "which_llm_description",
+    "llm_type",
+    "task",
+    "environment",
+    "object",
+    "session_name",
+    "llm_verbs",
+    "llm_objects"
+  ]
+}
