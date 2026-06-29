@@ -1,0 +1,5398 @@
+{
+  "work": "OakInk2",
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "reducer": "umap",
+    "umap_viz": {
+      "n_components": 2,
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "umap_cluster": {
+      "n_components": 5,
+      "n_neighbors": 15,
+      "min_dist": 0.0,
+      "metric": "cosine",
+      "random_state": 42
+    },
+    "hdbscan": {
+      "min_cluster_size": 8,
+      "min_samples": 3,
+      "metric": "euclidean",
+      "cluster_selection_method": "eom"
+    },
+    "n_points": 1122
+  },
+  "n_clusters": 64,
+  "noise_unique": 67,
+  "noise_share_unique": 0.0597,
+  "noise_share_weighted": 0.0587,
+  "clusters": [
+    {
+      "id": 9,
+      "label": "remove / place: tube, holder",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 14,
+      "size_total": 299,
+      "verb_top": [
+        [
+          "remove",
+          110
+        ],
+        [
+          "place",
+          79
+        ],
+        [
+          "use",
+          56
+        ],
+        [
+          "hold",
+          34
+        ],
+        [
+          "shake",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "tube",
+          228
+        ],
+        [
+          "holder",
+          71
+        ]
+      ],
+      "medoid_text": "Hold the test tube holder to the position.",
+      "exemplars": [
+        {
+          "text": "Hold the test tube holder to the position.",
+          "count": 10
+        },
+        {
+          "text": "Remove the test tube from the rack.",
+          "count": 99
+        },
+        {
+          "text": "Place the test tube on the rack.",
+          "count": 79
+        },
+        {
+          "text": "Use the holder to hold the test tube.",
+          "count": 30
+        },
+        {
+          "text": "Use the holder to place the test tube on the rack.",
+          "count": 26
+        },
+        {
+          "text": "Hold the test tube to the position.",
+          "count": 22
+        },
+        {
+          "text": "Remove the test tube from the holder",
+          "count": 11
+        },
+        {
+          "text": "Heat the test tube.",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "rearrange / put: burner, cap, ignitor",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 16,
+      "size_total": 274,
+      "verb_top": [
+        [
+          "rearrange",
+          105
+        ],
+        [
+          "put",
+          58
+        ],
+        [
+          "ignite",
+          54
+        ],
+        [
+          "uncap",
+          49
+        ],
+        [
+          "hold",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "burner",
+          213
+        ],
+        [
+          "cap",
+          51
+        ],
+        [
+          "ignitor",
+          7
+        ],
+        [
+          "saving",
+          3
+        ]
+      ],
+      "medoid_text": "Ignite the alcohol burner and then put off the alcohol burner.",
+      "exemplars": [
+        {
+          "text": "Ignite the alcohol burner and then put off the alcohol burner.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the alcohol burner from one position to another position.",
+          "count": 98
+        },
+        {
+          "text": "Put off the alcohol burner with its cap.",
+          "count": 50
+        },
+        {
+          "text": "Ignite the alcohol burner with the ignitor.",
+          "count": 48
+        },
+        {
+          "text": "Uncap the alcohol burner.",
+          "count": 47
+        },
+        {
+          "text": "Put off the alcohol burner.",
+          "count": 5
+        },
+        {
+          "text": "Hold the alcohol burner to the position.",
+          "count": 4
+        },
+        {
+          "text": "Hold the ignitor to the position.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "unscrew / screw: cap, bottle, black",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 38,
+      "size_total": 221,
+      "verb_top": [
+        [
+          "unscrew",
+          71
+        ],
+        [
+          "screw",
+          68
+        ],
+        [
+          "uncap",
+          30
+        ],
+        [
+          "cap",
+          28
+        ],
+        [
+          "rearrange",
+          10
+        ]
+      ],
+      "noun_top": [
+        [
+          "cap",
+          108
+        ],
+        [
+          "bottle",
+          106
+        ],
+        [
+          "black",
+          4
+        ],
+        [
+          "something",
+          1
+        ],
+        [
+          "storage",
+          1
+        ],
+        [
+          "open",
+          1
+        ]
+      ],
+      "medoid_text": "Unscrew the cap of the green and yellow striped bottle.",
+      "exemplars": [
+        {
+          "text": "Unscrew the cap of the green and yellow striped bottle.",
+          "count": 4
+        },
+        {
+          "text": "Cap the gray-green porcelain bottle.",
+          "count": 21
+        },
+        {
+          "text": "Uncap the gray-green porcelain bottle.",
+          "count": 20
+        },
+        {
+          "text": "Unscrew the cap of the large black and yellow striped bottle.",
+          "count": 17
+        },
+        {
+          "text": "Screw the cap onto the large black and yellow striped bottle.",
+          "count": 17
+        },
+        {
+          "text": "Unscrew the bottle.",
+          "count": 15
+        },
+        {
+          "text": "Screw the bottle.",
+          "count": 12
+        },
+        {
+          "text": "Unscrew the cap of the large white bottle.",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "open / close: gate, plate, button",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 23,
+      "size_total": 208,
+      "verb_top": [
+        [
+          "open",
+          56
+        ],
+        [
+          "close",
+          52
+        ],
+        [
+          "press",
+          27
+        ],
+        [
+          "take",
+          25
+        ],
+        [
+          "place",
+          25
+        ]
+      ],
+      "noun_top": [
+        [
+          "gate",
+          106
+        ],
+        [
+          "plate",
+          30
+        ],
+        [
+          "button",
+          27
+        ],
+        [
+          "bowl",
+          15
+        ],
+        [
+          "lever",
+          10
+        ],
+        [
+          "oven",
+          7
+        ]
+      ],
+      "medoid_text": "Open the gate of the microwave oven.",
+      "exemplars": [
+        {
+          "text": "Open the gate of the microwave oven.",
+          "count": 55
+        },
+        {
+          "text": "Close the gate of the microwave oven.",
+          "count": 51
+        },
+        {
+          "text": "Press the button on the microwave oven.",
+          "count": 27
+        },
+        {
+          "text": "Take the plate outside the microwave oven.",
+          "count": 14
+        },
+        {
+          "text": "Place the plate inside the microwave oven.",
+          "count": 14
+        },
+        {
+          "text": "Trigger the lever on the microwave oven.",
+          "count": 10
+        },
+        {
+          "text": "Take the bowl outside the microwave oven.",
+          "count": 7
+        },
+        {
+          "text": "Place the bowl inside the microwave oven.",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "press / the: button, lightbulb, lamp",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 36,
+      "size_total": 122,
+      "verb_top": [
+        [
+          "press",
+          47
+        ],
+        [
+          "the",
+          18
+        ],
+        [
+          "remove",
+          15
+        ],
+        [
+          "insert",
+          12
+        ],
+        [
+          "turn",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "button",
+          47
+        ],
+        [
+          "lightbulb",
+          27
+        ],
+        [
+          "lamp",
+          17
+        ],
+        [
+          "turned",
+          7
+        ],
+        [
+          "plug",
+          6
+        ],
+        [
+          "installed",
+          4
+        ]
+      ],
+      "medoid_text": "Remove the lightbulb from the lamp.",
+      "exemplars": [
+        {
+          "text": "Remove the lightbulb from the lamp.",
+          "count": 5
+        },
+        {
+          "text": "Press the button on the lamp.",
+          "count": 47
+        },
+        {
+          "text": "Insert the lightbulb into the lamp.",
+          "count": 9
+        },
+        {
+          "text": "Plug in the power plug of the lamp.",
+          "count": 6
+        },
+        {
+          "text": "Remove the power plug of the lamp.",
+          "count": 5
+        },
+        {
+          "text": "The replacement bulb is installed in the lamp and the table is illuminated.",
+          "count": 4
+        },
+        {
+          "text": "Rearrange the lamp from one position to another position.",
+          "count": 4
+        },
+        {
+          "text": "Hold the lamp to the position.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "label": "close / open: laptop, lid, plug",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 30,
+      "size_total": 120,
+      "verb_top": [
+        [
+          "close",
+          31
+        ],
+        [
+          "open",
+          23
+        ],
+        [
+          "hold",
+          20
+        ],
+        [
+          "use",
+          13
+        ],
+        [
+          "the",
+          11
+        ]
+      ],
+      "noun_top": [
+        [
+          "laptop",
+          41
+        ],
+        [
+          "lid",
+          41
+        ],
+        [
+          "plug",
+          8
+        ],
+        [
+          "mouse",
+          6
+        ],
+        [
+          "opened",
+          6
+        ],
+        [
+          "gamecontroller",
+          3
+        ]
+      ],
+      "medoid_text": "Power off the laptop, close the laptop lid and remove the power supply of the laptop.",
+      "exemplars": [
+        {
+          "text": "Power off the laptop, close the laptop lid and remove the power supply of the laptop.",
+          "count": 1
+        },
+        {
+          "text": "Hold the laptop to the position.",
+          "count": 20
+        },
+        {
+          "text": "Close the lid of the laptop.",
+          "count": 20
+        },
+        {
+          "text": "Open the lid of the laptop.",
+          "count": 17
+        },
+        {
+          "text": "Remove the power plug of the laptop.",
+          "count": 8
+        },
+        {
+          "text": "Close laptop.",
+          "count": 7
+        },
+        {
+          "text": "Open laptop.",
+          "count": 6
+        },
+        {
+          "text": "Rearrange the laptop from one position to another position.",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "label": "put / remove: lid, box, something",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 13,
+      "size_total": 119,
+      "verb_top": [
+        [
+          "put",
+          47
+        ],
+        [
+          "remove",
+          42
+        ],
+        [
+          "hold",
+          10
+        ],
+        [
+          "take",
+          9
+        ],
+        [
+          "place",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "lid",
+          89
+        ],
+        [
+          "box",
+          12
+        ],
+        [
+          "something",
+          9
+        ],
+        [
+          "tape",
+          7
+        ],
+        [
+          "paper",
+          2
+        ]
+      ],
+      "medoid_text": "Put on the box lid.",
+      "exemplars": [
+        {
+          "text": "Put on the box lid.",
+          "count": 41
+        },
+        {
+          "text": "Remove the box lid.",
+          "count": 42
+        },
+        {
+          "text": "Hold box lid to the position.",
+          "count": 5
+        },
+        {
+          "text": "Hold the box to the position.",
+          "count": 5
+        },
+        {
+          "text": "Put something into box.",
+          "count": 5
+        },
+        {
+          "text": "Take something out of box.",
+          "count": 4
+        },
+        {
+          "text": "Place the tape inside the box.",
+          "count": 4
+        },
+        {
+          "text": "Rearrange the box from one position to another position.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "label": "pull / push: drawer, something, pencil",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 18,
+      "size_total": 117,
+      "verb_top": [
+        [
+          "pull",
+          40
+        ],
+        [
+          "push",
+          36
+        ],
+        [
+          "take",
+          17
+        ],
+        [
+          "place",
+          10
+        ],
+        [
+          "put",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "drawer",
+          94
+        ],
+        [
+          "something",
+          10
+        ],
+        [
+          "pencil",
+          6
+        ],
+        [
+          "tape",
+          4
+        ],
+        [
+          "lightbulb",
+          2
+        ],
+        [
+          "stored",
+          1
+        ]
+      ],
+      "medoid_text": "Put something into drawer.",
+      "exemplars": [
+        {
+          "text": "Put something into drawer.",
+          "count": 6
+        },
+        {
+          "text": "Pull out the drawer.",
+          "count": 40
+        },
+        {
+          "text": "Push in the drawer.",
+          "count": 36
+        },
+        {
+          "text": "Place the drawer inside the box.",
+          "count": 6
+        },
+        {
+          "text": "Take the pencil outside the drawer.",
+          "count": 4
+        },
+        {
+          "text": "Hold the drawer to the position.",
+          "count": 3
+        },
+        {
+          "text": "Take the drawer outside the box.",
+          "count": 3
+        },
+        {
+          "text": "Take something out of drawer.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "label": "brush / write: whiteboard, pen, eraser",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 31,
+      "size_total": 117,
+      "verb_top": [
+        [
+          "brush",
+          39
+        ],
+        [
+          "write",
+          32
+        ],
+        [
+          "rearrange",
+          11
+        ],
+        [
+          "erase",
+          10
+        ],
+        [
+          "hold",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "whiteboard",
+          74
+        ],
+        [
+          "pen",
+          19
+        ],
+        [
+          "eraser",
+          8
+        ],
+        [
+          "everything",
+          6
+        ],
+        [
+          "outlines",
+          4
+        ],
+        [
+          "book",
+          2
+        ]
+      ],
+      "medoid_text": "Place the whiteboard eraser inside the box.",
+      "exemplars": [
+        {
+          "text": "Place the whiteboard eraser inside the box.",
+          "count": 2
+        },
+        {
+          "text": "Brush whiteboard with the whiteboard eraser.",
+          "count": 28
+        },
+        {
+          "text": "Write with the whiteboard pen on the whiteboard.",
+          "count": 21
+        },
+        {
+          "text": "Brush whiteboard.",
+          "count": 11
+        },
+        {
+          "text": "Write on whiteboard.",
+          "count": 8
+        },
+        {
+          "text": "Hold the whiteboard pen to the position.",
+          "count": 6
+        },
+        {
+          "text": "Rearrange the whiteboard pen from one position to another position.",
+          "count": 6
+        },
+        {
+          "text": "Erase everything on the whiteboard after shearing the paper.",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "heat / ignite: substances, substance, burner",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 37,
+      "size_total": 111,
+      "verb_top": [
+        [
+          "heat",
+          86
+        ],
+        [
+          "ignite",
+          14
+        ],
+        [
+          "put",
+          8
+        ],
+        [
+          "pour",
+          2
+        ],
+        [
+          "stop",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "substances",
+          57
+        ],
+        [
+          "substance",
+          20
+        ],
+        [
+          "burner",
+          10
+        ],
+        [
+          "tube",
+          8
+        ],
+        [
+          "put",
+          5
+        ],
+        [
+          "heating",
+          2
+        ]
+      ],
+      "medoid_text": "Heat the beaker, put off the alcohol burner after heating, and pour the heated experiment substances into the test tube.",
+      "exemplars": [
+        {
+          "text": "Heat the beaker, put off the alcohol burner after heating, and pour the heated experiment substances into the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Heat experiment substances in the beaker with alcohol lamp.",
+          "count": 24
+        },
+        {
+          "text": "Heat experiment substances in the test tube with alcohol lamp.",
+          "count": 24
+        },
+        {
+          "text": "Heat the experiment substance A in the test tube with alcohol lamp.",
+          "count": 9
+        },
+        {
+          "text": "Heat the experiment substance A in the beaker with alcohol lamp.",
+          "count": 7
+        },
+        {
+          "text": "Heat experiment substances in the conical flask with alcohol lamp.",
+          "count": 4
+        },
+        {
+          "text": "Heat the test tube and put off the alcohol burner after heating.",
+          "count": 3
+        },
+        {
+          "text": "Ignite the alcohol burner for heating, heat the beaker, and put off the alcohol burner after heating.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "label": "insert / remove: stick, usb, hub",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 19,
+      "size_total": 103,
+      "verb_top": [
+        [
+          "insert",
+          45
+        ],
+        [
+          "remove",
+          42
+        ],
+        [
+          "hold",
+          4
+        ],
+        [
+          "place",
+          4
+        ],
+        [
+          "take",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "stick",
+          58
+        ],
+        [
+          "usb",
+          34
+        ],
+        [
+          "hub",
+          8
+        ],
+        [
+          "laptop",
+          1
+        ],
+        [
+          "devices",
+          1
+        ],
+        [
+          "inserted",
+          1
+        ]
+      ],
+      "medoid_text": "Insert the usb stick into the usb hub.",
+      "exemplars": [
+        {
+          "text": "Insert the usb stick into the usb hub.",
+          "count": 11
+        },
+        {
+          "text": "Insert usb.",
+          "count": 17
+        },
+        {
+          "text": "Insert the usb stick into the laptop.",
+          "count": 17
+        },
+        {
+          "text": "Remove usb.",
+          "count": 16
+        },
+        {
+          "text": "Remove the usb stick from the laptop.",
+          "count": 15
+        },
+        {
+          "text": "Remove the usb stick from the usb hub.",
+          "count": 10
+        },
+        {
+          "text": "Hold the usb stick to the position.",
+          "count": 3
+        },
+        {
+          "text": "Rearrange the usb hub from one position to another position.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "label": "sharpen / insert: pencil, sharpener, written",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 20,
+      "size_total": 103,
+      "verb_top": [
+        [
+          "sharpen",
+          27
+        ],
+        [
+          "insert",
+          18
+        ],
+        [
+          "remove",
+          16
+        ],
+        [
+          "hold",
+          13
+        ],
+        [
+          "place",
+          9
+        ]
+      ],
+      "noun_top": [
+        [
+          "pencil",
+          82
+        ],
+        [
+          "sharpener",
+          17
+        ],
+        [
+          "written",
+          1
+        ],
+        [
+          "drawn",
+          1
+        ],
+        [
+          "sharpened",
+          1
+        ],
+        [
+          "sharpend",
+          1
+        ]
+      ],
+      "medoid_text": "Sharpen the pencil with the sharpener.",
+      "exemplars": [
+        {
+          "text": "Sharpen the pencil with the sharpener.",
+          "count": 18
+        },
+        {
+          "text": "insert the pencil into the sharpener",
+          "count": 18
+        },
+        {
+          "text": "remove the pencil from the sharpener",
+          "count": 16
+        },
+        {
+          "text": "Hold the pencil to the position.",
+          "count": 11
+        },
+        {
+          "text": "Sharpen pencil.",
+          "count": 7
+        },
+        {
+          "text": "Place the pencil sharpener inside the box.",
+          "count": 6
+        },
+        {
+          "text": "Take the pencil sharpener outside the box.",
+          "count": 5
+        },
+        {
+          "text": "Rearrange the pencil from one position to another position.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "label": "rearrange / take: spoon, fork, knife",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 30,
+      "size_total": 86,
+      "verb_top": [
+        [
+          "rearrange",
+          37
+        ],
+        [
+          "take",
+          18
+        ],
+        [
+          "place",
+          14
+        ],
+        [
+          "hold",
+          9
+        ],
+        [
+          "stir",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "spoon",
+          39
+        ],
+        [
+          "fork",
+          29
+        ],
+        [
+          "knife",
+          14
+        ],
+        [
+          "seasonings",
+          1
+        ],
+        [
+          "content",
+          1
+        ],
+        [
+          "cup",
+          1
+        ]
+      ],
+      "medoid_text": "Place the fork and the spoon inside the plate.",
+      "exemplars": [
+        {
+          "text": "Place the fork and the spoon inside the plate.",
+          "count": 1
+        },
+        {
+          "text": "Rearrange the spoon from one position to another position.",
+          "count": 13
+        },
+        {
+          "text": "Rearrange the white fruit knife from one position to another position.",
+          "count": 8
+        },
+        {
+          "text": "Take the fork outside tool rack.",
+          "count": 8
+        },
+        {
+          "text": "Take the spoon outside tool rack.",
+          "count": 8
+        },
+        {
+          "text": "Rearrange the fork from one position to another position.",
+          "count": 7
+        },
+        {
+          "text": "Hold the spoon to the position.",
+          "count": 5
+        },
+        {
+          "text": "Stir in the bowl with the spoon.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "staple / shear: paper, together, stapler",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 18,
+      "size_total": 85,
+      "verb_top": [
+        [
+          "staple",
+          36
+        ],
+        [
+          "shear",
+          20
+        ],
+        [
+          "rearrange",
+          6
+        ],
+        [
+          "take",
+          6
+        ],
+        [
+          "place",
+          6
+        ]
+      ],
+      "noun_top": [
+        [
+          "paper",
+          34
+        ],
+        [
+          "together",
+          23
+        ],
+        [
+          "stapler",
+          19
+        ],
+        [
+          "sheets",
+          4
+        ],
+        [
+          "stored",
+          3
+        ],
+        [
+          "according",
+          1
+        ]
+      ],
+      "medoid_text": "Shear paper with the stapler.",
+      "exemplars": [
+        {
+          "text": "Shear paper with the stapler.",
+          "count": 13
+        },
+        {
+          "text": "Staple paper together with stapler.",
+          "count": 22
+        },
+        {
+          "text": "Staple paper.",
+          "count": 14
+        },
+        {
+          "text": "Rearrange the stapler from one position to another position.",
+          "count": 6
+        },
+        {
+          "text": "Take the stapler outside the drawer.",
+          "count": 5
+        },
+        {
+          "text": "Shear paper.",
+          "count": 5
+        },
+        {
+          "text": "Place the stapler inside the drawer.",
+          "count": 4
+        },
+        {
+          "text": "Bind the sheets of paper with text into a document with the stapler.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "label": "stir / place: rod, mug, something",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 16,
+      "size_total": 82,
+      "verb_top": [
+        [
+          "stir",
+          24
+        ],
+        [
+          "place",
+          23
+        ],
+        [
+          "remove",
+          23
+        ],
+        [
+          "rearrange",
+          5
+        ],
+        [
+          "hold",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "rod",
+          79
+        ],
+        [
+          "mug",
+          1
+        ],
+        [
+          "something",
+          1
+        ],
+        [
+          "juice",
+          1
+        ]
+      ],
+      "medoid_text": "Stir with the rod in the mug.",
+      "exemplars": [
+        {
+          "text": "Stir with the rod in the mug.",
+          "count": 1
+        },
+        {
+          "text": "Place the glass rod on the rack.",
+          "count": 23
+        },
+        {
+          "text": "Remove the glass rod from the rack.",
+          "count": 23
+        },
+        {
+          "text": "Stir in the green mug with the rod.",
+          "count": 8
+        },
+        {
+          "text": "Stir in the blue cup with the rod.",
+          "count": 5
+        },
+        {
+          "text": "Rearrange the glass rod from one position to another position.",
+          "count": 4
+        },
+        {
+          "text": "Hold the glass rod to the position.",
+          "count": 4
+        },
+        {
+          "text": "Stir in the bowl with the rod.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "squeeze / flip: cap, paste, toothbrush",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 15,
+      "size_total": 77,
+      "verb_top": [
+        [
+          "squeeze",
+          23
+        ],
+        [
+          "flip",
+          22
+        ],
+        [
+          "place",
+          14
+        ],
+        [
+          "rearrange",
+          12
+        ],
+        [
+          "prepare",
+          4
+        ]
+      ],
+      "noun_top": [
+        [
+          "cap",
+          22
+        ],
+        [
+          "paste",
+          18
+        ],
+        [
+          "toothbrush",
+          16
+        ],
+        [
+          "toothpaste",
+          8
+        ],
+        [
+          "brush",
+          8
+        ],
+        [
+          "brushing",
+          4
+        ]
+      ],
+      "medoid_text": "Squeeze tooth paste and place tooth brush in place.",
+      "exemplars": [
+        {
+          "text": "Squeeze tooth paste and place tooth brush in place.",
+          "count": 1
+        },
+        {
+          "text": "Flip close the cap of the tooth paste tube.",
+          "count": 11
+        },
+        {
+          "text": "Flip open the cap of the tooth paste tube.",
+          "count": 11
+        },
+        {
+          "text": "Squeeze tooth paste onto the tooth brush.",
+          "count": 11
+        },
+        {
+          "text": "Rearrange the toothbrush from one position to another position.",
+          "count": 10
+        },
+        {
+          "text": "Squeeze tooth paste.",
+          "count": 6
+        },
+        {
+          "text": "Squeeze toothpaste onto the toothbrush and place the toothbrush onto the mug for toothbrushing.",
+          "count": 5
+        },
+        {
+          "text": "Place tooth brush in place for brushing.",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "label": "cut / rearrange: apple, plate, knife",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 19,
+      "size_total": 67,
+      "verb_top": [
+        [
+          "cut",
+          31
+        ],
+        [
+          "rearrange",
+          13
+        ],
+        [
+          "place",
+          13
+        ],
+        [
+          "hold",
+          3
+        ],
+        [
+          "assemble",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "apple",
+          63
+        ],
+        [
+          "plate",
+          1
+        ],
+        [
+          "knife",
+          1
+        ],
+        [
+          "slice",
+          1
+        ],
+        [
+          "together",
+          1
+        ]
+      ],
+      "medoid_text": "Place the apple inside the plate.",
+      "exemplars": [
+        {
+          "text": "Place the apple inside the plate.",
+          "count": 10
+        },
+        {
+          "text": "Rearrange the apple from one position to another position.",
+          "count": 12
+        },
+        {
+          "text": "Cut the apple.",
+          "count": 10
+        },
+        {
+          "text": "Cut the apple with the white fruit knife.",
+          "count": 9
+        },
+        {
+          "text": "Cut the apple with the orange cleaver knife.",
+          "count": 9
+        },
+        {
+          "text": "Hold the apple to the position.",
+          "count": 3
+        },
+        {
+          "text": "Cut the apple with the white cleaver knife.",
+          "count": 2
+        },
+        {
+          "text": "Assemble the apple into the product in the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "label": "wipe / hold: fryingpan, plate, sponge",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "clean",
+      "size_unique": 38,
+      "size_total": 67,
+      "verb_top": [
+        [
+          "wipe",
+          25
+        ],
+        [
+          "hold",
+          10
+        ],
+        [
+          "pour",
+          6
+        ],
+        [
+          "grip",
+          5
+        ],
+        [
+          "scoop",
+          5
+        ]
+      ],
+      "noun_top": [
+        [
+          "fryingpan",
+          16
+        ],
+        [
+          "plate",
+          14
+        ],
+        [
+          "sponge",
+          6
+        ],
+        [
+          "something",
+          5
+        ],
+        [
+          "water",
+          4
+        ],
+        [
+          "residues",
+          4
+        ]
+      ],
+      "medoid_text": "Scrape the detergent residues with the spoon from the fryingpan to the plate.",
+      "exemplars": [
+        {
+          "text": "Scrape the detergent residues with the spoon from the fryingpan to the plate.",
+          "count": 1
+        },
+        {
+          "text": "Wipe the plate with the sponge.",
+          "count": 10
+        },
+        {
+          "text": "Wipe the fryingpan with the sponge.",
+          "count": 7
+        },
+        {
+          "text": "Hold the sponge to the position.",
+          "count": 5
+        },
+        {
+          "text": "Wipe the fryingpan.",
+          "count": 4
+        },
+        {
+          "text": "Wipe the plate.",
+          "count": 3
+        },
+        {
+          "text": "Hold the fryingpan to the position.",
+          "count": 3
+        },
+        {
+          "text": "Hold the tongs to the position.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "label": "cut / assemble: bread, seasonings, together",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 28,
+      "size_total": 66,
+      "verb_top": [
+        [
+          "cut",
+          20
+        ],
+        [
+          "assemble",
+          12
+        ],
+        [
+          "the",
+          9
+        ],
+        [
+          "spread",
+          8
+        ],
+        [
+          "place",
+          7
+        ]
+      ],
+      "noun_top": [
+        [
+          "bread",
+          44
+        ],
+        [
+          "seasonings",
+          5
+        ],
+        [
+          "together",
+          3
+        ],
+        [
+          "something",
+          3
+        ],
+        [
+          "jam",
+          3
+        ],
+        [
+          "spread",
+          2
+        ]
+      ],
+      "medoid_text": "Grip seasonings onto the bread and spread it with the knife.",
+      "exemplars": [
+        {
+          "text": "Grip seasonings onto the bread and spread it with the knife.",
+          "count": 1
+        },
+        {
+          "text": "Cut the bread with the orange cleaver knife.",
+          "count": 10
+        },
+        {
+          "text": "Assemble the bread into the product in the plate.",
+          "count": 7
+        },
+        {
+          "text": "Place the bread inside the plate.",
+          "count": 7
+        },
+        {
+          "text": "Cut the bread.",
+          "count": 6
+        },
+        {
+          "text": "Rearrange the bread from one position to another position.",
+          "count": 5
+        },
+        {
+          "text": "Cut the bread with the white cleaver knife.",
+          "count": 3
+        },
+        {
+          "text": "Assemble the bread together.",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "label": "press / place: button, plate, something",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 20,
+      "size_total": 65,
+      "verb_top": [
+        [
+          "press",
+          28
+        ],
+        [
+          "place",
+          18
+        ],
+        [
+          "weigh",
+          15
+        ],
+        [
+          "the",
+          2
+        ],
+        [
+          "hold",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "button",
+          28
+        ],
+        [
+          "plate",
+          15
+        ],
+        [
+          "something",
+          12
+        ],
+        [
+          "bowl",
+          2
+        ],
+        [
+          "mug",
+          2
+        ],
+        [
+          "scale",
+          2
+        ]
+      ],
+      "medoid_text": "Weigh something with scale by pouring it into the plate.",
+      "exemplars": [
+        {
+          "text": "Weigh something with scale by pouring it into the plate.",
+          "count": 2
+        },
+        {
+          "text": "Press the button on the scale.",
+          "count": 28
+        },
+        {
+          "text": "Place the plate onto the platform of the scale.",
+          "count": 13
+        },
+        {
+          "text": "Weigh something with scale by scooping it into the plate.",
+          "count": 3
+        },
+        {
+          "text": "Place the bowl onto the platform of the scale.",
+          "count": 2
+        },
+        {
+          "text": "Place the yellow mug onto the platform of the scale.",
+          "count": 2
+        },
+        {
+          "text": "Weigh the plate with scale.",
+          "count": 2
+        },
+        {
+          "text": "Hold the scale to the position.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "label": "pour: substances, substance, b",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 10,
+      "size_total": 63,
+      "verb_top": [
+        [
+          "pour",
+          63
+        ]
+      ],
+      "noun_top": [
+        [
+          "substances",
+          44
+        ],
+        [
+          "substance",
+          10
+        ],
+        [
+          "b",
+          7
+        ],
+        [
+          "d",
+          2
+        ]
+      ],
+      "medoid_text": "Pour the experiment substance A from the test tube to the beaker.",
+      "exemplars": [
+        {
+          "text": "Pour the experiment substance A from the test tube to the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances from the beaker to the test tube.",
+          "count": 34
+        },
+        {
+          "text": "Pour the experiment substance A from the beaker to the test tube.",
+          "count": 8
+        },
+        {
+          "text": "Pour the experiment substance B from the test tube to the beaker.",
+          "count": 6
+        },
+        {
+          "text": "Pour experiment substances between the beaker and the test tube.",
+          "count": 6
+        },
+        {
+          "text": "Pour experiment substances from the test tube to the beaker.",
+          "count": 4
+        },
+        {
+          "text": "Pour the experiment substance D from the beaker to the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Pour the experiment substance D from the test tube holder to the beaker.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "place / rearrange: mesh, tripod, substances",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 11,
+      "size_total": 60,
+      "verb_top": [
+        [
+          "place",
+          33
+        ],
+        [
+          "rearrange",
+          22
+        ],
+        [
+          "hold",
+          3
+        ],
+        [
+          "stir",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "mesh",
+          38
+        ],
+        [
+          "tripod",
+          20
+        ],
+        [
+          "substances",
+          2
+        ]
+      ],
+      "medoid_text": "Place the asbestos mesh for heating.",
+      "exemplars": [
+        {
+          "text": "Place the asbestos mesh for heating.",
+          "count": 3
+        },
+        {
+          "text": "Place asbestos mesh onto the tripod.",
+          "count": 25
+        },
+        {
+          "text": "Rearrange the tripod from one position to another position.",
+          "count": 19
+        },
+        {
+          "text": "Hold the asbestos mesh to the position.",
+          "count": 3
+        },
+        {
+          "text": "Place the asbestos mesh for heating and heat the beaker.",
+          "count": 2
+        },
+        {
+          "text": "Place the asbestos mesh for heating, ignite the alcohol burner, and heat the beaker.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the asbestos mesh from one position to another position.",
+          "count": 2
+        },
+        {
+          "text": "Stir experiment substances in the beaker, place the asbestos mesh for heating, and heat the beaker.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "label": "plug / remove: plug, laptop, button",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 11,
+      "size_total": 47,
+      "verb_top": [
+        [
+          "plug",
+          22
+        ],
+        [
+          "remove",
+          12
+        ],
+        [
+          "hold",
+          7
+        ],
+        [
+          "press",
+          4
+        ],
+        [
+          "insert",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "plug",
+          28
+        ],
+        [
+          "laptop",
+          10
+        ],
+        [
+          "button",
+          4
+        ],
+        [
+          "socket",
+          4
+        ],
+        [
+          "usb",
+          1
+        ]
+      ],
+      "medoid_text": "Hold the power socket and the power plug to the position.",
+      "exemplars": [
+        {
+          "text": "Hold the power socket and the power plug to the position.",
+          "count": 1
+        },
+        {
+          "text": "Plug in the power plug of the laptop.",
+          "count": 10
+        },
+        {
+          "text": "Remove power plug.",
+          "count": 6
+        },
+        {
+          "text": "Plug in power plug.",
+          "count": 6
+        },
+        {
+          "text": "Remove the power plug",
+          "count": 6
+        },
+        {
+          "text": "Plug in the power plug",
+          "count": 6
+        },
+        {
+          "text": "Hold the power plug to the position.",
+          "count": 4
+        },
+        {
+          "text": "Press the button on the power socket.",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "label": "shake / pour: substances, transferred, substance",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 22,
+      "size_total": 47,
+      "verb_top": [
+        [
+          "shake",
+          29
+        ],
+        [
+          "pour",
+          7
+        ],
+        [
+          "experiment",
+          6
+        ],
+        [
+          "stir",
+          4
+        ],
+        [
+          "solution",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "substances",
+          36
+        ],
+        [
+          "transferred",
+          4
+        ],
+        [
+          "substance",
+          3
+        ],
+        [
+          "tube",
+          1
+        ],
+        [
+          "shaked",
+          1
+        ],
+        [
+          "mixed",
+          1
+        ]
+      ],
+      "medoid_text": "Pour experiment substances into the test tube and shake the test tube.",
+      "exemplars": [
+        {
+          "text": "Pour experiment substances into the test tube and shake the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Shake experiment substances in the test tube.",
+          "count": 18
+        },
+        {
+          "text": "Shake experiment substances in the test tube held by the test tube holder.",
+          "count": 6
+        },
+        {
+          "text": "Stir experiment substances in the beaker and pour the mixed experiment substances into the test tube.",
+          "count": 2
+        },
+        {
+          "text": "Shake the experiment substance A in the test tube.",
+          "count": 2
+        },
+        {
+          "text": "Experiment substance A is transferred into one test tube.",
+          "count": 2
+        },
+        {
+          "text": "Stir experiment substances in the beaker, pour the mixed experiment substances into the test tube, and then shake the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Shake the test tube and pour experiment substances into another test tube.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "label": "assemble / the: donut, baked, is",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 24,
+      "size_total": 46,
+      "verb_top": [
+        [
+          "assemble",
+          17
+        ],
+        [
+          "the",
+          14
+        ],
+        [
+          "place",
+          6
+        ],
+        [
+          "prepare",
+          4
+        ],
+        [
+          "take",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "donut",
+          28
+        ],
+        [
+          "baked",
+          5
+        ],
+        [
+          "is",
+          4
+        ],
+        [
+          "together",
+          2
+        ],
+        [
+          "seasoned",
+          2
+        ],
+        [
+          "bread",
+          2
+        ]
+      ],
+      "medoid_text": "Assemble the donut onto the bread.",
+      "exemplars": [
+        {
+          "text": "Assemble the donut onto the bread.",
+          "count": 3
+        },
+        {
+          "text": "Assemble the donut into the product in the plate.",
+          "count": 10
+        },
+        {
+          "text": "Place the donut inside the plate.",
+          "count": 5
+        },
+        {
+          "text": "The donut is baked.",
+          "count": 3
+        },
+        {
+          "text": "Assemble the donut together.",
+          "count": 2
+        },
+        {
+          "text": "Take the donut outside the plate.",
+          "count": 2
+        },
+        {
+          "text": "The donut is on top of the bread slice.",
+          "count": 2
+        },
+        {
+          "text": "Prepare a savory baked donut.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "label": "write / design: paper, texts, write",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 13,
+      "size_total": 41,
+      "verb_top": [
+        [
+          "write",
+          29
+        ],
+        [
+          "design",
+          6
+        ],
+        [
+          "hold",
+          2
+        ],
+        [
+          "rearrange",
+          1
+        ],
+        [
+          "place",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "paper",
+          32
+        ],
+        [
+          "texts",
+          3
+        ],
+        [
+          "write",
+          2
+        ],
+        [
+          "draw",
+          1
+        ],
+        [
+          "tools",
+          1
+        ],
+        [
+          "lines",
+          1
+        ]
+      ],
+      "medoid_text": "Design and draw on the paper.",
+      "exemplars": [
+        {
+          "text": "Design and draw on the paper.",
+          "count": 3
+        },
+        {
+          "text": "Write with the pencil on the paper.",
+          "count": 16
+        },
+        {
+          "text": "Write on paper.",
+          "count": 5
+        },
+        {
+          "text": "Write detailed texts on the paper.",
+          "count": 3
+        },
+        {
+          "text": "Write and bind the paper.",
+          "count": 3
+        },
+        {
+          "text": "Write with the pen on the paper.",
+          "count": 2
+        },
+        {
+          "text": "Design, write and bind the paper.",
+          "count": 2
+        },
+        {
+          "text": "Hold the paper to the position.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "label": "scoop / scrape: content, sugar, seasonings",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 21,
+      "size_total": 41,
+      "verb_top": [
+        [
+          "scoop",
+          27
+        ],
+        [
+          "scrape",
+          14
+        ]
+      ],
+      "noun_top": [
+        [
+          "content",
+          32
+        ],
+        [
+          "sugar",
+          5
+        ],
+        [
+          "seasonings",
+          2
+        ],
+        [
+          "powders",
+          1
+        ],
+        [
+          "dish",
+          1
+        ]
+      ],
+      "medoid_text": "Scoop the content with the spoon from the yellow mug to the plate.",
+      "exemplars": [
+        {
+          "text": "Scoop the content with the spoon from the yellow mug to the plate.",
+          "count": 3
+        },
+        {
+          "text": "Scoop the content with the spoon from the gray-green porcelain bottle to the bowl.",
+          "count": 6
+        },
+        {
+          "text": "Scoop the content with the spoon from the bowl to the plate.",
+          "count": 5
+        },
+        {
+          "text": "Scrape the content with the spoon from the bowl to the plate.",
+          "count": 5
+        },
+        {
+          "text": "Scrape the content with the spoon from the gray-green porcelain bottle to the plate.",
+          "count": 3
+        },
+        {
+          "text": "Scoop the content with the spoon from the yellow mug to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Scoop the sugar with the spoon from the yellow mug to the plate.",
+          "count": 2
+        },
+        {
+          "text": "Scoop the content with the spoon from the bowl to another bowl.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "put / the: flower, placed, put",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 12,
+      "size_total": 39,
+      "verb_top": [
+        [
+          "put",
+          20
+        ],
+        [
+          "the",
+          9
+        ],
+        [
+          "take",
+          5
+        ],
+        [
+          "place",
+          4
+        ],
+        [
+          "rearrange",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "flower",
+          30
+        ],
+        [
+          "placed",
+          8
+        ],
+        [
+          "put",
+          1
+        ]
+      ],
+      "medoid_text": "Put the flower into the vase.",
+      "exemplars": [
+        {
+          "text": "Put the flower into the vase.",
+          "count": 13
+        },
+        {
+          "text": "Put flower into vase.",
+          "count": 6
+        },
+        {
+          "text": "Take the flower outside the box.",
+          "count": 5
+        },
+        {
+          "text": "Place the flower inside the box.",
+          "count": 4
+        },
+        {
+          "text": "The plastic flower is placed into the vase as a sample.",
+          "count": 2
+        },
+        {
+          "text": "The plastic flower is placed inside the box for proper storage.",
+          "count": 2
+        },
+        {
+          "text": "The flower is placed inside the vase, serving as a model of the designing and drawing.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the flower from one position to another position.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "label": "cut / place: pear, cut, blocks",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "split",
+      "size_unique": 16,
+      "size_total": 39,
+      "verb_top": [
+        [
+          "cut",
+          21
+        ],
+        [
+          "place",
+          7
+        ],
+        [
+          "rearrange",
+          5
+        ],
+        [
+          "the",
+          4
+        ],
+        [
+          "take",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "pear",
+          35
+        ],
+        [
+          "cut",
+          2
+        ],
+        [
+          "blocks",
+          1
+        ],
+        [
+          "coated",
+          1
+        ]
+      ],
+      "medoid_text": "Cut the pear with the white fruit knife.",
+      "exemplars": [
+        {
+          "text": "Cut the pear with the white fruit knife.",
+          "count": 4
+        },
+        {
+          "text": "Cut the pear.",
+          "count": 7
+        },
+        {
+          "text": "Rearrange the pear from one position to another position.",
+          "count": 5
+        },
+        {
+          "text": "Cut the pear with the orange cleaver knife.",
+          "count": 4
+        },
+        {
+          "text": "Place the pear inside the plate.",
+          "count": 4
+        },
+        {
+          "text": "Cut the pear with the white cleaver knife.",
+          "count": 4
+        },
+        {
+          "text": "Place the pear inside the fryingpan.",
+          "count": 2
+        },
+        {
+          "text": "Take the pear outside the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "label": "grip / pour: content, something, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 19,
+      "size_total": 36,
+      "verb_top": [
+        [
+          "grip",
+          10
+        ],
+        [
+          "pour",
+          8
+        ],
+        [
+          "rearrange",
+          7
+        ],
+        [
+          "scoop",
+          6
+        ],
+        [
+          "hold",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "content",
+          12
+        ],
+        [
+          "something",
+          11
+        ],
+        [
+          "bowl",
+          10
+        ],
+        [
+          "seasonings",
+          1
+        ],
+        [
+          "plate",
+          1
+        ],
+        [
+          "addition",
+          1
+        ]
+      ],
+      "medoid_text": "Pour the content from the bowl to the plate.",
+      "exemplars": [
+        {
+          "text": "Pour the content from the bowl to the plate.",
+          "count": 3
+        },
+        {
+          "text": "Rearrange the bowl from one position to another position.",
+          "count": 6
+        },
+        {
+          "text": "Grip the content with the tongs from the plate to the bowl.",
+          "count": 5
+        },
+        {
+          "text": "Scoop something into the bowl.",
+          "count": 3
+        },
+        {
+          "text": "Hold the bowl to the position.",
+          "count": 3
+        },
+        {
+          "text": "Pour the content from the fryingpan to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Grip something into the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Grip the content with the tongs from the bowl to the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "label": "pour / shake: b, substance, c",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 15,
+      "size_total": 33,
+      "verb_top": [
+        [
+          "pour",
+          20
+        ],
+        [
+          "shake",
+          8
+        ],
+        [
+          "solution",
+          2
+        ],
+        [
+          "transfer",
+          2
+        ],
+        [
+          "stir",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "b",
+          11
+        ],
+        [
+          "substance",
+          7
+        ],
+        [
+          "c",
+          6
+        ],
+        [
+          "substances",
+          5
+        ],
+        [
+          "transferred",
+          2
+        ],
+        [
+          "flask",
+          1
+        ]
+      ],
+      "medoid_text": "Pour the experiment substance B from the beaker to the conical flask.",
+      "exemplars": [
+        {
+          "text": "Pour the experiment substance B from the beaker to the conical flask.",
+          "count": 2
+        },
+        {
+          "text": "Pour the experiment substance C from the conical flask to the beaker.",
+          "count": 6
+        },
+        {
+          "text": "Shake experiment substances in the conical flask.",
+          "count": 4
+        },
+        {
+          "text": "Pour the experiment substance B from the conical flask to the beaker.",
+          "count": 3
+        },
+        {
+          "text": "Pour the experiment substance B from the test tube to the conical flask.",
+          "count": 3
+        },
+        {
+          "text": "Pour the experiment substance A from the beaker to the conical flask.",
+          "count": 3
+        },
+        {
+          "text": "Solution B is transferred into the conical flask.",
+          "count": 2
+        },
+        {
+          "text": "Shake the experiment substance A in the conical flask.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "label": "place / rearrange: mouse, next, receiver",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 14,
+      "size_total": 32,
+      "verb_top": [
+        [
+          "place",
+          8
+        ],
+        [
+          "rearrange",
+          7
+        ],
+        [
+          "take",
+          7
+        ],
+        [
+          "the",
+          6
+        ],
+        [
+          "put",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "mouse",
+          24
+        ],
+        [
+          "next",
+          2
+        ],
+        [
+          "receiver",
+          2
+        ],
+        [
+          "stored",
+          2
+        ],
+        [
+          "used",
+          2
+        ]
+      ],
+      "medoid_text": "Store the mouse into the drawer.",
+      "exemplars": [
+        {
+          "text": "Store the mouse into the drawer.",
+          "count": 1
+        },
+        {
+          "text": "Rearrange the mouse from one position to another position.",
+          "count": 7
+        },
+        {
+          "text": "Place the mouse inside the drawer.",
+          "count": 7
+        },
+        {
+          "text": "Take the mouse outside the drawer.",
+          "count": 5
+        },
+        {
+          "text": "Take the mouse outside the box.",
+          "count": 2
+        },
+        {
+          "text": "The mouse is placed next to the laptop for work.",
+          "count": 2
+        },
+        {
+          "text": "Put the mouse into drawer, put the drawer into box, and close laptop.",
+          "count": 1
+        },
+        {
+          "text": "Place the mouse inside the box.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "label": "pour / the: content, water, milk",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 22,
+      "size_total": 32,
+      "verb_top": [
+        [
+          "pour",
+          31
+        ],
+        [
+          "the",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "content",
+          13
+        ],
+        [
+          "water",
+          10
+        ],
+        [
+          "milk",
+          4
+        ],
+        [
+          "juice",
+          2
+        ],
+        [
+          "soup",
+          1
+        ],
+        [
+          "drink",
+          1
+        ]
+      ],
+      "medoid_text": "Pour the water from the large black and yellow striped bottle to the green mug.",
+      "exemplars": [
+        {
+          "text": "Pour the water from the large black and yellow striped bottle to the green mug.",
+          "count": 1
+        },
+        {
+          "text": "Pour the water from the large white bottle to the blue cup.",
+          "count": 3
+        },
+        {
+          "text": "Pour the water from the large white bottle to the blue mug.",
+          "count": 2
+        },
+        {
+          "text": "Pour the content from the large black and yellow striped bottle to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Pour the milk from the large black and yellow striped bottle to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Pour the content from the gray-green porcelain bottle to the green mug.",
+          "count": 2
+        },
+        {
+          "text": "Pour the content from the large black and yellow striped bottle to the green mug.",
+          "count": 2
+        },
+        {
+          "text": "Pour the water from the large white bottle to the green mug.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "label": "grip / the: cubes, tablewares, are",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 20,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "grip",
+          12
+        ],
+        [
+          "the",
+          8
+        ],
+        [
+          "place",
+          5
+        ],
+        [
+          "scoop",
+          2
+        ],
+        [
+          "scrape",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "cubes",
+          11
+        ],
+        [
+          "tablewares",
+          6
+        ],
+        [
+          "are",
+          4
+        ],
+        [
+          "placed",
+          4
+        ],
+        [
+          "something",
+          4
+        ],
+        [
+          "drinks",
+          1
+        ]
+      ],
+      "medoid_text": "Grip sugar cubes into the bowl and place the tablewares.",
+      "exemplars": [
+        {
+          "text": "Grip sugar cubes into the bowl and place the tablewares.",
+          "count": 1
+        },
+        {
+          "text": "Grip the sugar cubes with the tongs from the fryingpan to the bowl.",
+          "count": 4
+        },
+        {
+          "text": "Place tablewares.",
+          "count": 4
+        },
+        {
+          "text": "The tablewares are in position.",
+          "count": 3
+        },
+        {
+          "text": "The tablewares are placed in position.",
+          "count": 3
+        },
+        {
+          "text": "Grip the sugar cubes with the tongs from the plate to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Scoop drinks and grip ice cubes into the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scrape something into the plate and place tablewares.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "label": "rearrange / grip: plate, content, something",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 9,
+      "size_total": 31,
+      "verb_top": [
+        [
+          "rearrange",
+          16
+        ],
+        [
+          "grip",
+          7
+        ],
+        [
+          "hold",
+          4
+        ],
+        [
+          "pour",
+          3
+        ],
+        [
+          "scoop",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "plate",
+          24
+        ],
+        [
+          "content",
+          6
+        ],
+        [
+          "something",
+          1
+        ]
+      ],
+      "medoid_text": "Pour something into the plate and grip something out of the plate.",
+      "exemplars": [
+        {
+          "text": "Pour something into the plate and grip something out of the plate.",
+          "count": 1
+        },
+        {
+          "text": "Rearrange the plate from one position to another position.",
+          "count": 15
+        },
+        {
+          "text": "Grip the content with the tongs from the plate to another plate.",
+          "count": 6
+        },
+        {
+          "text": "Hold the plate to the position.",
+          "count": 4
+        },
+        {
+          "text": "Rearrange the plate and another plate from one position to another position.",
+          "count": 1
+        },
+        {
+          "text": "Grip and scoop something into the plate.",
+          "count": 1
+        },
+        {
+          "text": "Pour and grip something into the plate.",
+          "count": 1
+        },
+        {
+          "text": "Pour and scrape something into the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "label": "rearrange / hold: flask, solution, liquid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 9,
+      "size_total": 30,
+      "verb_top": [
+        [
+          "rearrange",
+          17
+        ],
+        [
+          "hold",
+          6
+        ],
+        [
+          "prepare",
+          3
+        ],
+        [
+          "heat",
+          2
+        ],
+        [
+          "shake",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "flask",
+          25
+        ],
+        [
+          "solution",
+          3
+        ],
+        [
+          "liquid",
+          2
+        ]
+      ],
+      "medoid_text": "Prepare solution in the conical flask through heating.",
+      "exemplars": [
+        {
+          "text": "Prepare solution in the conical flask through heating.",
+          "count": 1
+        },
+        {
+          "text": "Rearrange the conical flask from one position to another position.",
+          "count": 17
+        },
+        {
+          "text": "Hold the conical flask to the position.",
+          "count": 6
+        },
+        {
+          "text": "Prepare solution in the conical flask through heating and stirring the components in the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Shake the conical flask and heat it.",
+          "count": 1
+        },
+        {
+          "text": "Heat liquid in conical flask, stir while heating and transfer the heated liquid into the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Heat liquid in conical flask and transfer liquid into the heated beaker.",
+          "count": 1
+        },
+        {
+          "text": "Transfer and heat liquid in the conical flask.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "tidy / ready: laptop, work, entertainment",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 12,
+      "size_total": 28,
+      "verb_top": [
+        [
+          "tidy",
+          16
+        ],
+        [
+          "ready",
+          11
+        ],
+        [
+          "illuminate",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "laptop",
+          9
+        ],
+        [
+          "work",
+          4
+        ],
+        [
+          "entertainment",
+          4
+        ],
+        [
+          "drawing",
+          3
+        ],
+        [
+          "desktop",
+          3
+        ],
+        [
+          "cutting",
+          2
+        ]
+      ],
+      "medoid_text": "Tidy up the desktop with the laptop after work.",
+      "exemplars": [
+        {
+          "text": "Tidy up the desktop with the laptop after work.",
+          "count": 4
+        },
+        {
+          "text": "Ready the laptop on the desktop for work.",
+          "count": 4
+        },
+        {
+          "text": "Tidy up the desktop with the laptop after entertainment.",
+          "count": 4
+        },
+        {
+          "text": "Tidy up the desktop after drawing.",
+          "count": 3
+        },
+        {
+          "text": "Tidy up the desktop after paper-cutting.",
+          "count": 2
+        },
+        {
+          "text": "Ready the desktop for drawing.",
+          "count": 2
+        },
+        {
+          "text": "Ready the laptop and the lamp on the desktop for work.",
+          "count": 2
+        },
+        {
+          "text": "Tidy up the desktop after writing.",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "label": "rearrange / hold: mug, cup, cap",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 12,
+      "size_total": 25,
+      "verb_top": [
+        [
+          "rearrange",
+          17
+        ],
+        [
+          "hold",
+          8
+        ]
+      ],
+      "noun_top": [
+        [
+          "mug",
+          11
+        ],
+        [
+          "cup",
+          10
+        ],
+        [
+          "cap",
+          4
+        ]
+      ],
+      "medoid_text": "Rearrange the green mug from one position to another position.",
+      "exemplars": [
+        {
+          "text": "Rearrange the green mug from one position to another position.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the blue cup from one position to another position.",
+          "count": 5
+        },
+        {
+          "text": "Rearrange the yellow mug from one position to another position.",
+          "count": 4
+        },
+        {
+          "text": "Rearrange the little green cup from one position to another position.",
+          "count": 3
+        },
+        {
+          "text": "Hold porcelain cap to the position.",
+          "count": 2
+        },
+        {
+          "text": "Hold the blue cup to the position.",
+          "count": 2
+        },
+        {
+          "text": "Hold the blue mug to the position.",
+          "count": 2
+        },
+        {
+          "text": "Hold the green mug to the position.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "label": "heat / stir: beaker, substances, solution",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 14,
+      "size_total": 25,
+      "verb_top": [
+        [
+          "heat",
+          10
+        ],
+        [
+          "stir",
+          9
+        ],
+        [
+          "prepare",
+          4
+        ],
+        [
+          "transfer",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "beaker",
+          9
+        ],
+        [
+          "substances",
+          9
+        ],
+        [
+          "solution",
+          4
+        ],
+        [
+          "liquid",
+          2
+        ],
+        [
+          "reactants",
+          1
+        ]
+      ],
+      "medoid_text": "Stir experiment substances in the beaker and then heat the beaker.",
+      "exemplars": [
+        {
+          "text": "Stir experiment substances in the beaker and then heat the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Heat the beaker.",
+          "count": 5
+        },
+        {
+          "text": "Stir experiment substances.",
+          "count": 3
+        },
+        {
+          "text": "Stir experiment substances in the beaker.",
+          "count": 3
+        },
+        {
+          "text": "Prepare solution in the beaker through heating.",
+          "count": 2
+        },
+        {
+          "text": "Heat the beaker and stir experiment substances while heating.",
+          "count": 2
+        },
+        {
+          "text": "Transfer and heat liquid in the beaker.",
+          "count": 2
+        },
+        {
+          "text": "Prepare solution in the beaker through heating and stirring the components.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "label": "pour / repeat: substances, substance",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 9,
+      "size_total": 24,
+      "verb_top": [
+        [
+          "pour",
+          22
+        ],
+        [
+          "repeat",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "substances",
+          14
+        ],
+        [
+          "substance",
+          10
+        ]
+      ],
+      "medoid_text": "Pour experiment substances from the test tube to another test tube.",
+      "exemplars": [
+        {
+          "text": "Pour experiment substances from the test tube to another test tube.",
+          "count": 10
+        },
+        {
+          "text": "Pour the experiment substance A from the test tube to another test tube.",
+          "count": 7
+        },
+        {
+          "text": "Pour experiment substances between the test tubes twice.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances into one test tube, pour experiment substances between the test tubes, and pour experiment substances back between the test tubes.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances from the beaker to the test tube and pour experiment substances from the test tube to another test tube.",
+          "count": 1
+        },
+        {
+          "text": "Pour the experiment substance A from the test tube holder to the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances from the beaker to one test tube, pour experiment substances between the test tubes for three times, and then pour experiment substances from both test tubes into the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Repeat pouring experiment substance A between two test tubes four times until it is fully mixed and generate experiment substance B.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "label": "design / the: shape, paper, prototype",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 17,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "design",
+          12
+        ],
+        [
+          "the",
+          4
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "cut",
+          1
+        ],
+        [
+          "under",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "shape",
+          8
+        ],
+        [
+          "paper",
+          4
+        ],
+        [
+          "prototype",
+          3
+        ],
+        [
+          "draw",
+          2
+        ],
+        [
+          "everything",
+          1
+        ],
+        [
+          "designed",
+          1
+        ]
+      ],
+      "medoid_text": "Design the flower shape on the whiteboard and draw the shape on the paper.",
+      "exemplars": [
+        {
+          "text": "Design the flower shape on the whiteboard and draw the shape on the paper.",
+          "count": 1
+        },
+        {
+          "text": "Design and cut out rectangle shape on the paper.",
+          "count": 3
+        },
+        {
+          "text": "Design, draw and cut out flower shape on the paper.",
+          "count": 2
+        },
+        {
+          "text": "Design and cut out flower shape on the paper.",
+          "count": 1
+        },
+        {
+          "text": "Design shape on the whiteboard and cut out a rectangular piece of paper according to the dimension of the designed shape.",
+          "count": 1
+        },
+        {
+          "text": "In a well-lit environment, design a rectangle shape on the whiteboard and cut out the paper according to the designed shape.",
+          "count": 1
+        },
+        {
+          "text": "Cut out the paper according to the auxiliary lines of the designed shape.",
+          "count": 1
+        },
+        {
+          "text": "Design a flower shape on the whiteboard, and draw auxiliary lines of the designed shape on the paper.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "label": "the / he: ingredients, flavored, cup",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 12,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "the",
+          18
+        ],
+        [
+          "he",
+          1
+        ],
+        [
+          "all",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "ingredients",
+          13
+        ],
+        [
+          "flavored",
+          2
+        ],
+        [
+          "cup",
+          1
+        ],
+        [
+          "spoonfuls",
+          1
+        ],
+        [
+          "prepared",
+          1
+        ],
+        [
+          "mixed",
+          1
+        ]
+      ],
+      "medoid_text": "The ingredients of the drink is mixed evenly.",
+      "exemplars": [
+        {
+          "text": "The ingredients of the drink is mixed evenly.",
+          "count": 6
+        },
+        {
+          "text": "The ingredients of the tea is mixed evenly.",
+          "count": 4
+        },
+        {
+          "text": "The slices have half a small cup of salt on the surface for flavor.",
+          "count": 1
+        },
+        {
+          "text": "he ingredients of the drink is mixed evenly.",
+          "count": 1
+        },
+        {
+          "text": "The drink contains two spoonfuls of salt to create a savory flavor.",
+          "count": 1
+        },
+        {
+          "text": "The ingredients of the juice is mixed evenly.",
+          "count": 1
+        },
+        {
+          "text": "The juice is flavored with both sugar and salt to create a mixed flavor.",
+          "count": 1
+        },
+        {
+          "text": "The fruit juice is prepared by mixing juice powder with water.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "label": "stir: spoon, mug, fork",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 9,
+      "size_total": 20,
+      "verb_top": [
+        [
+          "stir",
+          20
+        ]
+      ],
+      "noun_top": [
+        [
+          "spoon",
+          15
+        ],
+        [
+          "mug",
+          3
+        ],
+        [
+          "fork",
+          1
+        ],
+        [
+          "cup",
+          1
+        ]
+      ],
+      "medoid_text": "Stir in the mug with the spoon.",
+      "exemplars": [
+        {
+          "text": "Stir in the mug with the spoon.",
+          "count": 1
+        },
+        {
+          "text": "Stir in the blue mug with the spoon.",
+          "count": 6
+        },
+        {
+          "text": "Stir in the mug.",
+          "count": 3
+        },
+        {
+          "text": "Stir in the blue cup with the spoon.",
+          "count": 3
+        },
+        {
+          "text": "Stir in the tall blue mug with the spoon.",
+          "count": 2
+        },
+        {
+          "text": "Stir with the spoon.",
+          "count": 2
+        },
+        {
+          "text": "Stir in the yellow mug with the spoon.",
+          "count": 1
+        },
+        {
+          "text": "Stir in the yellow mug with the fork.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "label": "experiment / transfer: mixed, back, c",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 17,
+      "size_total": 19,
+      "verb_top": [
+        [
+          "experiment",
+          16
+        ],
+        [
+          "transfer",
+          2
+        ],
+        [
+          "divide",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "mixed",
+          7
+        ],
+        [
+          "back",
+          6
+        ],
+        [
+          "c",
+          2
+        ],
+        [
+          "stirred",
+          2
+        ],
+        [
+          "b",
+          1
+        ],
+        [
+          "substance",
+          1
+        ]
+      ],
+      "medoid_text": "Experiment substance B is mixed into experiment substance C to generate experiment substance D.",
+      "exemplars": [
+        {
+          "text": "Experiment substance B is mixed into experiment substance C to generate experiment substance D.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance B is mixed into A.",
+          "count": 2
+        },
+        {
+          "text": "Transfer the experiment substance B back into experiment substance A to generate experiment substance C.",
+          "count": 2
+        },
+        {
+          "text": "Experiment substance C and experiment substance B are mixed in the beaker and stirred until fully dissolves to obtain solution D.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance B is mixed back into experiment substance A and the mixture of experiment substance A and B is shaked to generate high concentration solution C.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance C is mixed into experiment substance B to generate experiment substance D.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance B is mixed into experiment substance A to generate experiment substance C.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance C is mixed into experiment substance A to generate experiment substance D.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "place / take: gamecontroler, used, receiver",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "leave",
+      "size_unique": 10,
+      "size_total": 18,
+      "verb_top": [
+        [
+          "place",
+          8
+        ],
+        [
+          "take",
+          4
+        ],
+        [
+          "the",
+          3
+        ],
+        [
+          "rearrange",
+          1
+        ],
+        [
+          "insert",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "gamecontroler",
+          14
+        ],
+        [
+          "used",
+          2
+        ],
+        [
+          "receiver",
+          1
+        ],
+        [
+          "stored",
+          1
+        ]
+      ],
+      "medoid_text": "Place the gamecontroler inside the box.",
+      "exemplars": [
+        {
+          "text": "Place the gamecontroler inside the box.",
+          "count": 5
+        },
+        {
+          "text": "Take the gamecontroler outside the box.",
+          "count": 4
+        },
+        {
+          "text": "Place the gamecontroler inside the drawer.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the gamecontroler from one position to another position.",
+          "count": 1
+        },
+        {
+          "text": "The gamecontroler is used for entertainment.",
+          "count": 1
+        },
+        {
+          "text": "Insert the usb receiver of the gamecontroler.",
+          "count": 1
+        },
+        {
+          "text": "Place the gamecontroler inside the drawer in the box for secure storage.",
+          "count": 1
+        },
+        {
+          "text": "Store the gamecontroler inside the drawer.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "label": "the / prepare: slices, platter, cut",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 15,
+      "size_total": 17,
+      "verb_top": [
+        [
+          "the",
+          12
+        ],
+        [
+          "prepare",
+          4
+        ],
+        [
+          "apple",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "slices",
+          4
+        ],
+        [
+          "platter",
+          3
+        ],
+        [
+          "cut",
+          2
+        ],
+        [
+          "coated",
+          2
+        ],
+        [
+          "apple",
+          2
+        ],
+        [
+          "cooled",
+          2
+        ]
+      ],
+      "medoid_text": "The apple is cut into two slices.",
+      "exemplars": [
+        {
+          "text": "The apple is cut into two slices.",
+          "count": 2
+        },
+        {
+          "text": "Prepare a chilled apple platter.",
+          "count": 2
+        },
+        {
+          "text": "Apple and pear are both cut to two slices.",
+          "count": 1
+        },
+        {
+          "text": "The apple slices are coated with three spoonfuls of seasonings.",
+          "count": 1
+        },
+        {
+          "text": "The apple and pear sliced are cooled by at least four ice cubes.",
+          "count": 1
+        },
+        {
+          "text": "The apple and the pear are weighed then sliced. Each is cut into two slices.",
+          "count": 1
+        },
+        {
+          "text": "The apple slices with cheese are is seasoned by two spoonfuls of salt and two spoonfuls of salad sauce.",
+          "count": 1
+        },
+        {
+          "text": "The apple slices with cheese are baked.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "label": "scoop / scrape: salt, heated, spoonfuls",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 15,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "scoop",
+          9
+        ],
+        [
+          "scrape",
+          3
+        ],
+        [
+          "pour",
+          1
+        ],
+        [
+          "the",
+          1
+        ],
+        [
+          "two",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "salt",
+          13
+        ],
+        [
+          "heated",
+          1
+        ],
+        [
+          "spoonfuls",
+          1
+        ],
+        [
+          "bowl",
+          1
+        ]
+      ],
+      "medoid_text": "Scoop the salt with the spoon from the little green cup to the bowl.",
+      "exemplars": [
+        {
+          "text": "Scoop the salt with the spoon from the little green cup to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the salt with the spoon from the little green cup to the plate.",
+          "count": 2
+        },
+        {
+          "text": "Pour the salt from the little green cup to the plate.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the salt with the spoon from the bowl to the plate.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the salt with the spoon from the little green cup to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the salt with the spoon from the bowl to the bread.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the salt with the spoon from the plate to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the salt with the spoon from the blue mug to the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "label": "prepare: cup, salad, bowl",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 15,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "prepare",
+          16
+        ]
+      ],
+      "noun_top": [
+        [
+          "cup",
+          14
+        ],
+        [
+          "salad",
+          1
+        ],
+        [
+          "bowl",
+          1
+        ]
+      ],
+      "medoid_text": "Prepare a cup of savory fruit juice milk tea.",
+      "exemplars": [
+        {
+          "text": "Prepare a cup of savory fruit juice milk tea.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of chilled fruit tea.",
+          "count": 2
+        },
+        {
+          "text": "Prepare a cup of honey coffee.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of chilled sweet milk tea.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of chilled juice milk with jam.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of milk tea.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of savory strawberry orange juice mixed with milk.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of savory honey fruit juice milk tea.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "label": "cap / uncap: teapot, content, something",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "access",
+      "size_unique": 10,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "cap",
+          5
+        ],
+        [
+          "uncap",
+          5
+        ],
+        [
+          "pour",
+          5
+        ],
+        [
+          "scoop",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "teapot",
+          10
+        ],
+        [
+          "content",
+          3
+        ],
+        [
+          "something",
+          3
+        ]
+      ],
+      "medoid_text": "Cap the porcelain teapot.",
+      "exemplars": [
+        {
+          "text": "Cap the porcelain teapot.",
+          "count": 3
+        },
+        {
+          "text": "Uncap the porcelain teapot.",
+          "count": 3
+        },
+        {
+          "text": "Uncap the teapot.",
+          "count": 2
+        },
+        {
+          "text": "Cap the teapot.",
+          "count": 2
+        },
+        {
+          "text": "Pour the content from the porcelain teapot to the little green cup.",
+          "count": 1
+        },
+        {
+          "text": "Pour the content from the blue mug to the porcelain teapot.",
+          "count": 1
+        },
+        {
+          "text": "Pour the content from the porcelain teapot to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pour something from the teapot to the cup.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "label": "the / two: prepared, brewed, spoonfuls",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 16,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "the",
+          15
+        ],
+        [
+          "two",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "prepared",
+          12
+        ],
+        [
+          "brewed",
+          2
+        ],
+        [
+          "spoonfuls",
+          1
+        ],
+        [
+          "slice",
+          1
+        ]
+      ],
+      "medoid_text": "The drink is prepared by mixing a spoonful of tea powder, a quarter mug of water and a spoonful of fruit jam in order.",
+      "exemplars": [
+        {
+          "text": "The drink is prepared by mixing a spoonful of tea powder, a quarter mug of water and a spoonful of fruit jam in order.",
+          "count": 1
+        },
+        {
+          "text": "Two spoonfuls of sugar powders in a quarter mug of hot water.",
+          "count": 1
+        },
+        {
+          "text": "The tea is brewed by first adding tea powder covering the bottom of the mug, then half a mug of water.",
+          "count": 1
+        },
+        {
+          "text": "The drink is prepared by mixing two spoonfuls of strawberry jam and two spoonfuls of orange juice into half a wineglass of milk.",
+          "count": 1
+        },
+        {
+          "text": "The fruit juice milk tea is prepared by mixing tea powder covering the bottom of the mug, a quarter mug of fruit juice and half a mug of milk in order.",
+          "count": 1
+        },
+        {
+          "text": "The drink is prepared by mixing in order tea powder covering the bottom of the bowl, fruit juice covering the bottom of the bowl, and half a bowl of milk.",
+          "count": 1
+        },
+        {
+          "text": "The tea contains an apple slice and a small spoonful of salt for flavor.",
+          "count": 1
+        },
+        {
+          "text": "The tea is brewed by first adding two spoonfuls of tea powder, then a quarter mug of water.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "label": "experiment / heat: heated, substance, transferred",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 13,
+      "size_total": 16,
+      "verb_top": [
+        [
+          "experiment",
+          10
+        ],
+        [
+          "heat",
+          2
+        ],
+        [
+          "transfer",
+          1
+        ],
+        [
+          "pour",
+          1
+        ],
+        [
+          "heated",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "heated",
+          6
+        ],
+        [
+          "substance",
+          3
+        ],
+        [
+          "transferred",
+          2
+        ],
+        [
+          "mixture",
+          2
+        ],
+        [
+          "tube",
+          1
+        ],
+        [
+          "shaked",
+          1
+        ]
+      ],
+      "medoid_text": "Experiment substance A is heated in the test tube to generate experiment substance B.",
+      "exemplars": [
+        {
+          "text": "Experiment substance A is heated in the test tube to generate experiment substance B.",
+          "count": 2
+        },
+        {
+          "text": "Experiment substance A is heated in the test tube with the test tube holder to generate experiment substance B.",
+          "count": 2
+        },
+        {
+          "text": "Experiment substance A if transferred to the test tube for heating.",
+          "count": 2
+        },
+        {
+          "text": "Heat experiment substance A in the test tube with the holder.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance A is heated in the beaker to generate experiment substance B.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance A is heated within the test tube, and then mixed into experiment substance B in the beaker to generate experiment substance C.",
+          "count": 1
+        },
+        {
+          "text": "Transfer experiment substance A into the test tube for heating.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance A is shaked and heated in the test tube and transferred into experiment substance B.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "label": "prepare / pour: substances, solution, liquid",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 14,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "prepare",
+          5
+        ],
+        [
+          "pour",
+          4
+        ],
+        [
+          "heat",
+          3
+        ],
+        [
+          "shake",
+          2
+        ],
+        [
+          "transfer",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "substances",
+          7
+        ],
+        [
+          "solution",
+          4
+        ],
+        [
+          "liquid",
+          2
+        ],
+        [
+          "tube",
+          1
+        ],
+        [
+          "reactants",
+          1
+        ]
+      ],
+      "medoid_text": "Shake the test tube, heat the test tube, and pour experiment substances between the heated test tube and the beaker.",
+      "exemplars": [
+        {
+          "text": "Shake the test tube, heat the test tube, and pour experiment substances between the heated test tube and the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Prepare solution in the conical flask through heating the components in the test tube.",
+          "count": 2
+        },
+        {
+          "text": "Pour experiment substances into the test tube, shake the test tube, and then heat the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances into the test tube and heat the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Heat experiment substances in the beaker, and then pour the heated experiment substances into the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Prepare solution in the test tube through heating and stirring the components in the beaker.",
+          "count": 1
+        },
+        {
+          "text": "Prepare solution in the beaker through heating the components in the test tube.",
+          "count": 1
+        },
+        {
+          "text": "Pour experiment substances into the test tube, shake the test tube, and heat the test tube.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "label": "experiment / the: mixture, heated, stiring",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 12,
+      "size_total": 15,
+      "verb_top": [
+        [
+          "experiment",
+          12
+        ],
+        [
+          "the",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "mixture",
+          3
+        ],
+        [
+          "heated",
+          3
+        ],
+        [
+          "stiring",
+          3
+        ],
+        [
+          "stirring",
+          2
+        ],
+        [
+          "shaked",
+          2
+        ],
+        [
+          "transferred",
+          1
+        ]
+      ],
+      "medoid_text": "Experiment substance A is heated while stiring to generate experiment substance C.",
+      "exemplars": [
+        {
+          "text": "Experiment substance A is heated while stiring to generate experiment substance C.",
+          "count": 1
+        },
+        {
+          "text": "The mixture of experiment substance A and B is heated to generate experiment substance C.",
+          "count": 3
+        },
+        {
+          "text": "Experiment substance A is heated in the beaker while stirring to generate solution B.",
+          "count": 2
+        },
+        {
+          "text": "Experiment substance A is transferred into the conical flask, shaked to mix up and then heated on the alcohol burner to generate experiment substance C.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance C is heated within the beaker while stiring to generate solution D.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance A is heated to generate experiment substance C.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance C is heated while stirring to generate experiment substance D.",
+          "count": 1
+        },
+        {
+          "text": "Experiment substance B is first shaked to mix up then heated on alcohol burner to generate experiment substance C.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "label": "the / assemble: assembled, baked, bread",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 11,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "the",
+          12
+        ],
+        [
+          "assemble",
+          2
+        ]
+      ],
+      "noun_top": [
+        [
+          "assembled",
+          8
+        ],
+        [
+          "baked",
+          3
+        ],
+        [
+          "bread",
+          1
+        ],
+        [
+          "sandwich",
+          1
+        ],
+        [
+          "made",
+          1
+        ]
+      ],
+      "medoid_text": "The sandwich is assembled from a slice of bread, apple slice and donut filling and another slice of bread.",
+      "exemplars": [
+        {
+          "text": "The sandwich is assembled from a slice of bread, apple slice and donut filling and another slice of bread.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich is baked.",
+          "count": 3
+        },
+        {
+          "text": "The sandwich is assembled from a slice of bread, a donut filling, two spoonfuls of salt for seasoning and another slice of bread.",
+          "count": 2
+        },
+        {
+          "text": "Assemble the bread and the apple into a sandwich.",
+          "count": 1
+        },
+        {
+          "text": "Assemble into a sandwich.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich is assembled from a slice of bread, the tomato sauce and sugar filling, and another slice of bread.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich is assembled from a slice of bread, a cheese donut filling, and another slice of bread.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich is assembled from a bread slice, a donut and another bread slice.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "label": "pour / scoop: something, content, mug",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 10,
+      "size_total": 14,
+      "verb_top": [
+        [
+          "pour",
+          10
+        ],
+        [
+          "scoop",
+          1
+        ],
+        [
+          "scrape",
+          1
+        ],
+        [
+          "grip",
+          1
+        ],
+        [
+          "stir",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "something",
+          7
+        ],
+        [
+          "content",
+          6
+        ],
+        [
+          "mug",
+          1
+        ]
+      ],
+      "medoid_text": "Pour something into the mug.",
+      "exemplars": [
+        {
+          "text": "Pour something into the mug.",
+          "count": 2
+        },
+        {
+          "text": "Pour the content from the tall blue mug to the bowl.",
+          "count": 4
+        },
+        {
+          "text": "Pour the content from the green mug to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pour the content from the orange mug to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pour something from the mug to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scoop something into the mug.",
+          "count": 1
+        },
+        {
+          "text": "Scrape something into the mug.",
+          "count": 1
+        },
+        {
+          "text": "Grip something into the mug.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "label": "the / place: scissors, pencil, stored",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 12,
+      "size_total": 13,
+      "verb_top": [
+        [
+          "the",
+          6
+        ],
+        [
+          "place",
+          2
+        ],
+        [
+          "take",
+          2
+        ],
+        [
+          "rearrange",
+          1
+        ],
+        [
+          "all",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "scissors",
+          5
+        ],
+        [
+          "pencil",
+          3
+        ],
+        [
+          "stored",
+          2
+        ],
+        [
+          "pieces",
+          1
+        ],
+        [
+          "tape",
+          1
+        ],
+        [
+          "sharpener",
+          1
+        ]
+      ],
+      "medoid_text": "The scissors are stored inside the box.",
+      "exemplars": [
+        {
+          "text": "The scissors are stored inside the box.",
+          "count": 1
+        },
+        {
+          "text": "Place the scissors inside the box.",
+          "count": 2
+        },
+        {
+          "text": "Rearrange the scissors from one position to another position.",
+          "count": 1
+        },
+        {
+          "text": "Take the scissors outside the drawer.",
+          "count": 1
+        },
+        {
+          "text": "Take the scissors outside the box.",
+          "count": 1
+        },
+        {
+          "text": "All used tools are stored in proper places.",
+          "count": 1
+        },
+        {
+          "text": "Store the cut paper pieces in the box.",
+          "count": 1
+        },
+        {
+          "text": "The pencil and the pencil sharpener are stored in the box.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "label": "grip / the: cubes, cube, put",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 11,
+      "size_total": 13,
+      "verb_top": [
+        [
+          "grip",
+          12
+        ],
+        [
+          "the",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "cubes",
+          9
+        ],
+        [
+          "cube",
+          3
+        ],
+        [
+          "put",
+          1
+        ]
+      ],
+      "medoid_text": "Grip the ice cubes with the tongs from the plate to the blue cup.",
+      "exemplars": [
+        {
+          "text": "Grip the ice cubes with the tongs from the plate to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Grip the ice cubes with the tongs from the plate to another plate.",
+          "count": 3
+        },
+        {
+          "text": "Grip the ice cubes with the tongs from the plate to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Grip the ice cubes with the tongs from the plate to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Grip the ice cube with the tongs from the plate to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Grip the ice cube with the tongs from the plate to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Grip the ice cube with the tongs from the plate to the green mug.",
+          "count": 1
+        },
+        {
+          "text": "Grip ice cubes into the wineglass.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "label": "scoop / pour: powder, tea, water",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 12,
+      "size_total": 13,
+      "verb_top": [
+        [
+          "scoop",
+          6
+        ],
+        [
+          "pour",
+          4
+        ],
+        [
+          "scrape",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "powder",
+          10
+        ],
+        [
+          "tea",
+          2
+        ],
+        [
+          "water",
+          1
+        ]
+      ],
+      "medoid_text": "Scoop the tea powder with the spoon from the gray-green porcelain bottle to the blue cup.",
+      "exemplars": [
+        {
+          "text": "Scoop the tea powder with the spoon from the gray-green porcelain bottle to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the tea powder with the spoon from the gray-green porcelain bottle to the bowl.",
+          "count": 2
+        },
+        {
+          "text": "Pour the tea powder from the green striped bottle to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the tea powder with the spoon from the gray-green porcelain bottle to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the tea powder with the spoon from the bowl to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Pour the tea from the blue striped bottle to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the coffee powder with the spoon from the yellow mug to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the milk powder with the spoon from the large black and yellow striped bottle to the blue mug.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "label": "the / two: chilled, put, spoonfuls",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 8,
+      "size_total": 11,
+      "verb_top": [
+        [
+          "the",
+          9
+        ],
+        [
+          "two",
+          1
+        ],
+        [
+          "three",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "chilled",
+          4
+        ],
+        [
+          "put",
+          3
+        ],
+        [
+          "spoonfuls",
+          1
+        ],
+        [
+          "transferred",
+          1
+        ],
+        [
+          "cooled",
+          1
+        ],
+        [
+          "dissolved",
+          1
+        ]
+      ],
+      "medoid_text": "The drink has three sugar cubes put into it.",
+      "exemplars": [
+        {
+          "text": "The drink has three sugar cubes put into it.",
+          "count": 2
+        },
+        {
+          "text": "The drink is chilled with at least one ice cube.",
+          "count": 3
+        },
+        {
+          "text": "Two spoonfuls of drink is transferred into the bowl and is cooled by three ice cubes.",
+          "count": 1
+        },
+        {
+          "text": "Three sugar cubes are transferred into the bowl.",
+          "count": 1
+        },
+        {
+          "text": "The tea is cooled by at least three ice cubes.",
+          "count": 1
+        },
+        {
+          "text": "The dish has three sugar cubes put into it.",
+          "count": 1
+        },
+        {
+          "text": "The drink is chilled with at least two ice cubes.",
+          "count": 1
+        },
+        {
+          "text": "The drink has three sugar cubes dissolved into it.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "label": "scoop / spread: sauce, cheese, sauces",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 9,
+      "size_total": 11,
+      "verb_top": [
+        [
+          "scoop",
+          6
+        ],
+        [
+          "spread",
+          4
+        ],
+        [
+          "there",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "sauce",
+          7
+        ],
+        [
+          "cheese",
+          2
+        ],
+        [
+          "sauces",
+          1
+        ],
+        [
+          "spoonfuls",
+          1
+        ]
+      ],
+      "medoid_text": "Spread the sauce on the plate with the spoon.",
+      "exemplars": [
+        {
+          "text": "Spread the sauce on the plate with the spoon.",
+          "count": 1
+        },
+        {
+          "text": "Spread the tomato sauce on the bread with the spoon.",
+          "count": 2
+        },
+        {
+          "text": "Scoop the tomato sauce with the spoon from the bowl to the plate.",
+          "count": 2
+        },
+        {
+          "text": "Scoop the sauces with the spoon from the yellow mug to the donut.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the tomato sauce with the spoon from the bowl to the donut.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the cheese with the spoon from the blue cup to the donut.",
+          "count": 1
+        },
+        {
+          "text": "Spread the cheese on the donut with the spoon.",
+          "count": 1
+        },
+        {
+          "text": "There are four spoonfuls of evenly spread sauce inside the plate.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "label": "pour / scoop: juice, powder, mug",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 8,
+      "size_total": 10,
+      "verb_top": [
+        [
+          "pour",
+          7
+        ],
+        [
+          "scoop",
+          1
+        ],
+        [
+          "half",
+          1
+        ],
+        [
+          "a",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "juice",
+          6
+        ],
+        [
+          "powder",
+          2
+        ],
+        [
+          "mug",
+          2
+        ]
+      ],
+      "medoid_text": "Pour the juice from the orange mug to the blue mug.",
+      "exemplars": [
+        {
+          "text": "Pour the juice from the orange mug to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Pour the juice from the tall blue mug to the bowl.",
+          "count": 3
+        },
+        {
+          "text": "Scoop the orange juice with the spoon from the orange mug to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Pour the juice powder from the bowl to the green mug.",
+          "count": 1
+        },
+        {
+          "text": "Pour the fruit juice from the orange mug to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Pour the juice powder from the orange mug to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Half a mug of juice is transferred into the bowl and mixed up.",
+          "count": 1
+        },
+        {
+          "text": "A quarter mug of juice is transferred into the bowl.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "label": "make / the: sandwich, seasoned, donut",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "manipulate",
+      "size_unique": 8,
+      "size_total": 9,
+      "verb_top": [
+        [
+          "make",
+          5
+        ],
+        [
+          "the",
+          3
+        ],
+        [
+          "prepare",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "sandwich",
+          5
+        ],
+        [
+          "seasoned",
+          1
+        ],
+        [
+          "donut",
+          1
+        ],
+        [
+          "made",
+          1
+        ],
+        [
+          "spoonfuls",
+          1
+        ]
+      ],
+      "medoid_text": "Make a sandwich with a filling of apple slices and donut, adding tomato sauce, mustard sauce, salt, and sugar.",
+      "exemplars": [
+        {
+          "text": "Make a sandwich with a filling of apple slices and donut, adding tomato sauce, mustard sauce, salt, and sugar.",
+          "count": 1
+        },
+        {
+          "text": "Make a baked sandwich with a filling of donut and salt.",
+          "count": 2
+        },
+        {
+          "text": "The sandwich filling is seasoned by two spoonfuls of tomato sauce, four spoonfuls of mustard sauce, a spoonful of salt and four spoonfuls of sugar.",
+          "count": 1
+        },
+        {
+          "text": "Make a baked sandwich with a filling of cheese and donut, adding tomato sauce.",
+          "count": 1
+        },
+        {
+          "text": "Make a sandwich with a filling of tomato sauce and sugar.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a baked donut with apple slices and jam.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich filling is made up of four spoonfuls of tomato sauce and four spoonfuls of sugar.",
+          "count": 1
+        },
+        {
+          "text": "The sandwich has three spoonfuls of tomato sauce for seasoning on its top.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "label": "scoop / scrape: jam, honey, content",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "retrieve",
+      "size_unique": 9,
+      "size_total": 9,
+      "verb_top": [
+        [
+          "scoop",
+          6
+        ],
+        [
+          "scrape",
+          3
+        ]
+      ],
+      "noun_top": [
+        [
+          "jam",
+          6
+        ],
+        [
+          "honey",
+          2
+        ],
+        [
+          "content",
+          1
+        ]
+      ],
+      "medoid_text": "Scoop the jam with the spoon from the bowl to the blue mug.",
+      "exemplars": [
+        {
+          "text": "Scoop the jam with the spoon from the bowl to the blue mug.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the jam with the spoon from the gray-green porcelain bottle to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the jam with the spoon from the bowl to the plate.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the strawberry jam with the spoon from the blue mug to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the honey with the spoon from the plate to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the fruit jam with the spoon from the blue cup to the bowl.",
+          "count": 1
+        },
+        {
+          "text": "Scrape the honey with the spoon from the bowl to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Scoop the fruit jam with the spoon from the bowl to the blue cup.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "label": "pour / scoop: wine, something, milk",
+      "auto_named": true,
+      "naming": "head verb(s) + top nouns, count-weighted",
+      "verb_category": "merge",
+      "size_unique": 8,
+      "size_total": 8,
+      "verb_top": [
+        [
+          "pour",
+          5
+        ],
+        [
+          "scoop",
+          1
+        ],
+        [
+          "prepare",
+          1
+        ],
+        [
+          "the",
+          1
+        ]
+      ],
+      "noun_top": [
+        [
+          "wine",
+          2
+        ],
+        [
+          "something",
+          2
+        ],
+        [
+          "milk",
+          1
+        ],
+        [
+          "content",
+          1
+        ],
+        [
+          "cup",
+          1
+        ],
+        [
+          "prepared",
+          1
+        ]
+      ],
+      "medoid_text": "Pour something from the cup to the wineglass.",
+      "exemplars": [
+        {
+          "text": "Pour something from the cup to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Pour the milk from the large black and yellow striped bottle to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Pour the prepared wine from the blue cup to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Pour the wine from the red striped bottle to the blue cup.",
+          "count": 1
+        },
+        {
+          "text": "Pour the content from the little green cup to the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Scoop something into the wineglass.",
+          "count": 1
+        },
+        {
+          "text": "Prepare a cup of wine.",
+          "count": 1
+        },
+        {
+          "text": "The wine is prepared in cup for the precise measurement of each ingredient. Then the wine is transferred into the wineglass for product.",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

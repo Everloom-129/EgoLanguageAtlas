@@ -1,0 +1,28 @@
+{
+  "name": "DeMiAn (How to Instruct Your Robot)",
+  "slug": "demian",
+  "status": "descriptive",
+  "work_type": "method (dense annotation)",
+  "focus": "Studies language density as a lever: re-labels segments along four aspects (physical motion, scene, arm pose, reasoning) via Qwen3-VL, with a learned instructor selecting an annotation at deployment.",
+  "usage_methods": [
+    "dense-relabel",
+    "vla-pretrain",
+    "world-model"
+  ],
+  "annotation_types": [
+    "dense-multi-aspect",
+    "task-instruction"
+  ],
+  "source_datasets": [
+    ">1M robot clips + 50K EgoVerse human videos"
+  ],
+  "downloadable": "none (no code/data release found)",
+  "license": "paper CC BY 4.0; dense annotations not released",
+  "links": {
+    "paper": "https://arxiv.org/abs/2605.17077",
+    "repo": "",
+    "project": "",
+    "atlas_en": "demian/demian_atlas.html",
+    "atlas_cn": "demian/demian_atlas_cn.html"
+  }
+}

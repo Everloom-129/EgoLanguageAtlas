@@ -1,0 +1,24 @@
+{
+  "name": "EgoVid-5M",
+  "slug": "egovid-5m",
+  "status": "built",
+  "work_type": "dataset (corpus)",
+  "focus": "5 million egocentric clips curated from Ego4D, each paired with a VLM-authored high-level action description and a long caption, for egocentric video generation.",
+  "usage_methods": ["world-model", "corpus"],
+  "usage_downstream": [],
+  "annotation_types": ["clip-narration", "verb-noun-action"],
+  "source_datasets": ["Ego4D (EgoVid-5M curation)"],
+  "data_access": "huggingface",
+  "downloadable": "open (HF: Jeff-Wang/EgoVid-5M, apache-2.0)",
+  "license": "apache-2.0 (annotations; videos under Ego4D License)",
+  "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+  "redistribution": "annotations permitted (apache-2.0); videos under Ego4D License",
+  "links": {
+    "paper": "https://arxiv.org/abs/2411.08380",
+    "repo": "https://huggingface.co/datasets/Jeff-Wang/EgoVid-5M",
+    "project": "https://egovid.github.io/",
+    "atlas_en": "egovid-5m/egovid-5m_atlas.html",
+    "atlas_cn": "egovid-5m/egovid-5m_atlas_cn.html"
+  },
+  "stats_file": "egovid-5m/egovid-5m_stats.json"
+}

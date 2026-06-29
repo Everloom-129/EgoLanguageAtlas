@@ -1,0 +1,27 @@
+{
+  "name": "EgoVLA",
+  "slug": "egovla",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Pretrains a VLA on egocentric human videos to predict wrist/hand actions, then retargets via inverse kinematics for a bimanual humanoid, with a new manipulation benchmark.",
+  "usage_methods": [
+    "vla-pretrain",
+    "hand-pose",
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "HOI4D, HOT3D, HoloAssist, TACO"
+  ],
+  "downloadable": "derived-only (reuses source labels)",
+  "license": "code MIT; reused labels follow each source dataset license",
+  "links": {
+    "paper": "https://arxiv.org/abs/2507.12440",
+    "repo": "https://github.com/RchalYang/EgoVLA_Release",
+    "project": "https://rchalyang.github.io/EgoVLA/",
+    "atlas_en": "egovla/egovla_atlas.html",
+    "atlas_cn": "egovla/egovla_atlas_cn.html"
+  }
+}

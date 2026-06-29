@@ -1,0 +1,23 @@
+{
+  "name": "EgoZero",
+  "slug": "egozero",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Learns closed-loop manipulation from Project Aria smart-glasses human demonstrations with zero robot data, deployed zero-shot on a Franka gripper.",
+  "usage_methods": [
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "own Project Aria smart-glasses demos"
+  ],
+  "downloadable": "none (self-collected demos, not released)",
+  "license": "code MIT; paper CC BY 4.0",
+  "links": {
+    "paper": "https://arxiv.org/abs/2505.20290",
+    "repo": "https://github.com/vliu15/egozero",
+    "project": "https://egozero-robot.github.io/",
+    "atlas_en": "egozero/egozero_atlas.html",
+    "atlas_cn": "egozero/egozero_atlas_cn.html"
+  }
+}

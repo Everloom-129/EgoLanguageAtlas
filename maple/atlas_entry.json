@@ -1,0 +1,25 @@
+{
+  "name": "MAPLE",
+  "slug": "maple",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Learns vision-encoder features that predict object contact points and grasping hand poses at contact from egocentric images, reused to train dexterous manipulation policies.",
+  "usage_methods": [
+    "perception-pretrain",
+    "affordance",
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "Ego4D (eval on EPIC-KITCHENS, EGTEA Gaze+)"
+  ],
+  "downloadable": "none (releases a checkpoint and code, not annotations)",
+  "license": "no license file in repo (default all rights reserved)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2504.06084",
+    "repo": "https://github.com/algvr/maple",
+    "project": "https://algvr.com/maple/",
+    "atlas_en": "maple/maple_atlas.html",
+    "atlas_cn": "maple/maple_atlas_cn.html"
+  }
+}

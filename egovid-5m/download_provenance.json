@@ -1,0 +1,23 @@
+{
+  "work": "EgoVid-5M",
+  "route": "huggingface_hub (hf_hub_download)",
+  "repo": "https://huggingface.co/datasets/Jeff-Wang/EgoVid-5M",
+  "repo_id": "Jeff-Wang/EgoVid-5M",
+  "commit_sha": "1d5a4ca072347ee48a2ec0af560e2b2b7bf2e6b1",
+  "access_utc": "2026-06-29T07:21:54.482118+00:00",
+  "license": "apache-2.0",
+  "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+  "note": "Annotation tables are apache-2.0; underlying clips are Ego4D (Ego4D License). Only the annotation CSVs are downloaded.",
+  "files": [
+    {
+      "file": "egovid-text.csv",
+      "bytes": 5241255419,
+      "status": "downloaded"
+    },
+    {
+      "file": "egovid-val.csv",
+      "bytes": 23641598,
+      "status": "downloaded"
+    }
+  ]
+}

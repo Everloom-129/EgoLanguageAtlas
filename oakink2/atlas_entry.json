@@ -1,0 +1,24 @@
+{
+  "name": "OakInk2",
+  "slug": "oakink2",
+  "status": "built",
+  "work_type": "dataset (corpus)",
+  "focus": "Bimanual hand-object manipulation organized as a task hierarchy, with complex-task and primitive-substep language descriptions in English and Chinese.",
+  "usage_methods": ["corpus", "hand-pose", "affordance"],
+  "usage_downstream": [],
+  "annotation_types": ["task-instruction", "atomic-substep"],
+  "source_datasets": ["OakInk2 (multi-view bimanual capture)"],
+  "data_access": "huggingface",
+  "downloadable": "open (HF: kelvin34501/OakInk-v2)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "redistribution": "permitted with attribution and share-alike",
+  "links": {
+    "paper": "https://arxiv.org/abs/2403.19417",
+    "repo": "https://huggingface.co/datasets/kelvin34501/OakInk-v2",
+    "project": "https://oakink.net/v2/",
+    "atlas_en": "oakink2/oakink2_atlas.html",
+    "atlas_cn": "oakink2/oakink2_atlas_cn.html"
+  },
+  "stats_file": "oakink2/oakink2_stats.json"
+}

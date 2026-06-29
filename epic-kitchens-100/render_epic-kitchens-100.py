@@ -34,6 +34,9 @@ REPO = "https://github.com/epic-kitchens/epic-kitchens-100-annotations"
 ARXIV = "https://arxiv.org/abs/2006.13256"
 PROJECT = "https://epic-kitchens.github.io/"
 LICENSE_URL = "https://creativecommons.org/licenses/by-nc/4.0/"
+EXAMPLE_VIDEO = "https://www.youtube.com/watch?v=8IzkrWAfAGg"
+EXAMPLE_IMG_URL = "https://img.youtube.com/vi/8IzkrWAfAGg/hqdefault.jpg"
+EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.jpg"))
 
 META = {
     "name": "EPIC-KITCHENS-100",
@@ -55,6 +58,8 @@ WORK_I18N = {
         "k_hours": "hours (measured)", "k_verbs": "verb classes", "k_nouns": "noun classes",
         "k_vocab": "vocabulary (tokens)", "k_participants": "participants (train+val)",
         "k_videos": "videos (labelled / total)", "k_meanlen": "mean length (tokens)",
+        "media_caption": "EPIC-KITCHENS-100 trailer frame: unscripted egocentric cooking.",
+        "media_credit": "EPIC-KITCHENS, University of Bristol (CC BY-NC 4.0).",
         "multinoun": "segments naming >1 noun",
         "focus": ("100 hours of unscripted egocentric kitchen activity, densely "
                   "annotated as verb plus noun action segments parsed from participant "
@@ -84,6 +89,8 @@ WORK_I18N = {
         "k_hours": "时长（实测）", "k_verbs": "动词类别", "k_nouns": "名词类别",
         "k_vocab": "词表（token）", "k_participants": "参与者（训练+验证）",
         "k_videos": "视频（标注 / 总数）", "k_meanlen": "平均长度（token）",
+        "media_caption": "EPIC-KITCHENS-100 预告片画面：无脚本第一人称烹饪。",
+        "media_credit": "EPIC-KITCHENS，布里斯托大学（CC BY-NC 4.0）。",
         "multinoun": "含多个名词的片段",
         "focus": ("100 小时无脚本第一人称厨房活动，由参与者旁白解析为动词加名词的动作"
                   "片段并密集标注。"),
@@ -122,7 +129,10 @@ def kc_list(t):
 
 
 def usage_body(t):
-    return f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
+    media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
+             + A.media_panel(t, image_uri=EXAMPLE_URI, video_url=EXAMPLE_VIDEO,
+                             page_url=PROJECT, caption=t["media_caption"], credit=t["media_credit"]))
+    return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
 
 
 def gran_body(t):

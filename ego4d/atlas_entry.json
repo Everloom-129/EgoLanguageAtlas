@@ -1,0 +1,29 @@
+{
+  "name": "Ego4D",
+  "slug": "ego4d",
+  "status": "descriptive",
+  "work_type": "dataset (corpus + benchmark)",
+  "focus": "Foundational 3,670 hour worldwide egocentric corpus with millions of timestamped free-form narrations and a multi-task benchmark suite.",
+  "usage_methods": [
+    "corpus",
+    "perception-pretrain",
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "clip-narration",
+    "video-summary",
+    "verb-noun-action"
+  ],
+  "source_datasets": [
+    "original capture (3,670 h, 74 locations)"
+  ],
+  "downloadable": "gated (license sign-up, then CLI)",
+  "license": "Ego4D License (gated; redistribution restricted)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2110.07058",
+    "repo": "https://github.com/facebookresearch/Ego4d",
+    "project": "https://ego4d-data.org/",
+    "atlas_en": "ego4d/ego4d_atlas.html",
+    "atlas_cn": "ego4d/ego4d_atlas_cn.html"
+  }
+}

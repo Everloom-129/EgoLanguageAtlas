@@ -1,0 +1,28 @@
+{
+  "name": "EgoDex",
+  "slug": "egodex",
+  "status": "descriptive",
+  "work_type": "dataset (corpus + benchmark)",
+  "focus": "829 hours of Apple Vision Pro egocentric video with native 3D hand pose over 194 tabletop tasks, each with a GPT-generated task description.",
+  "usage_methods": [
+    "corpus",
+    "hand-pose",
+    "vla-pretrain",
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "original capture (Apple Vision Pro)"
+  ],
+  "downloadable": "open download (Apple CDN); redistribution barred",
+  "license": "CC BY-NC-ND: annotation-text redistribution NOT permitted",
+  "links": {
+    "paper": "https://arxiv.org/abs/2505.11709",
+    "repo": "https://github.com/apple/ml-egodex",
+    "project": "https://machinelearning.apple.com/research/egodex-learning-dexterous-manipulation",
+    "atlas_en": "egodex/egodex_atlas.html",
+    "atlas_cn": "egodex/egodex_atlas_cn.html"
+  }
+}

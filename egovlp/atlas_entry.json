@@ -1,0 +1,28 @@
+{
+  "name": "EgoVLP (EgoClip / EgoNCE / EgoMCQ)",
+  "slug": "egovlp",
+  "status": "descriptive",
+  "work_type": "method + derived corpus",
+  "focus": "A pre-filtered, cleaned text layer over Ego4D: about 3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.",
+  "usage_methods": [
+    "perception-pretrain",
+    "corpus",
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "clip-narration",
+    "verb-noun-action"
+  ],
+  "source_datasets": [
+    "Ego4D"
+  ],
+  "downloadable": "open CSV (Ego4D-derived) via repo Drive links",
+  "license": "code MIT; data inherits Ego4D License",
+  "links": {
+    "paper": "https://arxiv.org/abs/2206.01670",
+    "repo": "https://github.com/showlab/EgoVLP",
+    "project": "http://qhlin.me/EgoVLP/",
+    "atlas_en": "egovlp/egovlp_atlas.html",
+    "atlas_cn": "egovlp/egovlp_atlas_cn.html"
+  }
+}

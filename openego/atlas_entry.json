@@ -1,0 +1,29 @@
+{
+  "name": "OpenEgo",
+  "slug": "openego",
+  "status": "descriptive",
+  "work_type": "dataset (unified corpus)",
+  "focus": "Consolidates six egocentric corpora (1,107 h, 290 tasks) into a unified 21-joint hand-pose format with intention-aligned, timestamped language primitives.",
+  "usage_methods": [
+    "corpus",
+    "hand-pose",
+    "vla-pretrain"
+  ],
+  "annotation_types": [
+    "task-instruction",
+    "atomic-substep",
+    "verb-noun-action"
+  ],
+  "source_datasets": [
+    "CaptainCook4D, HOI4D, HoloAssist, EgoDex, HOT3D, HO-Cap"
+  ],
+  "downloadable": "open-ish (Box); EgoDex-derived subset gated",
+  "license": "mixed per-source (MIT code; constituents vary, some CC BY-NC-ND)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2509.05513",
+    "repo": "https://github.com/ahadjawaid/openego",
+    "project": "https://www.openegocentric.com",
+    "atlas_en": "openego/openego_atlas.html",
+    "atlas_cn": "openego/openego_atlas_cn.html"
+  }
+}

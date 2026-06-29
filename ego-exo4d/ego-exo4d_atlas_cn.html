@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Ego-Exo4D · 第一人称语言标注图谱</title><style>
+:root{
+  --paper:#e9edf4; --ink:#15233e; --muted:#5d6c87; --line:#c4d0e2;
+  --accent:#1f4e9b; --accent2:#b45309; --card:rgba(255,255,255,.80);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  color:var(--ink); background-color:var(--paper);
+  background-image:
+    linear-gradient(rgba(110,135,175,.10) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(110,135,175,.10) 1px,transparent 1px),
+    linear-gradient(rgba(110,135,175,.18) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(110,135,175,.18) 1px,transparent 1px);
+  background-size:24px 24px,24px 24px,120px 120px,120px 120px;
+  font-size:13px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{border-bottom-style:solid}
+.wrap{max-width:1080px;margin:0 auto;padding:18px 16px 64px}
+.card{background:var(--card);border:1px solid var(--line);padding:16px 18px;margin:14px 0;
+  box-shadow:0 1px 0 rgba(21,35,62,.04)}
+.hero h1{font-size:30px;letter-spacing:.04em;margin:6px 0 4px}
+.toprow{display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--muted)}
+.langtoggle a{font-size:12px}
+.focus{color:var(--ink);max-width:74ch;margin:4px 0 12px}
+.tagline-chips{margin:6px 0}
+.ck{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-right:4px}
+.chip{display:inline-block;border:1px solid var(--accent);color:var(--accent);border-radius:11px;
+  padding:1px 9px;font-size:11px;margin:2px 3px}
+.chip.alt{border-color:var(--accent2);color:var(--accent2)}
+.famchip{display:inline-block;border:1px solid;border-radius:9px;padding:0 7px;font-size:11px;white-space:nowrap}
+.kcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:14px 0}
+.kcgrid.small{margin:0 0 10px}
+.kc{border:1px solid var(--line);background:rgba(255,255,255,.55);padding:8px 10px}
+.kcv{font-size:18px;font-weight:700;color:var(--accent);letter-spacing:.02em}
+.kcl{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.srcrow{font-size:12px;color:var(--muted);margin-top:6px}
+.note{font-size:11px;color:var(--muted);border-left:2px solid var(--line);padding-left:8px;margin:10px 0 0}
+section h2,.foot h2{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink);
+  border-bottom:1px solid var(--line);padding-bottom:7px;margin:0 0 12px;font-weight:700}
+.snum{color:var(--accent);font-weight:700;margin-right:6px}
+.subhelp{font-size:12px;color:var(--muted);margin:-4px 0 12px;max-width:78ch}
+.prose{max-width:80ch}
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px;margin:8px 0 2px}
+.flowbox{border:1px solid var(--accent);background:rgba(31,78,155,.06);padding:8px 10px;font-size:11.5px;
+  display:flex;align-items:center;text-align:center;max-width:200px}
+.flowbox.down{border-color:var(--accent2);background:rgba(180,83,9,.07);color:var(--accent2)}
+.flowarrow{display:flex;align-items:center;color:var(--muted);font-size:16px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 10px}
+input,select,button{font-family:inherit;font-size:12px;color:var(--ink);background:#fff;
+  border:1px solid var(--line);padding:5px 8px;border-radius:2px}
+input{min-width:200px;flex:0 1 260px}
+button{cursor:pointer;background:#f3f6fb}
+button:hover{border-color:var(--accent);color:var(--accent)}
+label{font-size:11px;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
+.cinfo{font-size:11px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin:2px 0 10px}
+.legitem{font-size:11px;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:5px}
+.legitem.off{opacity:.32;text-decoration:line-through}
+.sw{width:10px;height:10px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.scatterwrap{position:relative}
+#scatter{width:100%;height:520px;display:block;background:#fbfcfe;border:1px solid var(--line);cursor:crosshair}
+.tip{position:fixed;z-index:30;pointer-events:none;display:none;background:var(--ink);color:#eef3fb;
+  padding:6px 9px;font-size:11px;max-width:260px;border:1px solid #0c1626;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+.hlbar{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12px;
+  background:rgba(31,78,155,.07);border:1px solid var(--line);padding:6px 10px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line)}
+.tablewrap.tall{max-height:520px;overflow-y:auto}
+.dtable{width:100%;border-collapse:collapse;font-size:12px}
+.dtable th,.dtable td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+.dtable thead th{position:sticky;top:0;background:#eef2f8;cursor:pointer;white-space:nowrap;
+  font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.dtable th.num,.dtable td.num{text-align:right;font-variant-numeric:tabular-nums}
+.dtable td.lab{font-weight:600}
+.dtable td.ex{color:var(--muted);font-size:11px}
+#clustertable tbody tr{cursor:pointer}
+#clustertable tbody tr:hover{background:rgba(31,78,155,.06)}
+#clustertable tbody tr.sel{background:rgba(180,83,9,.12);outline:1px solid var(--accent2)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.minihead{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:6px 0 6px}
+.bar{display:grid;grid-template-columns:120px 1fr 56px;gap:8px;align-items:center;margin:3px 0}
+.bk{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt{background:#dde6f2;height:12px;border:1px solid var(--line);position:relative}
+.bf{display:block;height:100%}
+.bv{font-size:11px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.tierbox{font-size:12px;margin-top:8px;border:1px dashed var(--line);padding:8px}
+.wordwrap{display:flex;flex-wrap:wrap;gap:5px 9px;margin-top:4px}
+.word{font-size:12px;border:1px solid var(--line);padding:1px 7px;background:rgba(255,255,255,.5)}
+.word i{color:var(--muted);font-style:normal;font-size:10px}
+.exlist{margin:6px 0 0;padding:0;list-style:none}
+.exlist li{font-size:12px;border-left:2px solid var(--line);padding:3px 0 3px 8px;margin:4px 0}
+.exlist .tag{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}
+.foot .footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:6px 18px;font-size:11.5px}
+.foot .fk{display:inline-block;min-width:120px;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.05em;font-size:10px}
+.mediawrap{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 6px}
+.egomedia{max-width:360px;width:100%;border:1px solid var(--line);background:#fff;display:block}
+.egomedia.ph{display:flex;align-items:center;justify-content:center;height:120px;color:var(--muted);font-size:11px}
+.mediameta{flex:1;min-width:200px;font-size:12px}
+.medialinks{margin:6px 0}
+.mediacap{color:var(--ink)}
+.mediacredit{color:var(--muted);font-size:11px;margin-top:6px}
+.kvpanel .bar{grid-template-columns:170px 1fr;align-items:start}
+.kvpanel .bk{width:auto;white-space:normal;color:var(--muted);text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.kvpanel .bv{text-align:left}
+@media(max-width:720px){.twocol{grid-template-columns:1fr}#scatter{height:420px}.hero h1{font-size:24px}}
+</style></head>
+<body><div class="wrap"><header class="card hero"><div class="toprow"><div class="brand">第一人称语言标注图谱</div><div class="langtoggle"><a href="ego-exo4d_atlas.html">English</a></div></div><h1>Ego-Exo4D</h1><p class="focus">时间同步的第一人称与第三人称技能活动视频，配有原子动作描述、边做边讲旁白与专家点评三类语言标注。</p><div class="tagline-chips"><span class="ck">使用方式:</span> <span class="chip">corpus</span> <span class="chip">perception-pretrain</span> <span class="chip">eval-benchmark</span> </div><div class="tagline-chips"><span class="ck">标注类型:</span> <span class="chip alt">atomic-substep</span> <span class="chip alt">clip-narration</span> <span class="chip alt">expert-commentary</span></div><div class="tagline-chips"><span class="ck">来源数据集:</span> <span class="chip">original capture (paired ego + exo, skilled activity)</span></div><div class="kcgrid"><div class="kc"><div class="kcv">CVPR 2024</div><div class="kcl">发表</div></div><div class="kc"><div class="kcv">描述性</div><div class="kcl">条目类型</div></div><div class="kc"><div class="kcv">gated (license form, then CLI)</div><div class="kcl">标注可下载性</div></div><div class="kc"><div class="kcv">Ego-Exo4D License (gated; redistribution restricted)</div><div class="kcl">许可</div></div></div><div class="srcrow"><a href="https://github.com/facebookresearch/Ego4d">标注仓库</a> &middot; <a href="https://arxiv.org/abs/2311.18259">论文</a> &middot; <a href="https://ego-exo4d-data.org/">项目主页</a></div><p class="note">基于下载数据手工整理的参考资料，可能存在错误。欢迎提交 issue 修正。</p></header><section class="card"><h2><span class="snum">01</span>数据使用路径</h2><div class="minihead">第一人称示例媒体</div><div class="mediawrap"><div class="egomedia ph">示例帧</div><div class="mediameta"><div class="mediacap">Ego-Exo4D 将技能活动的第一人称与第三人称视频配对；项目主页展示同步的第一人称与第三人称视角。</div><div class="medialinks"><a href="https://ego-exo4d-data.org/assets/images/ego-exo-view.png">示例帧</a> &middot; <a href="https://youtu.be/GdooXEBAnI8">示例视频</a> &middot; <a href="https://ego-exo4d-data.org/">项目主页</a></div><div class="mediacredit">Ego-Exo4D, Grauman et al., CVPR 2024</div></div></div><p class="prose">Ego-Exo4D 采集时间同步的第一人称（Project Aria 眼镜）与第三人称（GoPro）技能活动视频，涵盖烹饪、音乐、舞蹈、体育与自行车维修等，来自 13 个城市的 740 名参与者，约 1,286 小时，并包含音频、眼动与三维点云。其标注包含三类配对的自然语言流：带时间戳的原子动作描述、参与者边做边讲的第一人称旁白，以及点评技术的专家评注。这些标注流支撑细粒度关键步骤识别、熟练度评估与第一/第三人称对应等基准。数据与文本需在签署许可后通过 egoexo 命令行工具获取，因此字符串无法在本图谱中再分发。</p><div class="flow"><div class="flowbox">同步的第一人称（Aria）+ 第三人称（GoPro）采集</div><div class="flowarrow">&rarr;</div><div class="flowbox">多模态与三维处理、隐私审查</div><div class="flowarrow">&rarr;</div><div class="flowbox">三类语言流：原子、边做边讲、专家点评</div><div class="flowarrow">&rarr;</div><div class="flowbox">关键步骤、熟练度、对应关系标签</div><div class="flowarrow">&rarr;</div><div class="flowbox down">受限命令行下载</div></div></section><section class="card"><h2><span class="snum">02</span>分类</h2><div class="kvpanel"><div class="bar"><span class="bk" style="width:auto">使用方式</span><span class="bv" style="text-align:left;flex:1"><span class="chip">corpus</span> <span class="chip">perception-pretrain</span> <span class="chip">eval-benchmark</span></span></div><div class="bar"><span class="bk" style="width:auto">标注类型</span><span class="bv" style="text-align:left;flex:1"><span class="chip alt">atomic-substep</span> <span class="chip alt">clip-narration</span> <span class="chip alt">expert-commentary</span></span></div><div class="bar"><span class="bk" style="width:auto">来源数据集</span><span class="bv" style="text-align:left;flex:1">original capture (paired ego + exo, skilled activity)</span></div><div class="bar"><span class="bk" style="width:auto">图谱适配性</span><span class="bv" style="text-align:left;flex:1">download+cluster target, gated: three real annotation streams behind the license</span></div></div></section><section class="card"><h2><span class="snum">03</span>获取与许可</h2><div class="kvpanel"><div class="bar"><span class="bk" style="width:auto">数据获取</span><span class="bv" style="text-align:left;flex:1">egoexo CLI after signing the Ego-Exo4D license</span></div><div class="bar"><span class="bk" style="width:auto">标注可下载性</span><span class="bv" style="text-align:left;flex:1">gated (license form, then CLI)</span></div><div class="bar"><span class="bk" style="width:auto">许可</span><span class="bv" style="text-align:left;flex:1">Ego-Exo4D License (gated; redistribution restricted)</span></div><div class="bar"><span class="bk" style="width:auto">再分发</span><span class="bv" style="text-align:left;flex:1">not permitted: gated license; raw narrations and commentary stay local and verbatim text is not republished</span></div></div></section><section class="card"><h2><span class="snum">04</span>为何为描述性条目</h2><p class="subhelp">Verified via arXiv 2311.18259, ego-exo4d-data.org, and github.com/facebookresearch/Ego4d. Dataset gated under the Ego-Exo4D License (code MIT).</p><p class="prose">Ego-Exo4D 发布了三类丰富的语言流，是很好的下载并聚类目标，但它们受签署的数据集许可约束，限制再分发。获批后可在本地分析文本，但不能在此重新发布，因此本条目以描述性方式呈现，并链接到受限来源，而非内嵌可聚类语料。</p></section><footer class="card foot"><h2><span class="snum">05</span>来源与可复现性</h2><div class="footgrid"><div><span class="fk">来源</span> <a href="https://github.com/facebookresearch/Ego4d">https://github.com/facebookresearch/Ego4d</a></div><div><span class="fk">标注提交</span> n/a</div><div><span class="fk">数据集版本</span> Ego-Exo4D @ n/a</div><div><span class="fk">获取日期</span> 2026-06-28</div><div><span class="fk">构建日期</span> 2026-06-29</div><div><span class="fk">编码器</span> n/a</div><div><span class="fk">降维</span> n/a (descriptive entry)</div><div><span class="fk">聚类</span> no downloadable clusterable corpus; see access and license</div><div><span class="fk">许可</span> <a href="">Ego-Exo4D License (gated; redistribution restricted)</a></div><div><span class="fk">署名</span> Grauman et al., Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives, CVPR 2024 (arXiv:2311.18259).</div><div><span class="fk">编制于</span> 第一人称语言标注图谱</div></div><p class="note">每一项统计均可追溯到下载的标注文件或标明引用来源。聚类标签由头部动词与名词自动生成，并非人工撰写。未知值显示为 n/a。</p></footer></div></body></html>

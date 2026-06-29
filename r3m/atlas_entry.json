@@ -1,0 +1,23 @@
+{
+  "name": "R3M",
+  "slug": "r3m",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "A reusable visual representation pretrained on Ego4D for data-efficient robot manipulation.",
+  "usage_methods": [
+    "perception-pretrain"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "Ego4D"
+  ],
+  "downloadable": "none (releases encoder weights, not annotations)",
+  "license": "code MIT",
+  "links": {
+    "paper": "https://arxiv.org/abs/2203.12601",
+    "repo": "https://github.com/facebookresearch/r3m",
+    "project": "https://sites.google.com/view/robot-r3m/",
+    "atlas_en": "r3m/r3m_atlas.html",
+    "atlas_cn": "r3m/r3m_atlas_cn.html"
+  }
+}

@@ -33,6 +33,8 @@ REPO = "https://github.com/hd-epic/hd-epic-annotations"
 ARXIV = "https://arxiv.org/abs/2502.04144"
 PROJECT = "https://hd-epic.github.io/"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+EXAMPLE_IMG_URL = "https://hd-epic.github.io/static/media/hd_epic_poster.png"
+EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.png"))
 
 META = {
     "name": "HD-EPIC",
@@ -55,6 +57,8 @@ WORK_I18N = {
         "k_clusters": "clusters", "k_meanlen": "mean length (tokens)",
         "k_hours": "hours (measured)", "k_verbcls": "verb classes",
         "k_nouncls": "noun classes", "k_videos": "videos", "k_participants": "participants",
+        "media_caption": "HD-EPIC teaser: egocentric multi-day kitchen recording.",
+        "media_credit": "HD-EPIC, University of Bristol (CC BY 4.0).",
         "focus": ("41 hours of unscripted egocentric cooking across 9 kitchens, with "
                   "highly-detailed full-sentence narrations, recipe steps, and a 26,550 "
                   "question VQA benchmark."),
@@ -88,6 +92,8 @@ WORK_I18N = {
         "k_clusters": "聚类数", "k_meanlen": "平均长度 (token)",
         "k_hours": "时长 (实测)", "k_verbcls": "动词类别",
         "k_nouncls": "名词类别", "k_videos": "视频", "k_participants": "参与者",
+        "media_caption": "HD-EPIC 预览：第一人称多日厨房录制。",
+        "media_credit": "HD-EPIC，布里斯托大学（CC BY 4.0）。",
         "focus": ("41 小时跨 9 个厨房的无脚本第一人称烹饪视频，"
                   "配有高度详细的整句旁白、食谱步骤，"
                   "以及一个 26,550 题的 VQA 基准。"),
@@ -146,7 +152,10 @@ def exlist(items, tag_key, text_key):
 
 
 def usage_body(t):
-    return f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
+    media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
+             + A.media_panel(t, image_uri=EXAMPLE_URI, image_url=EXAMPLE_IMG_URL,
+                             page_url=PROJECT, caption=t["media_caption"], credit=t["media_credit"]))
+    return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
 
 
 def gran_body(t):

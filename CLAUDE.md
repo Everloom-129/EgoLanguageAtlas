@@ -51,12 +51,25 @@ files, not function calls:
 - cluster -> `<slug>_clusters.json`, `<slug>_scatter.json`, patches `_stats.json`, caches `.cache/<slug>_emb.npy`
 - render -> `<slug>_atlas.html` (EN) and `<slug>_atlas_cn.html` (CN)
 
-**Generated dashboard, do not hand-edit.** `index.html` and the README survey
-and roadmap blocks are produced by `build_atlas_index.py`. It scans every
-`*/atlas_entry.json` manifest (built entries, with counts read from each entry's
-`stats_file`) plus `roadmap.json` (planned entries), then rewrites `index.html`
-and the README content between the `<!-- SURVEY:START -->`/`<!-- SURVEY:END -->`
-and `<!-- ROADMAP:START -->`/`<!-- ROADMAP:END -->` markers. Editing those
+**Two kinds of entry.** A FULL entry (download -> normalize -> cluster -> render)
+has `status: built` in its `atlas_entry.json` and a real cluster atlas. A
+DESCRIPTIVE entry (`status: descriptive`) is for works whose language cannot be
+downloaded and clustered (gated, no-derivatives, unreleased, or methods that
+consume others' annotations): write `<slug>/descriptive.json` (schema in any
+existing one, e.g. `r3m/`) and run `python make_descriptive.py <slug>/descriptive.json`,
+which renders the same blueprint chrome minus the scatter and writes the manifest.
+Both kinds are finished rows in the survey table; only unstarted works in
+`roadmap.json` show as planned, and `build_atlas_index.py` auto-drops any roadmap
+work that has gained an entry.
+
+**Generated dashboard, do not hand-edit.** `index.html` (English) and
+`index_cn.html` (Chinese), plus the README survey and roadmap blocks, are
+produced by `build_atlas_index.py`. It scans every `*/atlas_entry.json` manifest
+(built and descriptive entries, with counts read from each built entry's
+`stats_file`) plus `roadmap.json` (planned entries), then rewrites both index
+files and the README content between the `<!-- SURVEY:START -->`/`<!-- SURVEY:END -->`
+and `<!-- ROADMAP:START -->`/`<!-- ROADMAP:END -->` markers. The two index files
+link to each other with a header language toggle. Editing those
 regions by hand will be overwritten. To change the roadmap, edit the `PLANNED`
 list in `build_roadmap.py` (its single source of truth), run it, then run
 `build_atlas_index.py`. Adding or rebuilding any atlas means re-running
@@ -94,6 +107,14 @@ access date are recorded in each atlas footer.
   log, the parquet, `_stats.json`, and the atlas.
 - House style: no em-dashes or en-dashes in any visible text (atlas, index,
   README). Blueprint aesthetic.
+- Example media: every entry's atlas includes an "Example egocentric media" panel
+  (prepended to the data-usage path) with an example image or video from the
+  paper or project website, so a reader can see the actual ego video. Inline a
+  representative frame as a data URI via `atlas_lib.image_to_data_uri` (keeps the
+  page offline) only where the dataset license permits; for gated or
+  no-derivatives datasets, link to the source instead of embedding. Never emit
+  `<img src="http...">` (it breaks the offline rule); external media are anchors
+  only.
 - License policy: raw annotation text stays in `<slug>/.cache/` (gitignored).
   Commit only derived artifacts, except where a dataset license permits
   redistribution with attribution (EPIC-KITCHENS-100 is CC BY-NC 4.0, so its

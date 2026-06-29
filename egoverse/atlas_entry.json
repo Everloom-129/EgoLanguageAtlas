@@ -1,0 +1,29 @@
+{
+  "name": "EgoVerse",
+  "slug": "egoverse",
+  "status": "descriptive",
+  "work_type": "dataset (corpus)",
+  "focus": "Worldwide human egocentric platform, 1,362 h / ~80k episodes / 1,965 tasks, split into controlled EgoVerse-A and industry-scale EgoVerse-I with manipulation-relevant language.",
+  "usage_methods": [
+    "corpus",
+    "co-train",
+    "vla-pretrain"
+  ],
+  "annotation_types": [
+    "task-instruction",
+    "clip-narration",
+    "atomic-substep"
+  ],
+  "source_datasets": [
+    "original capture (Aria / iPhone)"
+  ],
+  "downloadable": "via S3 sync script (AWS creds)",
+  "license": "code MIT; dataset/annotation redistribution license not stated",
+  "links": {
+    "paper": "https://arxiv.org/abs/2604.07607",
+    "repo": "https://github.com/GaTech-RL2/EgoVerse",
+    "project": "https://egoverse.ai/",
+    "atlas_en": "egoverse/egoverse_atlas.html",
+    "atlas_cn": "egoverse/egoverse_atlas_cn.html"
+  }
+}

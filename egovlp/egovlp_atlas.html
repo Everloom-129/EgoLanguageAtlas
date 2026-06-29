@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>EgoVLP (EgoClip / EgoNCE / EgoMCQ) · Ego Language-Annotation Atlas</title><style>
+:root{
+  --paper:#e9edf4; --ink:#15233e; --muted:#5d6c87; --line:#c4d0e2;
+  --accent:#1f4e9b; --accent2:#b45309; --card:rgba(255,255,255,.80);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  color:var(--ink); background-color:var(--paper);
+  background-image:
+    linear-gradient(rgba(110,135,175,.10) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(110,135,175,.10) 1px,transparent 1px),
+    linear-gradient(rgba(110,135,175,.18) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(110,135,175,.18) 1px,transparent 1px);
+  background-size:24px 24px,24px 24px,120px 120px,120px 120px;
+  font-size:13px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{border-bottom-style:solid}
+.wrap{max-width:1080px;margin:0 auto;padding:18px 16px 64px}
+.card{background:var(--card);border:1px solid var(--line);padding:16px 18px;margin:14px 0;
+  box-shadow:0 1px 0 rgba(21,35,62,.04)}
+.hero h1{font-size:30px;letter-spacing:.04em;margin:6px 0 4px}
+.toprow{display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--muted)}
+.langtoggle a{font-size:12px}
+.focus{color:var(--ink);max-width:74ch;margin:4px 0 12px}
+.tagline-chips{margin:6px 0}
+.ck{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-right:4px}
+.chip{display:inline-block;border:1px solid var(--accent);color:var(--accent);border-radius:11px;
+  padding:1px 9px;font-size:11px;margin:2px 3px}
+.chip.alt{border-color:var(--accent2);color:var(--accent2)}
+.famchip{display:inline-block;border:1px solid;border-radius:9px;padding:0 7px;font-size:11px;white-space:nowrap}
+.kcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:14px 0}
+.kcgrid.small{margin:0 0 10px}
+.kc{border:1px solid var(--line);background:rgba(255,255,255,.55);padding:8px 10px}
+.kcv{font-size:18px;font-weight:700;color:var(--accent);letter-spacing:.02em}
+.kcl{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.srcrow{font-size:12px;color:var(--muted);margin-top:6px}
+.note{font-size:11px;color:var(--muted);border-left:2px solid var(--line);padding-left:8px;margin:10px 0 0}
+section h2,.foot h2{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink);
+  border-bottom:1px solid var(--line);padding-bottom:7px;margin:0 0 12px;font-weight:700}
+.snum{color:var(--accent);font-weight:700;margin-right:6px}
+.subhelp{font-size:12px;color:var(--muted);margin:-4px 0 12px;max-width:78ch}
+.prose{max-width:80ch}
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px;margin:8px 0 2px}
+.flowbox{border:1px solid var(--accent);background:rgba(31,78,155,.06);padding:8px 10px;font-size:11.5px;
+  display:flex;align-items:center;text-align:center;max-width:200px}
+.flowbox.down{border-color:var(--accent2);background:rgba(180,83,9,.07);color:var(--accent2)}
+.flowarrow{display:flex;align-items:center;color:var(--muted);font-size:16px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 10px}
+input,select,button{font-family:inherit;font-size:12px;color:var(--ink);background:#fff;
+  border:1px solid var(--line);padding:5px 8px;border-radius:2px}
+input{min-width:200px;flex:0 1 260px}
+button{cursor:pointer;background:#f3f6fb}
+button:hover{border-color:var(--accent);color:var(--accent)}
+label{font-size:11px;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
+.cinfo{font-size:11px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin:2px 0 10px}
+.legitem{font-size:11px;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:5px}
+.legitem.off{opacity:.32;text-decoration:line-through}
+.sw{width:10px;height:10px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.scatterwrap{position:relative}
+#scatter{width:100%;height:520px;display:block;background:#fbfcfe;border:1px solid var(--line);cursor:crosshair}
+.tip{position:fixed;z-index:30;pointer-events:none;display:none;background:var(--ink);color:#eef3fb;
+  padding:6px 9px;font-size:11px;max-width:260px;border:1px solid #0c1626;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+.hlbar{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12px;
+  background:rgba(31,78,155,.07);border:1px solid var(--line);padding:6px 10px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line)}
+.tablewrap.tall{max-height:520px;overflow-y:auto}
+.dtable{width:100%;border-collapse:collapse;font-size:12px}
+.dtable th,.dtable td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+.dtable thead th{position:sticky;top:0;background:#eef2f8;cursor:pointer;white-space:nowrap;
+  font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.dtable th.num,.dtable td.num{text-align:right;font-variant-numeric:tabular-nums}
+.dtable td.lab{font-weight:600}
+.dtable td.ex{color:var(--muted);font-size:11px}
+#clustertable tbody tr{cursor:pointer}
+#clustertable tbody tr:hover{background:rgba(31,78,155,.06)}
+#clustertable tbody tr.sel{background:rgba(180,83,9,.12);outline:1px solid var(--accent2)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.minihead{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:6px 0 6px}
+.bar{display:grid;grid-template-columns:120px 1fr 56px;gap:8px;align-items:center;margin:3px 0}
+.bk{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bt{background:#dde6f2;height:12px;border:1px solid var(--line);position:relative}
+.bf{display:block;height:100%}
+.bv{font-size:11px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.tierbox{font-size:12px;margin-top:8px;border:1px dashed var(--line);padding:8px}
+.wordwrap{display:flex;flex-wrap:wrap;gap:5px 9px;margin-top:4px}
+.word{font-size:12px;border:1px solid var(--line);padding:1px 7px;background:rgba(255,255,255,.5)}
+.word i{color:var(--muted);font-style:normal;font-size:10px}
+.exlist{margin:6px 0 0;padding:0;list-style:none}
+.exlist li{font-size:12px;border-left:2px solid var(--line);padding:3px 0 3px 8px;margin:4px 0}
+.exlist .tag{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}
+.foot .footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:6px 18px;font-size:11.5px}
+.foot .fk{display:inline-block;min-width:120px;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.05em;font-size:10px}
+.mediawrap{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 6px}
+.egomedia{max-width:360px;width:100%;border:1px solid var(--line);background:#fff;display:block}
+.egomedia.ph{display:flex;align-items:center;justify-content:center;height:120px;color:var(--muted);font-size:11px}
+.mediameta{flex:1;min-width:200px;font-size:12px}
+.medialinks{margin:6px 0}
+.mediacap{color:var(--ink)}
+.mediacredit{color:var(--muted);font-size:11px;margin-top:6px}
+.kvpanel .bar{grid-template-columns:170px 1fr;align-items:start}
+.kvpanel .bk{width:auto;white-space:normal;color:var(--muted);text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.kvpanel .bv{text-align:left}
+@media(max-width:720px){.twocol{grid-template-columns:1fr}#scatter{height:420px}.hero h1{font-size:24px}}
+</style></head>
+<body><div class="wrap"><header class="card hero"><div class="toprow"><div class="brand">Ego Language-Annotation Atlas</div><div class="langtoggle"><a href="egovlp_atlas_cn.html">中文</a></div></div><h1>EgoVLP (EgoClip / EgoNCE / EgoMCQ)</h1><p class="focus">A pre-filtered, cleaned text layer over Ego4D: about 3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.</p><div class="tagline-chips"><span class="ck">usage methods:</span> <span class="chip">perception-pretrain</span> <span class="chip">corpus</span> <span class="chip">eval-benchmark</span> </div><div class="tagline-chips"><span class="ck">annotation types:</span> <span class="chip alt">clip-narration</span> <span class="chip alt">verb-noun-action</span></div><div class="tagline-chips"><span class="ck">source datasets:</span> <span class="chip">Ego4D</span></div><div class="kcgrid"><div class="kc"><div class="kcv">NeurIPS 2022</div><div class="kcl">venue</div></div><div class="kc"><div class="kcv">descriptive</div><div class="kcl">entry type</div></div><div class="kc"><div class="kcv">open CSV (Ego4D-derived) via repo Drive links</div><div class="kcl">annotations downloadable</div></div><div class="kc"><div class="kcv">code MIT; data inherits Ego4D License</div><div class="kcl">license</div></div></div><div class="srcrow"><a href="https://github.com/showlab/EgoVLP">annotations repo</a> &middot; <a href="https://arxiv.org/abs/2206.01670">paper</a> &middot; <a href="http://qhlin.me/EgoVLP/">project page</a></div><p class="note">Hand-compiled reference over downloaded data, may contain errors. Open an issue to fix it.</p></header><section class="card"><h2><span class="snum">01</span>Data-usage path</h2><div class="minihead">Example egocentric media</div><div class="mediawrap"><div class="egomedia ph">example frame</div><div class="mediameta"><div class="mediacap">EgoVLP pretrains on Ego4D clip-text pairs; the repository figures show egocentric frames used in the EgoMCQ benchmark.</div><div class="medialinks"><a href="https://raw.githubusercontent.com/showlab/EgoVLP/main/figures/egomcq.jpg">example frame</a> &middot; <a href="http://qhlin.me/EgoVLP/">project page</a></div><div class="mediacredit">EgoVLP, Lin et al., NeurIPS 2022 (derived from Ego4D)</div></div></div><p class="prose">EgoVLP is an egocentric video-language pretraining method built on Ego4D. The authors construct EgoClip, a cleaned and filtered text layer over Ego4D narrations that yields about 3.8 million clip-text pairs with verb and noun tags and timestamps. A dual encoder is pretrained with the EgoNCE objective, a contrastive loss aware of verb-noun semantics and narration synonyms, and validated on EgoMCQ, an inter-video and intra-video multiple-choice benchmark. Because EgoClip is derived from Ego4D narrations and inherits the Ego4D License, the strings are not redistributed in this atlas.</p><div class="flow"><div class="flowbox">Ego4D videos + narrations</div><div class="flowarrow">&rarr;</div><div class="flowbox">EgoClip: cleaned ~3.8M clip-text pairs</div><div class="flowarrow">&rarr;</div><div class="flowbox">pretrain dual encoder with EgoNCE</div><div class="flowarrow">&rarr;</div><div class="flowbox">validate on EgoMCQ</div><div class="flowarrow">&rarr;</div><div class="flowbox down">transfer to downstream tasks</div></div></section><section class="card"><h2><span class="snum">02</span>Classification</h2><div class="kvpanel"><div class="bar"><span class="bk" style="width:auto">usage methods</span><span class="bv" style="text-align:left;flex:1"><span class="chip">perception-pretrain</span> <span class="chip">corpus</span> <span class="chip">eval-benchmark</span></span></div><div class="bar"><span class="bk" style="width:auto">annotation types</span><span class="bv" style="text-align:left;flex:1"><span class="chip alt">clip-narration</span> <span class="chip alt">verb-noun-action</span></span></div><div class="bar"><span class="bk" style="width:auto">source datasets</span><span class="bv" style="text-align:left;flex:1">Ego4D</span></div><div class="bar"><span class="bk" style="width:auto">atlas suitability</span><span class="bv" style="text-align:left;flex:1">download+cluster target: egoclip.csv gives ~3.8M narration strings (Ego4D-derived)</span></div></div></section><section class="card"><h2><span class="snum">03</span>Access and license</h2><div class="kvpanel"><div class="bar"><span class="bk" style="width:auto">data access</span><span class="bv" style="text-align:left;flex:1">project-script (EgoClip CSV via Google Drive in repo; Ego4D videos obtained separately)</span></div><div class="bar"><span class="bk" style="width:auto">annotations downloadable</span><span class="bv" style="text-align:left;flex:1">open CSV (Ego4D-derived) via repo Drive links</span></div><div class="bar"><span class="bk" style="width:auto">license</span><span class="bv" style="text-align:left;flex:1">code MIT; data inherits Ego4D License</span></div><div class="bar"><span class="bk" style="width:auto">redistribution</span><span class="bv" style="text-align:left;flex:1">restricted: EgoClip text is Ego4D-derived and inherits the gated Ego4D License, so the strings are not republished here</span></div></div></section><section class="card"><h2><span class="snum">04</span>Why this is a descriptive entry</h2><p class="subhelp">Verified via arXiv 2206.01670, qhlin.me/EgoVLP, and github.com/showlab/EgoVLP (code MIT). EgoClip text inherits the Ego4D License.</p><p class="prose">EgoClip is openly downloadable as a CSV, but its text is a filtered layer over Ego4D narrations and inherits the gated Ego4D License, which restricts redistribution, and EgoVLP consumes rather than originates the language. The corpus can be analyzed locally after obtaining Ego4D, so the entry is documented descriptively with links to the source rather than embedding Ego4D-derived strings.</p></section><footer class="card foot"><h2><span class="snum">05</span>Provenance and reproducibility</h2><div class="footgrid"><div><span class="fk">source</span> <a href="https://github.com/showlab/EgoVLP">https://github.com/showlab/EgoVLP</a></div><div><span class="fk">annotations commit</span> n/a</div><div><span class="fk">dataset version</span> EgoVLP (EgoClip / EgoNCE / EgoMCQ) @ n/a</div><div><span class="fk">access date</span> 2026-06-28</div><div><span class="fk">build date</span> 2026-06-29</div><div><span class="fk">encoder</span> n/a</div><div><span class="fk">reducer</span> n/a (descriptive entry)</div><div><span class="fk">clustering</span> no downloadable clusterable corpus; see access and license</div><div><span class="fk">license</span> <a href="">code MIT; data inherits Ego4D License</a></div><div><span class="fk">attribution</span> Lin et al., Egocentric Video-Language Pretraining, NeurIPS 2022 (arXiv:2206.01670).</div><div><span class="fk">compiled for</span> Ego Language-Annotation Atlas</div></div><p class="note">Every statistic traces to the downloaded annotation files or is marked as cited. Cluster labels are auto-derived from head verbs and nouns, not hand-written. Unknown values are shown as n/a.</p></footer></div></body></html>

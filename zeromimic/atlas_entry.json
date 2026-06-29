@@ -1,0 +1,24 @@
+{
+  "name": "ZeroMimic",
+  "slug": "zeromimic",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Distills image-goal-conditioned manipulation skills (open, close, pour, pick-place, cut, stir) from EPIC-KITCHENS human video for zero-shot robot deployment.",
+  "usage_methods": [
+    "affordance",
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "EPIC-KITCHENS"
+  ],
+  "downloadable": "none (consumes EPIC; releases policies)",
+  "license": "arXiv listing CC BY 4.0; code/checkpoint license not separately stated",
+  "links": {
+    "paper": "https://arxiv.org/abs/2503.23877",
+    "repo": "https://github.com/junyaoshi/ZeroMimic",
+    "project": "https://zeromimic.github.io/",
+    "atlas_en": "zeromimic/zeromimic_atlas.html",
+    "atlas_cn": "zeromimic/zeromimic_atlas_cn.html"
+  }
+}

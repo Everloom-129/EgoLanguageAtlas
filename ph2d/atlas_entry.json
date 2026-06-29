@@ -1,0 +1,27 @@
+{
+  "name": "HAT (Humanoid Policy ~ Human Policy)",
+  "slug": "ph2d",
+  "status": "descriptive",
+  "work_type": "method + corpus",
+  "focus": "An open egocentric human-demonstration corpus (PH2D) with per-demo task instructions and 3D hand poses, co-trained with a Human Action Transformer via differentiable retargeting.",
+  "usage_methods": [
+    "co-train",
+    "corpus",
+    "hand-pose"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "PH2D (Physical Human-Humanoid Data, own egocentric capture)"
+  ],
+  "downloadable": "open (MIT), but language lives inside HDF5 episode attributes",
+  "license": "MIT (dataset)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2503.13441",
+    "repo": "https://huggingface.co/datasets/RogerQi/PH2D",
+    "project": "https://human-as-robot.github.io/",
+    "atlas_en": "ph2d/ph2d_atlas.html",
+    "atlas_cn": "ph2d/ph2d_atlas_cn.html"
+  }
+}

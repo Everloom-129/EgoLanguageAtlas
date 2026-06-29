@@ -1,0 +1,29 @@
+{
+  "name": "PhysBrain",
+  "slug": "physbrain",
+  "status": "descriptive",
+  "work_type": "method + dataset (VQA)",
+  "focus": "An Egocentric2Embodiment pipeline turning raw human egocentric video into schema-driven, evidence-grounded supervision across seven VQA modes, yielding the ~3M-instance E2E-3M dataset.",
+  "usage_methods": [
+    "dense-relabel",
+    "vla-pretrain",
+    "perception-pretrain",
+    "corpus"
+  ],
+  "annotation_types": [
+    "vqa",
+    "dense-multi-aspect"
+  ],
+  "source_datasets": [
+    "Ego4D, BuildAI, EgoDex"
+  ],
+  "downloadable": "none (E2E-3M not yet released)",
+  "license": "not stated",
+  "links": {
+    "paper": "https://arxiv.org/abs/2512.16793",
+    "repo": "https://github.com/zgc-embodyai/PhysBrain",
+    "project": "https://zgc-embodyai.github.io/PhysBrain/",
+    "atlas_en": "physbrain/physbrain_atlas.html",
+    "atlas_cn": "physbrain/physbrain_atlas_cn.html"
+  }
+}

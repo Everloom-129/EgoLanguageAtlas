@@ -1,0 +1,27 @@
+{
+  "name": "MotionTrans",
+  "slug": "motiontrans",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Transfers motion-level manipulation skills from VR-collected human demonstrations to robots through a human-to-robot transformation pipeline and weighted human-robot co-training.",
+  "usage_methods": [
+    "co-train",
+    "hand-pose",
+    "corpus"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "own VR human manipulation + robot data"
+  ],
+  "downloadable": "derived-only (HF dataset; NL instructions generated locally)",
+  "license": "code MIT; HF dataset has no license tag",
+  "links": {
+    "paper": "https://arxiv.org/abs/2509.17759",
+    "repo": "https://github.com/michaelyuancb/motiontrans",
+    "project": "https://motiontrans.github.io/",
+    "atlas_en": "motiontrans/motiontrans_atlas.html",
+    "atlas_cn": "motiontrans/motiontrans_atlas_cn.html"
+  }
+}

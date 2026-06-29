@@ -70,6 +70,56 @@ def flow_diagram(steps):
     return '<div class="flow">' + "".join(boxes) + "</div>"
 
 
+def image_to_data_uri(url, cache_path, max_bytes=4_000_000):
+    """Download an image once (cache it) and return a data: URI, or None.
+
+    Embedding as a data URI keeps the page offline (no external request at view
+    time). Used only where the dataset license permits showing a teaser frame.
+    """
+    import base64
+    import mimetypes
+    import os
+    import urllib.request
+    try:
+        if not os.path.exists(cache_path):
+            req = urllib.request.Request(url, headers={"User-Agent": "ego-atlas/1.0"})
+            data = urllib.request.urlopen(req, timeout=30).read()
+            if len(data) > max_bytes:
+                return None
+            os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+            with open(cache_path, "wb") as fh:
+                fh.write(data)
+        with open(cache_path, "rb") as fh:
+            data = fh.read()
+        if not data or len(data) > max_bytes:
+            return None
+        mime = mimetypes.guess_type(cache_path)[0] or "image/jpeg"
+        return f"data:{mime};base64," + base64.b64encode(data).decode("ascii")
+    except Exception:
+        return None
+
+
+def media_panel(t, image_uri=None, image_url="", video_url="", page_url="",
+                caption="", credit=""):
+    """Example egocentric media. Inline image is a data URI (offline). External
+    URLs appear only as clickable links, never as auto-loaded <img src=http>."""
+    if image_uri:
+        img = f'<img class="egomedia" src="{image_uri}" alt="example egocentric frame"/>'
+    else:
+        img = f'<div class="egomedia ph">{esc(t.get("m_frame", "example"))}</div>'
+    links = []
+    if image_url:
+        links.append(f'<a href="{esc(image_url)}">{esc(t["m_frame"])}</a>')
+    if video_url:
+        links.append(f'<a href="{esc(video_url)}">{esc(t["m_video"])}</a>')
+    if page_url:
+        links.append(f'<a href="{esc(page_url)}">{esc(t["m_page"])}</a>')
+    cap = f'<div class="mediacap">{esc(caption)}</div>' if caption else ""
+    cr = f'<div class="mediacredit">{esc(credit)}</div>' if credit else ""
+    return (f'<div class="mediawrap">{img}<div class="mediameta">{cap}'
+            f'<div class="medialinks">{" &middot; ".join(links)}</div>{cr}</div></div>')
+
+
 def sec(num, title, body, sub=""):
     s = f'<p class="subhelp">{esc(sub)}</p>' if sub else ""
     return (f'<section class="card"><h2><span class="snum">{num}</span>{esc(title)}</h2>'
@@ -109,6 +159,11 @@ CHROME = {
         "sec_clusters": "Cluster table", "sec_gran": "Granularity and density",
         "sec_vn": "Verbs and nouns", "sec_drawer": "Sample browser",
         "sec_foot": "Provenance and reproducibility",
+        "sec_media": "Example egocentric media",
+        "m_frame": "example frame", "m_video": "example video", "m_page": "project page",
+        "media_help": ("A representative example from the source so you can see the "
+                       "egocentric video. Inline frames appear only where the dataset "
+                       "license permits; otherwise follow the source links."),
         "scatter_help": ("Each point is one unique cleaned annotation, positioned by "
                          "UMAP over sentence-embeddings and colored by its cluster's verb "
                          "family. Hover for the string, search to highlight, click a "
@@ -152,6 +207,10 @@ CHROME = {
         "sec_clusters": "聚类明细表", "sec_gran": "粒度与密度",
         "sec_vn": "动词与名词", "sec_drawer": "样本浏览器",
         "sec_foot": "来源与可复现性",
+        "sec_media": "第一人称示例媒体",
+        "m_frame": "示例帧", "m_video": "示例视频", "m_page": "项目主页",
+        "media_help": ("来自来源的代表性示例，便于直观了解第一人称视频。仅在数据集"
+                       "许可允许时内嵌帧，否则请点击来源链接。"),
         "scatter_help": ("每个点代表一条唯一的清洗后标注，位置由句向量经 UMAP 降维得到，"
                          "颜色对应其聚类的动词大类。悬停查看字符串，搜索可高亮，点击图例"
                          "大类可切换显隐，或点击下方聚类行。"),
@@ -421,6 +480,16 @@ label{font-size:11px;color:var(--muted);display:inline-flex;gap:5px;align-items:
 .foot .footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:6px 18px;font-size:11.5px}
 .foot .fk{display:inline-block;min-width:120px;color:var(--muted);text-transform:uppercase;
   letter-spacing:.05em;font-size:10px}
+.mediawrap{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 6px}
+.egomedia{max-width:360px;width:100%;border:1px solid var(--line);background:#fff;display:block}
+.egomedia.ph{display:flex;align-items:center;justify-content:center;height:120px;color:var(--muted);font-size:11px}
+.mediameta{flex:1;min-width:200px;font-size:12px}
+.medialinks{margin:6px 0}
+.mediacap{color:var(--ink)}
+.mediacredit{color:var(--muted);font-size:11px;margin-top:6px}
+.kvpanel .bar{grid-template-columns:170px 1fr;align-items:start}
+.kvpanel .bk{width:auto;white-space:normal;color:var(--muted);text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.kvpanel .bv{text-align:left}
 @media(max-width:720px){.twocol{grid-template-columns:1fr}#scatter{height:420px}.hero h1{font-size:24px}}
 """
 

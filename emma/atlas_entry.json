@@ -1,0 +1,23 @@
+{
+  "name": "EMMA",
+  "slug": "emma",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Scales mobile manipulation by co-training egocentric human full-body motion with static robot data, avoiding mobile teleoperation.",
+  "usage_methods": [
+    "co-train"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "own egocentric human full-body motion + static robot data"
+  ],
+  "downloadable": "none (code coming soon)",
+  "license": "code and data license unspecified",
+  "links": {
+    "paper": "https://arxiv.org/abs/2509.04443",
+    "repo": "",
+    "project": "https://ego-moma.github.io/",
+    "atlas_en": "emma/emma_atlas.html",
+    "atlas_cn": "emma/emma_atlas_cn.html"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "VIP",
+  "slug": "vip",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Learns a self-supervised goal-conditioned value function from unlabeled Ego4D video, providing dense visual rewards for unseen robot tasks.",
+  "usage_methods": [
+    "reward-repr",
+    "perception-pretrain"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "Ego4D"
+  ],
+  "downloadable": "none (trains on unlabeled Ego4D; releases encoder weights)",
+  "license": "code CC BY-NC 4.0",
+  "links": {
+    "paper": "https://arxiv.org/abs/2210.00030",
+    "repo": "https://github.com/facebookresearch/vip",
+    "project": "https://sites.google.com/view/vip-rl/",
+    "atlas_en": "vip/vip_atlas.html",
+    "atlas_cn": "vip/vip_atlas_cn.html"
+  }
+}

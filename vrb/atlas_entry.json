@@ -1,0 +1,23 @@
+{
+  "name": "VRB (Vision-Robotics Bridge)",
+  "slug": "vrb",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Trains a visual affordance model (contact heatmap plus post-contact wrist trajectory) from human video to drive several robot-learning paradigms.",
+  "usage_methods": [
+    "affordance"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "Ego4D + EPIC-KITCHENS"
+  ],
+  "downloadable": "none (visual affordances, no language)",
+  "license": "code MIT",
+  "links": {
+    "paper": "https://arxiv.org/abs/2304.08488",
+    "repo": "https://github.com/shikharbahl/vrb",
+    "project": "https://vision-robotics-bridge.github.io/",
+    "atlas_en": "vrb/vrb_atlas.html",
+    "atlas_cn": "vrb/vrb_atlas_cn.html"
+  }
+}

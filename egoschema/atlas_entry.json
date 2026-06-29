@@ -1,0 +1,25 @@
+{
+  "name": "EgoSchema",
+  "slug": "egoschema",
+  "status": "descriptive",
+  "work_type": "benchmark",
+  "focus": "Diagnostic long-form video-QA benchmark: 5,031 multiple-choice questions over 3-minute Ego4D clips requiring long temporal certificates.",
+  "usage_methods": [
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "vqa"
+  ],
+  "source_datasets": [
+    "Ego4D"
+  ],
+  "downloadable": "open questions + options; correct-answer key withheld",
+  "license": "Ego4D License (questions LLM-generated then human-curated)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2308.09126",
+    "repo": "https://github.com/egoschema/EgoSchema",
+    "project": "https://egoschema.github.io/",
+    "atlas_en": "egoschema/egoschema_atlas.html",
+    "atlas_cn": "egoschema/egoschema_atlas_cn.html"
+  }
+}

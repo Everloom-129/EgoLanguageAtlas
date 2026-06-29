@@ -1,0 +1,19 @@
+{
+  "work": "OakInk2",
+  "route": "huggingface_hub (hf_hub_download)",
+  "repo": "https://huggingface.co/datasets/kelvin34501/OakInk-v2",
+  "repo_id": "kelvin34501/OakInk-v2",
+  "commit_sha": "21705616140d726607027e70d58b7837f442ffd8",
+  "access_utc": "2026-06-29T07:24:58.280690+00:00",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "files": [
+    {
+      "file": "program.tar",
+      "bytes": 3594240,
+      "sha256": "67d234e396e8392c95234db5dd84b33163469419aa68117bf1c355ee7319d500",
+      "json_members": 2049,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Phantom",
+  "slug": "phantom",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Trains robot manipulation from human-only video by converting each demonstration into robot-compatible observation-action pairs via hand-pose estimation and visual editing.",
+  "usage_methods": [
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "own lab human video demos"
+  ],
+  "downloadable": "none (releases code and policies, not annotations)",
+  "license": "code MIT; paper CC BY 4.0",
+  "links": {
+    "paper": "https://arxiv.org/abs/2503.00779",
+    "repo": "https://github.com/MarionLepert/phantom",
+    "project": "https://phantom-human-videos.github.io/",
+    "atlas_en": "phantom/phantom_atlas.html",
+    "atlas_cn": "phantom/phantom_atlas_cn.html"
+  }
+}

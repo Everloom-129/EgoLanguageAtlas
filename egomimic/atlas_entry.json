@@ -1,0 +1,24 @@
+{
+  "name": "EgoMimic",
+  "slug": "egomimic",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Captures egocentric human data with Aria glasses and co-trains a unified human-plus-robot imitation policy on a kinematically-matched bimanual robot.",
+  "usage_methods": [
+    "co-train",
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "own Project Aria human demos"
+  ],
+  "downloadable": "HF data is hand-tracking + video (no language corpus)",
+  "license": "code MIT; HuggingFace dataset license not stated",
+  "links": {
+    "paper": "https://arxiv.org/abs/2410.24221",
+    "repo": "https://github.com/SimarKareer/EgoMimic",
+    "project": "https://egomimic.github.io/",
+    "atlas_en": "egomimic/egomimic_atlas.html",
+    "atlas_cn": "egomimic/egomimic_atlas_cn.html"
+  }
+}

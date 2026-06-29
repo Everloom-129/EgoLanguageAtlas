@@ -1,0 +1,27 @@
+{
+  "name": "Being-H0",
+  "slug": "being-h0",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "A dexterous VLA pretrained from large-scale human hand videos via physical instruction tuning and part-level hand-motion tokenization, building the UniHand corpus.",
+  "usage_methods": [
+    "vla-pretrain",
+    "hand-pose",
+    "corpus"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "UniHand (11 sets incl. OakInk2, EgoDex, HoloAssist)"
+  ],
+  "downloadable": "derived-only (checkpoints; UniHand text not released standalone)",
+  "license": "code MIT; full UniHand corpus license not released",
+  "links": {
+    "paper": "https://arxiv.org/abs/2507.15597",
+    "repo": "https://github.com/BeingBeyond/Being-H0",
+    "project": "https://beingbeyond.github.io/Being-H0/",
+    "atlas_en": "being-h0/being-h0_atlas.html",
+    "atlas_cn": "being-h0/being-h0_atlas_cn.html"
+  }
+}

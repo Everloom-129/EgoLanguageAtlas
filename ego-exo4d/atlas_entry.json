@@ -1,0 +1,29 @@
+{
+  "name": "Ego-Exo4D",
+  "slug": "ego-exo4d",
+  "status": "descriptive",
+  "work_type": "dataset (corpus + benchmark)",
+  "focus": "Time-synchronized ego and exo video of skilled activity with atomic action descriptions, narrate-and-act narrations, and expert commentary.",
+  "usage_methods": [
+    "corpus",
+    "perception-pretrain",
+    "eval-benchmark"
+  ],
+  "annotation_types": [
+    "atomic-substep",
+    "clip-narration",
+    "expert-commentary"
+  ],
+  "source_datasets": [
+    "original capture (paired ego + exo, skilled activity)"
+  ],
+  "downloadable": "gated (license form, then CLI)",
+  "license": "Ego-Exo4D License (gated; redistribution restricted)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2311.18259",
+    "repo": "https://github.com/facebookresearch/Ego4d",
+    "project": "https://ego-exo4d-data.org/",
+    "atlas_en": "ego-exo4d/ego-exo4d_atlas.html",
+    "atlas_cn": "ego-exo4d/ego-exo4d_atlas_cn.html"
+  }
+}

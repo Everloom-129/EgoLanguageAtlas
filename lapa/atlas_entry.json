@@ -1,0 +1,25 @@
+{
+  "name": "LAPA (Latent Action Pretraining)",
+  "slug": "lapa",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "Unsupervised vision-language-action pretraining that learns discrete latent actions between video frames from actionless and human video, then fine-tunes them to real robot actions.",
+  "usage_methods": [
+    "vla-pretrain"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
+  "source_datasets": [
+    "Open X-Embodiment, Bridgev2, Something-Something V2"
+  ],
+  "downloadable": "derived-only (releases weights and code; no language corpus)",
+  "license": "code and weights MIT",
+  "links": {
+    "paper": "https://arxiv.org/abs/2410.11758",
+    "repo": "https://github.com/LatentActionPretraining/LAPA",
+    "project": "https://latentactionpretraining.github.io/",
+    "atlas_en": "lapa/lapa_atlas.html",
+    "atlas_cn": "lapa/lapa_atlas_cn.html"
+  }
+}
