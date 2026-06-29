@@ -1,0 +1,25 @@
+{
+  "work": "EgoVLP (EgoClip)",
+  "route": "project-script (Google Drive)",
+  "repo": "https://github.com/showlab/EgoVLP",
+  "drive_id": "1-aaDu_Gi-Y2sQI_2rsI2D1zvQBJnHpXl",
+  "file": "egoclip.csv",
+  "bytes": 658658096,
+  "rows": 3847727,
+  "columns": [
+    "video_uid",
+    "video_dur",
+    "narration_source",
+    "narration_ind",
+    "narration_time",
+    "clip_start",
+    "clip_end",
+    "clip_text",
+    "tag_verb",
+    "tag_noun"
+  ],
+  "access_utc": "2026-06-29T19:42:59.595628+00:00",
+  "license": "Ego4D License (EgoClip text is Ego4D-derived)",
+  "license_note": "internal non-commercial analysis; derived text not redistributed externally",
+  "source_dataset": "Ego4D (filtered by EgoVLP)"
+}

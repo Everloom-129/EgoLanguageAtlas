@@ -1,28 +1,24 @@
 {
   "name": "EgoVLP (EgoClip / EgoNCE / EgoMCQ)",
   "slug": "egovlp",
-  "status": "descriptive",
+  "status": "built",
   "work_type": "method + derived corpus",
-  "focus": "A pre-filtered, cleaned text layer over Ego4D: about 3.8M clip-text pairs (EgoClip) plus the EgoNCE objective and the EgoMCQ choice benchmark.",
-  "usage_methods": [
-    "perception-pretrain",
-    "corpus",
-    "eval-benchmark"
-  ],
-  "annotation_types": [
-    "clip-narration",
-    "verb-noun-action"
-  ],
-  "source_datasets": [
-    "Ego4D"
-  ],
-  "downloadable": "open CSV (Ego4D-derived) via repo Drive links",
-  "license": "code MIT; data inherits Ego4D License",
+  "focus": "The canonical Ego4D narration corpus: about 3.8 million timestamped clip-text pairs (EgoClip) filtered for video-language pretraining, with camera-wearer and other-person tags.",
+  "usage_methods": ["perception-pretrain", "corpus", "eval-benchmark"],
+  "usage_downstream": [],
+  "annotation_types": ["clip-narration", "verb-noun-action"],
+  "source_datasets": ["Ego4D (filtered by EgoVLP)"],
+  "data_access": "project-script (Google Drive)",
+  "downloadable": "open CSV (egoclip.csv); Ego4D-derived, internal use",
+  "license": "Ego4D License (EgoClip text is Ego4D-derived)",
+  "license_url": "https://ego4ddataset.com/",
+  "redistribution": "Ego4D-derived; analyzed internally, derived text not redistributed externally",
   "links": {
     "paper": "https://arxiv.org/abs/2206.01670",
     "repo": "https://github.com/showlab/EgoVLP",
-    "project": "http://qhlin.me/EgoVLP/",
+    "project": "https://qinghonglin.github.io/EgoVLP/",
     "atlas_en": "egovlp/egovlp_atlas.html",
     "atlas_cn": "egovlp/egovlp_atlas_cn.html"
-  }
+  },
+  "stats_file": "egovlp/egovlp_stats.json"
 }

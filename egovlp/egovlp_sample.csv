@@ -1,0 +1,501 @@
+ann_id,work,source_dataset,annotation_type,text,text_clean,t_start,t_end,clip_id,verb,noun,verb_category,subject,split,count
+egoclip-0,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around,looks around,,,,look,around,look,camera_wearer,full,80081
+egoclip-1,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around,walks around,,,,walk,around,walk,camera_wearer,full,28374
+egoclip-2,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns around,turns around,,,,turn,around,turn,camera_wearer,full,13405
+egoclip-3,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves around.,moves around,,,,move,around,move,camera_wearer,full,7484
+egoclip-4,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the room,walks around the room,,,,walk,room,walk,camera_wearer,full,5884
+egoclip-5,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the room,looks around the room,,,,look,room,look,camera_wearer,full,5573
+egoclip-6,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the room.,walks in the room,,,,walk,room,walk,camera_wearer,full,4768
+egoclip-7,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the house,walks around the house,,,,walk,house,walk,camera_wearer,full,4168
+egoclip-8,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stands up,stands up,,,,stand,up,stand,camera_wearer,full,3971
+egoclip-9,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts the camera,adjusts the camera,,,,adjust,camera,adjust,camera_wearer,full,3801
+egoclip-10,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the house,looks around the house,,,,look,house,look,camera_wearer,full,3540
+egoclip-11,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the laptop.,looks at the laptop,,,,look,laptop,look,camera_wearer,full,3535
+egoclip-12,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves hand,moves hand,,,,move,hand,move,camera_wearer,full,3478
+egoclip-13,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns to the side,turns to the side,,,,turn,side,turn,camera_wearer,full,3410
+egoclip-14,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the tap.,opens the tap,,,,open,tap,open,camera_wearer,full,2906
+egoclip-15,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the house,walks in the house,,,,walk,house,walk,camera_wearer,full,2856
+egoclip-16,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the tap.,closes the tap,,,,close,tap,close,camera_wearer,full,2827
+egoclip-17,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the hand.,moves the hand,,,,move,hand,move,camera_wearer,full,2781
+egoclip-18,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the kitchen.,walks around the kitchen,,,,walk,kitchen,walk,camera_wearer,full,2755
+egoclip-19,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pulls the thread,pulls the thread,,,,pull,thread,pull,camera_wearer,full,2569
+egoclip-20,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads the book,reads the book,,,,read,book,read,camera_wearer,full,2544
+egoclip-21,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks forward.,walks forward,,,,walk,forward,walk,camera_wearer,full,2521
+egoclip-22,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the phone,operates the phone,,,,operate,phone,operate,camera_wearer,full,2520
+egoclip-23,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the fridge,opens the fridge,,,,open,fridge,open,camera_wearer,full,2287
+egoclip-24,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the wall,paints the wall,,,,paint,wall,paint,camera_wearer,full,2283
+egoclip-25,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to man X,talks to man x,,,,talk,man,talk,camera_wearer,full,2278
+egoclip-26,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the phone,looks at the phone,,,,look,phone,look,camera_wearer,full,2178
+egoclip-27,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the door.,opens the door,,,,open,door,open,camera_wearer,full,2148
+egoclip-28,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C swings hand,swings hand,,,,swing,hand,swing,camera_wearer,full,2116
+egoclip-29,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the drawer,closes the drawer,,,,close,drawer,close,camera_wearer,full,2111
+egoclip-30,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Looks around a room,looks around a room,,,,look,room,look,camera_wearer,full,2111
+egoclip-31,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the drawer.,opens the drawer,,,,open,drawer,open,camera_wearer,full,2036
+egoclip-32,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c walks on the road,walks on the road,,,,walk,road,walk,camera_wearer,full,2026
+egoclip-33,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the right hand,moves the right hand,,,,move,right,move,camera_wearer,full,2019
+egoclip-34,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C uses the phone,uses the phone,,,,use,phone,use,camera_wearer,full,1984
+egoclip-35,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks on the floor,walks on the floor,,,,walk,floor,walk,camera_wearer,full,1946
+egoclip-36,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C bends down,bends down,,,,bend,down,bend,camera_wearer,full,1909
+egoclip-37,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scrolls the phone,scrolls the phone,,,,scroll,phone,scroll,camera_wearer,full,1905
+egoclip-38,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads a book,reads a book,,,,read,book,read,camera_wearer,full,1863
+egoclip-39,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits the fabric,knits the fabric,,,,knit,fabric,knit,camera_wearer,full,1860
+egoclip-40,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the kitchen.,walks in the kitchen,,,,walk,kitchen,walk,camera_wearer,full,1829
+egoclip-41,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c walks on the pavement,walks on the pavement,,,,walk,pavement,walk,camera_wearer,full,1801
+egoclip-42,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C steps forward.,steps forward,,,,step,forward,step,camera_wearer,full,1798
+egoclip-43,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A man X talks to C,man x talks to c,,,,man,talks,man,other_person,full,1768
+egoclip-44,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves hands,moves hands,,,,move,hands,move,camera_wearer,full,1675
+egoclip-45,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the fridge,closes the fridge,,,,close,fridge,close,camera_wearer,full,1668
+egoclip-46,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves his hand,moves his hand,,,,move,hand,move,camera_wearer,full,1637
+egoclip-47,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the compound,walks around the compound,,,,walk,compound,walk,camera_wearer,full,1587
+egoclip-48,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a book,picks a book,,,,pick,book,pick,camera_wearer,full,1576
+egoclip-49,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the table,looks around the table,,,,look,table,look,camera_wearer,full,1533
+egoclip-50,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the book,looks at the book,,,,look,book,look,camera_wearer,full,1437
+egoclip-51,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares around,stares around,,,,stare,around,stare,camera_wearer,full,1406
+egoclip-52,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks down,looks down,,,,look,down,look,camera_wearer,full,1388
+egoclip-53,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the left hand,moves the left hand,,,,move,left,move,camera_wearer,full,1368
+egoclip-54,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C watches television.,watches television,,,,watch,television,watch,camera_wearer,full,1352
+egoclip-55,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rolls the dough,rolls the dough,,,,roll,dough,roll,camera_wearer,full,1340
+egoclip-56,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Moves a hand,moves a hand,,,,move,hand,move,camera_wearer,full,1332
+egoclip-57,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C uses phone,uses phone,,,,use,phone,use,camera_wearer,full,1310
+egoclip-58,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates a phone,operates a phone,,,,operate,phone,operate,camera_wearer,full,1305
+egoclip-59,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O a woman X talks to C,woman x talks to c,,,,woman,talks,woman,other_person,full,1299
+egoclip-60,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with woman X.,converses with woman x,,,,converse,woman,converse,camera_wearer,full,1286
+egoclip-61,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the compound,looks around the compound,,,,look,compound,look,camera_wearer,full,1283
+egoclip-62,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises hand,raises hand,,,,raise,hand,raise,camera_wearer,full,1271
+egoclip-63,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the kitchen.,looks around the kitchen,,,,look,kitchen,look,camera_wearer,full,1261
+egoclip-64,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the table,looks at the table,,,,look,table,look,camera_wearer,full,1259
+egoclip-65,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the garage,walks in the garage,,,,walk,garage,walk,camera_wearer,full,1248
+egoclip-66,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the garage,walks around the garage,,,,walk,garage,walk,camera_wearer,full,1240
+egoclip-67,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Turns around the room,turns around the room,,,,turn,room,turn,camera_wearer,full,1206
+egoclip-68,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the workshop,walks around the workshop,,,,walk,workshop,walk,camera_wearer,full,1196
+egoclip-69,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts his hand,lifts his hand,,,,lift,hand,lift,camera_wearer,full,1161
+egoclip-70,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a drawer,opens a drawer,,,,open,drawer,open,camera_wearer,full,1154
+egoclip-71,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks forward,looks forward,,,,look,forward,look,camera_wearer,full,1144
+egoclip-72,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves around the room,moves around the room,,,,move,room,move,camera_wearer,full,1143
+egoclip-73,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays the guitar,plays the guitar,,,,play,guitar,play,camera_wearer,full,1129
+egoclip-74,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to person X,talks to person x,,,,talk,person,talk,camera_wearer,full,1122
+egoclip-75,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C swings the right hand,swings the right hand,,,,swing,right,swing,camera_wearer,full,1114
+egoclip-76,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the cabinet,opens the cabinet,,,,open,cabinet,open,camera_wearer,full,1103
+egoclip-77,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a knife.,picks a knife,,,,pick,knife,pick,camera_wearer,full,1094
+egoclip-78,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns on the tap.,turns on the tap,,,,turn,tap,turn,camera_wearer,full,1072
+egoclip-79,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns off the tap.,turns off the tap,,,,turn,tap,turn,camera_wearer,full,1062
+egoclip-80,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts the right hand,lifts the right hand,,,,lift,right,lift,camera_wearer,full,1062
+egoclip-81,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the road,looks around the road,,,,look,road,look,camera_wearer,full,1047
+egoclip-82,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at man X,looks at man x,,,,look,man,look,camera_wearer,full,1042
+egoclip-83,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the book .,opens the book,,,,open,book,open,camera_wearer,full,1040
+egoclip-84,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a card,picks a card,,,,pick,card,pick,camera_wearer,full,1034
+egoclip-85,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c looks around the supermarket,looks around the supermarket,,,,look,supermarket,look,camera_wearer,full,1031
+egoclip-86,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a cloth,picks a cloth,,,,pick,cloth,pick,camera_wearer,full,1027
+egoclip-87,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C interacts with the man X.,interacts with the man x,,,,interact,man,interact,camera_wearer,full,1027
+egoclip-88,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays the piano with both hands.,plays the piano with both hands,,,,play,piano,play,camera_wearer,full,1026
+egoclip-89,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to woman X,talks to woman x,,,,talk,woman,talk,camera_wearer,full,1021
+egoclip-90,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the field,looks around the field,,,,look,field,look,camera_wearer,full,1007
+egoclip-91,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves both hands,moves both hands,,,,move,both,move,camera_wearer,full,992
+egoclip-92,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C makes a step,makes a step,,,,make,step,make,camera_wearer,full,978
+egoclip-93,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the cabinet.,closes the cabinet,,,,close,cabinet,close,camera_wearer,full,975
+egoclip-94,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c walks in the supermarket,walks in the supermarket,,,,walk,supermarket,walk,camera_wearer,full,972
+egoclip-95,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C crosses the road,crosses the road,,,,cross,road,cross,camera_wearer,full,972
+egoclip-96,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the workshop,walks in the workshop,,,,walk,workshop,walk,camera_wearer,full,961
+egoclip-97,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#CC stares at the laptop,stares at the laptop,,,,stare,laptop,stare,camera_wearer,full,947
+egoclip-98,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C folds the cloth,folds the cloth,,,,fold,cloth,fold,camera_wearer,full,946
+egoclip-99,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the knife,picks the knife,,,,pick,knife,pick,camera_wearer,full,937
+egoclip-100,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to a man X,talks to a man x,,,,talk,man,talk,camera_wearer,full,936
+egoclip-101,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the card on the table,puts the card on the table,,,,put,card,put,camera_wearer,full,934
+egoclip-102,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with a man X,converses with a man x,,,,converse,man,converse,camera_wearer,full,929
+egoclip-103,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the drawing,paints the drawing,,,,paint,drawing,paint,camera_wearer,full,917
+egoclip-104,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C watches the television,watches the television,,,,watch,television,watch,camera_wearer,full,907
+egoclip-105,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts a card on the table,puts a card on the table,,,,put,card,put,camera_wearer,full,906
+egoclip-106,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks aside,looks aside,,,,look,aside,look,camera_wearer,full,903
+egoclip-107,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts camera,adjusts camera,,,,adjust,camera,adjust,camera_wearer,full,899
+egoclip-108,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the field,walks around the field,,,,walk,field,walk,camera_wearer,full,894
+egoclip-109,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the paper,looks at the paper,,,,look,paper,look,camera_wearer,full,890
+egoclip-110,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the supermarket,walks around the supermarket,,,,walk,supermarket,walk,camera_wearer,full,886
+egoclip-111,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the phone,holds the phone,,,,hold,phone,hold,camera_wearer,full,877
+egoclip-112,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stirs the food.,stirs the food,,,,stir,food,stir,camera_wearer,full,872
+egoclip-113,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dips the brush in the paint,dips the brush in the paint,,,,dip,brush,dip,camera_wearer,full,863
+egoclip-114,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the door.,closes the door,,,,close,door,close,camera_wearer,full,857
+egoclip-115,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts the hand.,lifts the hand,,,,lift,hand,lift,camera_wearer,full,856
+egoclip-116,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns right,turns right,,,,turn,right,turn,camera_wearer,full,852
+egoclip-117,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the wall with the paint brush.,paints the wall with the paint brush,,,,paint,wall,paint,camera_wearer,full,843
+egoclip-118,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pulls thread,pulls thread,,,,pull,thread,pull,camera_wearer,full,839
+egoclip-119,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the store,walks around the store,,,,walk,store,walk,camera_wearer,full,822
+egoclip-120,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Walks around a room,walks around a room,,,,walk,room,walk,camera_wearer,full,819
+egoclip-121,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks along the road,walks along the road,,,,walk,along,walk,camera_wearer,full,819
+egoclip-122,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates phone,operates phone,,,,operate,phone,operate,camera_wearer,full,816
+egoclip-123,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C wipes the book,wipes the book,,,,wipe,book,wipe,camera_wearer,full,815
+egoclip-124,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns left,turns left,,,,turn,left,turn,camera_wearer,full,814
+egoclip-125,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the card,picks the card,,,,pick,card,pick,camera_wearer,full,811
+egoclip-126,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C writes on the paper,writes on the paper,,,,write,paper,write,camera_wearer,full,799
+egoclip-127,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the card down,puts the card down,,,,put,card,put,camera_wearer,full,799
+egoclip-128,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the cloth,picks the cloth,,,,pick,cloth,pick,camera_wearer,full,795
+egoclip-129,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a brick,picks a brick,,,,pick,brick,pick,camera_wearer,full,782
+egoclip-130,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scrolls phone,scrolls phone,,,,scroll,phone,scroll,camera_wearer,full,781
+egoclip-131,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a piece of wood,picks a piece of wood,,,,pick,piece,pick,camera_wearer,full,781
+egoclip-132,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C interacts with man X,interacts with man x,,,,interact,man,interact,camera_wearer,full,780
+egoclip-133,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks on the sidewalk,walks on the sidewalk,,,,walk,sidewalk,walk,camera_wearer,full,780
+egoclip-134,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C writes on the book,writes on the book,,,,write,book,write,camera_wearer,full,778
+egoclip-135,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts the fabric,adjusts the fabric,,,,adjust,fabric,adjust,camera_wearer,full,777
+egoclip-136,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts the left hand.,lifts the left hand,,,,lift,left,lift,camera_wearer,full,774
+egoclip-137,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sits down.,sits down,,,,sit,down,sit,camera_wearer,full,773
+egoclip-138,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays the piano,plays the piano,,,,play,piano,play,camera_wearer,full,770
+egoclip-139,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sews the cloth,sews the cloth,,,,sew,cloth,sew,camera_wearer,full,762
+egoclip-140,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stands on the floor,stands on the floor,,,,stand,floor,stand,camera_wearer,full,758
+egoclip-141,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C draws on the book,draws on the book,,,,draw,book,draw,camera_wearer,full,750
+egoclip-142,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C draws on the paper,draws on the paper,,,,draw,paper,draw,camera_wearer,full,749
+egoclip-143,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the dough,picks the dough,,,,pick,dough,pick,camera_wearer,full,748
+egoclip-144,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches the camera.,touches the camera,,,,touch,camera,touch,camera_wearer,full,747
+egoclip-145,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts hand,lifts hand,,,,lift,hand,lift,camera_wearer,full,747
+egoclip-146,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the book,picks the book,,,,pick,book,pick,camera_wearer,full,740
+egoclip-147,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a spoon.,picks a spoon,,,,pick,spoon,pick,camera_wearer,full,739
+egoclip-148,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts the thread,adjusts the thread,,,,adjust,thread,adjust,camera_wearer,full,738
+egoclip-149,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to a woman X,talks to a woman x,,,,talk,woman,talk,camera_wearer,full,737
+egoclip-150,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the mirror.,looks at the mirror,,,,look,mirror,look,camera_wearer,full,734
+egoclip-151,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves forward,moves forward,,,,move,forward,move,camera_wearer,full,731
+egoclip-152,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C eats the food,eats the food,,,,eat,food,eat,camera_wearer,full,727
+egoclip-153,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to man Y,talks to man y,,,,talk,man,talk,camera_wearer,full,726
+egoclip-154,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c types on the keyboard,types on the keyboard,,,,type,keyboard,type,camera_wearer,full,722
+egoclip-155,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the dough,turns the dough,,,,turn,dough,turn,camera_wearer,full,718
+egoclip-156,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks on the ground,walks on the ground,,,,walk,ground,walk,camera_wearer,full,714
+egoclip-157,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the book,stares at the book,,,,stare,book,stare,camera_wearer,full,711
+egoclip-158,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C folds the paper,folds the paper,,,,fold,paper,fold,camera_wearer,full,708
+egoclip-159,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C cuts the thread,cuts the thread,,,,cut,thread,cut,camera_wearer,full,708
+egoclip-160,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C drinks water,drinks water,,,,drink,water,drink,camera_wearer,full,706
+egoclip-161,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the wood,holds the wood,,,,hold,wood,hold,camera_wearer,full,704
+egoclip-162,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches the face,touches the face,,,,touch,face,touch,camera_wearer,full,699
+egoclip-163,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C interacts with the woman X.,interacts with the woman x,,,,interact,woman,interact,camera_wearer,full,697
+egoclip-164,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the hands.,moves the hands,,,,move,hands,move,camera_wearer,full,694
+egoclip-165,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts the cloth,adjusts the cloth,,,,adjust,cloth,adjust,camera_wearer,full,687
+egoclip-166,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds a phone,holds a phone,,,,hold,phone,hold,camera_wearer,full,686
+egoclip-167,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a door.,opens a door,,,,open,door,open,camera_wearer,full,686
+egoclip-168,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C fixes the camera.,fixes the camera,,,,fix,camera,fix,camera_wearer,full,682
+egoclip-169,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C drives the car,drives the car,,,,drive,car,drive,camera_wearer,full,682
+egoclip-170,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Walks around a garage,walks around a garage,,,,walk,garage,walk,camera_wearer,full,682
+egoclip-171,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C a black car drives past C,black car drives past c,,,,black,car,black,camera_wearer,full,681
+egoclip-172,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Coils a knitting thread on a knitting needle,coils a knitting thread on a knitting needle,,,,coil,knitting,coil,camera_wearer,full,680
+egoclip-173,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the book on the shelf,puts the book on the shelf,,,,put,book,put,camera_wearer,full,675
+egoclip-174,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a bottle.,picks a bottle,,,,pick,bottle,pick,camera_wearer,full,674
+egoclip-175,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at person X,looks at person x,,,,look,person,look,camera_wearer,full,672
+egoclip-176,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C swings the left hand,swings the left hand,,,,swing,left,swing,camera_wearer,full,670
+egoclip-177,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the laptop.,operates the laptop,,,,operate,laptop,operate,camera_wearer,full,669
+egoclip-178,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays piano,plays piano,,,,play,piano,play,camera_wearer,full,668
+egoclip-179,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in a room,walks in a room,,,,walk,room,walk,camera_wearer,full,666
+egoclip-180,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the bottle.,opens the bottle,,,,open,bottle,open,camera_wearer,full,664
+egoclip-181,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Moves the book,moves the book,,,,move,book,move,camera_wearer,full,664
+egoclip-182,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the bottle.,closes the bottle,,,,close,bottle,close,camera_wearer,full,662
+egoclip-183,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a paper,picks a paper,,,,pick,paper,pick,camera_wearer,full,662
+egoclip-184,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens tap,opens tap,,,,open,tap,open,camera_wearer,full,661
+egoclip-185,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the cards,picks the cards,,,,pick,cards,pick,camera_wearer,full,661
+egoclip-186,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits a fabric,knits a fabric,,,,knit,fabric,knit,camera_wearer,full,659
+egoclip-187,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the wood,picks the wood,,,,pick,wood,pick,camera_wearer,full,658
+egoclip-188,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stirs food,stirs food,,,,stir,food,stir,camera_wearer,full,656
+egoclip-189,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a card from the table,picks a card from the table,,,,pick,card,pick,camera_wearer,full,656
+egoclip-190,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks down the stairs,walks down the stairs,,,,walk,stairs,walk,camera_wearer,full,655
+egoclip-191,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O Man X walks around,man x walks around,,,,man,walks,man,other_person,full,655
+egoclip-192,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the wall,looks at the wall,,,,look,wall,look,camera_wearer,full,653
+egoclip-193,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C crochets with the yarn,crochets with the yarn,,,,crochet,yarn,crochet,camera_wearer,full,651
+egoclip-194,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the shop,walks around the shop,,,,walk,shop,walk,camera_wearer,full,648
+egoclip-195,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C eats food,eats food,,,,eat,food,eat,camera_wearer,full,639
+egoclip-196,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dips the paint brush in the paint,dips the paint brush in the paint,,,,dip,paint,dip,camera_wearer,full,639
+egoclip-197,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks with lady X,talks with lady x,,,,talk,lady,talk,camera_wearer,full,638
+egoclip-198,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C c touches the phone,touches the phone,,,,touch,phone,touch,camera_wearer,full,630
+egoclip-199,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves her hand,moves her hand,,,,move,hand,move,camera_wearer,full,630
+egoclip-200,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the garden,walks around the garden,,,,walk,garden,walk,camera_wearer,full,625
+egoclip-201,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the shop,looks around the shop,,,,look,shop,look,camera_wearer,full,622
+egoclip-202,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the phone,picks the phone,,,,pick,phone,pick,camera_wearer,full,620
+egoclip-203,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the television,looks at the television,,,,look,television,look,camera_wearer,full,616
+egoclip-204,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks on the field,walks on the field,,,,walk,field,walk,camera_wearer,full,613
+egoclip-205,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with a woman X.,converses with a woman x,,,,converse,woman,converse,camera_wearer,full,608
+egoclip-206,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dips brush in paint,dips brush in paint,,,,dip,brush,dip,camera_wearer,full,607
+egoclip-207,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks right,looks right,,,,look,right,look,camera_wearer,full,605
+egoclip-208,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises the hand,raises the hand,,,,raise,hand,raise,camera_wearer,full,604
+egoclip-209,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O man Y talks to C,man y talks to c,,,,man,talks,man,other_person,full,603
+egoclip-210,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pulls a thread,pulls a thread,,,,pull,thread,pull,camera_wearer,full,598
+egoclip-211,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks a round,looks a round,,,,look,round,look,camera_wearer,full,597
+egoclip-212,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c walk around,walk around,,,,walk,around,walk,camera_wearer,full,597
+egoclip-213,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the screen.,looks at the screen,,,,look,screen,look,camera_wearer,full,595
+egoclip-214,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the book.,holds the book,,,,hold,book,hold,camera_wearer,full,590
+egoclip-215,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the phone with both hands,operates the phone with both hands,,,,operate,phone,operate,camera_wearer,full,588
+egoclip-216,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches his face,touches his face,,,,touch,face,touch,camera_wearer,full,588
+egoclip-217,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a bowl,picks a bowl,,,,pick,bowl,pick,camera_wearer,full,586
+egoclip-218,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns back,turns back,,,,turn,back,turn,camera_wearer,full,585
+egoclip-219,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O Y walks away,walks away,,,,walk,away,walk,other_person,full,583
+egoclip-220,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C throws the ball,throws the ball,,,,throw,ball,throw,camera_wearer,full,579
+egoclip-221,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the table,stares at the table,,,,stare,table,stare,camera_wearer,full,577
+egoclip-222,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks dough,picks dough,,,,pick,dough,pick,camera_wearer,full,575
+egoclip-223,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the dog,looks at the dog,,,,look,dog,look,camera_wearer,full,574
+egoclip-224,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits the garment,knits the garment,,,,knit,garment,knit,camera_wearer,full,574
+egoclip-225,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the cloth,holds the cloth,,,,hold,cloth,hold,camera_wearer,full,573
+egoclip-226,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays the piano with his right hand.,plays the piano with his right hand,,,,play,piano,play,camera_wearer,full,572
+egoclip-227,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plays guitar,plays guitar,,,,play,guitar,play,camera_wearer,full,569
+egoclip-228,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with person X,converses with person x,,,,converse,person,converse,camera_wearer,full,569
+egoclip-229,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks left,looks left,,,,look,left,look,camera_wearer,full,567
+egoclip-230,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#x x picks card,picks card,,,,pick,card,pick,other,full,567
+egoclip-231,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O person X walks around,person x walks around,,,,person,walks,person,other_person,full,567
+egoclip-232,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C A woman X converses with C.,woman x converses with c,,,,woman,converses,woman,camera_wearer,full,567
+egoclip-233,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses.,converses,,,,converse,converses,converse,camera_wearer,full,563
+egoclip-234,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with man X,converses with man x,,,,converse,man,converse,camera_wearer,full,561
+egoclip-235,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Knits a piece of fabric with a knitting needle,knits a piece of fabric with a knitting needle,,,,knit,piece,knit,camera_wearer,full,561
+egoclip-236,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stops walking,stops walking,,,,stop,walking,stop,camera_wearer,full,556
+egoclip-237,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a tap,opens a tap,,,,open,tap,open,camera_wearer,full,555
+egoclip-238,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks towards the table.,walks towards the table,,,,walk,towards,walk,camera_wearer,full,555
+egoclip-239,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C places card on the table,places card on the table,,,,place,card,place,camera_wearer,full,555
+egoclip-240,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c picks a pen,picks a pen,,,,pick,pen,pick,camera_wearer,full,550
+egoclip-241,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C interacts with person X.,interacts with person x,,,,interact,person,interact,camera_wearer,full,550
+egoclip-242,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dips the paint brush in the paint can,dips the paint brush in the paint can,,,,dip,paint,dip,camera_wearer,full,549
+egoclip-243,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the paper,turns the paper,,,,turn,paper,turn,camera_wearer,full,548
+egoclip-244,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with the man X.,converses with the man x,,,,converse,man,converse,camera_wearer,full,547
+egoclip-245,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts up the hand,lifts up the hand,,,,lift,hand,lift,camera_wearer,full,546
+egoclip-246,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at woman X,looks at woman x,,,,look,woman,look,camera_wearer,full,546
+egoclip-247,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks puzzle piece.,picks puzzle piece,,,,pick,puzzle,pick,camera_wearer,full,546
+egoclip-248,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the field,walks in the field,,,,walk,field,walk,camera_wearer,full,542
+egoclip-249,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the spoon,picks the spoon,,,,pick,spoon,pick,camera_wearer,full,542
+egoclip-250,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,# C c opens fridge,opens fridge,,,,open,fridge,open,other,full,541
+egoclip-251,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at man Y,looks at man y,,,,look,man,look,camera_wearer,full,536
+egoclip-252,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C a white car drives past C,white car drives past c,,,,white,car,white,camera_wearer,full,535
+egoclip-253,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the phone with both hands,holds the phone with both hands,,,,hold,phone,hold,camera_wearer,full,535
+egoclip-254,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the scissors,picks the scissors,,,,pick,scissors,pick,camera_wearer,full,532
+egoclip-255,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dialogues with man x,dialogues with man x,,,,dialogue,man,dialogue,camera_wearer,full,529
+egoclip-256,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C cuts the wood.,cuts the wood,,,,cut,wood,cut,camera_wearer,full,529
+egoclip-257,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the leg.,moves the leg,,,,move,leg,move,camera_wearer,full,528
+egoclip-258,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a cabinet,opens a cabinet,,,,open,cabinet,open,camera_wearer,full,526
+egoclip-259,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C c moves around the kitchen,moves around the kitchen,,,,move,kitchen,move,camera_wearer,full,524
+egoclip-260,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks cards,picks cards,,,,pick,cards,pick,camera_wearer,full,523
+egoclip-261,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the construction site.,walks around the construction site,,,,walk,construction,walk,camera_wearer,full,521
+egoclip-262,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C A car drives past C.,car drives past c,,,,car,drives,car,camera_wearer,full,521
+egoclip-263,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with X,converses with x,,,,converse,x,converse,camera_wearer,full,519
+egoclip-264,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sews the fabric,sews the fabric,,,,sew,fabric,sew,camera_wearer,full,519
+egoclip-265,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks up,looks up,,,,look,up,look,camera_wearer,full,518
+egoclip-266,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c raises his hand,raises his hand,,,,raise,hand,raise,camera_wearer,full,518
+egoclip-267,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scoops concrete,scoops concrete,,,,scoop,concrete,scoop,camera_wearer,full,517
+egoclip-268,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Interacts with a man X,interacts with a man x,,,,interact,man,interact,camera_wearer,full,516
+egoclip-269,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the board,paints the board,,,,paint,board,paint,camera_wearer,full,514
+egoclip-270,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C cuts the dough,cuts the dough,,,,cut,dough,cut,camera_wearer,full,512
+egoclip-271,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a phone,picks a phone,,,,pick,phone,pick,camera_wearer,full,511
+egoclip-272,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches face.,touches face,,,,touch,face,touch,camera_wearer,full,510
+egoclip-273,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c closes tap,closes tap,,,,close,tap,close,camera_wearer,full,510
+egoclip-274,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C washes hands,washes hands,,,,wash,hands,wash,camera_wearer,full,510
+egoclip-275,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a fridge.,opens a fridge,,,,open,fridge,open,camera_wearer,full,509
+egoclip-276,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves his hands,moves his hands,,,,move,hands,move,camera_wearer,full,504
+egoclip-277,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c uses a phone,uses a phone,,,,use,phone,use,camera_wearer,full,504
+egoclip-278,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Moves the paper,moves the paper,,,,move,paper,move,camera_wearer,full,503
+egoclip-279,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the area,looks around the area,,,,look,area,look,camera_wearer,full,503
+egoclip-280,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C drops the twig on the ground with his left hand.,drops the twig on the ground with his left hand,,,,drop,twig,drop,camera_wearer,full,503
+egoclip-281,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the cupboard,opens the cupboard,,,,open,cupboard,open,camera_wearer,full,502
+egoclip-282,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Picks the paper,picks the paper,,,,pick,paper,pick,camera_wearer,full,502
+egoclip-283,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at X,looks at x,,,,look,x,look,camera_wearer,full,502
+egoclip-284,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds a book,holds a book,,,,hold,book,hold,camera_wearer,full,501
+egoclip-285,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the book,closes the book,,,,close,book,close,camera_wearer,full,499
+egoclip-286,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C kicks the ball,kicks the ball,,,,kick,ball,kick,camera_wearer,full,494
+egoclip-287,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#VV looks at the cards,looks at the cards,,,,look,cards,look,other,full,493
+egoclip-288,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the container.,picks the container,,,,pick,container,pick,camera_wearer,full,490
+egoclip-289,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the cards on the table,puts the cards on the table,,,,put,cards,put,camera_wearer,full,490
+egoclip-290,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares a round,stares a round,,,,stare,round,stare,camera_wearer,full,490
+egoclip-291,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Walks around a kitchen,walks around a kitchen,,,,walk,kitchen,walk,camera_wearer,full,488
+egoclip-292,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the book with both hands,holds the book with both hands,,,,hold,book,hold,camera_wearer,full,487
+egoclip-293,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Dials the phone,dials the phone,,,,dial,phone,dial,camera_wearer,full,486
+egoclip-294,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pulls the needle,pulls the needle,,,,pull,needle,pull,camera_wearer,full,486
+egoclip-295,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rolls thread around the crotchet needle,rolls thread around the crotchet needle,,,,roll,thread,roll,camera_wearer,full,486
+egoclip-296,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts hand up,lifts hand up,,,,lift,hand,lift,camera_wearer,full,484
+egoclip-297,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the fabric,holds the fabric,,,,hold,fabric,hold,camera_wearer,full,484
+egoclip-298,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dips brush in the paint,dips brush in the paint,,,,dip,brush,dip,camera_wearer,full,482
+egoclip-299,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the workshop,looks around the workshop,,,,look,workshop,look,camera_wearer,full,481
+egoclip-300,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Holds the paper,holds the paper,,,,hold,paper,hold,camera_wearer,full,479
+egoclip-301,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,# C c talks to x,talks to x,,,,talk,x,talk,other,full,476
+egoclip-302,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pulls the yarn,pulls the yarn,,,,pull,yarn,pull,camera_wearer,full,476
+egoclip-303,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts the cloth,lifts the cloth,,,,lift,cloth,lift,camera_wearer,full,476
+egoclip-304,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the store,looks around the store,,,,look,store,look,camera_wearer,full,476
+egoclip-305,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the water tap,opens the water tap,,,,open,water,open,camera_wearer,full,475
+egoclip-306,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C arranges cards,arranges cards,,,,arrange,cards,arrange,camera_wearer,full,475
+egoclip-307,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sweeps the floor,sweeps the floor,,,,sweep,floor,sweep,camera_wearer,full,474
+egoclip-308,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the canvas,paints the canvas,,,,paint,canvas,paint,camera_wearer,full,474
+egoclip-309,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at a man X,stares at a man x,,,,stare,man,stare,camera_wearer,full,472
+egoclip-310,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens a book,opens a book,,,,open,book,open,camera_wearer,full,468
+egoclip-311,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C drops the scissors on the table.,drops the scissors on the table,,,,drop,scissors,drop,camera_wearer,full,465
+egoclip-312,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the picture,paints the picture,,,,paint,picture,paint,camera_wearer,full,465
+egoclip-313,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks outside,walks outside,,,,walk,outside,walk,camera_wearer,full,464
+egoclip-314,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads the magazine,reads the magazine,,,,read,magazine,read,camera_wearer,full,464
+egoclip-315,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A places the card on the table,places the card on the table,,,,place,card,place,other_person,full,463
+egoclip-316,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the water tap,closes the water tap,,,,close,water,close,camera_wearer,full,460
+egoclip-317,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens drawer,opens drawer,,,,open,drawer,open,camera_wearer,full,460
+egoclip-318,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts down his hand,puts down his hand,,,,put,hand,put,camera_wearer,full,460
+egoclip-319,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a plate,picks a plate,,,,pick,plate,pick,camera_wearer,full,458
+egoclip-320,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the cloth,looks at the cloth,,,,look,cloth,look,camera_wearer,full,458
+egoclip-321,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the wall,stares at the wall,,,,stare,wall,stare,camera_wearer,full,457
+egoclip-322,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises hand up,raises hand up,,,,raise,hand,raise,camera_wearer,full,457
+egoclip-323,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C a man x converses with C.,man x converses with c,,,,man,converses,man,camera_wearer,full,457
+egoclip-324,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks scissors,picks scissors,,,,pick,scissors,pick,camera_wearer,full,456
+egoclip-325,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c speaks to woman y,speaks to woman y,,,,speak,woman,speak,camera_wearer,full,455
+egoclip-326,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rides the bicycle,rides the bicycle,,,,ride,bicycle,ride,camera_wearer,full,455
+egoclip-327,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with man D,converses with man d,,,,converse,man,converse,camera_wearer,full,455
+egoclip-328,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C wipes hands.,wipes hands,,,,wipe,hands,wipe,camera_wearer,full,454
+egoclip-329,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sits on the chair,sits on the chair,,,,sit,chair,sit,camera_wearer,full,453
+egoclip-330,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks up the stairs,walks up the stairs,,,,walk,stairs,walk,camera_wearer,full,449
+egoclip-331,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C irons the cloth,irons the cloth,,,,iron,cloth,iron,camera_wearer,full,449
+egoclip-332,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the drawing,looks at the drawing,,,,look,drawing,look,camera_wearer,full,445
+egoclip-333,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks cloth,picks cloth,,,,pick,cloth,pick,camera_wearer,full,445
+egoclip-334,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Sews the sweater,sews the sweater,,,,sew,sweater,sew,camera_wearer,full,443
+egoclip-335,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the book,turns the book,,,,turn,book,turn,camera_wearer,full,441
+egoclip-336,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the fabric,looks at the fabric,,,,look,fabric,look,camera_wearer,full,441
+egoclip-337,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the hammer,picks the hammer,,,,pick,hammer,pick,camera_wearer,full,441
+egoclip-338,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C sews the piece of cloth,sews the piece of cloth,,,,sew,piece,sew,camera_wearer,full,440
+egoclip-339,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks back.,walks back,,,,walk,back,walk,camera_wearer,full,440
+egoclip-340,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves in the room,moves in the room,,,,move,room,move,camera_wearer,full,440
+egoclip-341,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the bottle.,picks the bottle,,,,pick,bottle,pick,camera_wearer,full,439
+egoclip-342,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks with man X,talks with man x,,,,talk,man,talk,camera_wearer,full,439
+egoclip-343,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a hammer,picks a hammer,,,,pick,hammer,pick,camera_wearer,full,438
+egoclip-344,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the ball,picks the ball,,,,pick,ball,pick,camera_wearer,full,437
+egoclip-345,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O Man Y walks around,man y walks around,,,,man,walks,man,other_person,full,436
+egoclip-346,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C dialogues with person X,dialogues with person x,,,,dialogue,person,dialogue,camera_wearer,full,435
+egoclip-347,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the phone with his right hand,operates the phone with his right hand,,,,operate,phone,operate,camera_wearer,full,434
+egoclip-348,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C straightens the thread,straightens the thread,,,,straighten,thread,straighten,camera_wearer,full,434
+egoclip-349,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the tablet,operates the tablet,,,,operate,tablet,operate,camera_wearer,full,432
+egoclip-350,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the wall with a paint brush,paints the wall with a paint brush,,,,paint,wall,paint,camera_wearer,full,431
+egoclip-351,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C talks to person Y,talks to person y,,,,talk,person,talk,camera_wearer,full,430
+egoclip-352,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C c opens the container,opens the container,,,,open,container,open,camera_wearer,full,429
+egoclip-353,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C adjusts the yarn,adjusts the yarn,,,,adjust,yarn,adjust,camera_wearer,full,428
+egoclip-354,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds a paper,holds a paper,,,,hold,paper,hold,camera_wearer,full,427
+egoclip-355,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits a cloth,knits a cloth,,,,knit,cloth,knit,camera_wearer,full,427
+egoclip-356,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the compound,walks in the compound,,,,walk,compound,walk,camera_wearer,full,427
+egoclip-357,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a container.,picks a container,,,,pick,container,pick,camera_wearer,full,425
+egoclip-358,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stretches hand,stretches hand,,,,stretch,hand,stretch,camera_wearer,full,424
+egoclip-359,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the building,looks around the building,,,,look,building,look,camera_wearer,full,424
+egoclip-360,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C kneads the dough,kneads the dough,,,,knead,dough,knead,camera_wearer,full,423
+egoclip-361,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c scoops the concrete,scoops the concrete,,,,scoop,concrete,scoop,camera_wearer,full,421
+egoclip-362,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,# X x talks to c,talks to c,,,,talk,c,talk,other,full,420
+egoclip-363,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c moves backwards,moves backwards,,,,move,backwards,move,camera_wearer,full,419
+egoclip-364,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the box,moves the box,,,,move,box,move,camera_wearer,full,419
+egoclip-365,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Puts the brick mold on the ground,puts the brick mold on the ground,,,,put,brick,put,camera_wearer,full,419
+egoclip-366,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C shuffles the cards,shuffles the cards,,,,shuffle,cards,shuffle,camera_wearer,full,418
+egoclip-367,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the computer,looks at the computer,,,,look,computer,look,camera_wearer,full,417
+egoclip-368,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the brick mold,moves the brick mold,,,,move,brick,move,camera_wearer,full,417
+egoclip-369,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the camera,holds the camera,,,,hold,camera,hold,camera_wearer,full,416
+egoclip-370,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at woman Y,looks at woman y,,,,look,woman,look,camera_wearer,full,416
+egoclip-371,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks book,picks book,,,,pick,book,pick,camera_wearer,full,416
+egoclip-372,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks to the table,walks to the table,,,,walk,table,walk,camera_wearer,full,415
+egoclip-373,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C pours water in the sink,pours water in the sink,,,,pour,water,pour,camera_wearer,full,415
+egoclip-374,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches the fabric,touches the fabric,,,,touch,fabric,touch,camera_wearer,full,413
+egoclip-375,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the magazine.,looks at the magazine,,,,look,magazine,look,camera_wearer,full,412
+egoclip-376,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c looks at the shelf,looks at the shelf,,,,look,shelf,look,camera_wearer,full,411
+egoclip-377,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the garden,walks in the garden,,,,walk,garden,walk,camera_wearer,full,411
+egoclip-378,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scoops cement,scoops cement,,,,scoop,cement,scoop,camera_wearer,full,411
+egoclip-379,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C arranges the cards,arranges the cards,,,,arrange,cards,arrange,camera_wearer,full,411
+egoclip-380,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A man x interacts with c,man x interacts with c,,,,man,interacts,man,other_person,full,409
+egoclip-381,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads the paper,reads the paper,,,,read,paper,read,camera_wearer,full,408
+egoclip-382,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at man Z,looks at man z,,,,look,man,look,camera_wearer,full,408
+egoclip-383,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C converses with the woman X.,converses with the woman x,,,,converse,woman,converse,camera_wearer,full,407
+egoclip-384,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds a cloth,holds a cloth,,,,hold,cloth,hold,camera_wearer,full,407
+egoclip-385,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the cloth,turns the cloth,,,,turn,cloth,turn,camera_wearer,full,407
+egoclip-386,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises his right hand,raises his right hand,,,,raise,right,raise,camera_wearer,full,405
+egoclip-387,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks up a card,picks up a card,,,,pick,card,pick,camera_wearer,full,405
+egoclip-388,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a lid,picks a lid,,,,pick,lid,pick,camera_wearer,full,404
+egoclip-389,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the thread,holds the thread,,,,hold,thread,hold,camera_wearer,full,404
+egoclip-390,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C plasters the wall,plasters the wall,,,,plaster,wall,plaster,camera_wearer,full,403
+egoclip-391,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rubs hands,rubs hands,,,,rub,hands,rub,camera_wearer,full,402
+egoclip-392,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens door,opens door,,,,open,door,open,camera_wearer,full,402
+egoclip-393,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the brick,picks the brick,,,,pick,brick,pick,camera_wearer,full,400
+egoclip-394,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#CC cuts grass with a lawn mower,cuts grass with a lawn mower,,,,cut,grass,cut,camera_wearer,full,399
+egoclip-395,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C places a card on the table,places a card on the table,,,,place,card,place,camera_wearer,full,398
+egoclip-396,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C wipes the table,wipes the table,,,,wipe,table,wipe,camera_wearer,full,397
+egoclip-397,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks wood,picks wood,,,,pick,wood,pick,camera_wearer,full,397
+egoclip-398,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c picks the lid,picks the lid,,,,pick,lid,pick,camera_wearer,full,396
+egoclip-399,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Picks the bowl,picks the bowl,,,,pick,bowl,pick,camera_wearer,full,396
+egoclip-400,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts cards on the table,puts cards on the table,,,,put,cards,put,camera_wearer,full,396
+egoclip-401,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A man Y looks around,man y looks around,,,,man,looks,man,other_person,full,392
+egoclip-402,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C opens the box,opens the box,,,,open,box,open,camera_wearer,full,392
+egoclip-403,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the phone,stares at the phone,,,,stare,phone,stare,camera_wearer,full,392
+egoclip-404,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints on a paper,paints on a paper,,,,paint,paper,paint,camera_wearer,full,392
+egoclip-405,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the construction site,looks around the construction site,,,,look,construction,look,camera_wearer,full,390
+egoclip-406,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves her hand forwards,moves her hand forwards,,,,move,hand,move,camera_wearer,full,387
+egoclip-407,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C c catches the ball,catches the ball,,,,catch,ball,catch,camera_wearer,full,387
+egoclip-408,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stretches the thread,stretches the thread,,,,stretch,thread,stretch,camera_wearer,full,386
+egoclip-409,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A person X talks to C,person x talks to c,,,,person,talks,person,other_person,full,385
+egoclip-410,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C presses the phone,presses the phone,,,,press,phone,press,camera_wearer,full,382
+egoclip-411,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C drops the wood.,drops the wood,,,,drop,wood,drop,camera_wearer,full,380
+egoclip-412,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts both hands.,lifts both hands,,,,lift,both,lift,camera_wearer,full,378
+egoclip-413,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads the music paper,reads the music paper,,,,read,music,read,camera_wearer,full,378
+egoclip-414,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a cup,picks a cup,,,,pick,cup,pick,camera_wearer,full,377
+egoclip-415,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates the computer,operates the computer,,,,operate,computer,operate,camera_wearer,full,377
+egoclip-416,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks ahead,walks ahead,,,,walk,ahead,walk,camera_wearer,full,377
+egoclip-417,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C closes the cupboard,closes the cupboard,,,,close,cupboard,close,camera_wearer,full,375
+egoclip-418,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C uses his phone,uses his phone,,,,use,phone,use,camera_wearer,full,375
+egoclip-419,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a box,picks a box,,,,pick,box,pick,camera_wearer,full,374
+egoclip-420,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C touches the cloth,touches the cloth,,,,touch,cloth,touch,camera_wearer,full,374
+egoclip-421,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the wood,turns the wood,,,,turn,wood,turn,camera_wearer,full,373
+egoclip-422,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the floor,looks at the floor,,,,look,floor,look,camera_wearer,full,373
+egoclip-423,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O woman Y talks to C,woman y talks to c,,,,woman,talks,woman,other_person,full,373
+egoclip-424,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the pen.,picks the pen,,,,pick,pen,pick,camera_wearer,full,372
+egoclip-425,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stretches the cloth,stretches the cloth,,,,stretch,cloth,stretch,camera_wearer,full,371
+egoclip-426,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks to the kitchen.,walks to the kitchen,,,,walk,kitchen,walk,camera_wearer,full,370
+egoclip-427,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stops painting,stops painting,,,,stop,painting,stop,camera_wearer,full,369
+egoclip-428,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Looks around a supermarket,looks around a supermarket,,,,look,supermarket,look,camera_wearer,full,369
+egoclip-429,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises her hand,raises her hand,,,,raise,hand,raise,camera_wearer,full,368
+egoclip-430,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the television,stares at the television,,,,stare,television,stare,camera_wearer,full,368
+egoclip-431,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Adjusts a camera,adjusts a camera,,,,adjust,camera,adjust,camera_wearer,full,367
+egoclip-432,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C cuts the paper,cuts the paper,,,,cut,paper,cut,camera_wearer,full,367
+egoclip-433,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits a fabric with knitting needles,knits a fabric with knitting needles,,,,knit,fabric,knit,camera_wearer,full,367
+egoclip-434,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rides a bicycle on the road,rides a bicycle on the road,,,,ride,bicycle,ride,camera_wearer,full,367
+egoclip-435,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lowers hand,lowers hand,,,,lower,hand,lower,camera_wearer,full,366
+egoclip-436,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks the iron box,picks the iron box,,,,pick,iron,pick,camera_wearer,full,365
+egoclip-437,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the phone on the table,puts the phone on the table,,,,put,phone,put,camera_wearer,full,364
+egoclip-438,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C interacts with woman X,interacts with woman x,,,,interact,woman,interact,camera_wearer,full,364
+egoclip-439,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks around the apartment,looks around the apartment,,,,look,apartment,look,camera_wearer,full,364
+egoclip-440,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Rolls the thread around the crochet,rolls the thread around the crochet,,,,roll,thread,roll,camera_wearer,full,363
+egoclip-441,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C holds the cards,holds the cards,,,,hold,cards,hold,camera_wearer,full,362
+egoclip-442,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C operates a mobile phone,operates a mobile phone,,,,operate,mobile,operate,camera_wearer,full,362
+egoclip-443,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks around the building,walks around the building,,,,walk,building,walk,camera_wearer,full,362
+egoclip-444,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C paints the ceiling,paints the ceiling,,,,paint,ceiling,paint,camera_wearer,full,362
+egoclip-445,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C raises his left hand,raises his left hand,,,,raise,left,raise,camera_wearer,full,361
+egoclip-446,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scoops food,scoops food,,,,scoop,food,scoop,camera_wearer,full,361
+egoclip-447,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the camera around,moves the camera around,,,,move,camera,move,camera_wearer,full,360
+egoclip-448,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C The man X interacts with C.,the man x interacts with c,,,,the,man,the,camera_wearer,full,359
+egoclip-449,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c talks with x,talks with x,,,,talk,x,talk,camera_wearer,full,359
+egoclip-450,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts card down,puts card down,,,,put,card,put,camera_wearer,full,359
+egoclip-451,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves hand up,moves hand up,,,,move,hand,move,camera_wearer,full,356
+egoclip-452,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Looks around a garage,looks around a garage,,,,look,garage,look,camera_wearer,full,356
+egoclip-453,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads book,reads book,,,,read,book,read,camera_wearer,full,356
+egoclip-454,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C scoops cement with a trowel,scoops cement with a trowel,,,,scoop,cement,scoop,camera_wearer,full,356
+egoclip-455,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C turns the fabric,turns the fabric,,,,turn,fabric,turn,camera_wearer,full,355
+egoclip-456,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O man X walks,man x walks,,,,man,walks,man,other_person,full,354
+egoclip-457,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads a magazine,reads a magazine,,,,read,magazine,read,camera_wearer,full,352
+egoclip-458,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O man A talks,man a talks,,,,man,talks,man,other_person,full,352
+egoclip-459,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rubs his hands on the ground,rubs his hands on the ground,,,,rub,hands,rub,camera_wearer,full,352
+egoclip-460,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C writes on a book,writes on a book,,,,write,book,write,camera_wearer,full,350
+egoclip-461,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C knits the cloth,knits the cloth,,,,knit,cloth,knit,camera_wearer,full,350
+egoclip-462,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks ahead,looks ahead,,,,look,ahead,look,camera_wearer,full,349
+egoclip-463,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the store,walks in the store,,,,walk,store,walk,camera_wearer,full,348
+egoclip-464,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C uses gestures,uses gestures,,,,use,gestures,use,camera_wearer,full,347
+egoclip-465,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks phone,picks phone,,,,pick,phone,pick,camera_wearer,full,345
+egoclip-466,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rubs his hands together.,rubs his hands together,,,,rub,hands,rub,camera_wearer,full,343
+egoclip-467,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks out of the room,walks out of the room,,,,walk,room,walk,camera_wearer,full,343
+egoclip-468,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the clothes,looks at the clothes,,,,look,clothes,look,camera_wearer,full,343
+egoclip-469,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the book in the shelf,puts the book in the shelf,,,,put,book,put,camera_wearer,full,342
+egoclip-470,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a towel,picks a towel,,,,pick,towel,pick,camera_wearer,full,341
+egoclip-471,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the tablet,looks at the tablet,,,,look,tablet,look,camera_wearer,full,340
+egoclip-472,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a wood,picks a wood,,,,pick,wood,pick,camera_wearer,full,340
+egoclip-473,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a metal,picks a metal,,,,pick,metal,pick,camera_wearer,full,339
+egoclip-474,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C walks in the building,walks in the building,,,,walk,building,walk,camera_wearer,full,339
+egoclip-475,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts card on the table,puts card on the table,,,,put,card,put,camera_wearer,full,338
+egoclip-476,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C wipes the hands,wipes the hands,,,,wipe,hands,wipe,camera_wearer,full,337
+egoclip-477,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C reads the manual,reads the manual,,,,read,manual,read,camera_wearer,full,336
+egoclip-478,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C lifts a hand,lifts a hand,,,,lift,hand,lift,camera_wearer,full,335
+egoclip-479,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#x x talks with c,talks with c,,,,talk,c,talk,other,full,335
+egoclip-480,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C takes a book,takes a book,,,,take,book,take,camera_wearer,full,335
+egoclip-481,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves the legs.,moves the legs,,,,move,legs,move,camera_wearer,full,334
+egoclip-482,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C Talks to woman Y,talks to woman y,,,,talk,woman,talk,camera_wearer,full,334
+egoclip-483,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at the colleagues,looks at the colleagues,,,,look,colleagues,look,camera_wearer,full,334
+egoclip-484,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#c c touches phone,touches phone,,,,touch,phone,touch,camera_wearer,full,333
+egoclip-485,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a brush,picks a brush,,,,pick,brush,pick,camera_wearer,full,333
+egoclip-486,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a flower,picks a flower,,,,pick,flower,pick,camera_wearer,full,333
+egoclip-487,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C stares at the floor,stares at the floor,,,,stare,floor,stare,camera_wearer,full,332
+egoclip-488,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C moves left hand,moves left hand,,,,move,left,move,camera_wearer,full,332
+egoclip-489,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks knife.,picks knife,,,,pick,knife,pick,camera_wearer,full,331
+egoclip-490,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C climbs the ladder,climbs the ladder,,,,climb,ladder,climb,camera_wearer,full,331
+egoclip-491,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C picks a dough,picks a dough,,,,pick,dough,pick,camera_wearer,full,331
+egoclip-492,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C irons the shirt.,irons the shirt,,,,iron,shirt,iron,camera_wearer,full,331
+egoclip-493,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C measures the wood,measures the wood,,,,measure,wood,measure,camera_wearer,full,330
+egoclip-494,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#O A lady X talks with C,lady x talks with c,,,,lady,talks,lady,other_person,full,329
+egoclip-495,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C looks at lady X,looks at lady x,,,,look,lady,look,camera_wearer,full,329
+egoclip-496,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C draws on a book.,draws on a book,,,,draw,book,draw,camera_wearer,full,329
+egoclip-497,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C A motorcycle rides past C,motorcycle rides past c,,,,motorcycle,rides,motorcycle,camera_wearer,full,329
+egoclip-498,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C rolls the dough with a rolling pin,rolls the dough with a rolling pin,,,,roll,dough,roll,camera_wearer,full,328
+egoclip-499,EgoVLP (EgoClip),Ego4D (EgoVLP/EgoClip filtering),clip-narration,#C C puts the paper on the table,puts the paper on the table,,,,put,paper,put,camera_wearer,full,327
