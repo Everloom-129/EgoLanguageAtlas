@@ -479,6 +479,23 @@
       "license": "no license file in repo (GAP, default all-rights-reserved)",
       "suitability": "descriptive-only: contact + hand-pose priors, nothing clusterable",
       "focus": "Learns encoder features predicting contact points and grasping hand poses at contact from egocentric images, reused to train dexterous manipulation policies."
+    },
+    {
+      "category": "method",
+      "name": "EgoScale",
+      "venue": "arXiv 2026",
+      "arxiv": "https://arxiv.org/abs/2602.16710",
+      "usage_methods": [
+        "vla-pretrain",
+        "hand-pose"
+      ],
+      "annotation_types": [],
+      "source_datasets": "large-scale egocentric human video (~20,854 h, aggregated)",
+      "data_access": "none",
+      "downloadable": "none (model; code coming soon, no dataset)",
+      "license": "not stated (code coming soon)",
+      "suitability": "descriptive-only: VLA scaling-law study, releases a model not a corpus",
+      "focus": "A dexterous-manipulation VLA pretrained on about 20,854 hours of action-labeled egocentric human video, showing a log-linear scaling law between human-data scale and prediction error."
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "name": "EgoScale",
+  "slug": "egoscale",
+  "status": "descriptive",
+  "work_type": "method",
+  "focus": "A dexterous-manipulation VLA pretrained on about 20,854 hours of action-labeled egocentric human video, demonstrating a log-linear scaling law between human-data scale and prediction error.",
+  "usage_methods": [
+    "vla-pretrain",
+    "hand-pose"
+  ],
+  "annotation_types": [],
+  "source_datasets": [
+    "large-scale egocentric human video (about 20,854 hours, aggregated; sources not enumerated)"
+  ],
+  "downloadable": "none (no dataset or annotations released)",
+  "license": "not stated (code coming soon)",
+  "links": {
+    "paper": "https://arxiv.org/abs/2602.16710",
+    "repo": "https://research.nvidia.com/labs/gear/egoscale/",
+    "project": "https://research.nvidia.com/labs/gear/egoscale/",
+    "atlas_en": "egoscale/egoscale_atlas.html",
+    "atlas_cn": "egoscale/egoscale_atlas_cn.html"
+  }
+}
