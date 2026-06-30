@@ -70,6 +70,7 @@ INDEX_I18N = {
         "note": ("Hand-compiled reference over downloaded data, may contain errors. Open an "
                  "issue to fix it. No em-dashes, blueprint house style."),
         "s_entries": "Entries", "s_survey": "Survey table",
+        "s_built": "Built atlases", "s_desc": "Descriptive entries",
         "s_cross": "Cross-work comparison", "s_road": "Roadmap (researched, not yet built)",
         "th_work": "work", "th_type": "type", "th_usage": "usage",
         "th_annot": "annotation types", "th_ann": "annotations", "th_clusters": "clusters",
@@ -101,6 +102,7 @@ INDEX_I18N = {
         "note": ("基于下载数据手工整理的参考资料，可能存在错误。欢迎提交 issue 修正。"
                  "不使用长破折号，蓝图风格。"),
         "s_entries": "条目", "s_survey": "综述表",
+        "s_built": "已构建图谱", "s_desc": "描述性条目",
         "s_cross": "跨工作对比", "s_road": "路线图（已调研，尚未构建）",
         "th_work": "工作", "th_type": "类型", "th_usage": "使用方式",
         "th_annot": "标注类型", "th_ann": "标注数", "th_clusters": "聚类数",
@@ -403,55 +405,67 @@ def build_crosswork(built, t):
             + '</div></div>' + umap)
 
 
-def build_index(entries, planned, lang):
-    t = INDEX_I18N[lang]
-    n_built = sum(1 for e in entries if e.get("status") == "built")
-    n_desc = sum(1 for e in entries if e.get("status") == "descriptive")
-    n_plan = len(planned)
-    # tier grouping for cards
+def cards_grouped(entry_list, t, lang):
+    """Cards grouped by usage tier, for a given subset of entries."""
     tiers = {}
-    for e in entries:
+    for e in entry_list:
         tiers.setdefault(primary_tier(e), []).append(e)
-    cards = []
+    out = []
     for tk in TIER_ORDER:
         if tk in tiers:
-            cards.append(f'<h3>{esc(tier_label(tk, lang))}</h3><div class="cards">'
-                         + "".join(entry_card(e, t) for e in tiers[tk]) + '</div>')
-    cards_html = "".join(cards) or f'<p class="note">{esc(t["cross_none"])}</p>'
+            out.append(f'<h3>{esc(tier_label(tk, lang))}</h3><div class="cards">'
+                       + "".join(entry_card(e, t) for e in tiers[tk]) + '</div>')
+    return "".join(out)
 
+
+def build_index(entries, planned, lang):
+    t = INDEX_I18N[lang]
+    built = [e for e in entries if e.get("status") == "built"]
+    desc = [e for e in entries if e.get("status") == "descriptive"]
+    n_built, n_desc, n_plan = len(built), len(desc), len(planned)
+
+    built_cards = cards_grouped(built, t, lang) or f'<p class="note">{esc(t["cross_none"])}</p>'
+    desc_cards = cards_grouped(desc, t, lang) or ""
     cross = build_crosswork(entries, t) if n_built >= 2 else f'<p class="note">{esc(t["cross_none"])}</p>'
     lang_attr = "zh" if lang == "cn" else "en"
-    return (
+
+    header = (
         f'<!DOCTYPE html>\n<html lang="{lang_attr}"><head><meta charset="utf-8"/>'
         '<meta name="viewport" content="width=device-width, initial-scale=1"/>'
         f'<title>{esc(t["title"])}</title>'
         f'<style>{CSS}</style></head><body><div class="wrap">'
-        '<header class="card">'
-        '<div class="toprow">'
+        '<header class="card"><div class="toprow">'
         f'<div class="brand">{esc(t["brand"])}</div>'
-        f'<div class="langtoggle"><a href="{t["other_file"]}">{esc(t["other_name"])}</a></div>'
-        '</div>'
+        f'<div class="langtoggle"><a href="{t["other_file"]}">{esc(t["other_name"])}</a></div></div>'
         f'<h1>{esc(t["title"])}</h1>'
         f'<p class="focus">{esc(t["focus"])}</p>'
         f'<div class="kc"><div><div class="kcv">{n_built}</div><div class="kcl">{esc(t["k_built"])}</div></div>'
         f'<div><div class="kcv">{n_desc}</div><div class="kcl">{esc(t["k_desc"])}</div></div>'
         f'<div><div class="kcv">{n_plan}</div><div class="kcl">{esc(t["k_plan"])}</div></div>'
         f'<div><div class="kcv">{BUILD_DATE}</div><div class="kcl">{esc(t["k_gen"])}</div></div></div>'
-        f'<p class="note">{esc(t["note"])}</p>'
-        '</header>'
-        f'<section class="card"><h2><span class="snum">01</span>{esc(t["s_entries"])}</h2>{cards_html}</section>'
-        f'<section class="card"><h2><span class="snum">02</span>{esc(t["s_survey"])}</h2>'
+        f'<p class="note">{esc(t["note"])}</p></header>'
+    )
+    survey = (
         f'<div class="tablewrap"><table><thead><tr><th>{esc(t["th_work"])}</th><th>{esc(t["th_type"])}</th>'
         f'<th>{esc(t["th_usage"])}</th><th>{esc(t["th_annot"])}</th><th>{esc(t["th_ann"])}</th>'
         f'<th>{esc(t["th_clusters"])}</th><th>{esc(t["th_data"])}</th>'
         f'<th>{esc(t["th_license"])}</th><th>{esc(t["th_atlas"])}</th></tr></thead><tbody>'
-        f'{survey_rows_html(entries, planned, t)}</tbody></table></div></section>'
-        f'<section class="card"><h2><span class="snum">03</span>{esc(t["s_cross"])}</h2>{cross}</section>'
-        f'<section class="card"><h2><span class="snum">04</span>{esc(t["s_road"])}</h2>'
-        f'{roadmap_html(planned, t, lang)}</section>'
-        f'<footer class="card"><p class="note">{t["footer"].format(date=BUILD_DATE)}</p></footer>'
-        '</div></body></html>'
+        f'{survey_rows_html(entries, planned, t)}</tbody></table></div>'
     )
+
+    # Section order: built atlases first, cross-work comparison second, then the
+    # descriptive entries, the full survey table, and the roadmap.
+    sections = [(t["s_built"], built_cards), (t["s_cross"], cross)]
+    if desc_cards:
+        sections.append((t["s_desc"], desc_cards))
+    sections.append((t["s_survey"], survey))
+    sections.append((t["s_road"], roadmap_html(planned, t, lang)))
+    body = "".join(
+        f'<section class="card"><h2><span class="snum">{i:02d}</span>{esc(title)}</h2>{html_}</section>'
+        for i, (title, html_) in enumerate(sections, 1)
+    )
+    footer = f'<footer class="card"><p class="note">{t["footer"].format(date=BUILD_DATE)}</p></footer>'
+    return header + body + footer + '</div></body></html>'
 
 
 # -------------------------------------------------------------------- README
