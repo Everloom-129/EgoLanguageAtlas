@@ -6,8 +6,16 @@
   "arxiv": "https://arxiv.org/abs/2604.07607",
   "repo": "https://github.com/GaTech-RL2/EgoVerse",
   "project": "https://egoverse.ai/",
-  "usage_methods": ["corpus", "co-train", "vla-pretrain"],
-  "annotation_types": ["task-instruction", "clip-narration", "atomic-substep"],
+  "usage_methods": [
+    "corpus",
+    "co-train",
+    "vla-pretrain"
+  ],
+  "annotation_types": [
+    "task-instruction",
+    "clip-narration",
+    "atomic-substep"
+  ],
   "source_datasets": "original capture (Aria / iPhone)",
   "data_access": "project-script (sync_s3.py with AWS credentials)",
   "downloadable": "via S3 sync script (AWS creds)",
@@ -18,12 +26,24 @@
   "focus_cn": "覆盖全球的人类第一人称平台，约 1,362 小时 / 约 8 万段 / 1,965 个任务，分为受控的 EgoVerse-A 与工业规模的 EgoVerse-I，配有与操作相关的语言。",
   "datapath_en": "EgoVerse is a worldwide human egocentric platform of about 1,362 hours, roughly 80,000 episodes, and 1,965 tasks, captured with Project Aria glasses, head-mounted iPhone rigs, and custom industry rigs. It is split into a controlled EgoVerse-A (about 75 hours over six flagship tasks) and an industry-scale EgoVerse-I (about 1,287 hours), with episodes in a standardized Zarr and LeRobot format holding egocentric RGB, 21-keypoint per-hand and head pose, camera motion, and per-segment language: task descriptions and object lists in EgoVerse-A, and denser one to two second narrations, active-hand indicators, and static versus mobile flags in EgoVerse-I. Data is pulled from S3 with a credentialed sync script and used to co-train language-conditioned and VLA policies across embodiments. The code is MIT, but the dataset redistribution terms are not stated.",
   "datapath_cn": "EgoVerse 是覆盖全球的人类第一人称平台，约 1,362 小时、约 8 万段、1,965 个任务，使用 Project Aria 眼镜、头戴 iPhone 装置与定制工业装置采集。它分为受控的 EgoVerse-A（约 75 小时、六个旗舰任务）与工业规模的 EgoVerse-I（约 1,287 小时），片段采用标准化的 Zarr 与 LeRobot 格式，包含第一人称 RGB、每只手 21 个关键点与头部姿态、相机运动以及分段语言：EgoVerse-A 提供任务描述与物体清单，EgoVerse-I 提供更密集的 1 至 2 秒旁白、活动手指示与静止/移动标记。数据通过需凭证的同步脚本从 S3 拉取，用于跨形态共训语言条件与 VLA 策略。代码采用 MIT，但数据集再分发条款未声明。",
-  "flow_en": ["worldwide egocentric capture (Aria, iPhone, industry rigs)", "standardize to Zarr and LeRobot episodes", "per-segment language: tasks, narrations, active-hand flags", "S3 sync with AWS credentials", "co-train language-conditioned and VLA policies"],
-  "flow_cn": ["全球第一人称采集（Aria、iPhone、工业装置）", "标准化为 Zarr 与 LeRobot 片段", "分段语言：任务、旁白、活动手标记", "用 AWS 凭证从 S3 同步", "共训语言条件与 VLA 策略"],
+  "flow_en": [
+    "worldwide egocentric capture (Aria, iPhone, industry rigs)",
+    "standardize to Zarr and LeRobot episodes",
+    "per-segment language: tasks, narrations, active-hand flags",
+    "S3 sync with AWS credentials",
+    "co-train language-conditioned and VLA policies"
+  ],
+  "flow_cn": [
+    "全球第一人称采集（Aria、iPhone、工业装置）",
+    "标准化为 Zarr 与 LeRobot 片段",
+    "分段语言：任务、旁白、活动手标记",
+    "用 AWS 凭证从 S3 同步",
+    "共训语言条件与 VLA 策略"
+  ],
   "no_corpus_en": "EgoVerse publishes dense per-segment language and is a strong download+cluster candidate, but the only documented access route is a credentialed S3 sync script (sync_s3.py): the bucket is not public, there is no metadata-only export and no HuggingFace mirror, so the annotations cannot be fetched without AWS credentials. Unlike EgoDex (a public CDN archive readable by range request), EgoVerse is blocked on access, not just license, so it is documented descriptively this run. It can be built into a full atlas if AWS credentials or a local synced copy are provided.",
   "no_corpus_cn": "EgoVerse 发布了密集的分段语言，是很好的下载并聚类候选，但唯一有文档记载的访问方式是需凭证的 S3 同步脚本（sync_s3.py）：存储桶非公开，没有仅元数据的导出，也没有 HuggingFace 镜像，因此没有 AWS 凭证就无法获取标注。与 EgoDex（可用范围请求读取的公开 CDN 压缩包）不同，EgoVerse 受阻于访问而非仅许可，故本次以描述性方式记录。如提供 AWS 凭证或本地已同步副本，即可构建为完整图谱。",
   "example_image_url": "https://arxiv.org/html/2604.07607v1/figures/egoverse.png",
-  "example_video_url": "https://partners.mecka.ai/egoverse",
+  "example_video_url": "https://egoverse.ai/assets/videos/DatasetOverview.mp4",
   "example_page_url": "https://egoverse.ai/",
   "example_inline": false,
   "example_credit": "EgoVerse, Punamiya, Kareer, Xu et al., 2026 (Georgia Tech RL2)",

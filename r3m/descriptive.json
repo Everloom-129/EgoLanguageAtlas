@@ -6,7 +6,9 @@
   "arxiv": "https://arxiv.org/abs/2203.12601",
   "repo": "https://github.com/facebookresearch/r3m",
   "project": "https://sites.google.com/view/robot-r3m/",
-  "usage_methods": ["perception-pretrain"],
+  "usage_methods": [
+    "perception-pretrain"
+  ],
   "annotation_types": [],
   "source_datasets": "Ego4D",
   "data_access": "none (consumes Ego4D)",
@@ -18,8 +20,18 @@
   "focus_cn": "在 Ego4D 上预训练的可复用视觉表征，用于数据高效的机器人操作。",
   "datapath_en": "R3M consumes Ego4D egocentric video together with its free-form narrations, training a frozen visual encoder with time-contrastive learning, video-language alignment, and an L1 sparsity penalty. It releases encoder weights rather than a new language-annotation corpus, so there are no R3M-original strings to download and cluster.",
   "datapath_cn": "R3M 使用 Ego4D 第一人称视频及其自由文本旁白，通过时间对比学习、视频-语言对齐与 L1 稀疏约束训练一个冻结的视觉编码器。它发布的是编码器权重而非新的语言标注语料，因此没有 R3M 原创的字符串可供下载与聚类。",
-  "flow_en": ["Ego4D video + narrations", "time-contrastive + video-language alignment", "frozen R3M visual encoder", "downstream robot manipulation"],
-  "flow_cn": ["Ego4D 视频 + 旁白", "时间对比 + 视频-语言对齐", "冻结的 R3M 视觉编码器", "下游机器人操作"],
+  "flow_en": [
+    "Ego4D video + narrations",
+    "time-contrastive + video-language alignment",
+    "frozen R3M visual encoder",
+    "downstream robot manipulation"
+  ],
+  "flow_cn": [
+    "Ego4D 视频 + 旁白",
+    "时间对比 + 视频-语言对齐",
+    "冻结的 R3M 视觉编码器",
+    "下游机器人操作"
+  ],
   "no_corpus_en": "R3M is a representation-learning method, not an annotation source. It reuses Ego4D narrations (which carry the Ego4D license) and releases model weights under MIT. This atlas documents R3M descriptively rather than clustering downloaded strings.",
   "no_corpus_cn": "R3M 是一种表征学习方法，而非标注来源。它复用 Ego4D 旁白（受 Ego4D 许可约束），并以 MIT 许可发布模型权重。因此本图谱以描述性方式记录 R3M，而非对下载的字符串进行聚类。",
   "example_image_url": "",

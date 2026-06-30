@@ -34,6 +34,8 @@ REPO = "https://github.com/apple/ml-egodex"
 ARXIV = "https://arxiv.org/abs/2505.11709"
 VIEWER = "https://huggingface.co/spaces/pablovela5620/ego-dex-viewer"
 LICENSE_URL = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+# CC BY-NC-ND: link the teaser figure, never embed/redistribute it (no derivatives).
+EXAMPLE_IMG_URL = "https://arxiv.org/html/2505.11709v2/x1.png"
 
 # reversible example pairs (active vs alternate direction) from the parquet
 REV_PAIRS = []
@@ -144,7 +146,8 @@ def kc_list(t):
 
 def usage_body(t):
     media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
-             + A.media_panel(t, image_uri=None, video_url=VIEWER, page_url=REPO,
+             + A.media_panel(t, image_uri=None, image_url=EXAMPLE_IMG_URL,
+                             video_url=VIEWER, page_url=REPO,
                              caption=t["media_caption"], credit=t["media_credit"]))
     return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
 

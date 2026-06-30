@@ -34,6 +34,7 @@ ARXIV = "https://arxiv.org/abs/2503.13441"
 PROJECT = "https://human-as-robot.github.io/"
 LICENSE_URL = "https://opensource.org/license/mit"
 EXAMPLE_IMG_URL = "https://human-as-robot.github.io/resources/hat_overview.jpg"
+EXAMPLE_VIDEO = "https://human-as-robot.github.io/resources/website_teaser.mp4"
 EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.jpg"))
 
 META = {
@@ -136,7 +137,8 @@ def kc_list(t):
 def usage_body(t):
     media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
              + A.media_panel(t, image_uri=EXAMPLE_URI, image_url=EXAMPLE_IMG_URL,
-                             page_url=PROJECT, caption=t["media_caption"], credit=t["media_credit"]))
+                             video_url=EXAMPLE_VIDEO, page_url=PROJECT,
+                             caption=t["media_caption"], credit=t["media_credit"]))
     return (media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
             + f'<p class="note">{A.esc(t["small_note"])}</p>')
 

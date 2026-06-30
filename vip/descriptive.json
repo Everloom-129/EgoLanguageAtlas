@@ -6,7 +6,10 @@
   "arxiv": "https://arxiv.org/abs/2210.00030",
   "repo": "https://github.com/facebookresearch/vip",
   "project": "https://sites.google.com/view/vip-rl/",
-  "usage_methods": ["reward-repr", "perception-pretrain"],
+  "usage_methods": [
+    "reward-repr",
+    "perception-pretrain"
+  ],
   "annotation_types": [],
   "source_datasets": "Ego4D",
   "data_access": "none (consumes Ego4D)",
@@ -18,14 +21,24 @@
   "focus_cn": "从无标注的 Ego4D 视频中自监督学习目标条件价值函数，为未见过的机器人任务提供稠密视觉奖励。",
   "datapath_en": "VIP consumes Ego4D egocentric video without using any action or language labels. It casts representation learning as offline goal-conditioned reinforcement learning and derives a self-supervised dual value-function objective (an implicit time-contrastive loss) trained over video frames. It releases pretrained visual-encoder weights that yield both a representation and a dense, smooth reward (the embedding distance to a goal image), not a new language-annotation corpus.",
   "datapath_cn": "VIP 使用 Ego4D 第一人称视频，但不依赖任何动作或语言标注。它将表征学习建模为离线目标条件强化学习，推导出一个在视频帧上训练的自监督对偶价值函数目标（隐式时间对比损失）。它发布的是预训练视觉编码器权重，可同时提供表征与稠密平滑奖励（到目标图像的嵌入距离），而非新的语言标注语料。",
-  "flow_en": ["Ego4D video frames (unlabeled)", "goal-conditioned value objective (implicit time-contrastive)", "frozen VIP visual encoder + reward", "downstream robot control / reward shaping"],
-  "flow_cn": ["Ego4D 视频帧（无标注）", "目标条件价值目标（隐式时间对比）", "冻结的 VIP 视觉编码器 + 奖励", "下游机器人控制 / 奖励塑形"],
+  "flow_en": [
+    "Ego4D video frames (unlabeled)",
+    "goal-conditioned value objective (implicit time-contrastive)",
+    "frozen VIP visual encoder + reward",
+    "downstream robot control / reward shaping"
+  ],
+  "flow_cn": [
+    "Ego4D 视频帧（无标注）",
+    "目标条件价值目标（隐式时间对比）",
+    "冻结的 VIP 视觉编码器 + 奖励",
+    "下游机器人控制 / 奖励塑形"
+  ],
   "no_corpus_en": "VIP is a reward and representation-learning method, not an annotation source. It trains on unlabeled Ego4D frames (it does not consume narrations) and releases model weights under CC BY-NC 4.0. There are no VIP-original language strings to download or cluster, so this atlas documents it descriptively.",
   "no_corpus_cn": "VIP 是一种奖励与表征学习方法，而非标注来源。它在无标注的 Ego4D 帧上训练（不消费旁白），并以 CC BY-NC 4.0 许可发布模型权重。没有 VIP 原创的语言字符串可供下载或聚类，因此本图谱以描述性方式记录它。",
-  "example_image_url": "",
-  "example_video_url": "",
+  "example_image_url": "https://raw.githubusercontent.com/facebookresearch/vip/main/vip/assets/pickplace_melon.png",
+  "example_video_url": "https://sites.google.com/view/vip-rl/",
   "example_page_url": "https://sites.google.com/view/vip-rl/",
-  "example_inline": false,
+  "example_inline": true,
   "example_credit": "VIP, Ma et al., ICLR 2023",
   "example_caption_en": "VIP is pretrained on unlabeled Ego4D egocentric video; the project page shows example footage and learned reward curves.",
   "example_caption_cn": "VIP 在无标注的 Ego4D 第一人称视频上预训练；项目主页展示了示例片段与学习到的奖励曲线。",

@@ -6,8 +6,14 @@
   "arxiv": "https://arxiv.org/abs/2507.15597",
   "repo": "https://github.com/BeingBeyond/Being-H0",
   "project": "https://beingbeyond.github.io/Being-H0/",
-  "usage_methods": ["vla-pretrain", "hand-pose", "corpus"],
-  "annotation_types": ["task-instruction"],
+  "usage_methods": [
+    "vla-pretrain",
+    "hand-pose",
+    "corpus"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
   "source_datasets": "UniHand (11 sets incl. OakInk2, EgoDex, HoloAssist)",
   "data_access": "huggingface (checkpoints; UniHand not standalone)",
   "downloadable": "derived-only (checkpoints; UniHand text not released standalone)",
@@ -18,14 +24,26 @@
   "focus_cn": "通过物理指令微调与部件级手部动作分词，从大规模人类手部视频预训练的灵巧 VLA，并构建 UniHand 语料。",
   "datapath_en": "Being-H0 is pretrained on UniHand, a corpus the authors assemble from 11 human-video sources (including OakInk2, EgoDex and HoloAssist) spanning motion capture, VR and RGB-only footage with task instructions. It applies physical instruction tuning and tokenizes hand motion at the part level via grouped residual quantization, so a multimodal model learns to follow instructions at hand-level dexterity. It releases checkpoints; the full UniHand instruction text is not published as a standalone, independently downloadable corpus.",
   "datapath_cn": "Being-H0 在 UniHand 上预训练，该语料由作者从 11 个人类视频来源（包括 OakInk2、EgoDex 与 HoloAssist）汇编而成，涵盖动作捕捉、VR 与纯 RGB 画面并带有任务指令。它采用物理指令微调，通过分组残差量化在部件级对手部动作分词，使多模态模型学会在手部级灵巧度上跟随指令。它发布检查点；完整的 UniHand 指令文本未作为独立可下载语料发布。",
-  "flow_en": ["UniHand human hand videos + instructions (11 sources)", "part-level hand-motion tokenization (GRQ)", "physical instruction tuning of a VLA", "physical-space alignment + post-training", "dexterous robot manipulation"],
-  "flow_cn": ["UniHand 人类手部视频 + 指令（11 个来源）", "部件级手部动作分词（GRQ）", "VLA 物理指令微调", "物理空间对齐 + 后训练", "灵巧机器人操作"],
+  "flow_en": [
+    "UniHand human hand videos + instructions (11 sources)",
+    "part-level hand-motion tokenization (GRQ)",
+    "physical instruction tuning of a VLA",
+    "physical-space alignment + post-training",
+    "dexterous robot manipulation"
+  ],
+  "flow_cn": [
+    "UniHand 人类手部视频 + 指令（11 个来源）",
+    "部件级手部动作分词（GRQ）",
+    "VLA 物理指令微调",
+    "物理空间对齐 + 后训练",
+    "灵巧机器人操作"
+  ],
   "no_corpus_en": "Being-H0 builds the UniHand instruction corpus internally but releases only model checkpoints; the assembled instruction text (which mixes 11 source licenses) is not published as a standalone downloadable dataset. With no independently retrievable corpus, this atlas documents Being-H0 descriptively rather than clustering its strings.",
   "no_corpus_cn": "Being-H0 在内部构建了 UniHand 指令语料，但仅发布模型检查点；其汇编的指令文本（混合 11 个来源的许可）未作为独立可下载数据集发布。由于没有可独立获取的语料，本图谱以描述性方式记录 Being-H0，而非对其字符串进行聚类。",
-  "example_image_url": "",
-  "example_video_url": "",
+  "example_image_url": "https://beingbeyond.github.io/Being-H0/assets/image/overview.webp",
+  "example_video_url": "https://beingbeyond.github.io/Being-H0/assets/video/real_demo/pour_cup.mp4",
   "example_page_url": "https://beingbeyond.github.io/Being-H0/",
-  "example_inline": false,
+  "example_inline": true,
   "example_credit": "Being-H0, Luo et al., 2025",
   "example_caption_en": "Being-H0 is pretrained on large-scale egocentric human hand videos from UniHand; the project page shows hand-motion data and robot manipulation rollouts.",
   "example_caption_cn": "Being-H0 在来自 UniHand 的大规模第一人称人类手部视频上预训练；项目主页展示了手部动作数据与机器人操作执行。",

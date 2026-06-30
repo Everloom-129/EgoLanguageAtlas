@@ -5,9 +5,16 @@
   "venue": "arXiv 2026",
   "arxiv": "https://arxiv.org/abs/2605.17077",
   "repo": "",
-  "project": "",
-  "usage_methods": ["dense-relabel", "vla-pretrain", "world-model"],
-  "annotation_types": ["dense-multi-aspect", "task-instruction"],
+  "project": "https://arxiv.org/abs/2605.17077",
+  "usage_methods": [
+    "dense-relabel",
+    "vla-pretrain",
+    "world-model"
+  ],
+  "annotation_types": [
+    "dense-multi-aspect",
+    "task-instruction"
+  ],
   "source_datasets": ">1M robot clips + 50K EgoVerse human videos",
   "data_access": "none",
   "downloadable": "none (no code/data release found)",
@@ -18,14 +25,26 @@
   "focus_cn": "将语言密度作为杠杆：用 Qwen3-VL 沿四个方面（物理运动、场景、手臂姿态、推理）重新标注片段，并由一个学习得到的指令器在部署时选择标注。",
   "datapath_en": "DeMiAn (Dense Multi-Aspect Annotation) treats language density as a lever to extract more signal from fixed corpora without collecting new data. A vision-language model (Qwen3-VL) re-labels existing demonstration segments along four aspects, physical motion, scene composition, arm pose, and reasoning, over more than one million robot clips and about 50,000 EgoVerse human egocentric videos. A small learned instructor then selects which annotation aspect to inject at deployment, run asynchronously so generation latency hides behind the rollout. The richer language improves both a VLA policy and a video-based world-action model, but the dense annotations themselves are not released.",
   "datapath_cn": "DeMiAn（密集多方面标注）将语言密度作为杠杆，在不采集新数据的情况下从固定语料中提取更多信号。视觉语言模型（Qwen3-VL）沿四个方面（物理运动、场景构成、手臂姿态、推理）对已有演示片段重新标注，覆盖超过一百万条机器人片段与约 5 万条 EgoVerse 人类第一人称视频。随后一个学习得到的小型指令器在部署时选择注入哪种标注方面，并以异步方式运行，使生成延迟隐藏在执行过程之后。更丰富的语言同时提升了 VLA 策略与基于视频的世界-动作模型，但其密集标注本身并未公开。",
-  "flow_en": ["segment existing robot and human demos", "VLM relabels four aspects (motion, scene, arm pose, reasoning)", "fine-tune a small instructor to pick the aspect", "inject the chosen annotation at deployment", "train VLA policy and world-action model"],
-  "flow_cn": ["对已有机器人与人类演示进行分段", "VLM 重新标注四个方面（运动、场景、手臂姿态、推理）", "微调小型指令器以选择方面", "在部署时注入所选标注", "训练 VLA 策略与世界-动作模型"],
+  "flow_en": [
+    "segment existing robot and human demos",
+    "VLM relabels four aspects (motion, scene, arm pose, reasoning)",
+    "fine-tune a small instructor to pick the aspect",
+    "inject the chosen annotation at deployment",
+    "train VLA policy and world-action model"
+  ],
+  "flow_cn": [
+    "对已有机器人与人类演示进行分段",
+    "VLM 重新标注四个方面（运动、场景、手臂姿态、推理）",
+    "微调小型指令器以选择方面",
+    "在部署时注入所选标注",
+    "训练 VLA 策略与世界-动作模型"
+  ],
   "no_corpus_en": "DeMiAn is the clearest dense-multi-aspect annotation exemplar, but it is a method, not a released corpus. The paper is CC BY 4.0 and no code, data, or dense annotations have been published, and the work re-labels other datasets (robot clips and EgoVerse) rather than originating a standalone corpus. It is therefore documented descriptively until any annotations are released.",
   "no_corpus_cn": "DeMiAn 是密集多方面标注最清晰的范例，但它是一种方法而非已发布的语料。论文采用 CC BY 4.0，未公开任何代码、数据或密集标注，且该工作是对其他数据集（机器人片段与 EgoVerse）重新标注，而非原创独立语料。因此在任何标注发布之前以描述性方式记录。",
   "example_image_url": "https://arxiv.org/html/2605.17077v1/x1.png",
   "example_video_url": "",
-  "example_page_url": "https://arxiv.org/html/2605.17077v1",
-  "example_inline": false,
+  "example_page_url": "https://arxiv.org/abs/2605.17077",
+  "example_inline": true,
   "example_credit": "DeMiAn (How to Instruct Your Robot), Kim et al., arXiv:2605.17077, 2026",
   "example_caption_en": "DeMiAn re-annotates robot and human egocentric demos along four aspects; the paper teaser shows the relabeling overview.",
   "example_caption_cn": "DeMiAn 沿四个方面重新标注机器人与人类第一人称演示；论文示意图展示了重标注总览。",

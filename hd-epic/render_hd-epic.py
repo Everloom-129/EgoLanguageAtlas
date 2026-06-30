@@ -34,6 +34,7 @@ ARXIV = "https://arxiv.org/abs/2502.04144"
 PROJECT = "https://hd-epic.github.io/"
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 EXAMPLE_IMG_URL = "https://hd-epic.github.io/static/media/hd_epic_poster.png"
+EXAMPLE_VIDEO = "https://hd-epic.github.io/static/media/videos/epic_kitchens_videowall.mp4"
 EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.png"))
 
 META = {
@@ -154,7 +155,8 @@ def exlist(items, tag_key, text_key):
 def usage_body(t):
     media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
              + A.media_panel(t, image_uri=EXAMPLE_URI, image_url=EXAMPLE_IMG_URL,
-                             page_url=PROJECT, caption=t["media_caption"], credit=t["media_credit"]))
+                             video_url=EXAMPLE_VIDEO, page_url=PROJECT,
+                             caption=t["media_caption"], credit=t["media_credit"]))
     return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
 
 

@@ -6,8 +6,12 @@
   "arxiv": "https://arxiv.org/abs/2410.11758",
   "repo": "https://github.com/LatentActionPretraining/LAPA",
   "project": "https://latentactionpretraining.github.io/",
-  "usage_methods": ["vla-pretrain"],
-  "annotation_types": ["task-instruction"],
+  "usage_methods": [
+    "vla-pretrain"
+  ],
+  "annotation_types": [
+    "task-instruction"
+  ],
   "source_datasets": "Open X-Embodiment, Bridgev2, Something-Something V2",
   "data_access": "huggingface (model weights)",
   "downloadable": "derived-only (releases weights and code; no language corpus)",
@@ -18,14 +22,26 @@
   "focus_cn": "无监督的视觉-语言-动作预训练：从无动作标注的视频与人类视频中学习帧间的离散潜在动作，再微调映射为真实机器人动作。",
   "datapath_en": "LAPA trains an action-quantization model that infers discrete latent actions between consecutive frames of actionless video, including human manipulation video such as Something-Something V2. It then pretrains a latent vision-language-action model to predict those latent actions from an observation and a task description, and fine-tunes on a small set of real robot trajectories to map latent actions to executable ones. LAPA releases the latent-action model and a 7B VLA under MIT; the task descriptions it conditions on are consumed from existing datasets, so it publishes no new language corpus.",
   "datapath_cn": "LAPA 训练一个动作量化模型，从无动作标注视频（包括 Something-Something V2 等人类操作视频）的相邻帧间推断离散潜在动作。随后它预训练一个潜在的视觉-语言-动作模型，从观测与任务描述预测这些潜在动作，并在少量真实机器人轨迹上微调，将潜在动作映射为可执行动作。LAPA 以 MIT 许可发布潜在动作模型与一个 7B 的 VLA；其所依赖的任务描述取自已有数据集，因此不发布新的语言语料。",
-  "flow_en": ["actionless and human video", "quantize discrete latent actions between frames", "pretrain latent VLA on observation + task instruction", "fine-tune to real robot actions", "deploy VLA policy"],
-  "flow_cn": ["无动作标注与人类视频", "量化帧间离散潜在动作", "在观测 + 任务指令上预训练潜在 VLA", "微调为真实机器人动作", "部署 VLA 策略"],
+  "flow_en": [
+    "actionless and human video",
+    "quantize discrete latent actions between frames",
+    "pretrain latent VLA on observation + task instruction",
+    "fine-tune to real robot actions",
+    "deploy VLA policy"
+  ],
+  "flow_cn": [
+    "无动作标注与人类视频",
+    "量化帧间离散潜在动作",
+    "在观测 + 任务指令上预训练潜在 VLA",
+    "微调为真实机器人动作",
+    "部署 VLA 策略"
+  ],
   "no_corpus_en": "LAPA is a representation- and policy-pretraining method, not an annotation source. The latent actions are learned without action labels, and the task instructions it uses as conditioning are reused from Open X-Embodiment, BridgeV2, and Something-Something V2 under their own licenses rather than authored anew. It releases code and weights under MIT, so this atlas documents LAPA descriptively rather than clustering downloaded strings.",
   "no_corpus_cn": "LAPA 是一种表征与策略预训练方法，而非标注来源。其潜在动作在没有动作标签的情况下学习，作为条件使用的任务指令取自 Open X-Embodiment、BridgeV2 与 Something-Something V2 并遵循各自许可，而非重新撰写。它以 MIT 许可发布代码与权重，因此本图谱以描述性方式记录 LAPA，而非对下载的字符串进行聚类。",
-  "example_image_url": "",
-  "example_video_url": "https://latentactionpretraining.github.io/static/images/rollout.gif",
+  "example_image_url": "https://latentactionpretraining.github.io/static/images/method.png",
+  "example_video_url": "https://latentactionpretraining.github.io/static/videos/final_final_teaser.mp4",
   "example_page_url": "https://latentactionpretraining.github.io/",
-  "example_inline": false,
+  "example_inline": true,
   "example_credit": "LAPA, Ye et al., ICLR 2025",
   "example_caption_en": "LAPA pretrains on actionless and human video; the project page shows latent-action rollouts and robot results.",
   "example_caption_cn": "LAPA 在无动作标注与人类视频上预训练；项目主页展示潜在动作执行与机器人结果。",

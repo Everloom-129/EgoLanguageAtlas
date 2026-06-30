@@ -35,6 +35,9 @@ ARXIV = "https://arxiv.org/abs/2308.09126"
 PROJECT = "https://egoschema.github.io/"
 EGO4D = "https://ego4d-data.org/"
 LICENSE_URL = "https://ego4ddataset.com/"
+EXAMPLE_VIDEO = "https://www.youtube.com/watch?v=_VVoiSzb5E4"
+EXAMPLE_IMG_URL = "https://img.youtube.com/vi/_VVoiSzb5E4/hqdefault.jpg"
+EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.jpg"))
 
 # a few example questions with options, from the parquet
 EXAMPLES = []
@@ -142,7 +145,8 @@ def kc_list(t):
 
 def usage_body(t):
     media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
-             + A.media_panel(t, image_uri=None, video_url=EGO4D, page_url=PROJECT,
+             + A.media_panel(t, image_uri=EXAMPLE_URI, image_url=EXAMPLE_IMG_URL,
+                             video_url=EXAMPLE_VIDEO, page_url=PROJECT,
                              caption=t["media_caption"], credit=t["media_credit"]))
     return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"])
 

@@ -6,7 +6,10 @@
   "arxiv": "https://arxiv.org/abs/2503.23877",
   "repo": "https://github.com/junyaoshi/ZeroMimic",
   "project": "https://zeromimic.github.io/",
-  "usage_methods": ["affordance", "hand-pose"],
+  "usage_methods": [
+    "affordance",
+    "hand-pose"
+  ],
   "annotation_types": [],
   "source_datasets": "EPIC-KITCHENS",
   "data_access": "none (consumes EPIC-KITCHENS)",
@@ -18,14 +21,24 @@
   "focus_cn": "从 EPIC-KITCHENS 人类视频中蒸馏出图像目标条件的操作技能（开、关、倒、抓放、切、搅拌），用于零样本机器人部署。",
   "datapath_en": "ZeroMimic consumes EPIC-KITCHENS egocentric kitchen video, using hand-pose estimation (HaMeR) and structure-from-motion to recover 3D wrist trajectories and camera geometry from shaky in-the-wild footage. It distills these into image-goal-conditioned skill policies for common manipulation categories (open, close, pour, pick-place, cut, stir) that deploy zero-shot on real robot arms. It releases the policies and checkpoints, not a language corpus.",
   "datapath_cn": "ZeroMimic 使用 EPIC-KITCHENS 第一人称厨房视频，借助手部姿态估计（HaMeR）与运动恢复结构，从抖动的真实场景画面中恢复 3D 腕部轨迹与相机几何。它将这些蒸馏为图像目标条件的技能策略，覆盖常见操作类别（开、关、倒、抓放、切、搅拌），可在真实机器人臂上零样本部署。它发布的是策略与检查点，而非语言语料。",
-  "flow_en": ["EPIC-KITCHENS egocentric video", "hand-pose (HaMeR) + structure-from-motion", "image-goal-conditioned skill policies", "zero-shot robot deployment (Franka / WidowX)"],
-  "flow_cn": ["EPIC-KITCHENS 第一人称视频", "手部姿态（HaMeR） + 运动恢复结构", "图像目标条件技能策略", "零样本机器人部署（Franka / WidowX）"],
+  "flow_en": [
+    "EPIC-KITCHENS egocentric video",
+    "hand-pose (HaMeR) + structure-from-motion",
+    "image-goal-conditioned skill policies",
+    "zero-shot robot deployment (Franka / WidowX)"
+  ],
+  "flow_cn": [
+    "EPIC-KITCHENS 第一人称视频",
+    "手部姿态（HaMeR） + 运动恢复结构",
+    "图像目标条件技能策略",
+    "零样本机器人部署（Franka / WidowX）"
+  ],
   "no_corpus_en": "ZeroMimic is a skill-distillation method, not an annotation source. It consumes EPIC-KITCHENS video (which carries the EPIC license) and releases deployable policies, not text. There are no ZeroMimic-original language strings to download or cluster.",
   "no_corpus_cn": "ZeroMimic 是一种技能蒸馏方法，而非标注来源。它消费 EPIC-KITCHENS 视频（受 EPIC 许可约束），并发布可部署的策略而非文本。没有 ZeroMimic 原创的语言字符串可供下载或聚类。",
-  "example_image_url": "",
+  "example_image_url": "https://img.youtube.com/vi/nFhNSsR7TEY/hqdefault.jpg",
   "example_video_url": "https://youtu.be/nFhNSsR7TEY",
   "example_page_url": "https://zeromimic.github.io/",
-  "example_inline": false,
+  "example_inline": true,
   "example_credit": "ZeroMimic, Shi et al., ICRA 2025",
   "example_caption_en": "ZeroMimic distills manipulation skills from EPIC-KITCHENS egocentric video; the project page and demo video show hand-trajectory extraction and robot rollouts.",
   "example_caption_cn": "ZeroMimic 从 EPIC-KITCHENS 第一人称视频中蒸馏操作技能；项目主页与演示视频展示了手部轨迹提取与机器人执行。",

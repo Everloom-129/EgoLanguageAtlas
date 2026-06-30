@@ -6,8 +6,16 @@
   "arxiv": "https://arxiv.org/abs/2512.16793",
   "repo": "https://github.com/zgc-embodyai/PhysBrain",
   "project": "https://zgc-embodyai.github.io/PhysBrain/",
-  "usage_methods": ["dense-relabel", "vla-pretrain", "perception-pretrain", "corpus"],
-  "annotation_types": ["vqa", "dense-multi-aspect"],
+  "usage_methods": [
+    "dense-relabel",
+    "vla-pretrain",
+    "perception-pretrain",
+    "corpus"
+  ],
+  "annotation_types": [
+    "vqa",
+    "dense-multi-aspect"
+  ],
   "source_datasets": "Ego4D, BuildAI, EgoDex",
   "data_access": "none (E2E-3M not yet released)",
   "downloadable": "none (E2E-3M not yet released)",
@@ -18,14 +26,26 @@
   "focus_cn": "一条 Egocentric2Embodiment 流水线，将原始人类第一人称视频转化为模式驱动、证据支撑的监督信号，覆盖七种 VQA 模式，产出约 300 万条实例的 E2E-3M 数据集。",
   "datapath_en": "PhysBrain's Egocentric2Embodiment (E2E) pipeline converts raw first-person human video into schema-driven, evidence-grounded supervision instead of collecting robot-specific data. It draws on three domains, Ego4D for open-world household activity, BuildAI for industrial workflows, and EgoDex for laboratory manipulation, and produces about three million VQA instances (the E2E-3M dataset) spanning seven question modes: temporal, attribute, spatial, reasoning, trajectory, mechanics, and summary. The PhysBrain embodied model is trained on E2E-3M and reports large gains in egocentric understanding and planning. Access is currently paper and project-page only; the dataset is unreleased and no license is stated.",
   "datapath_cn": "PhysBrain 的 Egocentric2Embodiment（E2E）流水线将原始第一人称人类视频转化为模式驱动、证据支撑的监督信号，而非采集机器人专属数据。它借助三个领域：Ego4D（开放世界家庭活动）、BuildAI（工业流程）与 EgoDex（实验室操作），产出约三百万条 VQA 实例（E2E-3M 数据集），涵盖七种问题模式：时间、属性、空间、推理、轨迹、机理与摘要。PhysBrain 具身模型在 E2E-3M 上训练，并在第一人称理解与规划上报告显著提升。目前仅有论文与项目主页可访问；数据集尚未发布，且未声明许可。",
-  "flow_en": ["ingest raw egocentric video (Ego4D, BuildAI, EgoDex)", "schema-driven structuring into seven VQA modes", "evidence-grounded supervision generation", "aggregate ~3M instances into E2E-3M", "train and evaluate the PhysBrain embodied model"],
-  "flow_cn": ["接入原始第一人称视频（Ego4D、BuildAI、EgoDex）", "按模式结构化为七种 VQA 模式", "生成证据支撑的监督信号", "聚合约 300 万实例为 E2E-3M", "训练并评估 PhysBrain 具身模型"],
+  "flow_en": [
+    "ingest raw egocentric video (Ego4D, BuildAI, EgoDex)",
+    "schema-driven structuring into seven VQA modes",
+    "evidence-grounded supervision generation",
+    "aggregate ~3M instances into E2E-3M",
+    "train and evaluate the PhysBrain embodied model"
+  ],
+  "flow_cn": [
+    "接入原始第一人称视频（Ego4D、BuildAI、EgoDex）",
+    "按模式结构化为七种 VQA 模式",
+    "生成证据支撑的监督信号",
+    "聚合约 300 万实例为 E2E-3M",
+    "训练并评估 PhysBrain 具身模型"
+  ],
   "no_corpus_en": "PhysBrain describes the E2E-3M dataset of about three million VQA instances, but that dataset is not yet released, the public repository hosts only the project website, and no license is stated. Because there is no downloadable corpus and no redistribution terms, PhysBrain is documented descriptively and should be revisited if E2E-3M is published.",
   "no_corpus_cn": "PhysBrain 描述了约三百万条 VQA 实例的 E2E-3M 数据集，但该数据集尚未发布，公开仓库仅托管项目网站，且未声明许可。由于没有可下载的语料，也没有再分发条款，PhysBrain 以描述性方式记录，待 E2E-3M 发布后再行重访。",
   "example_image_url": "https://zgc-embodyai.github.io/PhysBrain/imgs/pipeline.jpg",
   "example_video_url": "https://zgc-embodyai.github.io/PhysBrain/videos/teaser_video.mp4",
   "example_page_url": "https://zgc-embodyai.github.io/PhysBrain/",
-  "example_inline": false,
+  "example_inline": true,
   "example_credit": "PhysBrain, Lin et al., arXiv:2512.16793, 2025",
   "example_caption_en": "PhysBrain turns egocentric human video into VQA supervision; the project page shows teaser videos across lab, factory, and household scenes.",
   "example_caption_cn": "PhysBrain 将第一人称人类视频转化为 VQA 监督；项目主页展示了实验室、工厂与家庭场景的预告视频。",

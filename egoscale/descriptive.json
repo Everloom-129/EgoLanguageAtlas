@@ -6,7 +6,10 @@
   "arxiv": "https://arxiv.org/abs/2602.16710",
   "repo": "https://research.nvidia.com/labs/gear/egoscale/",
   "project": "https://research.nvidia.com/labs/gear/egoscale/",
-  "usage_methods": ["vla-pretrain", "hand-pose"],
+  "usage_methods": [
+    "vla-pretrain",
+    "hand-pose"
+  ],
   "annotation_types": [],
   "source_datasets": "large-scale egocentric human video (about 20,854 hours, aggregated; sources not enumerated)",
   "data_access": "none (method; code coming soon, no dataset released)",
@@ -18,12 +21,24 @@
   "focus_cn": "在约 20,854 小时带动作标签的第一人称人类视频上预训练的灵巧操作 VLA，揭示了人类数据规模与预测误差之间的对数线性扩展规律。",
   "datapath_en": "EgoScale pretrains a Vision-Language-Action model on about 20,854 hours of action-labeled egocentric human video, more than twenty times larger than prior efforts, unifying diverse sources through a common wrist-level action representation with retargeted dexterous hand actions. It reports a log-linear scaling law between human-data scale and validation loss, and the final policy improves average success by 54 percent over a no-pretraining baseline on a 22-DoF dexterous hand, transferring to lower-DoF hands as an embodiment-agnostic motor prior. It releases a model rather than a new annotation corpus.",
   "datapath_cn": "EgoScale 在约 20,854 小时带动作标签的第一人称人类视频上预训练一个视觉-语言-动作模型，规模超过以往工作的二十倍，并通过统一的腕部动作表示与重定向的灵巧手动作整合多种来源。论文报告了人类数据规模与验证损失之间的对数线性扩展规律；最终策略在 22 自由度灵巧手上相比无预训练基线将平均成功率提升 54%，并可迁移到更低自由度的手，作为与形态无关的运动先验。它发布的是模型而非新的标注语料。",
-  "flow_en": ["aggregate egocentric human video (~20,854 h)", "unify via wrist-level action representation", "VLA pretraining (scaling law)", "fine-tune on a 22-DoF dexterous hand", "transfer across embodiments"],
-  "flow_cn": ["聚合第一人称人类视频（约 20,854 小时）", "通过腕部动作表示统一", "VLA 预训练（扩展规律）", "在 22 自由度灵巧手上微调", "跨形态迁移"],
+  "flow_en": [
+    "aggregate egocentric human video (~20,854 h)",
+    "unify via wrist-level action representation",
+    "VLA pretraining (scaling law)",
+    "fine-tune on a 22-DoF dexterous hand",
+    "transfer across embodiments"
+  ],
+  "flow_cn": [
+    "聚合第一人称人类视频（约 20,854 小时）",
+    "通过腕部动作表示统一",
+    "VLA 预训练（扩展规律）",
+    "在 22 自由度灵巧手上微调",
+    "跨形态迁移"
+  ],
   "no_corpus_en": "EgoScale is a scaling study and method, not an annotation source. It consumes large-scale egocentric human video and releases a Vision-Language-Action model (code coming soon); it does not publish a new downloadable language-annotation corpus, so this atlas documents it descriptively with links to the paper and project page.",
   "no_corpus_cn": "EgoScale 是一项扩展研究与方法，而非标注来源。它消费大规模第一人称人类视频并发布一个视觉-语言-动作模型（代码即将开源）；它没有发布新的可下载语言标注语料，因此本图谱以描述性方式记录，并链接到论文与项目主页。",
   "example_image_url": "",
-  "example_video_url": "https://research.nvidia.com/labs/gear/egoscale/",
+  "example_video_url": "https://research.nvidia.com/labs/gear/egoscale/videos/EgoScaleTwitterVideo.mp4",
   "example_page_url": "https://research.nvidia.com/labs/gear/egoscale/",
   "example_inline": false,
   "example_credit": "EgoScale, Zheng et al., NVIDIA GEAR, arXiv:2602.16710 (2026)",

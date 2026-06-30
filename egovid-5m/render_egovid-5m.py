@@ -30,6 +30,7 @@ ARXIV = "https://arxiv.org/abs/2411.08380"
 PROJECT = "https://egovid.github.io/"
 LICENSE_URL = "https://www.apache.org/licenses/LICENSE-2.0"
 EXAMPLE_IMG_URL = "https://egovid.github.io/static/images/abs.png"
+EXAMPLE_VIDEO = "https://egovid.github.io/static/videos/egovid.mp4"
 EXAMPLE_URI = A.image_to_data_uri(EXAMPLE_IMG_URL, os.path.join(HERE, ".cache", "example.png"))
 
 SAMPLED = stats["counts"].get("sampled_note", "")
@@ -121,7 +122,8 @@ def kc_list(t):
 def usage_body(t):
     media = (f'<div class="minihead">{A.esc(t["sec_media"])}</div>'
              + A.media_panel(t, image_uri=EXAMPLE_URI, image_url=EXAMPLE_IMG_URL,
-                             page_url=PROJECT, caption=t["media_caption"], credit=t["media_credit"]))
+                             video_url=EXAMPLE_VIDEO, page_url=PROJECT,
+                             caption=t["media_caption"], credit=t["media_credit"]))
     banner = f'<p class="note">{A.esc(t["sampled_banner"])}</p>'
     return media + f'<p class="prose">{A.esc(t["datapath"])}</p>' + A.flow_diagram(t["flow"]) + banner
 
