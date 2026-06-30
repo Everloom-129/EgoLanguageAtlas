@@ -17,7 +17,7 @@
   "source_datasets": [
     "CaptainCook4D, HOI4D, HoloAssist, EgoDex, HOT3D, HO-Cap"
   ],
-  "downloadable": "open-ish (Box); EgoDex-derived subset gated",
+  "downloadable": "not yet: Box folder needs auth, download script coming soon, no HuggingFace mirror",
   "license": "mixed per-source (MIT code; constituents vary, some CC BY-NC-ND)",
   "links": {
     "paper": "https://arxiv.org/abs/2509.05513",
